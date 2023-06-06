@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QWidget" name="verticalLayoutWidget">
@@ -158,7 +158,7 @@ selection-background-color: blue;</string>
          <item>
           <widget class="QStackedWidget" name="stackedWidget2">
            <property name="currentIndex">
-            <number>0</number>
+            <number>1</number>
            </property>
            <widget class="QWidget" name="stackedWidgetPage1">
             <widget class="QPushButton" name="pushButton_11">
@@ -187,24 +187,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_24">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_21"/>
+                 <widget class="QSpinBox" name="Amount_item_1"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_31">
+                 <widget class="QPushButton" name="Btn_item_1">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_49">
+                 <widget class="QLabel" name="Product_1">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_50">
+                 <widget class="QLabel" name="Price_1">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -215,24 +215,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_25">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_22"/>
+                 <widget class="QSpinBox" name="Amount_item_2"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_34">
+                 <widget class="QPushButton" name="Btn_item_2">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_51">
+                 <widget class="QLabel" name="Product_2">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_52">
+                 <widget class="QLabel" name="Price_2">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -243,24 +243,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_26">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_23"/>
+                 <widget class="QSpinBox" name="Amount_item_3"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_35">
+                 <widget class="QPushButton" name="Btn_item_3">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_53">
+                 <widget class="QLabel" name="Product_3">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_54">
+                 <widget class="QLabel" name="Price_3">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -271,24 +271,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_8">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_5"/>
+                 <widget class="QSpinBox" name="Amount_item_4"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_17">
+                 <widget class="QPushButton" name="Btn_item_4">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_17">
+                 <widget class="QLabel" name="Product_4">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_18">
+                 <widget class="QLabel" name="Price_4">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -299,24 +299,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_7">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_4"/>
+                 <widget class="QSpinBox" name="Amount_item_5"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_16">
+                 <widget class="QPushButton" name="Btn_item_5">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_15">
+                 <widget class="QLabel" name="Product_5">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_16">
+                 <widget class="QLabel" name="Price_5">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -327,24 +327,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_28">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_25"/>
+                 <widget class="QSpinBox" name="Amount_item_6"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_37">
+                 <widget class="QPushButton" name="Btn_item_6">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_57">
+                 <widget class="QLabel" name="Product_6">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_58">
+                 <widget class="QLabel" name="Price_6">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -355,24 +355,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_6">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_3"/>
+                 <widget class="QSpinBox" name="Amount_item_7"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_15">
+                 <widget class="QPushButton" name="Btn_item_7">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_13">
+                 <widget class="QLabel" name="Product_7">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_14">
+                 <widget class="QLabel" name="Price_7">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -383,24 +383,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_5">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_2"/>
+                 <widget class="QSpinBox" name="Amount_item_8"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_14">
+                 <widget class="QPushButton" name="Btn_item_8">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_11">
+                 <widget class="QLabel" name="Product_8">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_12">
+                 <widget class="QLabel" name="Price_8">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -411,24 +411,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_4">
                 <item>
-                 <widget class="QSpinBox" name="spinBox"/>
+                 <widget class="QSpinBox" name="Amount_item_9"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_13">
+                 <widget class="QPushButton" name="Btn_item_9">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_9">
+                 <widget class="QLabel" name="Product_9">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_10">
+                 <widget class="QLabel" name="Price_9">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -466,24 +466,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_31">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_28"/>
+                 <widget class="QSpinBox" name="Amount_item_10"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_40">
+                 <widget class="QPushButton" name="Btn_item_10">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_63">
+                 <widget class="QLabel" name="Product_10">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_64">
+                 <widget class="QLabel" name="Price_10">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -494,24 +494,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_32">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_29"/>
+                 <widget class="QSpinBox" name="Amount_item_11"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_41">
+                 <widget class="QPushButton" name="Btn_item_11">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_65">
+                 <widget class="QLabel" name="Product_11">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_66">
+                 <widget class="QLabel" name="Price_11">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -522,24 +522,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_33">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_30"/>
+                 <widget class="QSpinBox" name="Amount_item_12"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_42">
+                 <widget class="QPushButton" name="Btn_item_12">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_67">
+                 <widget class="QLabel" name="Product_12">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_68">
+                 <widget class="QLabel" name="Price_12">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -550,24 +550,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_34">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_31"/>
+                 <widget class="QSpinBox" name="Amount_item_13"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_43">
+                 <widget class="QPushButton" name="Btn_item_13">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_69">
+                 <widget class="QLabel" name="Product_13">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_70">
+                 <widget class="QLabel" name="Price_13">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -578,24 +578,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_35">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_32"/>
+                 <widget class="QSpinBox" name="Amount_item_14"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_44">
+                 <widget class="QPushButton" name="Btn_item_14">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_71">
+                 <widget class="QLabel" name="Product_14">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_72">
+                 <widget class="QLabel" name="Price_14">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -606,24 +606,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_36">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_33"/>
+                 <widget class="QSpinBox" name="Amount_item_15"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_45">
+                 <widget class="QPushButton" name="Btn_item_15">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_73">
+                 <widget class="QLabel" name="Product_15">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_74">
+                 <widget class="QLabel" name="Price_15">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
@@ -634,24 +634,24 @@ selection-background-color: blue;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_37">
                 <item>
-                 <widget class="QSpinBox" name="spinBox_34"/>
+                 <widget class="QSpinBox" name="Amount_item_16"/>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_46">
+                 <widget class="QPushButton" name="Btn_item_16">
                   <property name="text">
                    <string>Dodaj</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_75">
+                 <widget class="QLabel" name="Product_16">
                   <property name="text">
                    <string>Hamburger</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_76">
+                 <widget class="QLabel" name="Price_16">
                   <property name="text">
                    <string>6,90zł</string>
                   </property>
