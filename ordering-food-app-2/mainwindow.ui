@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QWidget" name="verticalLayoutWidget">
@@ -161,25 +161,12 @@ selection-background-color: blue;</string>
             <number>1</number>
            </property>
            <widget class="QWidget" name="stackedWidgetPage1">
-            <widget class="QPushButton" name="pushButton_11">
-             <property name="geometry">
-              <rect>
-               <x>300</x>
-               <y>350</y>
-               <width>31</width>
-               <height>29</height>
-              </rect>
-             </property>
-             <property name="text">
-              <string>&gt;</string>
-             </property>
-            </widget>
             <widget class="QWidget" name="layoutWidget">
              <property name="geometry">
               <rect>
                <x>10</x>
                <y>20</y>
-               <width>272</width>
+               <width>285</width>
                <height>337</height>
               </rect>
              </property>
@@ -234,7 +221,7 @@ selection-background-color: blue;</string>
                 <item>
                  <widget class="QLabel" name="Price_2">
                   <property name="text">
-                   <string>6,90zł</string>
+                   <string>5,00zł</string>
                   </property>
                  </widget>
                 </item>
@@ -262,7 +249,7 @@ selection-background-color: blue;</string>
                 <item>
                  <widget class="QLabel" name="Price_3">
                   <property name="text">
-                   <string>6,90zł</string>
+                   <string>12,50zł</string>
                   </property>
                  </widget>
                 </item>
@@ -290,7 +277,7 @@ selection-background-color: blue;</string>
                 <item>
                  <widget class="QLabel" name="Price_4">
                   <property name="text">
-                   <string>6,90zł</string>
+                   <string>25,99zł</string>
                   </property>
                  </widget>
                 </item>
@@ -318,7 +305,7 @@ selection-background-color: blue;</string>
                 <item>
                  <widget class="QLabel" name="Price_5">
                   <property name="text">
-                   <string>6,90zł</string>
+                   <string>10,00zł</string>
                   </property>
                  </widget>
                 </item>
@@ -346,7 +333,7 @@ selection-background-color: blue;</string>
                 <item>
                  <widget class="QLabel" name="Price_6">
                   <property name="text">
-                   <string>6,90zł</string>
+                   <string>7,80zł</string>
                   </property>
                  </widget>
                 </item>
@@ -374,7 +361,7 @@ selection-background-color: blue;</string>
                 <item>
                  <widget class="QLabel" name="Price_7">
                   <property name="text">
-                   <string>6,90zł</string>
+                   <string>16,80zł</string>
                   </property>
                  </widget>
                 </item>
@@ -402,7 +389,7 @@ selection-background-color: blue;</string>
                 <item>
                  <widget class="QLabel" name="Price_8">
                   <property name="text">
-                   <string>6,90zł</string>
+                   <string>18,20zł</string>
                   </property>
                  </widget>
                 </item>
@@ -430,13 +417,26 @@ selection-background-color: blue;</string>
                 <item>
                  <widget class="QLabel" name="Price_9">
                   <property name="text">
-                   <string>6,90zł</string>
+                   <string>5,50zł</string>
                   </property>
                  </widget>
                 </item>
                </layout>
               </item>
              </layout>
+            </widget>
+            <widget class="QToolButton" name="toolButton">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>350</y>
+               <width>24</width>
+               <height>26</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>&gt;</string>
+             </property>
             </widget>
            </widget>
            <widget class="QWidget" name="page_4">
@@ -707,12 +707,22 @@ selection-background-color: blue;</string>
        <item>
         <widget class="QLabel" name="label_8">
          <property name="text">
-          <string>Wyszukaj pozycję</string>
+          <string>SUMA</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLabel" name="label_sum">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
