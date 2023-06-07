@@ -237,6 +237,6 @@ void MainWindow::on_pushButton_7_clicked()
 void MainWindow::on_Btn_item_1_clicked()
 {
     actual_sum1();
-    ui->Amount_item_1->setValue(0);
+    ui->Amount_item_1->setValue(0);// resetuje ilość
 }
 
