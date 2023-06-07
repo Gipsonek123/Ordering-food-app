@@ -57,89 +57,89 @@ public:
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_8;
     QHBoxLayout *horizontalLayout_24;
-    QSpinBox *spinBox_21;
-    QPushButton *pushButton_31;
-    QLabel *label_49;
-    QLabel *label_50;
+    QSpinBox *Amount_item_1;
+    QPushButton *Btn_item_1;
+    QLabel *Product_1;
+    QLabel *Price_1;
     QHBoxLayout *horizontalLayout_25;
-    QSpinBox *spinBox_22;
-    QPushButton *pushButton_34;
-    QLabel *label_51;
-    QLabel *label_52;
+    QSpinBox *Amount_item_2;
+    QPushButton *Btn_item_2;
+    QLabel *Product_2;
+    QLabel *Price_2;
     QHBoxLayout *horizontalLayout_26;
-    QSpinBox *spinBox_23;
-    QPushButton *pushButton_35;
-    QLabel *label_53;
-    QLabel *label_54;
+    QSpinBox *Amount_item_3;
+    QPushButton *Btn_item_3;
+    QLabel *Product_3;
+    QLabel *Price_3;
     QHBoxLayout *horizontalLayout_8;
-    QSpinBox *spinBox_5;
-    QPushButton *pushButton_17;
-    QLabel *label_17;
-    QLabel *label_18;
+    QSpinBox *Amount_item_4;
+    QPushButton *Btn_item_4;
+    QLabel *Product_4;
+    QLabel *Price_4;
     QHBoxLayout *horizontalLayout_7;
-    QSpinBox *spinBox_4;
-    QPushButton *pushButton_16;
-    QLabel *label_15;
-    QLabel *label_16;
+    QSpinBox *Amount_item_5;
+    QPushButton *Btn_item_5;
+    QLabel *Product_5;
+    QLabel *Price_5;
     QHBoxLayout *horizontalLayout_28;
-    QSpinBox *spinBox_25;
-    QPushButton *pushButton_37;
-    QLabel *label_57;
-    QLabel *label_58;
+    QSpinBox *Amount_item_6;
+    QPushButton *Btn_item_6;
+    QLabel *Product_6;
+    QLabel *Price_6;
     QHBoxLayout *horizontalLayout_6;
-    QSpinBox *spinBox_3;
-    QPushButton *pushButton_15;
-    QLabel *label_13;
-    QLabel *label_14;
+    QSpinBox *Amount_item_7;
+    QPushButton *Btn_item_7;
+    QLabel *Product_7;
+    QLabel *Price_7;
     QHBoxLayout *horizontalLayout_5;
-    QSpinBox *spinBox_2;
-    QPushButton *pushButton_14;
-    QLabel *label_11;
-    QLabel *label_12;
+    QSpinBox *Amount_item_8;
+    QPushButton *Btn_item_8;
+    QLabel *Product_8;
+    QLabel *Price_8;
     QHBoxLayout *horizontalLayout_4;
-    QSpinBox *spinBox;
-    QPushButton *pushButton_13;
-    QLabel *label_9;
-    QLabel *label_10;
+    QSpinBox *Amount_item_9;
+    QPushButton *Btn_item_9;
+    QLabel *Product_9;
+    QLabel *Price_9;
     QWidget *page_4;
     QPushButton *pushButton_65;
     QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout_9;
     QHBoxLayout *horizontalLayout_31;
-    QSpinBox *spinBox_28;
-    QPushButton *pushButton_40;
-    QLabel *label_63;
-    QLabel *label_64;
+    QSpinBox *Amount_item_10;
+    QPushButton *Btn_item_10;
+    QLabel *Product_10;
+    QLabel *Price_10;
     QHBoxLayout *horizontalLayout_32;
-    QSpinBox *spinBox_29;
-    QPushButton *pushButton_41;
-    QLabel *label_65;
-    QLabel *label_66;
+    QSpinBox *Amount_item_11;
+    QPushButton *Btn_item_11;
+    QLabel *Product_11;
+    QLabel *Price_11;
     QHBoxLayout *horizontalLayout_33;
-    QSpinBox *spinBox_30;
-    QPushButton *pushButton_42;
-    QLabel *label_67;
-    QLabel *label_68;
+    QSpinBox *Amount_item_12;
+    QPushButton *Btn_item_12;
+    QLabel *Product_12;
+    QLabel *Price_12;
     QHBoxLayout *horizontalLayout_34;
-    QSpinBox *spinBox_31;
-    QPushButton *pushButton_43;
-    QLabel *label_69;
-    QLabel *label_70;
+    QSpinBox *Amount_item_13;
+    QPushButton *Btn_item_13;
+    QLabel *Product_13;
+    QLabel *Price_13;
     QHBoxLayout *horizontalLayout_35;
-    QSpinBox *spinBox_32;
-    QPushButton *pushButton_44;
-    QLabel *label_71;
-    QLabel *label_72;
+    QSpinBox *Amount_item_14;
+    QPushButton *Btn_item_14;
+    QLabel *Product_14;
+    QLabel *Price_14;
     QHBoxLayout *horizontalLayout_36;
-    QSpinBox *spinBox_33;
-    QPushButton *pushButton_45;
-    QLabel *label_73;
-    QLabel *label_74;
+    QSpinBox *Amount_item_15;
+    QPushButton *Btn_item_15;
+    QLabel *Product_15;
+    QLabel *Price_15;
     QHBoxLayout *horizontalLayout_37;
-    QSpinBox *spinBox_34;
-    QPushButton *pushButton_46;
-    QLabel *label_75;
-    QLabel *label_76;
+    QSpinBox *Amount_item_16;
+    QPushButton *Btn_item_16;
+    QLabel *Product_16;
+    QLabel *Price_16;
     QLabel *label_2;
     QPushButton *pushButton_6;
     QWidget *verticalLayoutWidget_5;
@@ -269,225 +269,225 @@ public:
         verticalLayout_8->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_24 = new QHBoxLayout();
         horizontalLayout_24->setObjectName("horizontalLayout_24");
-        spinBox_21 = new QSpinBox(layoutWidget);
-        spinBox_21->setObjectName("spinBox_21");
+        Amount_item_1 = new QSpinBox(layoutWidget);
+        Amount_item_1->setObjectName("Amount_item_1");
 
-        horizontalLayout_24->addWidget(spinBox_21);
+        horizontalLayout_24->addWidget(Amount_item_1);
 
-        pushButton_31 = new QPushButton(layoutWidget);
-        pushButton_31->setObjectName("pushButton_31");
+        Btn_item_1 = new QPushButton(layoutWidget);
+        Btn_item_1->setObjectName("Btn_item_1");
 
-        horizontalLayout_24->addWidget(pushButton_31);
+        horizontalLayout_24->addWidget(Btn_item_1);
 
-        label_49 = new QLabel(layoutWidget);
-        label_49->setObjectName("label_49");
+        Product_1 = new QLabel(layoutWidget);
+        Product_1->setObjectName("Product_1");
 
-        horizontalLayout_24->addWidget(label_49);
+        horizontalLayout_24->addWidget(Product_1);
 
-        label_50 = new QLabel(layoutWidget);
-        label_50->setObjectName("label_50");
+        Price_1 = new QLabel(layoutWidget);
+        Price_1->setObjectName("Price_1");
 
-        horizontalLayout_24->addWidget(label_50);
+        horizontalLayout_24->addWidget(Price_1);
 
 
         verticalLayout_8->addLayout(horizontalLayout_24);
 
         horizontalLayout_25 = new QHBoxLayout();
         horizontalLayout_25->setObjectName("horizontalLayout_25");
-        spinBox_22 = new QSpinBox(layoutWidget);
-        spinBox_22->setObjectName("spinBox_22");
+        Amount_item_2 = new QSpinBox(layoutWidget);
+        Amount_item_2->setObjectName("Amount_item_2");
 
-        horizontalLayout_25->addWidget(spinBox_22);
+        horizontalLayout_25->addWidget(Amount_item_2);
 
-        pushButton_34 = new QPushButton(layoutWidget);
-        pushButton_34->setObjectName("pushButton_34");
+        Btn_item_2 = new QPushButton(layoutWidget);
+        Btn_item_2->setObjectName("Btn_item_2");
 
-        horizontalLayout_25->addWidget(pushButton_34);
+        horizontalLayout_25->addWidget(Btn_item_2);
 
-        label_51 = new QLabel(layoutWidget);
-        label_51->setObjectName("label_51");
+        Product_2 = new QLabel(layoutWidget);
+        Product_2->setObjectName("Product_2");
 
-        horizontalLayout_25->addWidget(label_51);
+        horizontalLayout_25->addWidget(Product_2);
 
-        label_52 = new QLabel(layoutWidget);
-        label_52->setObjectName("label_52");
+        Price_2 = new QLabel(layoutWidget);
+        Price_2->setObjectName("Price_2");
 
-        horizontalLayout_25->addWidget(label_52);
+        horizontalLayout_25->addWidget(Price_2);
 
 
         verticalLayout_8->addLayout(horizontalLayout_25);
 
         horizontalLayout_26 = new QHBoxLayout();
         horizontalLayout_26->setObjectName("horizontalLayout_26");
-        spinBox_23 = new QSpinBox(layoutWidget);
-        spinBox_23->setObjectName("spinBox_23");
+        Amount_item_3 = new QSpinBox(layoutWidget);
+        Amount_item_3->setObjectName("Amount_item_3");
 
-        horizontalLayout_26->addWidget(spinBox_23);
+        horizontalLayout_26->addWidget(Amount_item_3);
 
-        pushButton_35 = new QPushButton(layoutWidget);
-        pushButton_35->setObjectName("pushButton_35");
+        Btn_item_3 = new QPushButton(layoutWidget);
+        Btn_item_3->setObjectName("Btn_item_3");
 
-        horizontalLayout_26->addWidget(pushButton_35);
+        horizontalLayout_26->addWidget(Btn_item_3);
 
-        label_53 = new QLabel(layoutWidget);
-        label_53->setObjectName("label_53");
+        Product_3 = new QLabel(layoutWidget);
+        Product_3->setObjectName("Product_3");
 
-        horizontalLayout_26->addWidget(label_53);
+        horizontalLayout_26->addWidget(Product_3);
 
-        label_54 = new QLabel(layoutWidget);
-        label_54->setObjectName("label_54");
+        Price_3 = new QLabel(layoutWidget);
+        Price_3->setObjectName("Price_3");
 
-        horizontalLayout_26->addWidget(label_54);
+        horizontalLayout_26->addWidget(Price_3);
 
 
         verticalLayout_8->addLayout(horizontalLayout_26);
 
         horizontalLayout_8 = new QHBoxLayout();
         horizontalLayout_8->setObjectName("horizontalLayout_8");
-        spinBox_5 = new QSpinBox(layoutWidget);
-        spinBox_5->setObjectName("spinBox_5");
+        Amount_item_4 = new QSpinBox(layoutWidget);
+        Amount_item_4->setObjectName("Amount_item_4");
 
-        horizontalLayout_8->addWidget(spinBox_5);
+        horizontalLayout_8->addWidget(Amount_item_4);
 
-        pushButton_17 = new QPushButton(layoutWidget);
-        pushButton_17->setObjectName("pushButton_17");
+        Btn_item_4 = new QPushButton(layoutWidget);
+        Btn_item_4->setObjectName("Btn_item_4");
 
-        horizontalLayout_8->addWidget(pushButton_17);
+        horizontalLayout_8->addWidget(Btn_item_4);
 
-        label_17 = new QLabel(layoutWidget);
-        label_17->setObjectName("label_17");
+        Product_4 = new QLabel(layoutWidget);
+        Product_4->setObjectName("Product_4");
 
-        horizontalLayout_8->addWidget(label_17);
+        horizontalLayout_8->addWidget(Product_4);
 
-        label_18 = new QLabel(layoutWidget);
-        label_18->setObjectName("label_18");
+        Price_4 = new QLabel(layoutWidget);
+        Price_4->setObjectName("Price_4");
 
-        horizontalLayout_8->addWidget(label_18);
+        horizontalLayout_8->addWidget(Price_4);
 
 
         verticalLayout_8->addLayout(horizontalLayout_8);
 
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setObjectName("horizontalLayout_7");
-        spinBox_4 = new QSpinBox(layoutWidget);
-        spinBox_4->setObjectName("spinBox_4");
+        Amount_item_5 = new QSpinBox(layoutWidget);
+        Amount_item_5->setObjectName("Amount_item_5");
 
-        horizontalLayout_7->addWidget(spinBox_4);
+        horizontalLayout_7->addWidget(Amount_item_5);
 
-        pushButton_16 = new QPushButton(layoutWidget);
-        pushButton_16->setObjectName("pushButton_16");
+        Btn_item_5 = new QPushButton(layoutWidget);
+        Btn_item_5->setObjectName("Btn_item_5");
 
-        horizontalLayout_7->addWidget(pushButton_16);
+        horizontalLayout_7->addWidget(Btn_item_5);
 
-        label_15 = new QLabel(layoutWidget);
-        label_15->setObjectName("label_15");
+        Product_5 = new QLabel(layoutWidget);
+        Product_5->setObjectName("Product_5");
 
-        horizontalLayout_7->addWidget(label_15);
+        horizontalLayout_7->addWidget(Product_5);
 
-        label_16 = new QLabel(layoutWidget);
-        label_16->setObjectName("label_16");
+        Price_5 = new QLabel(layoutWidget);
+        Price_5->setObjectName("Price_5");
 
-        horizontalLayout_7->addWidget(label_16);
+        horizontalLayout_7->addWidget(Price_5);
 
 
         verticalLayout_8->addLayout(horizontalLayout_7);
 
         horizontalLayout_28 = new QHBoxLayout();
         horizontalLayout_28->setObjectName("horizontalLayout_28");
-        spinBox_25 = new QSpinBox(layoutWidget);
-        spinBox_25->setObjectName("spinBox_25");
+        Amount_item_6 = new QSpinBox(layoutWidget);
+        Amount_item_6->setObjectName("Amount_item_6");
 
-        horizontalLayout_28->addWidget(spinBox_25);
+        horizontalLayout_28->addWidget(Amount_item_6);
 
-        pushButton_37 = new QPushButton(layoutWidget);
-        pushButton_37->setObjectName("pushButton_37");
+        Btn_item_6 = new QPushButton(layoutWidget);
+        Btn_item_6->setObjectName("Btn_item_6");
 
-        horizontalLayout_28->addWidget(pushButton_37);
+        horizontalLayout_28->addWidget(Btn_item_6);
 
-        label_57 = new QLabel(layoutWidget);
-        label_57->setObjectName("label_57");
+        Product_6 = new QLabel(layoutWidget);
+        Product_6->setObjectName("Product_6");
 
-        horizontalLayout_28->addWidget(label_57);
+        horizontalLayout_28->addWidget(Product_6);
 
-        label_58 = new QLabel(layoutWidget);
-        label_58->setObjectName("label_58");
+        Price_6 = new QLabel(layoutWidget);
+        Price_6->setObjectName("Price_6");
 
-        horizontalLayout_28->addWidget(label_58);
+        horizontalLayout_28->addWidget(Price_6);
 
 
         verticalLayout_8->addLayout(horizontalLayout_28);
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName("horizontalLayout_6");
-        spinBox_3 = new QSpinBox(layoutWidget);
-        spinBox_3->setObjectName("spinBox_3");
+        Amount_item_7 = new QSpinBox(layoutWidget);
+        Amount_item_7->setObjectName("Amount_item_7");
 
-        horizontalLayout_6->addWidget(spinBox_3);
+        horizontalLayout_6->addWidget(Amount_item_7);
 
-        pushButton_15 = new QPushButton(layoutWidget);
-        pushButton_15->setObjectName("pushButton_15");
+        Btn_item_7 = new QPushButton(layoutWidget);
+        Btn_item_7->setObjectName("Btn_item_7");
 
-        horizontalLayout_6->addWidget(pushButton_15);
+        horizontalLayout_6->addWidget(Btn_item_7);
 
-        label_13 = new QLabel(layoutWidget);
-        label_13->setObjectName("label_13");
+        Product_7 = new QLabel(layoutWidget);
+        Product_7->setObjectName("Product_7");
 
-        horizontalLayout_6->addWidget(label_13);
+        horizontalLayout_6->addWidget(Product_7);
 
-        label_14 = new QLabel(layoutWidget);
-        label_14->setObjectName("label_14");
+        Price_7 = new QLabel(layoutWidget);
+        Price_7->setObjectName("Price_7");
 
-        horizontalLayout_6->addWidget(label_14);
+        horizontalLayout_6->addWidget(Price_7);
 
 
         verticalLayout_8->addLayout(horizontalLayout_6);
 
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setObjectName("horizontalLayout_5");
-        spinBox_2 = new QSpinBox(layoutWidget);
-        spinBox_2->setObjectName("spinBox_2");
+        Amount_item_8 = new QSpinBox(layoutWidget);
+        Amount_item_8->setObjectName("Amount_item_8");
 
-        horizontalLayout_5->addWidget(spinBox_2);
+        horizontalLayout_5->addWidget(Amount_item_8);
 
-        pushButton_14 = new QPushButton(layoutWidget);
-        pushButton_14->setObjectName("pushButton_14");
+        Btn_item_8 = new QPushButton(layoutWidget);
+        Btn_item_8->setObjectName("Btn_item_8");
 
-        horizontalLayout_5->addWidget(pushButton_14);
+        horizontalLayout_5->addWidget(Btn_item_8);
 
-        label_11 = new QLabel(layoutWidget);
-        label_11->setObjectName("label_11");
+        Product_8 = new QLabel(layoutWidget);
+        Product_8->setObjectName("Product_8");
 
-        horizontalLayout_5->addWidget(label_11);
+        horizontalLayout_5->addWidget(Product_8);
 
-        label_12 = new QLabel(layoutWidget);
-        label_12->setObjectName("label_12");
+        Price_8 = new QLabel(layoutWidget);
+        Price_8->setObjectName("Price_8");
 
-        horizontalLayout_5->addWidget(label_12);
+        horizontalLayout_5->addWidget(Price_8);
 
 
         verticalLayout_8->addLayout(horizontalLayout_5);
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName("horizontalLayout_4");
-        spinBox = new QSpinBox(layoutWidget);
-        spinBox->setObjectName("spinBox");
+        Amount_item_9 = new QSpinBox(layoutWidget);
+        Amount_item_9->setObjectName("Amount_item_9");
 
-        horizontalLayout_4->addWidget(spinBox);
+        horizontalLayout_4->addWidget(Amount_item_9);
 
-        pushButton_13 = new QPushButton(layoutWidget);
-        pushButton_13->setObjectName("pushButton_13");
+        Btn_item_9 = new QPushButton(layoutWidget);
+        Btn_item_9->setObjectName("Btn_item_9");
 
-        horizontalLayout_4->addWidget(pushButton_13);
+        horizontalLayout_4->addWidget(Btn_item_9);
 
-        label_9 = new QLabel(layoutWidget);
-        label_9->setObjectName("label_9");
+        Product_9 = new QLabel(layoutWidget);
+        Product_9->setObjectName("Product_9");
 
-        horizontalLayout_4->addWidget(label_9);
+        horizontalLayout_4->addWidget(Product_9);
 
-        label_10 = new QLabel(layoutWidget);
-        label_10->setObjectName("label_10");
+        Price_9 = new QLabel(layoutWidget);
+        Price_9->setObjectName("Price_9");
 
-        horizontalLayout_4->addWidget(label_10);
+        horizontalLayout_4->addWidget(Price_9);
 
 
         verticalLayout_8->addLayout(horizontalLayout_4);
@@ -506,175 +506,175 @@ public:
         verticalLayout_9->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_31 = new QHBoxLayout();
         horizontalLayout_31->setObjectName("horizontalLayout_31");
-        spinBox_28 = new QSpinBox(layoutWidget1);
-        spinBox_28->setObjectName("spinBox_28");
+        Amount_item_10 = new QSpinBox(layoutWidget1);
+        Amount_item_10->setObjectName("Amount_item_10");
 
-        horizontalLayout_31->addWidget(spinBox_28);
+        horizontalLayout_31->addWidget(Amount_item_10);
 
-        pushButton_40 = new QPushButton(layoutWidget1);
-        pushButton_40->setObjectName("pushButton_40");
+        Btn_item_10 = new QPushButton(layoutWidget1);
+        Btn_item_10->setObjectName("Btn_item_10");
 
-        horizontalLayout_31->addWidget(pushButton_40);
+        horizontalLayout_31->addWidget(Btn_item_10);
 
-        label_63 = new QLabel(layoutWidget1);
-        label_63->setObjectName("label_63");
+        Product_10 = new QLabel(layoutWidget1);
+        Product_10->setObjectName("Product_10");
 
-        horizontalLayout_31->addWidget(label_63);
+        horizontalLayout_31->addWidget(Product_10);
 
-        label_64 = new QLabel(layoutWidget1);
-        label_64->setObjectName("label_64");
+        Price_10 = new QLabel(layoutWidget1);
+        Price_10->setObjectName("Price_10");
 
-        horizontalLayout_31->addWidget(label_64);
+        horizontalLayout_31->addWidget(Price_10);
 
 
         verticalLayout_9->addLayout(horizontalLayout_31);
 
         horizontalLayout_32 = new QHBoxLayout();
         horizontalLayout_32->setObjectName("horizontalLayout_32");
-        spinBox_29 = new QSpinBox(layoutWidget1);
-        spinBox_29->setObjectName("spinBox_29");
+        Amount_item_11 = new QSpinBox(layoutWidget1);
+        Amount_item_11->setObjectName("Amount_item_11");
 
-        horizontalLayout_32->addWidget(spinBox_29);
+        horizontalLayout_32->addWidget(Amount_item_11);
 
-        pushButton_41 = new QPushButton(layoutWidget1);
-        pushButton_41->setObjectName("pushButton_41");
+        Btn_item_11 = new QPushButton(layoutWidget1);
+        Btn_item_11->setObjectName("Btn_item_11");
 
-        horizontalLayout_32->addWidget(pushButton_41);
+        horizontalLayout_32->addWidget(Btn_item_11);
 
-        label_65 = new QLabel(layoutWidget1);
-        label_65->setObjectName("label_65");
+        Product_11 = new QLabel(layoutWidget1);
+        Product_11->setObjectName("Product_11");
 
-        horizontalLayout_32->addWidget(label_65);
+        horizontalLayout_32->addWidget(Product_11);
 
-        label_66 = new QLabel(layoutWidget1);
-        label_66->setObjectName("label_66");
+        Price_11 = new QLabel(layoutWidget1);
+        Price_11->setObjectName("Price_11");
 
-        horizontalLayout_32->addWidget(label_66);
+        horizontalLayout_32->addWidget(Price_11);
 
 
         verticalLayout_9->addLayout(horizontalLayout_32);
 
         horizontalLayout_33 = new QHBoxLayout();
         horizontalLayout_33->setObjectName("horizontalLayout_33");
-        spinBox_30 = new QSpinBox(layoutWidget1);
-        spinBox_30->setObjectName("spinBox_30");
+        Amount_item_12 = new QSpinBox(layoutWidget1);
+        Amount_item_12->setObjectName("Amount_item_12");
 
-        horizontalLayout_33->addWidget(spinBox_30);
+        horizontalLayout_33->addWidget(Amount_item_12);
 
-        pushButton_42 = new QPushButton(layoutWidget1);
-        pushButton_42->setObjectName("pushButton_42");
+        Btn_item_12 = new QPushButton(layoutWidget1);
+        Btn_item_12->setObjectName("Btn_item_12");
 
-        horizontalLayout_33->addWidget(pushButton_42);
+        horizontalLayout_33->addWidget(Btn_item_12);
 
-        label_67 = new QLabel(layoutWidget1);
-        label_67->setObjectName("label_67");
+        Product_12 = new QLabel(layoutWidget1);
+        Product_12->setObjectName("Product_12");
 
-        horizontalLayout_33->addWidget(label_67);
+        horizontalLayout_33->addWidget(Product_12);
 
-        label_68 = new QLabel(layoutWidget1);
-        label_68->setObjectName("label_68");
+        Price_12 = new QLabel(layoutWidget1);
+        Price_12->setObjectName("Price_12");
 
-        horizontalLayout_33->addWidget(label_68);
+        horizontalLayout_33->addWidget(Price_12);
 
 
         verticalLayout_9->addLayout(horizontalLayout_33);
 
         horizontalLayout_34 = new QHBoxLayout();
         horizontalLayout_34->setObjectName("horizontalLayout_34");
-        spinBox_31 = new QSpinBox(layoutWidget1);
-        spinBox_31->setObjectName("spinBox_31");
+        Amount_item_13 = new QSpinBox(layoutWidget1);
+        Amount_item_13->setObjectName("Amount_item_13");
 
-        horizontalLayout_34->addWidget(spinBox_31);
+        horizontalLayout_34->addWidget(Amount_item_13);
 
-        pushButton_43 = new QPushButton(layoutWidget1);
-        pushButton_43->setObjectName("pushButton_43");
+        Btn_item_13 = new QPushButton(layoutWidget1);
+        Btn_item_13->setObjectName("Btn_item_13");
 
-        horizontalLayout_34->addWidget(pushButton_43);
+        horizontalLayout_34->addWidget(Btn_item_13);
 
-        label_69 = new QLabel(layoutWidget1);
-        label_69->setObjectName("label_69");
+        Product_13 = new QLabel(layoutWidget1);
+        Product_13->setObjectName("Product_13");
 
-        horizontalLayout_34->addWidget(label_69);
+        horizontalLayout_34->addWidget(Product_13);
 
-        label_70 = new QLabel(layoutWidget1);
-        label_70->setObjectName("label_70");
+        Price_13 = new QLabel(layoutWidget1);
+        Price_13->setObjectName("Price_13");
 
-        horizontalLayout_34->addWidget(label_70);
+        horizontalLayout_34->addWidget(Price_13);
 
 
         verticalLayout_9->addLayout(horizontalLayout_34);
 
         horizontalLayout_35 = new QHBoxLayout();
         horizontalLayout_35->setObjectName("horizontalLayout_35");
-        spinBox_32 = new QSpinBox(layoutWidget1);
-        spinBox_32->setObjectName("spinBox_32");
+        Amount_item_14 = new QSpinBox(layoutWidget1);
+        Amount_item_14->setObjectName("Amount_item_14");
 
-        horizontalLayout_35->addWidget(spinBox_32);
+        horizontalLayout_35->addWidget(Amount_item_14);
 
-        pushButton_44 = new QPushButton(layoutWidget1);
-        pushButton_44->setObjectName("pushButton_44");
+        Btn_item_14 = new QPushButton(layoutWidget1);
+        Btn_item_14->setObjectName("Btn_item_14");
 
-        horizontalLayout_35->addWidget(pushButton_44);
+        horizontalLayout_35->addWidget(Btn_item_14);
 
-        label_71 = new QLabel(layoutWidget1);
-        label_71->setObjectName("label_71");
+        Product_14 = new QLabel(layoutWidget1);
+        Product_14->setObjectName("Product_14");
 
-        horizontalLayout_35->addWidget(label_71);
+        horizontalLayout_35->addWidget(Product_14);
 
-        label_72 = new QLabel(layoutWidget1);
-        label_72->setObjectName("label_72");
+        Price_14 = new QLabel(layoutWidget1);
+        Price_14->setObjectName("Price_14");
 
-        horizontalLayout_35->addWidget(label_72);
+        horizontalLayout_35->addWidget(Price_14);
 
 
         verticalLayout_9->addLayout(horizontalLayout_35);
 
         horizontalLayout_36 = new QHBoxLayout();
         horizontalLayout_36->setObjectName("horizontalLayout_36");
-        spinBox_33 = new QSpinBox(layoutWidget1);
-        spinBox_33->setObjectName("spinBox_33");
+        Amount_item_15 = new QSpinBox(layoutWidget1);
+        Amount_item_15->setObjectName("Amount_item_15");
 
-        horizontalLayout_36->addWidget(spinBox_33);
+        horizontalLayout_36->addWidget(Amount_item_15);
 
-        pushButton_45 = new QPushButton(layoutWidget1);
-        pushButton_45->setObjectName("pushButton_45");
+        Btn_item_15 = new QPushButton(layoutWidget1);
+        Btn_item_15->setObjectName("Btn_item_15");
 
-        horizontalLayout_36->addWidget(pushButton_45);
+        horizontalLayout_36->addWidget(Btn_item_15);
 
-        label_73 = new QLabel(layoutWidget1);
-        label_73->setObjectName("label_73");
+        Product_15 = new QLabel(layoutWidget1);
+        Product_15->setObjectName("Product_15");
 
-        horizontalLayout_36->addWidget(label_73);
+        horizontalLayout_36->addWidget(Product_15);
 
-        label_74 = new QLabel(layoutWidget1);
-        label_74->setObjectName("label_74");
+        Price_15 = new QLabel(layoutWidget1);
+        Price_15->setObjectName("Price_15");
 
-        horizontalLayout_36->addWidget(label_74);
+        horizontalLayout_36->addWidget(Price_15);
 
 
         verticalLayout_9->addLayout(horizontalLayout_36);
 
         horizontalLayout_37 = new QHBoxLayout();
         horizontalLayout_37->setObjectName("horizontalLayout_37");
-        spinBox_34 = new QSpinBox(layoutWidget1);
-        spinBox_34->setObjectName("spinBox_34");
+        Amount_item_16 = new QSpinBox(layoutWidget1);
+        Amount_item_16->setObjectName("Amount_item_16");
 
-        horizontalLayout_37->addWidget(spinBox_34);
+        horizontalLayout_37->addWidget(Amount_item_16);
 
-        pushButton_46 = new QPushButton(layoutWidget1);
-        pushButton_46->setObjectName("pushButton_46");
+        Btn_item_16 = new QPushButton(layoutWidget1);
+        Btn_item_16->setObjectName("Btn_item_16");
 
-        horizontalLayout_37->addWidget(pushButton_46);
+        horizontalLayout_37->addWidget(Btn_item_16);
 
-        label_75 = new QLabel(layoutWidget1);
-        label_75->setObjectName("label_75");
+        Product_16 = new QLabel(layoutWidget1);
+        Product_16->setObjectName("Product_16");
 
-        horizontalLayout_37->addWidget(label_75);
+        horizontalLayout_37->addWidget(Product_16);
 
-        label_76 = new QLabel(layoutWidget1);
-        label_76->setObjectName("label_76");
+        Price_16 = new QLabel(layoutWidget1);
+        Price_16->setObjectName("Price_16");
 
-        horizontalLayout_37->addWidget(label_76);
+        horizontalLayout_37->addWidget(Price_16);
 
 
         verticalLayout_9->addLayout(horizontalLayout_37);
@@ -700,6 +700,7 @@ public:
         verticalLayout_6->setContentsMargins(0, 0, 0, 0);
         label_8 = new QLabel(verticalLayoutWidget_5);
         label_8->setObjectName("label_8");
+        label_8->setAlignment(Qt::AlignCenter);
 
         verticalLayout_6->addWidget(label_8);
 
@@ -828,7 +829,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(6);
+        stackedWidget->setCurrentIndex(3);
         stackedWidget2->setCurrentIndex(0);
 
 
@@ -844,58 +845,58 @@ public:
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Na wynos", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Gdzie zjesz?", nullptr));
         pushButton_11->setText(QCoreApplication::translate("MainWindow", ">", nullptr));
-        pushButton_31->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_49->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_50->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_34->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_51->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_52->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_35->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_53->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_54->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_17->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_17->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_18->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_16->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_15->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_16->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_37->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_57->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_58->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_15->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_13->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_14->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_14->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_11->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_12->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_13->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_9->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_10->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_1->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_1->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_1->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_2->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_2->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_2->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_3->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_3->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_3->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_4->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_4->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_4->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_5->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_5->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_5->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_6->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_6->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_6->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_7->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_7->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_7->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_8->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_8->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_8->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_9->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_9->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_9->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
         pushButton_65->setText(QCoreApplication::translate("MainWindow", "<", nullptr));
-        pushButton_40->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_63->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_64->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_41->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_65->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_66->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_42->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_67->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_68->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_43->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_69->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_70->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_44->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_71->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_72->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_45->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_73->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_74->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
-        pushButton_46->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
-        label_75->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        label_76->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_10->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_10->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_10->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_11->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_11->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_11->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_12->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_12->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_12->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_13->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_13->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_13->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_14->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_14->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_14->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_15->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_15->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_15->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Btn_item_16->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
+        Product_16->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
+        Price_16->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "MENU", nullptr));
         pushButton_6->setText(QCoreApplication::translate("MainWindow", "Przejd\305\272 do koszyka/podsumowania", nullptr));
-        label_8->setText(QCoreApplication::translate("MainWindow", "Wyszukaj pozycj\304\231", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "SUMA", nullptr));
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Polecane zestawy", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("MainWindow", "Desery", nullptr));
         groupBox_3->setTitle(QCoreApplication::translate("MainWindow", "Napoje", nullptr));

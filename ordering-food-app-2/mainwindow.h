@@ -39,6 +39,8 @@ private slots:
 
     void on_pushButton_7_clicked();
 
+    void on_Btn_item_1_clicked();
+
 private:
 //    //zwykla
 //    void on_pushButton_clicked();
@@ -66,5 +68,6 @@ private:
     Ui::MainWindow *ui;
     void receipt();
     void order_number();
+    void actual_sum();
 };
 #endif // MAINWINDOW_H

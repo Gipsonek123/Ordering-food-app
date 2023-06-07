@@ -8,6 +8,7 @@
 #include <QTime>
 #include <QFile>
 #include <QTextStream>
+#include <QRegularExpression> // do wycinania ze string wartosci liczbowej
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -153,9 +154,24 @@ void MainWindow::order_number()
     QString data_time = data + "\n" + czas;
     ui->label_time1->setText(data_time);
     QString nr_zam = napis + numer_zamowienia;
-    ui->label_numer_zamowienia->setText(nr_zam);
+    ui->label_numer_zamowienia->setText(nr_zam); // wypisz w oknie
 }
 
+
+void MainWindow::actual_sum()
+{
+    int number1 = ui->Amount_item_1->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
+    QString Strprice1 = ui->Price_1->text(); // Odczytaj tekst z pola QLabel
+    Strprice1.remove("zł"); // Usuń symbol waluty
+    Strprice1.replace(",", "."); // Zamień przecinek na kropkę
+    double prize1 = Strprice1.toDouble(); // Konwertuj oczyszczony string na liczbę zmiennoprzecinkową (cena za 1 produkt)
+    double sum;
+    sum = number1 * prize1;
+    QString value = QString::number(sum);
+    QString zl = " zł";
+    QString total = value + zl;
+    ui->lineEdit->setText(total);
+}
 
 
 void MainWindow::on_pushButton_clicked()
@@ -209,5 +225,11 @@ void MainWindow::on_pushButton_7_clicked()
 {
     goToNextPage();
     receipt();
+}
+
+
+void MainWindow::on_Btn_item_1_clicked()
+{
+    actual_sum();
 }
 
