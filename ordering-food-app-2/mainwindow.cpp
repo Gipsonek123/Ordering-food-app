@@ -184,6 +184,7 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_pushButton_3_clicked()
 {
     goToNextPage();
+
 }
 
 // na miejscu
@@ -231,5 +232,6 @@ void MainWindow::on_pushButton_7_clicked()
 void MainWindow::on_Btn_item_1_clicked()
 {
     actual_sum();
+    ui->Amount_item_1->setValue(0);
 }
 
