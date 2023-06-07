@@ -37,6 +37,8 @@ private slots:
 
     void on_pushButton_5_clicked();
 
+    void on_pushButton_7_clicked();
+
 private:
 //    //zwykla
 //    void on_pushButton_clicked();
@@ -62,5 +64,7 @@ private:
 //    void nextPage();
 
     Ui::MainWindow *ui;
+    void receipt();
+    void order_number();
 };
 #endif // MAINWINDOW_H
