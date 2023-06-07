@@ -61,7 +61,7 @@ void MainWindow::goToNextPage()
 
 
 
-void MainWindow::receipt() // funkcja wypisujaca na ekran numera zamowienia
+void MainWindow::receipt() // funkcja wypisujaca na ekran numer paragonu
 {
     int newNumber1;
     int previousNumber1;
@@ -99,10 +99,10 @@ void MainWindow::receipt() // funkcja wypisujaca na ekran numera zamowienia
 
     QString paragon = numer_paragonu + zera + numer_par;
 
-    ui->label_receipt->setText(paragon);
+    ui->label_receipt->setText(paragon); // wypisanie w oknie
 }
 
-void MainWindow::order_number()
+void MainWindow::order_number() //funkcja wypisujaca na ekran date, godzine i numer zamowienia
 {
     int newNumber;
     int previousNumber;
@@ -158,24 +158,24 @@ void MainWindow::order_number()
 }
 
 
-void MainWindow::actual_sum1()
-{
-    int number1 = ui->Amount_item_1->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
-    QString Strprice1 = ui->Price_1->text(); // Odczytaj tekst z pola QLabel(cena produktu)
-    Strprice1.remove("zł"); // Usuń symbol waluty
-    Strprice1.replace(",", "."); // Zamień przecinek na kropkę
-    double prize1 = Strprice1.toDouble(); // Konwertuj oczyszczony string na liczbę zmiennoprzecinkową (cena za 1 produkt)
+void MainWindow::actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funkcja do obliczania i wypisywania obecnej ceny, jako argumenty przyjmuje wskaźniki
+{                                                                         // do obiektów pierwszy pokazuje ilość danego produktu a drugi jego cenę
+    int number = amountSpinBox->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
+    QString Strprice = priceLabel->text(); // Odczytaj tekst z pola QLabel(cena produktu)
+    Strprice.remove("zł"); // Usuń symbol waluty
+    Strprice.replace(",", "."); // Zamień przecinek na kropkę
+    double prize = Strprice.toDouble(); // Konwertuj oczyszczony string na liczbę zmiennoprzecinkową (cena za 1 produkt)
 
     QString Strcurrentprize = ui->label_sum->text(); // odczytanie obecnej sumy
     Strcurrentprize.remove("zł"); // Usuń symbol waluty
-    double currentprize = Strcurrentprize.toDouble(); // zamienia string na double
+    double currentprize = Strcurrentprize.toDouble(); // zamienia string z obecna cena na double
 
-    double sum1;
-    sum1 =  currentprize + (number1 * prize1);
-    QString value1 = QString::number(sum1);
+    double sum;
+    sum = currentprize + (number * prize); // oblicza sume
+    QString value = QString::number(sum); // zamienia sume na stringa
     QString zl = " zł";
-    QString total = value1 + zl;
-    ui->label_sum->setText(total);
+    QString total = value + zl;
+    ui->label_sum->setText(total); // wypisuje na ekranie obecna sume
 }
 
 
@@ -236,7 +236,124 @@ void MainWindow::on_pushButton_7_clicked()
 
 void MainWindow::on_Btn_item_1_clicked()
 {
-    actual_sum1();
+    actual_sum(ui->Amount_item_1, ui->Price_1);
     ui->Amount_item_1->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_2_clicked()
+{
+    actual_sum(ui->Amount_item_2, ui->Price_2);
+    ui->Amount_item_2->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_3_clicked()
+{
+    actual_sum(ui->Amount_item_3, ui->Price_3);
+    ui->Amount_item_3->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_4_clicked()
+{
+    actual_sum(ui->Amount_item_4, ui->Price_4);
+    ui->Amount_item_4->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_5_clicked()
+{
+    actual_sum(ui->Amount_item_5, ui->Price_5);
+    ui->Amount_item_5->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_6_clicked()
+{
+    actual_sum(ui->Amount_item_6, ui->Price_6);
+    ui->Amount_item_6->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_7_clicked()
+{
+    actual_sum(ui->Amount_item_7, ui->Price_7);
+    ui->Amount_item_7->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_8_clicked()
+{
+    actual_sum(ui->Amount_item_8, ui->Price_8);
+    ui->Amount_item_8->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_9_clicked()
+{
+    actual_sum(ui->Amount_item_9, ui->Price_9);
+    ui->Amount_item_9->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_10_clicked()
+{
+    actual_sum(ui->Amount_item_10, ui->Price_10);
+    ui->Amount_item_10->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_11_clicked()
+{
+    actual_sum(ui->Amount_item_11, ui->Price_11);
+    ui->Amount_item_11->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_12_clicked()
+{
+    actual_sum(ui->Amount_item_12, ui->Price_12);
+    ui->Amount_item_12->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_13_clicked()
+{
+    actual_sum(ui->Amount_item_13, ui->Price_13);
+    ui->Amount_item_13->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_14_clicked()
+{
+    actual_sum(ui->Amount_item_14, ui->Price_14);
+    ui->Amount_item_14->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_15_clicked()
+{
+    actual_sum(ui->Amount_item_15, ui->Price_15);
+    ui->Amount_item_15->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_Btn_item_16_clicked()
+{
+    actual_sum(ui->Amount_item_16, ui->Price_16);
+    ui->Amount_item_16->setValue(0);// resetuje ilość
+}
+
+
+void MainWindow::on_toolButton_clicked()
+{
+    ui->stackedWidget2->setCurrentIndex(1);// przejscie do kolejnej strony
+}
+
+
+void MainWindow::on_pushButton_65_clicked()
+{
+    ui->stackedWidget2->setCurrentIndex(0); // przejscie do poprzedniej strony
 }
 

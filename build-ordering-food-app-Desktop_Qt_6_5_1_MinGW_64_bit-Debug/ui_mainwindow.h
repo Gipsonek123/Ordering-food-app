@@ -22,6 +22,7 @@
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QToolButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -52,7 +53,6 @@ public:
     QVBoxLayout *verticalLayout_7;
     QStackedWidget *stackedWidget2;
     QWidget *stackedWidgetPage1;
-    QPushButton *pushButton_11;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_8;
     QHBoxLayout *horizontalLayout_24;
@@ -100,6 +100,7 @@ public:
     QPushButton *Btn_item_9;
     QLabel *Product_9;
     QLabel *Price_9;
+    QToolButton *toolButton;
     QWidget *page_4;
     QPushButton *pushButton_65;
     QWidget *layoutWidget1;
@@ -257,12 +258,9 @@ public:
         stackedWidget2->setObjectName("stackedWidget2");
         stackedWidgetPage1 = new QWidget();
         stackedWidgetPage1->setObjectName("stackedWidgetPage1");
-        pushButton_11 = new QPushButton(stackedWidgetPage1);
-        pushButton_11->setObjectName("pushButton_11");
-        pushButton_11->setGeometry(QRect(300, 350, 31, 29));
         layoutWidget = new QWidget(stackedWidgetPage1);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(10, 20, 272, 337));
+        layoutWidget->setGeometry(QRect(10, 20, 285, 337));
         verticalLayout_8 = new QVBoxLayout(layoutWidget);
         verticalLayout_8->setObjectName("verticalLayout_8");
         verticalLayout_8->setContentsMargins(0, 0, 0, 0);
@@ -491,6 +489,9 @@ public:
 
         verticalLayout_8->addLayout(horizontalLayout_4);
 
+        toolButton = new QToolButton(stackedWidgetPage1);
+        toolButton->setObjectName("toolButton");
+        toolButton->setGeometry(QRect(300, 350, 24, 26));
         stackedWidget2->addWidget(stackedWidgetPage1);
         page_4 = new QWidget();
         page_4->setObjectName("page_4");
@@ -830,7 +831,7 @@ public:
         retranslateUi(MainWindow);
 
         stackedWidget->setCurrentIndex(3);
-        stackedWidget2->setCurrentIndex(0);
+        stackedWidget2->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -844,34 +845,34 @@ public:
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "Na miejscu", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Na wynos", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Gdzie zjesz?", nullptr));
-        pushButton_11->setText(QCoreApplication::translate("MainWindow", ">", nullptr));
         Btn_item_1->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_1->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
         Price_1->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
         Btn_item_2->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_2->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_2->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_2->setText(QCoreApplication::translate("MainWindow", "5,00z\305\202", nullptr));
         Btn_item_3->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_3->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_3->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_3->setText(QCoreApplication::translate("MainWindow", "12,50z\305\202", nullptr));
         Btn_item_4->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_4->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_4->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_4->setText(QCoreApplication::translate("MainWindow", "25,99z\305\202", nullptr));
         Btn_item_5->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_5->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_5->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_5->setText(QCoreApplication::translate("MainWindow", "10,00z\305\202", nullptr));
         Btn_item_6->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_6->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_6->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_6->setText(QCoreApplication::translate("MainWindow", "7,80z\305\202", nullptr));
         Btn_item_7->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_7->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_7->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_7->setText(QCoreApplication::translate("MainWindow", "16,80z\305\202", nullptr));
         Btn_item_8->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_8->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_8->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_8->setText(QCoreApplication::translate("MainWindow", "18,20z\305\202", nullptr));
         Btn_item_9->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_9->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_9->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_9->setText(QCoreApplication::translate("MainWindow", "5,50z\305\202", nullptr));
+        toolButton->setText(QCoreApplication::translate("MainWindow", ">", nullptr));
         pushButton_65->setText(QCoreApplication::translate("MainWindow", "<", nullptr));
         Btn_item_10->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_10->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
