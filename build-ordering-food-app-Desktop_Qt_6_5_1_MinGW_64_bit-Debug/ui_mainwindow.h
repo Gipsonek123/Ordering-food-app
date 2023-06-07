@@ -14,7 +14,6 @@
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QProgressBar>
@@ -145,7 +144,7 @@ public:
     QWidget *verticalLayoutWidget_5;
     QVBoxLayout *verticalLayout_6;
     QLabel *label_8;
-    QLineEdit *lineEdit;
+    QLabel *label_sum;
     QGroupBox *groupBox;
     QGroupBox *groupBox_2;
     QGroupBox *groupBox_3;
@@ -704,10 +703,11 @@ public:
 
         verticalLayout_6->addWidget(label_8);
 
-        lineEdit = new QLineEdit(verticalLayoutWidget_5);
-        lineEdit->setObjectName("lineEdit");
+        label_sum = new QLabel(verticalLayoutWidget_5);
+        label_sum->setObjectName("label_sum");
+        label_sum->setAlignment(Qt::AlignCenter);
 
-        verticalLayout_6->addWidget(lineEdit);
+        verticalLayout_6->addWidget(label_sum);
 
         groupBox = new QGroupBox(Menupage);
         groupBox->setObjectName("groupBox");
@@ -897,6 +897,7 @@ public:
         label_2->setText(QCoreApplication::translate("MainWindow", "MENU", nullptr));
         pushButton_6->setText(QCoreApplication::translate("MainWindow", "Przejd\305\272 do koszyka/podsumowania", nullptr));
         label_8->setText(QCoreApplication::translate("MainWindow", "SUMA", nullptr));
+        label_sum->setText(QString());
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Polecane zestawy", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("MainWindow", "Desery", nullptr));
         groupBox_3->setTitle(QCoreApplication::translate("MainWindow", "Napoje", nullptr));

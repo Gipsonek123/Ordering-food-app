@@ -68,6 +68,6 @@ private:
     Ui::MainWindow *ui;
     void receipt();
     void order_number();
-    void actual_sum();
+    void actual_sum1();
 };
 #endif // MAINWINDOW_H

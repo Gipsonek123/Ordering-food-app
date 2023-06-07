@@ -158,19 +158,24 @@ void MainWindow::order_number()
 }
 
 
-void MainWindow::actual_sum()
+void MainWindow::actual_sum1()
 {
     int number1 = ui->Amount_item_1->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
-    QString Strprice1 = ui->Price_1->text(); // Odczytaj tekst z pola QLabel
+    QString Strprice1 = ui->Price_1->text(); // Odczytaj tekst z pola QLabel(cena produktu)
     Strprice1.remove("zł"); // Usuń symbol waluty
     Strprice1.replace(",", "."); // Zamień przecinek na kropkę
     double prize1 = Strprice1.toDouble(); // Konwertuj oczyszczony string na liczbę zmiennoprzecinkową (cena za 1 produkt)
-    double sum;
-    sum = number1 * prize1;
-    QString value = QString::number(sum);
+
+    QString Strcurrentprize = ui->label_sum->text(); // odczytanie obecnej sumy
+    Strcurrentprize.remove("zł"); // Usuń symbol waluty
+    double currentprize = Strcurrentprize.toDouble(); // zamienia string na double
+
+    double sum1;
+    sum1 =  currentprize + (number1 * prize1);
+    QString value1 = QString::number(sum1);
     QString zl = " zł";
-    QString total = value + zl;
-    ui->lineEdit->setText(total);
+    QString total = value1 + zl;
+    ui->label_sum->setText(total);
 }
 
 
@@ -231,7 +236,7 @@ void MainWindow::on_pushButton_7_clicked()
 
 void MainWindow::on_Btn_item_1_clicked()
 {
-    actual_sum();
+    actual_sum1();
     ui->Amount_item_1->setValue(0);
 }
 
