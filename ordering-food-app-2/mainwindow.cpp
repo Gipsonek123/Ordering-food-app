@@ -9,13 +9,15 @@
 #include <QFile>
 #include <QTextStream>
 #include <QRegularExpression> // do wycinania ze string wartosci liczbowej
-
+#include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QPixmap pix(":/img/img/startPict2.jpg");
+    ui->label_5->setPixmap(pix);
 }
 
 MainWindow::~MainWindow()

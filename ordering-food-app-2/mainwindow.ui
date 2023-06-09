@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QWidget" name="verticalLayoutWidget">
@@ -56,6 +56,21 @@ selection-background-color: blue;</string>
        </item>
       </layout>
      </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-10</y>
+        <width>481</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_5</zorder>
+     <zorder>verticalLayoutWidget</zorder>
     </widget>
     <widget class="QWidget" name="progressBar_2">
      <widget class="QLabel" name="label_6">
