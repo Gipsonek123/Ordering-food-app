@@ -1,5 +1,12 @@
 <RCC>
     <qresource prefix="/img">
         <file>img/startPict2.jpg</file>
+        <file>img/restaurant.jpg</file>
+        <file>img/restaurant2.jpg</file>
+        <file>img/takeaway.jpg</file>
+        <file>img/startClickIcon2.svg</file>
+        <file>img/loading.jpg</file>
+        <file>img/progressbar2.jpg</file>
+        <file>img/recipe.jpg</file>
     </qresource>
 </RCC>

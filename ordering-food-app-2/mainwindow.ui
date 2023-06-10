@@ -35,9 +35,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>-1</y>
+        <y>-11</y>
         <width>481</width>
-        <height>631</height>
+        <height>671</height>
        </rect>
       </property>
       <property name="maximumSize">
@@ -70,26 +70,23 @@
 	font: 350 14pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
 	color: rgb(226,234,216);
-	background-color: rgb(130,170,90);
+	background-color: rgba(130,170,90,0.6);
 	border: none;
-	border-left: 1px solid rgb(110,144,76);
-	border-right: 1px solid rgb(110,144,76);
-	border-bottom: 5px solid rgb(110,144,76);
-	opacity: 50%;
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
 }
 QPushButton:hover{
-	background-color: rgb(138,181,96);
-	border-left: 1px solid rgb(110,144,76);
-	border-right: 1px solid rgb(110,144,76);
-	border-bottom: 5px solid rgb(110,144,76);
-	opacity: 50%;
+	background-color: rgba(138,181,96, 0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
 }
-
 QPushButton:pressed{
-	background-color: rgb(120,157,83);
-	border-left: 1px solid rgb(110,144,76);
-	border-right: 1px solid rgb(110,144,76);
-	border-bottom: 5px solid rgb(110,144,76);
+	background-color: rgba(120,157,83,0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
 	padding-top: -5px;
 	border-bottom: none;
 }</string>
@@ -127,6 +124,10 @@ QPushButton:pressed{
         <width>231</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	font: 350 10pt &quot;Cascadia Code SemiLight&quot;;
+</string>
       </property>
       <property name="text">
        <string>Trwa ładowanie pozycji z menu...</string>
@@ -193,13 +194,46 @@ QProgressBar::chunk {
        <rect>
         <x>90</x>
         <y>149</y>
-        <width>301</width>
+        <width>302</width>
         <height>261</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QPushButton" name="pushButton_3">
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;
+	color: rgb(226,234,216);
+	background-color: rgba(130,170,90,0.6);
+	border: none;
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:hover{
+	background-color: rgba(138,181,96, 0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:pressed{
+	background-color: rgba(120,157,83,0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+	padding-top: -5px;
+	border-bottom: none;
+}	
+</string>
+         </property>
          <property name="text">
           <string>Na miejscu</string>
          </property>
@@ -207,6 +241,39 @@ QProgressBar::chunk {
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_2">
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;
+	color: rgb(226,234,216);
+	background-color: rgba(130,170,90,0.6);
+	border: none;
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:hover{
+	background-color: rgba(138,181,96, 0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:pressed{
+	background-color: rgba(120,157,83,0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+	padding-top: -5px;
+	border-bottom: none;
+}	
+</string>
+         </property>
          <property name="text">
           <string>Na wynos</string>
          </property>
@@ -217,16 +284,36 @@ QProgressBar::chunk {
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>160</x>
         <y>90</y>
-        <width>91</width>
+        <width>151</width>
         <height>51</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	font: 350 12pt &quot;Cascadia Code SemiLight&quot;;
+</string>
       </property>
       <property name="text">
        <string>Gdzie zjesz?</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>501</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_10</zorder>
+     <zorder>verticalLayoutWidget_2</zorder>
+     <zorder>label_3</zorder>
     </widget>
     <widget class="QWidget" name="Menupage">
      <widget class="QScrollBar" name="verticalScrollBar">
@@ -901,6 +988,28 @@ QProgressBar::chunk {
         <height>31</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">QProgressBar{
+	border-color: #9f95a3;
+	border-width: 1px;
+	border-style: solid;
+	background-color: #fbfbfb;
+	height: 26px;
+	border-radius: 13px;
+	text-align: right;
+}
+
+QProgressBar::chunk {
+    /* looks buggy somehow */
+    border-color: #893a94;
+    border-width: 1px;
+    border-style: solid;
+    /* same as border-color but with 37% opacity */
+    background-color: #60893a94;
+    border-radius: 11px;
+    margin: 2px;
+}</string>
+      </property>
       <property name="value">
        <number>24</number>
       </property>
@@ -1121,6 +1230,28 @@ QProgressBar::chunk {
         <width>421</width>
         <height>31</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QProgressBar{
+	border-color: #9f95a3;
+	border-width: 1px;
+	border-style: solid;
+	background-color: #fbfbfb;
+	height: 26px;
+	border-radius: 13px;
+	text-align: right;
+}
+
+QProgressBar::chunk {
+    /* looks buggy somehow */
+    border-color: #893a94;
+    border-width: 1px;
+    border-style: solid;
+    /* same as border-color but with 37% opacity */
+    background-color: #60893a94;
+    border-radius: 11px;
+    margin: 2px;
+}</string>
       </property>
       <property name="value">
        <number>24</number>

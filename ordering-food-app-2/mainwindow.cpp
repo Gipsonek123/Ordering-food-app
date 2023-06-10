@@ -18,8 +18,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     QPixmap pix(":/img/img/startPict2.jpg");
     QPixmap loading(":/img/img/loading.jpg");
+    QPixmap takeaway(":/img/img/takeaway.jpg");
     ui->label_5->setPixmap(pix);
     ui->label_9->setPixmap(loading);
+    ui->label_10->setPixmap(takeaway);
 
 }
 
