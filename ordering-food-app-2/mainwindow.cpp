@@ -17,7 +17,10 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     QPixmap pix(":/img/img/startPict2.jpg");
+    QPixmap loading(":/img/img/loading.jpg");
     ui->label_5->setPixmap(pix);
+    ui->label_9->setPixmap(loading);
+
 }
 
 MainWindow::~MainWindow()
@@ -358,4 +361,5 @@ void MainWindow::on_pushButton_65_clicked()
 {
     ui->stackedWidget2->setCurrentIndex(0); // przejscie do poprzedniej strony
 }
+
 
