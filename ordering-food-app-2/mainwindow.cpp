@@ -172,7 +172,7 @@ void MainWindow::actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funk
 
     double sum;
     sum = currentprize + (number * prize); // oblicza sume
-    QString value = QString::number(sum); // zamienia sume na stringa
+    QString value = QString::number(sum, 'f', 2); // zamienia sume na stringa
     QString zl = " zł";
     QString total = value + zl;
     ui->label_sum->setText(total); // wypisuje na ekranie obecna sume
