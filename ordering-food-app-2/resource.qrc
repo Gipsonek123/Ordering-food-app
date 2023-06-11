@@ -8,5 +8,9 @@
         <file>img/loading.jpg</file>
         <file>img/progressbar2.jpg</file>
         <file>img/recipe.jpg</file>
+        <file>img/burger.jpg</file>
+        <file>img/order.jpg</file>
+        <file>img/menu.jpg</file>
+        <file>img/x.png</file>
     </qresource>
 </RCC>

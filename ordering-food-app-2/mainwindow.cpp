@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     QPixmap pix(":/img/img/startPict2.jpg");
     QPixmap loading(":/img/img/loading.jpg");
-    QPixmap takeaway(":/img/img/takeaway.jpg");
+    QPixmap takeaway(":/img/img/menu.jpg");
     ui->label_5->setPixmap(pix);
     ui->label_9->setPixmap(loading);
     ui->label_10->setPixmap(takeaway);
@@ -30,28 +30,48 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::progressBarLoading()
+//void MainWindow::progressBarLoading()
+void MainWindow::progressBarLoading(QProgressBar* progressBar)
 {
     QTimer* timer = new QTimer(this);
-    connect(timer, &QTimer::timeout, this, &MainWindow::updateProgressBar);
-    timer->start(25);
+//    connect(timer, &QTimer::timeout, this, &MainWindow::updateProgressBar(progressBar));
+//    connect(timer, &QTimer::timeout, this, [=]() {
+//        updateProgressBar(progressBar); // Wywołanie updateProgressBar z przekazanym progressBar
+//    });
+//    static int value = 0;
+    connect(timer, &QTimer::timeout, this, [=]() { MainWindow::updateProgressBar(progressBar, timer, &value);
+    });
+//    updateProgressBar(progressBar)});
+    timer->start(20);
+
 }
 
-void MainWindow::updateProgressBar()
+//void MainWindow::updateProgressBar()
+void MainWindow::updateProgressBar(QProgressBar *progressBarName, QTimer* timer, int* value)
 {
-    static int value = 0;
-    ui->progressBar->setValue(value);
-
-    if (value >= 100) {
-        goToNextPage();
-        // to ponizej robimy tylko po to, aby przeskoczylo nam o 1 strone, a nie do samego
-        QTimer* timer = qobject_cast<QTimer*>(sender()); // Pobierz wskaźnik na QTimer
-        if (timer) {
-            timer->stop(); // Zatrzymaj QTimer
-        }
+//    static int value = 0;
+//    ui->progressBar->setValue(value);
+    qDebug() << "Current value: " << *value << "tak: " << progressBarName;
+    if (progressBarName && value) {
+//        QProgressBar* progressBarName = findChild<QProgressBar*>(progressBar);
+//        QString progressBarName = progressBar->objectName();
+//        MainWindow* mainWindow = qobject_cast<MainWindow*>(progressBar->parentWidget());
+        progressBarName->setValue(*value);
+//        updateProgressBar(progressBar,*value);
+        if (*value > 100) {
+            // to ponizej robimy tylko po to, aby przeskoczylo nam o 1 strone, a nie do samego
+//            QTimer* timer = qobject_cast<QTimer*>(sender()); // Pobierz wskaźnik na QTimer
+              timer->stop();
+            goToNextPage();
+//            if (timer) {
+//            counter+=1;
+           // Zatrzymaj QTimer
+            *value = 0;
+//            }
+    }
+        (*value)++;
     }
 
-    value++;
 }
 
 void MainWindow::goToNextPage()
@@ -189,27 +209,32 @@ void MainWindow::actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funk
 void MainWindow::on_pushButton_clicked()
 {
     goToNextPage();
-    progressBarLoading();
+    progressBarLoading(ui->progressBar);
 }
 
 // na wynos
 void MainWindow::on_pushButton_3_clicked()
 {
     goToNextPage();
+    goToNextPage();
 
+//    progressBarLoading(ui->progressBar_3);
 }
 
 // na miejscu
 void MainWindow::on_pushButton_2_clicked()
 {
     goToNextPage();
+    goToNextPage();
+
+//    progressBarLoading(ui->progressBar_3);
 }
 
 // przejdz do koszyka/poodsumowania
 void MainWindow::on_pushButton_6_clicked()
 {
     goToNextPage();
-    progressBarLoading();
+//    progressBarLoading();
 }
 
 // zaplac
@@ -364,4 +389,10 @@ void MainWindow::on_pushButton_65_clicked()
     ui->stackedWidget2->setCurrentIndex(0); // przejscie do poprzedniej strony
 }
 
+
+// po wyborze czy na miejscu, czy na wynos (progressbar)
+void MainWindow::on_progressBar_3_valueChanged()
+{
+    goToNextPage();
+}
 

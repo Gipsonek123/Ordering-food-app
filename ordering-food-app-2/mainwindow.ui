@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>10</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QLabel" name="label_5">
@@ -114,6 +114,24 @@ QPushButton:pressed{
        <bool>false</bool>
       </property>
      </widget>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>432</x>
+        <y>18</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/img/img/startClickIcon2.svg);
+color: white;
+background-color: rgb(128,128,128,0.2);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="progressBar_2">
      <widget class="QLabel" name="label_6">
@@ -126,7 +144,9 @@ QPushButton:pressed{
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">	font: 350 10pt &quot;Cascadia Code SemiLight&quot;;
+       <string notr="true">	color: white;
+    background-color: rgba(120, 157, 83, 0.1);
+	font: 350 10pt &quot;Cascadia Code SemiLight&quot;;
 </string>
       </property>
       <property name="text">
@@ -189,131 +209,199 @@ QProgressBar::chunk {
      <zorder>progressBar</zorder>
     </widget>
     <widget class="QWidget" name="secondPage">
-     <widget class="QWidget" name="verticalLayoutWidget_2">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>149</y>
-        <width>302</width>
-        <height>261</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QPushButton" name="pushButton_3">
-         <property name="minimumSize">
-          <size>
-           <width>300</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton{
-	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
-	padding-top: 5px;
-	color: rgb(226,234,216);
-	background-color: rgba(130,170,90,0.6);
-	border: none;
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:hover{
-	background-color: rgba(138,181,96, 0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:pressed{
-	background-color: rgba(120,157,83,0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-	padding-top: -5px;
-	border-bottom: none;
-}	
-</string>
-         </property>
-         <property name="text">
-          <string>Na miejscu</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="maximumSize">
-          <size>
-           <width>300</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton{
-	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
-	padding-top: 5px;
-	color: rgb(226,234,216);
-	background-color: rgba(130,170,90,0.6);
-	border: none;
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:hover{
-	background-color: rgba(138,181,96, 0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:pressed{
-	background-color: rgba(120,157,83,0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-	padding-top: -5px;
-	border-bottom: none;
-}	
-</string>
-         </property>
-         <property name="text">
-          <string>Na wynos</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>90</y>
-        <width>151</width>
+        <x>150</x>
+        <y>170</y>
+        <width>181</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">	font: 350 12pt &quot;Cascadia Code SemiLight&quot;;
-</string>
+    background-color: rgba(120, 157, 83, 0.1);
+	color: white;
+	text-align: center;</string>
       </property>
       <property name="text">
-       <string>Gdzie zjesz?</string>
+       <string>  Gdzie zjesz?</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>-10</x>
-        <y>0</y>
-        <width>501</width>
-        <height>651</height>
+        <x>30</x>
+        <y>-10</y>
+        <width>421</width>
+        <height>631</height>
        </rect>
       </property>
       <property name="text">
        <string/>
       </property>
      </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>390</y>
+        <width>300</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;
+	color: rgb(226,234,216);
+	background-color: rgba(130,170,90,0.6);
+	border: none;
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:hover{
+	background-color: rgba(138,181,96, 0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:pressed{
+	background-color: rgba(120,157,83,0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+	padding-top: -5px;
+	border-bottom: none;
+}	
+</string>
+      </property>
+      <property name="text">
+       <string>Na wynos</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>320</y>
+        <width>300</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;
+	color: rgb(226,234,216);
+	background-color: rgba(130,170,90,0.6);
+	border: none;
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:hover{
+	background-color: rgba(138,181,96, 0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:pressed{
+	background-color: rgba(120,157,83,0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+	padding-top: -5px;
+	border-bottom: none;
+}	
+</string>
+      </property>
+      <property name="text">
+       <string>Na miejscu</string>
+      </property>
+     </widget>
      <zorder>label_10</zorder>
-     <zorder>verticalLayoutWidget_2</zorder>
      <zorder>label_3</zorder>
+     <zorder>pushButton_2</zorder>
+     <zorder>pushButton_3</zorder>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QProgressBar" name="progressBar_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>290</y>
+        <width>421</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QProgressBar{
+	border-color: #9f95a3;
+	border-width: 1px;
+	border-style: solid;
+	background-color: #fbfbfb;
+	height: 26px;
+	border-radius: 13px;
+	text-align: right;
+}
+
+QProgressBar::chunk {
+    /* looks buggy somehow */
+    border-color: #893a94;
+    border-width: 1px;
+    border-style: solid;
+    /* same as border-color but with 37% opacity */
+    background-color: #60893a94;
+    border-radius: 11px;
+    margin: 2px;
+}</string>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+      <property name="invertedAppearance">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>170</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	color: white;
+    background-color: rgba(120, 157, 83, 0.1);
+	font: 350 10pt &quot;Cascadia Code SemiLight&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Już prawie gotowe...</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="Menupage">
      <widget class="QScrollBar" name="verticalScrollBar">
@@ -975,6 +1063,12 @@ QPushButton:pressed{
         <height>20</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">	color: white;
+    background-color: rgba(120, 157, 83, 0.1);
+	font: 350 10pt &quot;Cascadia Code SemiLight&quot;;
+</string>
+      </property>
       <property name="text">
        <string>Trwa zapisywanie produktów...</string>
       </property>
@@ -1022,14 +1116,20 @@ QProgressBar::chunk {
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>140</x>
+        <x>150</x>
         <y>110</y>
-        <width>191</width>
+        <width>181</width>
         <height>20</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">	color: white;
+    background-color: rgba(120, 157, 83, 0.1);
+	font: 350 10pt &quot;Cascadia Code SemiLight&quot;;
+</string>
+      </property>
       <property name="text">
-       <string>podsumowanie zamówienia</string>
+       <string>Podsumowanie zamówienia</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_8">
@@ -1094,6 +1194,12 @@ QProgressBar::chunk {
         <width>121</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	color: white;
+    background-color: rgba(120, 157, 83, 0.1);
+	font: 350 10pt &quot;Cascadia Code SemiLight&quot;;
+</string>
       </property>
       <property name="text">
        <string>Gdzie zapłacisz?</string>
@@ -1268,6 +1374,12 @@ QProgressBar::chunk {
         <width>211</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	color: white;
+    background-color: rgba(120, 157, 83, 0.1);
+	font: 350 10pt &quot;Cascadia Code SemiLight&quot;;
+</string>
       </property>
       <property name="text">
        <string>Trwa generowanie paragonu...</string>
