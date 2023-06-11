@@ -12,5 +12,6 @@
         <file>img/order.jpg</file>
         <file>img/menu.jpg</file>
         <file>img/x.png</file>
+        <file>img/paying.png</file>
     </qresource>
 </RCC>
