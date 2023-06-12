@@ -13,5 +13,7 @@
         <file>img/menu.jpg</file>
         <file>img/x.png</file>
         <file>img/paying.png</file>
+        <file>img/burger2.jpg</file>
+        <file>img/burger4.jpg</file>
     </qresource>
 </RCC>
