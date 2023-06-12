@@ -88,5 +88,6 @@ private:
     void order_number();
     void actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel);
     void saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel);
+    void clean_file();
 };
 #endif // MAINWINDOW_H

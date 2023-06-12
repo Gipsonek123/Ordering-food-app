@@ -212,6 +212,24 @@ void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QL
         file.close();
 }
 
+void MainWindow::clean_file()
+{
+        QFile file("zamowione_produkty.txt");
+
+        if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        qDebug() << "Nie można otworzyć pliku.";
+        }
+
+        // Zapisz pustą zawartość do pliku
+        QTextStream stream(&file);
+        stream << "";
+
+        // Wymuś zapis do pliku
+        stream.flush();
+
+        // Zamknij plik
+        file.close();
+}
 
 void MainWindow::on_pushButton_clicked()
 {
@@ -243,6 +261,7 @@ void MainWindow::on_pushButton_6_clicked()
 void MainWindow::on_pushButton_10_clicked()
 {
     goToNextPage();
+    clean_file();
 }
 
 // karta online/tutaj
