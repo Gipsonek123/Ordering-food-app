@@ -9,6 +9,8 @@
 #include <QFile>
 #include <QTextStream>
 #include <QRegularExpression> // do wycinania ze string wartosci liczbowej
+#include "dbmanager.h"
+#include <vector>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -22,6 +24,10 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+std::vector<Food> resultFood = writeFoodToVectorOfObjects();
+
+
 
 void MainWindow::progressBarLoading()
 {
