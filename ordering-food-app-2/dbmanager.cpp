@@ -22,8 +22,8 @@ std::vector<Food> writeFoodToVectorOfObjects()
 {
     QSqlQuery query("SELECT * FROM food");
     int idName = query.record().indexOf("food_name");
-    int idCost = query.record().indexOf("cost");
-    int idCategory = query.record().indexOf("category_id");
+    int idCost = query.record().indexOf("food_cost");
+    int idCategory = query.record().indexOf("food_category");
     std::vector<Food> Foods;
     while (query.next())
     {
@@ -38,9 +38,33 @@ std::vector<Food> writeFoodToVectorOfObjects()
     }
     return Foods;
 }
+std::vector<Addons> writeAddonsToVectorOfObjects()
+{
+    QSqlQuery query("SELECT * FROM food");
+    int idName = query.record().indexOf("addon_name");
+    int idCost = query.record().indexOf("addon_cost");
+    int idCategory = query.record().indexOf("addon_category");
+    std::vector<Addons> addons;
+    while (query.next())
+    {
+        QString name = query.value(idName).toString();
+        double cost = query.value(idCost).toDouble();
+        int category = query.value(idCategory).toInt();
+        addons.push_back(Addons(name, cost, category));
+        // qDebug() << name <<" "<<cost<<" "<< category;
+    }
+    for ( auto& obj : addons) {
+        obj.writeAddonsToScreen();
+    }
+    return addons;
+}
+
 
 Food::Food(const QString name, const double cost, const int category):foodName(name),foodCost(cost),foodCategory(category){};
 
 void Food::writeFoodToScreen(){
     qDebug()<<this->foodName<<" "<<this->foodCost<<" "<<this->foodCategory;
+}
+void Addons::writeAddonsToScreen(){
+    qDebug()<<this->addonName<<" "<<this->addonCost<<" "<<this->addonCategory;
 }

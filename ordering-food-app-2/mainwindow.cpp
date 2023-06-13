@@ -11,7 +11,9 @@
 #include <QRegularExpression> // do wycinania ze string wartosci liczbowej
 #include "dbmanager.h"
 #include <vector>
+#include <iostream>
 
+std::vector<Food> resultFood = writeFoodToVectorOfObjects();
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -25,7 +27,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-std::vector<Food> resultFood = writeFoodToVectorOfObjects();
 
 
 
@@ -189,6 +190,7 @@ void MainWindow::on_pushButton_clicked()
 {
     goToNextPage();
     progressBarLoading();
+
 }
 
 // na wynos

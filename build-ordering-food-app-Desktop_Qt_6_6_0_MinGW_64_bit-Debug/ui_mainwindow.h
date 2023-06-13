@@ -14,7 +14,6 @@
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QProgressBar>
@@ -23,6 +22,7 @@
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QToolButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -53,7 +53,6 @@ public:
     QVBoxLayout *verticalLayout_7;
     QStackedWidget *stackedWidget2;
     QWidget *stackedWidgetPage1;
-    QPushButton *pushButton_11;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_8;
     QHBoxLayout *horizontalLayout_24;
@@ -101,6 +100,7 @@ public:
     QPushButton *Btn_item_9;
     QLabel *Product_9;
     QLabel *Price_9;
+    QToolButton *toolButton;
     QWidget *page_4;
     QPushButton *pushButton_65;
     QWidget *layoutWidget1;
@@ -145,7 +145,7 @@ public:
     QWidget *verticalLayoutWidget_5;
     QVBoxLayout *verticalLayout_6;
     QLabel *label_8;
-    QLineEdit *lineEdit;
+    QLabel *label_sum;
     QGroupBox *groupBox;
     QGroupBox *groupBox_2;
     QGroupBox *groupBox_3;
@@ -165,16 +165,15 @@ public:
     QVBoxLayout *verticalLayout_4;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
+    QWidget *page_6;
+    QLabel *label_time1;
+    QLabel *label_numer_zamowienia;
+    QPushButton *pushButton_7;
+    QWidget *page_3;
+    QLabel *label_receipt;
     QWidget *page_23;
     QProgressBar *progressBar_10;
     QLabel *label_240;
-    QWidget *page_3;
-    QLabel *label_5;
-    QWidget *page_6;
-    QWidget *layoutWidget2;
-    QVBoxLayout *verticalLayout_5;
-    QLabel *label_111;
-    QLabel *label_112;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -182,12 +181,12 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(481, 612);
+        MainWindow->resize(480, 665);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         stackedWidget = new QStackedWidget(centralwidget);
         stackedWidget->setObjectName("stackedWidget");
-        stackedWidget->setGeometry(QRect(0, -1, 481, 571));
+        stackedWidget->setGeometry(QRect(0, 0, 481, 611));
         stackedWidget->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(254, 255, 180, 255), stop:1 rgba(216, 235, 168, 255))\n"
 ""));
         firstPage = new QWidget();
@@ -259,12 +258,9 @@ public:
         stackedWidget2->setObjectName("stackedWidget2");
         stackedWidgetPage1 = new QWidget();
         stackedWidgetPage1->setObjectName("stackedWidgetPage1");
-        pushButton_11 = new QPushButton(stackedWidgetPage1);
-        pushButton_11->setObjectName("pushButton_11");
-        pushButton_11->setGeometry(QRect(300, 350, 31, 29));
         layoutWidget = new QWidget(stackedWidgetPage1);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(10, 20, 272, 337));
+        layoutWidget->setGeometry(QRect(10, 20, 285, 337));
         verticalLayout_8 = new QVBoxLayout(layoutWidget);
         verticalLayout_8->setObjectName("verticalLayout_8");
         verticalLayout_8->setContentsMargins(0, 0, 0, 0);
@@ -493,6 +489,9 @@ public:
 
         verticalLayout_8->addLayout(horizontalLayout_4);
 
+        toolButton = new QToolButton(stackedWidgetPage1);
+        toolButton->setObjectName("toolButton");
+        toolButton->setGeometry(QRect(300, 350, 24, 26));
         stackedWidget2->addWidget(stackedWidgetPage1);
         page_4 = new QWidget();
         page_4->setObjectName("page_4");
@@ -701,13 +700,15 @@ public:
         verticalLayout_6->setContentsMargins(0, 0, 0, 0);
         label_8 = new QLabel(verticalLayoutWidget_5);
         label_8->setObjectName("label_8");
+        label_8->setAlignment(Qt::AlignCenter);
 
         verticalLayout_6->addWidget(label_8);
 
-        lineEdit = new QLineEdit(verticalLayoutWidget_5);
-        lineEdit->setObjectName("lineEdit");
+        label_sum = new QLabel(verticalLayoutWidget_5);
+        label_sum->setObjectName("label_sum");
+        label_sum->setAlignment(Qt::AlignCenter);
 
-        verticalLayout_6->addWidget(lineEdit);
+        verticalLayout_6->addWidget(label_sum);
 
         groupBox = new QGroupBox(Menupage);
         groupBox->setObjectName("groupBox");
@@ -773,6 +774,40 @@ public:
         verticalLayout_4->addWidget(pushButton_5);
 
         stackedWidget->addWidget(page_2);
+        page_6 = new QWidget();
+        page_6->setObjectName("page_6");
+        label_time1 = new QLabel(page_6);
+        label_time1->setObjectName("label_time1");
+        label_time1->setGeometry(QRect(0, 60, 481, 151));
+        QSizePolicy sizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(label_time1->sizePolicy().hasHeightForWidth());
+        label_time1->setSizePolicy(sizePolicy);
+        QFont font;
+        font.setPointSize(22);
+        font.setBold(true);
+        label_time1->setFont(font);
+        label_time1->setAlignment(Qt::AlignCenter);
+        label_numer_zamowienia = new QLabel(page_6);
+        label_numer_zamowienia->setObjectName("label_numer_zamowienia");
+        label_numer_zamowienia->setGeometry(QRect(20, 210, 441, 151));
+        sizePolicy.setHeightForWidth(label_numer_zamowienia->sizePolicy().hasHeightForWidth());
+        label_numer_zamowienia->setSizePolicy(sizePolicy);
+        label_numer_zamowienia->setFont(font);
+        label_numer_zamowienia->setAlignment(Qt::AlignCenter);
+        pushButton_7 = new QPushButton(page_6);
+        pushButton_7->setObjectName("pushButton_7");
+        pushButton_7->setGeometry(QRect(170, 520, 141, 29));
+        stackedWidget->addWidget(page_6);
+        page_3 = new QWidget();
+        page_3->setObjectName("page_3");
+        label_receipt = new QLabel(page_3);
+        label_receipt->setObjectName("label_receipt");
+        label_receipt->setGeometry(QRect(0, 150, 481, 131));
+        label_receipt->setFont(font);
+        label_receipt->setAlignment(Qt::AlignCenter);
+        stackedWidget->addWidget(page_3);
         page_23 = new QWidget();
         page_23->setObjectName("page_23");
         progressBar_10 = new QProgressBar(page_23);
@@ -784,35 +819,10 @@ public:
         label_240->setObjectName("label_240");
         label_240->setGeometry(QRect(130, 200, 211, 20));
         stackedWidget->addWidget(page_23);
-        page_3 = new QWidget();
-        page_3->setObjectName("page_3");
-        label_5 = new QLabel(page_3);
-        label_5->setObjectName("label_5");
-        label_5->setGeometry(QRect(140, 80, 191, 41));
-        stackedWidget->addWidget(page_3);
-        page_6 = new QWidget();
-        page_6->setObjectName("page_6");
-        layoutWidget2 = new QWidget(page_6);
-        layoutWidget2->setObjectName("layoutWidget2");
-        layoutWidget2->setGeometry(QRect(150, 80, 184, 49));
-        verticalLayout_5 = new QVBoxLayout(layoutWidget2);
-        verticalLayout_5->setObjectName("verticalLayout_5");
-        verticalLayout_5->setContentsMargins(0, 0, 0, 0);
-        label_111 = new QLabel(layoutWidget2);
-        label_111->setObjectName("label_111");
-
-        verticalLayout_5->addWidget(label_111);
-
-        label_112 = new QLabel(layoutWidget2);
-        label_112->setObjectName("label_112");
-
-        verticalLayout_5->addWidget(label_112);
-
-        stackedWidget->addWidget(page_6);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 481, 26));
+        menubar->setGeometry(QRect(0, 0, 480, 17));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -835,34 +845,34 @@ public:
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "Na miejscu", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Na wynos", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Gdzie zjesz?", nullptr));
-        pushButton_11->setText(QCoreApplication::translate("MainWindow", ">", nullptr));
         Btn_item_1->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_1->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
         Price_1->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
         Btn_item_2->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_2->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_2->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_2->setText(QCoreApplication::translate("MainWindow", "5,00z\305\202", nullptr));
         Btn_item_3->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_3->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_3->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_3->setText(QCoreApplication::translate("MainWindow", "12,50z\305\202", nullptr));
         Btn_item_4->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_4->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_4->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_4->setText(QCoreApplication::translate("MainWindow", "25,99z\305\202", nullptr));
         Btn_item_5->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_5->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_5->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_5->setText(QCoreApplication::translate("MainWindow", "10,00z\305\202", nullptr));
         Btn_item_6->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_6->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_6->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_6->setText(QCoreApplication::translate("MainWindow", "7,80z\305\202", nullptr));
         Btn_item_7->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_7->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_7->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_7->setText(QCoreApplication::translate("MainWindow", "16,80z\305\202", nullptr));
         Btn_item_8->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_8->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_8->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_8->setText(QCoreApplication::translate("MainWindow", "18,20z\305\202", nullptr));
         Btn_item_9->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_9->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
-        Price_9->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
+        Price_9->setText(QCoreApplication::translate("MainWindow", "5,50z\305\202", nullptr));
+        toolButton->setText(QCoreApplication::translate("MainWindow", ">", nullptr));
         pushButton_65->setText(QCoreApplication::translate("MainWindow", "<", nullptr));
         Btn_item_10->setText(QCoreApplication::translate("MainWindow", "Dodaj", nullptr));
         Product_10->setText(QCoreApplication::translate("MainWindow", "Hamburger", nullptr));
@@ -887,7 +897,8 @@ public:
         Price_16->setText(QCoreApplication::translate("MainWindow", "6,90z\305\202", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "MENU", nullptr));
         pushButton_6->setText(QCoreApplication::translate("MainWindow", "Przejd\305\272 do koszyka/podsumowania", nullptr));
-        label_8->setText(QCoreApplication::translate("MainWindow", "Wyszukaj pozycj\304\231", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "SUMA", nullptr));
+        label_sum->setText(QString());
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Polecane zestawy", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("MainWindow", "Desery", nullptr));
         groupBox_3->setTitle(QCoreApplication::translate("MainWindow", "Napoje", nullptr));
@@ -901,10 +912,11 @@ public:
         label_4->setText(QCoreApplication::translate("MainWindow", "Gdzie zap\305\202acisz?", nullptr));
         pushButton_4->setText(QCoreApplication::translate("MainWindow", "Kart\304\205/online tutaj", nullptr));
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "Got\303\263wk\304\205 przy kasie", nullptr));
+        label_time1->setText(QString());
+        label_numer_zamowienia->setText(QString());
+        pushButton_7->setText(QCoreApplication::translate("MainWindow", "Wy\305\233wietl paragon", nullptr));
+        label_receipt->setText(QString());
         label_240->setText(QCoreApplication::translate("MainWindow", "Trwa generowanie paragonu...", nullptr));
-        label_5->setText(QCoreApplication::translate("MainWindow", "paragon/numer zam\303\263wienia", nullptr));
-        label_111->setText(QCoreApplication::translate("MainWindow", "Dzi\304\231kujemy za zakupy!", nullptr));
-        label_112->setText(QCoreApplication::translate("MainWindow", "Tw\303\263j numer zam\303\263wienia to:", nullptr));
     } // retranslateUi
 
 };

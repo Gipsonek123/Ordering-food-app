@@ -15,7 +15,20 @@ private:
     const int foodCategory;
 };
 
+class Addons
+{
+public:
+    Addons(const QString, const double, const int);
+    void writeAddonsToScreen();
+private:
+    const QString addonName;
+    const double addonCost;
+    const int addonCategory;
+};
+
+
 std::vector<Food> writeFoodToVectorOfObjects();
+std::vector<Addons> writeAddonsToVectorOfObjects();
 
 class dbManager
 {
