@@ -184,23 +184,25 @@ void MainWindow::actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funk
 void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel)
 {
     int number = amountSpinBox->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
-    QString Strprice = priceLabel->text(); // Odczytaj tekst z pola QLabel(cena produktu)
-    QString Name_of_product = nameLabel->text(); // odczytaj nazwe produktu
-    Strprice.remove("zł"); // Usuń symbol waluty
-    Strprice.replace(",", "."); // Zamień przecinek na kropkę
-    double prize = Strprice.toDouble(); // Konwertuj oczyszczony string na liczbę zmiennoprzecinkową (cena za 1 produkt)
-    double sum = number * prize;
-    QString value = QString::number(sum, 'f', 2); // zamienia sume na stringa
-    value.replace(".", ","); // Zamień kropke na przecinek
-    QString quantity = QString::number(number);
-    QString total = quantity +"x " + Name_of_product + " " + value + "zł";
-
-
-    QFile file("zamowione_produkty.txt");
-    if (!file.open(QIODevice::Append | QIODevice::Text))  // Otwieranie pliku w trybie dopisywania
+    if(number > 0)
     {
-        qDebug() << "Nie można otworzyć pliku.";
-    }
+        QString Strprice = priceLabel->text(); // Odczytaj tekst z pola QLabel(cena produktu)
+        QString Name_of_product = nameLabel->text(); // odczytaj nazwe produktu
+        Strprice.remove("zł"); // Usuń symbol waluty
+        Strprice.replace(",", "."); // Zamień przecinek na kropkę
+        double prize = Strprice.toDouble(); // Konwertuj oczyszczony string na liczbę zmiennoprzecinkową (cena za 1 produkt)
+        double sum = number * prize;
+        QString value = QString::number(sum, 'f', 2); // zamienia sume na stringa
+        value.replace(".", ","); // Zamień kropke na przecinek
+        QString quantity = QString::number(number);
+        QString total = quantity +"x " + Name_of_product + " " + value + "zł";
+
+
+        QFile file("zamowione_produkty.txt");
+        if (!file.open(QIODevice::Append | QIODevice::Text))  // Otwieranie pliku w trybie dopisywania
+        {
+            qDebug() << "Nie można otworzyć pliku.";
+        }
 
         // Tworzenie obiektu klasy QTextStream i powiązanie go z obiektem QFile
         QTextStream stream(&file);
@@ -210,11 +212,13 @@ void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QL
 
         // Zamykanie pliku
         file.close();
+    }
+
 }
 
-void MainWindow::clean_file()
+void MainWindow::clean_file(const QString& file_patch)
 {
-        QFile file("zamowione_produkty.txt");
+        QFile file(file_patch);
 
         if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
         qDebug() << "Nie można otworzyć pliku.";
@@ -230,6 +234,25 @@ void MainWindow::clean_file()
         // Zamknij plik
         file.close();
 }
+
+void MainWindow::readFileContents(const QString& filePath)
+{
+        QFile file(filePath);
+
+        if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        {
+        // obsługa błędu odczytu pliku
+        }
+
+        QTextStream in(&file);
+        QString fileContents = in.readAll();
+
+        file.close();
+
+        ui->label_summary->setText(fileContents); // wypisz w oknie
+
+}
+
 
 void MainWindow::on_pushButton_clicked()
 {
@@ -261,7 +284,8 @@ void MainWindow::on_pushButton_6_clicked()
 void MainWindow::on_pushButton_10_clicked()
 {
     goToNextPage();
-    clean_file();
+
+
 }
 
 // karta online/tutaj
@@ -284,6 +308,8 @@ void MainWindow::on_pushButton_7_clicked()
 {
     goToNextPage();
     receipt();
+    readFileContents("zamowione_produkty.txt");
+    clean_file("zamowione_produkty.txt");
 }
 
 

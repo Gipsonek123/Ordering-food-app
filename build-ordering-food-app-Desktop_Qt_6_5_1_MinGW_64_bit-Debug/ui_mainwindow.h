@@ -171,6 +171,7 @@ public:
     QPushButton *pushButton_7;
     QWidget *page_3;
     QLabel *label_receipt;
+    QLabel *label_summary;
     QWidget *page_23;
     QProgressBar *progressBar_10;
     QLabel *label_240;
@@ -804,9 +805,13 @@ public:
         page_3->setObjectName("page_3");
         label_receipt = new QLabel(page_3);
         label_receipt->setObjectName("label_receipt");
-        label_receipt->setGeometry(QRect(0, 150, 481, 131));
+        label_receipt->setGeometry(QRect(0, 20, 481, 131));
         label_receipt->setFont(font);
         label_receipt->setAlignment(Qt::AlignCenter);
+        label_summary = new QLabel(page_3);
+        label_summary->setObjectName("label_summary");
+        label_summary->setGeometry(QRect(0, 180, 471, 251));
+        label_summary->setAlignment(Qt::AlignCenter);
         stackedWidget->addWidget(page_3);
         page_23 = new QWidget();
         page_23->setObjectName("page_23");
@@ -916,6 +921,7 @@ public:
         label_numer_zamowienia->setText(QString());
         pushButton_7->setText(QCoreApplication::translate("MainWindow", "Wy\305\233wietl paragon", nullptr));
         label_receipt->setText(QString());
+        label_summary->setText(QString());
         label_240->setText(QCoreApplication::translate("MainWindow", "Trwa generowanie paragonu...", nullptr));
     } // retranslateUi
 
