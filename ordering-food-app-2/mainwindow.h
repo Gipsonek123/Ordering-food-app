@@ -10,6 +10,7 @@
 #include <QWidget> // elementy uzytkownika, w tym progress bar
 #include <QThread> //biblioteka m.in do animacji progressbaru
 
+//#include "product.h" // to dodalem
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -25,6 +26,8 @@ public:
 
     void progressBarLoading(QProgressBar *progressBar);
     void updateProgressBar(QProgressBar *progressBar, QTimer* timer, int* value);
+signals:
+    void changeProductStackedWidgetIndex(int index);
 private slots:
     void on_pushButton_clicked();
     void goToNextPage();
@@ -83,9 +86,12 @@ private slots:
 
     void on_progressBar_3_valueChanged();
 
+    void on_product1Btn_clicked();
+
 private:
 
     Ui::MainWindow *ui;
+
     void receipt();
     void order_number();
     void actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel);

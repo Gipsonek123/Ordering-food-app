@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "produkt.h"
 #include "ui_mainwindow.h"
 #include <QTimer>
 #include <QFile>
@@ -16,13 +17,78 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
     QPixmap pix(":/img/img/startPict2.jpg");
     QPixmap loading(":/img/img/loading.jpg");
     QPixmap takeaway(":/img/img/menu.jpg");
     ui->label_5->setPixmap(pix);
     ui->label_9->setPixmap(loading);
     ui->label_10->setPixmap(takeaway);
+    // nowa wersja
+    for(int i=0; i<18; ++i){
+        Produkt* produkt = new Produkt;
+        QPushButton* produktBtn = nullptr;
 
+        switch(i){
+        case 0:
+            produktBtn = ui->product1Btn;
+            break;
+        case 1:
+            produktBtn = ui->product2Btn;
+            break;
+        case 2:
+            produktBtn = ui->product3Btn;
+            break;
+        case 3:
+            produktBtn = ui->product4Btn;
+            break;
+        case 4:
+            produktBtn = ui->product5Btn;
+            break;
+        case 5:
+            produktBtn = ui->product6Btn;
+            break;
+        case 6:
+            produktBtn = ui->product7Btn;
+            break;
+        case 7:
+            produktBtn = ui->product8Btn;
+            break;
+        case 8:
+            produktBtn = ui->product9Btn;
+            break;
+        case 9:
+            produktBtn = ui->product10Btn;
+            break;
+        case 10:
+            produktBtn = ui->product11Btn;
+            break;
+        case 11:
+            produktBtn = ui->product12Btn;
+            break;
+        case 12:
+            produktBtn = ui->product13Btn;
+            break;
+        case 13:
+            produktBtn = ui->product14Btn;
+            break;
+        case 14:
+            produktBtn = ui->product15Btn;
+            break;
+        case 15:
+            produktBtn = ui->product16Btn;
+            break;
+        case 16:
+            produktBtn = ui->product17Btn;
+            break;
+        case 17:
+            produktBtn = ui->product18Btn;
+            break;
+        }
+        connect(produktBtn, &QPushButton::clicked, this, [produkt,i](){
+            produkt->handleStackedWidgetIndexChange(i);
+        });
+    }
 }
 
 MainWindow::~MainWindow()
@@ -394,5 +460,10 @@ void MainWindow::on_pushButton_65_clicked()
 void MainWindow::on_progressBar_3_valueChanged()
 {
     goToNextPage();
+}
+
+
+void MainWindow::on_product1Btn_clicked()
+{
 }
 

@@ -11,15 +11,15 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    product.cpp
+    produkt.cpp
 
 HEADERS += \
     mainwindow.h \
-    product.h
+    produkt.h
 
 FORMS += \
     mainwindow.ui \
-    product.ui
+    produkt.ui
 
 RESOURCES += \
     resource.qrc
