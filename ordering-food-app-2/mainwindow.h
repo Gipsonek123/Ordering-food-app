@@ -5,11 +5,12 @@
 #include <QStackedWidget>
 #include <QSpinBox>
 #include <QLabel>
-
+#include <QProgressBar>
 
 #include <QWidget> // elementy uzytkownika, w tym progress bar
 #include <QThread> //biblioteka m.in do animacji progressbaru
 
+//#include "product.h" // to dodalem
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,12 +24,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-
+    void progressBarLoading(QProgressBar *progressBar);
+    void updateProgressBar(QProgressBar *progressBar, QTimer* timer, int* value);
+signals:
+    void changeProductStackedWidgetIndex(int index);
 private slots:
     void on_pushButton_clicked();
     void goToNextPage();
-    void progressBarLoading();
-    void updateProgressBar();
+
     void on_pushButton_3_clicked();
 
     void on_pushButton_2_clicked();
@@ -81,11 +84,17 @@ private slots:
 
     void on_pushButton_65_clicked();
 
+    void on_progressBar_3_valueChanged();
+
+    void on_product1Btn_clicked();
+
 private:
 
     Ui::MainWindow *ui;
+
     void receipt();
     void order_number();
     void actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel);
+    int value = 0;
 };
 #endif // MAINWINDOW_H
