@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>8</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QLabel" name="label_5">
@@ -2535,6 +2535,83 @@ QPushButton:pressed{
       <property name="alignment">
        <set>Qt::AlignCenter</set>
       </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ul. Opolska 159</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>110</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;</string>
+      </property>
+      <property name="text">
+       <string>NIP: 5462133298</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>130</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;</string>
+      </property>
+      <property name="text">
+       <string>## NIEFISKALNY ##</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>172</x>
+        <y>20</y>
+        <width>146</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="styleSheet">
+          <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;</string>
+         </property>
+         <property name="text">
+          <string>Fast Truck S.C.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>44-100 Gliwice</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="page_23">
