@@ -93,6 +93,7 @@ private slots:
     void goToPreviousPage();
 
     void changeMenuPage();
+    void goToFirstPage();
 
     void on_pushButton_26_clicked();
 
@@ -105,6 +106,8 @@ private slots:
     void on_pushButton_19_clicked();
 
     void on_pushButton_18_clicked();
+
+    void on_pushButton_12_clicked();
 
 private:
 
