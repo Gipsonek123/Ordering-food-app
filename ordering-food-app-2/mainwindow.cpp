@@ -152,6 +152,28 @@ void MainWindow::goToNextPage()
     }
 }
 
+void MainWindow::goToPreviousPage()
+{
+    int currentIndex = ui->stackedWidget->currentIndex();
+    int previousPageIndex = currentIndex - 1;
+
+    // Sprawdź, czy nextPageIndex nie przekracza liczby stron w QStackedWidget.
+    if (previousPageIndex < ui->stackedWidget->count())
+    {
+        ui->stackedWidget->setCurrentIndex(previousPageIndex);
+    }
+}
+
+void MainWindow::changeMenuPage()
+{
+    int index = ui->stackedWidget_2->currentIndex();
+    if(index==1){
+         ui->stackedWidget_2->setCurrentIndex(0);
+
+    }else{
+         ui->stackedWidget_2->setCurrentIndex(1);
+    }
+}
 
 
 void MainWindow::receipt() // funkcja wypisujaca na ekran numer paragonu
@@ -444,16 +466,16 @@ void MainWindow::on_Btn_item_16_clicked()
 }
 
 
-void MainWindow::on_toolButton_clicked()
-{
-    ui->stackedWidget2->setCurrentIndex(1);// przejscie do kolejnej strony
-}
+//void MainWindow::on_toolButton_clicked()
+//{
+//    ui->stackedWidget2->setCurrentIndex(1);// przejscie do kolejnej strony
+//}
 
 
-void MainWindow::on_pushButton_65_clicked()
-{
-    ui->stackedWidget2->setCurrentIndex(0); // przejscie do poprzedniej strony
-}
+//void MainWindow::on_pushButton_65_clicked()
+//{
+//    ui->stackedWidget2->setCurrentIndex(0); // przejscie do poprzedniej strony
+//}
 
 
 // po wyborze czy na miejscu, czy na wynos (progressbar)
@@ -465,5 +487,42 @@ void MainWindow::on_progressBar_3_valueChanged()
 
 void MainWindow::on_product1Btn_clicked()
 {
+}
+
+//przejdz dalej (Zupy)
+void MainWindow::on_pushButton_26_clicked()
+{
+    goToNextPage();
+}
+
+//przejdz dalej (Salatki)
+void MainWindow::on_pushButton_20_clicked()
+{
+    goToNextPage();
+
+}
+
+//w podsumowaniu zamowienia poprzednia strona
+void MainWindow::on_pushButton_8_clicked()
+{
+    goToPreviousPage();
+}
+
+//kup taniej
+void MainWindow::on_pushButton_9_clicked()
+{
+    goToPreviousPage();
+}
+
+
+void MainWindow::on_pushButton_19_clicked()
+{
+    changeMenuPage();
+}
+
+
+void MainWindow::on_pushButton_18_clicked()
+{
+    goToPreviousPage();
 }
 
