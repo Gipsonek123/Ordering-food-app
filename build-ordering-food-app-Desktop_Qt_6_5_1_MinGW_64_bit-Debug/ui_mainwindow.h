@@ -171,6 +171,8 @@ public:
     QPushButton *pushButton_7;
     QWidget *page_3;
     QLabel *label_receipt;
+    QLabel *label_summary;
+    QLabel *label_total_price;
     QWidget *page_23;
     QProgressBar *progressBar_10;
     QLabel *label_240;
@@ -804,9 +806,17 @@ public:
         page_3->setObjectName("page_3");
         label_receipt = new QLabel(page_3);
         label_receipt->setObjectName("label_receipt");
-        label_receipt->setGeometry(QRect(0, 150, 481, 131));
+        label_receipt->setGeometry(QRect(0, 20, 481, 131));
         label_receipt->setFont(font);
         label_receipt->setAlignment(Qt::AlignCenter);
+        label_summary = new QLabel(page_3);
+        label_summary->setObjectName("label_summary");
+        label_summary->setGeometry(QRect(0, 170, 471, 221));
+        label_summary->setAlignment(Qt::AlignCenter);
+        label_total_price = new QLabel(page_3);
+        label_total_price->setObjectName("label_total_price");
+        label_total_price->setGeometry(QRect(20, 410, 441, 91));
+        label_total_price->setAlignment(Qt::AlignCenter);
         stackedWidget->addWidget(page_3);
         page_23 = new QWidget();
         page_23->setObjectName("page_23");
@@ -831,7 +841,7 @@ public:
         retranslateUi(MainWindow);
 
         stackedWidget->setCurrentIndex(3);
-        stackedWidget2->setCurrentIndex(1);
+        stackedWidget2->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -916,6 +926,8 @@ public:
         label_numer_zamowienia->setText(QString());
         pushButton_7->setText(QCoreApplication::translate("MainWindow", "Wy\305\233wietl paragon", nullptr));
         label_receipt->setText(QString());
+        label_summary->setText(QString());
+        label_total_price->setText(QString());
         label_240->setText(QCoreApplication::translate("MainWindow", "Trwa generowanie paragonu...", nullptr));
     } // retranslateUi
 

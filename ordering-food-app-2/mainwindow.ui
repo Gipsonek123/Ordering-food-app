@@ -367,7 +367,7 @@ QPushButton:pressed{
          <item>
           <widget class="QStackedWidget" name="stackedWidget2">
            <property name="currentIndex">
-            <number>1</number>
+            <number>0</number>
            </property>
            <widget class="QWidget" name="stackedWidgetPage1">
             <widget class="QWidget" name="layoutWidget">
@@ -2518,7 +2518,7 @@ QPushButton:pressed{
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>150</y>
+        <y>20</y>
         <width>481</width>
         <height>131</height>
        </rect>
@@ -2528,6 +2528,38 @@ QPushButton:pressed{
         <pointsize>22</pointsize>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_summary">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>170</y>
+        <width>471</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_total_price">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>410</y>
+        <width>441</width>
+        <height>91</height>
+       </rect>
       </property>
       <property name="text">
        <string/>

@@ -361,6 +361,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 17: _t->on_Btn_item_7_clicked(); break;
         case 18: _t->on_Btn_item_8_clicked(); break;
         case 19: _t->on_Btn_item_9_clicked(); break;
+        //case 20: _t->on_pushButton_11_clicked(); break;
         case 21: _t->on_Btn_item_10_clicked(); break;
         case 22: _t->on_Btn_item_11_clicked(); break;
         case 23: _t->on_Btn_item_12_clicked(); break;

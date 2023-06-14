@@ -261,14 +261,134 @@ void MainWindow::actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funk
 
     QString Strcurrentprize = ui->label_sum->text(); // odczytanie obecnej sumy
     Strcurrentprize.remove("zł"); // Usuń symbol waluty
+    Strcurrentprize.replace(",", "."); // Zamień przecinek na kropkę
     double currentprize = Strcurrentprize.toDouble(); // zamienia string z obecna cena na double
 
     double sum;
     sum = currentprize + (number * prize); // oblicza sume
-    QString value = QString::number(sum); // zamienia sume na stringa
+    QString value = QString::number(sum, 'f', 2); // zamienia sume na stringa
+    value.replace(".", ","); // Zamień kropke na przecinek
     QString zl = " zł";
     QString total = value + zl;
     ui->label_sum->setText(total); // wypisuje na ekranie obecna sume
+}
+
+
+void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel)// funkcja zapisujaca produkty wraz z cenami do pliku tekstowego "zamowione_produkty"
+{                                                                                               // do pliku tekstowego ceny produktow sa zapisywane tylko ceny
+    int number = amountSpinBox->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
+    if(number > 0)
+    {
+        QString Strprice = priceLabel->text(); // Odczytaj tekst z pola QLabel(cena produktu)
+        QString Name_of_product = nameLabel->text(); // odczytaj nazwe produktu
+        Strprice.remove("zł"); // Usuń symbol waluty
+        Strprice.replace(",", "."); // Zamień przecinek na kropkę
+        double prize = Strprice.toDouble(); // Konwertuj oczyszczony string na liczbę zmiennoprzecinkową (cena za 1 produkt)
+        double sum = number * prize;
+        QString value = QString::number(sum, 'f', 2); // zamienia sume na stringa
+        value.replace(".", ","); // Zamień kropke na przecinek
+        QString quantity = QString::number(number);
+        QString total = quantity +"x " + Name_of_product + " " + value + "zł";
+
+        QFile file("ceny_produktow.txt"); // zapisanie tylko cen produktow
+        if (!file.open(QIODevice::Append | QIODevice::Text))  // Otwieranie pliku w trybie dopisywania
+        {
+            qDebug() << "Nie można otworzyć pliku.";
+        }
+
+        // Tworzenie obiektu klasy QTextStream i powiązanie go z obiektem QFile
+        QTextStream stream(&file);
+        QString prizes = QString::number(sum);
+
+        // Zapisywanie tekstu do strumienia
+        stream << prizes << Qt::endl;
+
+        // Zamykanie pliku
+        file.close();
+
+        QFile file1("zamowione_produkty.txt"); // zapisanie całego zamowienia
+        if (!file1.open(QIODevice::Append | QIODevice::Text))  // Otwieranie pliku w trybie dopisywania
+        {
+            qDebug() << "Nie można otworzyć pliku.";
+        }
+
+        // Tworzenie obiektu klasy QTextStream i powiązanie go z obiektem QFile
+        QTextStream stream1(&file1);
+
+        // Zapisywanie tekstu do strumienia
+        stream1 << total << Qt::endl;
+
+        // Zamykanie pliku
+        file.close();
+
+    }
+}
+
+void MainWindow::clean_file(const QString& file_patch) //funkcja czyszczaca plik
+{
+        QFile file(file_patch);
+
+        if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        qDebug() << "Nie można otworzyć pliku.";
+        }
+
+        // Zapisz pustą zawartość do pliku
+        QTextStream stream(&file);
+        stream << "";
+
+        // Wymuś zapis do pliku
+        stream.flush();
+
+        // Zamknij plik
+        file.close();
+}
+
+void MainWindow::read_file_contents(const QString& filePath)// funkcja odczytujaca zawartosc z pliku(zamowione produkty) i wypisujaca na ekran
+{
+        QFile file(filePath);
+
+        if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        {
+        // obsługa błędu odczytu pliku
+        }
+
+        QTextStream in(&file);
+        QString fileContents = in.readAll();
+
+        file.close();
+
+        ui->label_summary->setText(fileContents); // wypisz w oknie
+
+}
+
+
+void MainWindow::total_price(const QString& filePath)
+{
+        double total = 0;
+
+        QFile file(filePath);
+        if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        {
+        // Obsługa błędu, jeśli nie udało się otworzyć pliku
+        }
+
+        // Utwórz obiekt klasy QTextStream i skojarz go z obiektem QFile
+        QTextStream in(&file);
+
+        // Odczytaj dane linia po linii, dopóki nie osiągniesz końca pliku
+        while (!in.atEnd())
+        {
+        QString line = in.readLine();
+        double prize = line.toDouble();
+        total += prize;
+        }
+
+        // Zamknij plik po zakończeniu odczytu
+        file.close();
+        QString total_price = QString::number(total, 'f', 2);
+        total_price.replace(".", ","); // Zamień kropke na przecinek
+        QString sum_all = "Suma: " + total_price + "zł";
+        ui->label_total_price->setText(sum_all); // wypisz w oknie
 }
 
 
@@ -307,6 +427,8 @@ void MainWindow::on_pushButton_6_clicked()
 void MainWindow::on_pushButton_10_clicked()
 {
     goToNextPage();
+
+
 }
 
 // karta online/tutaj
@@ -329,12 +451,17 @@ void MainWindow::on_pushButton_7_clicked()
 {
     goToNextPage();
     receipt();
+    read_file_contents("zamowione_produkty.txt");
+    total_price("ceny_produktow.txt");
+    clean_file("ceny_produktow.txt");
+    clean_file("zamowione_produkty.txt");
 }
 
 
 void MainWindow::on_Btn_item_1_clicked()
 {
     actual_sum(ui->Amount_item_1, ui->Price_1);
+    saving_products(ui->Amount_item_1, ui->Price_1, ui->Product_1);
     ui->Amount_item_1->setValue(0);// resetuje ilość
 }
 
@@ -342,6 +469,7 @@ void MainWindow::on_Btn_item_1_clicked()
 void MainWindow::on_Btn_item_2_clicked()
 {
     actual_sum(ui->Amount_item_2, ui->Price_2);
+    saving_products(ui->Amount_item_2, ui->Price_2, ui->Product_2);
     ui->Amount_item_2->setValue(0);// resetuje ilość
 }
 
@@ -349,6 +477,7 @@ void MainWindow::on_Btn_item_2_clicked()
 void MainWindow::on_Btn_item_3_clicked()
 {
     actual_sum(ui->Amount_item_3, ui->Price_3);
+    saving_products(ui->Amount_item_3, ui->Price_3, ui->Product_3);
     ui->Amount_item_3->setValue(0);// resetuje ilość
 }
 
@@ -356,6 +485,7 @@ void MainWindow::on_Btn_item_3_clicked()
 void MainWindow::on_Btn_item_4_clicked()
 {
     actual_sum(ui->Amount_item_4, ui->Price_4);
+    saving_products(ui->Amount_item_4, ui->Price_4, ui->Product_4);
     ui->Amount_item_4->setValue(0);// resetuje ilość
 }
 
@@ -363,6 +493,7 @@ void MainWindow::on_Btn_item_4_clicked()
 void MainWindow::on_Btn_item_5_clicked()
 {
     actual_sum(ui->Amount_item_5, ui->Price_5);
+    saving_products(ui->Amount_item_5, ui->Price_5, ui->Product_5);
     ui->Amount_item_5->setValue(0);// resetuje ilość
 }
 
@@ -370,6 +501,7 @@ void MainWindow::on_Btn_item_5_clicked()
 void MainWindow::on_Btn_item_6_clicked()
 {
     actual_sum(ui->Amount_item_6, ui->Price_6);
+    saving_products(ui->Amount_item_6, ui->Price_6, ui->Product_6);
     ui->Amount_item_6->setValue(0);// resetuje ilość
 }
 
@@ -377,6 +509,7 @@ void MainWindow::on_Btn_item_6_clicked()
 void MainWindow::on_Btn_item_7_clicked()
 {
     actual_sum(ui->Amount_item_7, ui->Price_7);
+    saving_products(ui->Amount_item_7, ui->Price_7, ui->Product_7);
     ui->Amount_item_7->setValue(0);// resetuje ilość
 }
 
@@ -384,6 +517,7 @@ void MainWindow::on_Btn_item_7_clicked()
 void MainWindow::on_Btn_item_8_clicked()
 {
     actual_sum(ui->Amount_item_8, ui->Price_8);
+    saving_products(ui->Amount_item_8, ui->Price_8, ui->Product_8);
     ui->Amount_item_8->setValue(0);// resetuje ilość
 }
 
@@ -391,6 +525,7 @@ void MainWindow::on_Btn_item_8_clicked()
 void MainWindow::on_Btn_item_9_clicked()
 {
     actual_sum(ui->Amount_item_9, ui->Price_9);
+    saving_products(ui->Amount_item_9, ui->Price_9, ui->Product_9);
     ui->Amount_item_9->setValue(0);// resetuje ilość
 }
 
@@ -398,6 +533,7 @@ void MainWindow::on_Btn_item_9_clicked()
 void MainWindow::on_Btn_item_10_clicked()
 {
     actual_sum(ui->Amount_item_10, ui->Price_10);
+    saving_products(ui->Amount_item_10, ui->Price_10, ui->Product_10);
     ui->Amount_item_10->setValue(0);// resetuje ilość
 }
 
@@ -405,6 +541,7 @@ void MainWindow::on_Btn_item_10_clicked()
 void MainWindow::on_Btn_item_11_clicked()
 {
     actual_sum(ui->Amount_item_11, ui->Price_11);
+    saving_products(ui->Amount_item_11, ui->Price_11, ui->Product_11);
     ui->Amount_item_11->setValue(0);// resetuje ilość
 }
 
@@ -412,6 +549,7 @@ void MainWindow::on_Btn_item_11_clicked()
 void MainWindow::on_Btn_item_12_clicked()
 {
     actual_sum(ui->Amount_item_12, ui->Price_12);
+    saving_products(ui->Amount_item_12, ui->Price_12, ui->Product_12);
     ui->Amount_item_12->setValue(0);// resetuje ilość
 }
 
@@ -419,6 +557,7 @@ void MainWindow::on_Btn_item_12_clicked()
 void MainWindow::on_Btn_item_13_clicked()
 {
     actual_sum(ui->Amount_item_13, ui->Price_13);
+    saving_products(ui->Amount_item_13, ui->Price_13, ui->Product_13);
     ui->Amount_item_13->setValue(0);// resetuje ilość
 }
 
@@ -426,6 +565,7 @@ void MainWindow::on_Btn_item_13_clicked()
 void MainWindow::on_Btn_item_14_clicked()
 {
     actual_sum(ui->Amount_item_14, ui->Price_14);
+    saving_products(ui->Amount_item_14, ui->Price_14, ui->Product_14);
     ui->Amount_item_14->setValue(0);// resetuje ilość
 }
 
@@ -433,6 +573,7 @@ void MainWindow::on_Btn_item_14_clicked()
 void MainWindow::on_Btn_item_15_clicked()
 {
     actual_sum(ui->Amount_item_15, ui->Price_15);
+    saving_products(ui->Amount_item_15, ui->Price_15, ui->Product_15);
     ui->Amount_item_15->setValue(0);// resetuje ilość
 }
 
@@ -440,6 +581,7 @@ void MainWindow::on_Btn_item_15_clicked()
 void MainWindow::on_Btn_item_16_clicked()
 {
     actual_sum(ui->Amount_item_16, ui->Price_16);
+    saving_products(ui->Amount_item_16, ui->Price_16, ui->Product_16);
     ui->Amount_item_16->setValue(0);// resetuje ilość
 }
 
