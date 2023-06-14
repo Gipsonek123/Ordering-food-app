@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "produkt.h"
 #include "ui_mainwindow.h"
 #include <QTimer>
 #include <QFile>
@@ -9,13 +10,85 @@
 #include <QFile>
 #include <QTextStream>
 #include <QRegularExpression> // do wycinania ze string wartosci liczbowej
-
+#include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    QPixmap pix(":/img/img/startPict2.jpg");
+    QPixmap loading(":/img/img/loading.jpg");
+    QPixmap takeaway(":/img/img/menu.jpg");
+    ui->label_5->setPixmap(pix);
+    ui->label_9->setPixmap(loading);
+    ui->label_10->setPixmap(takeaway);
+    // nowa wersja
+    for(int i=0; i<18; ++i){
+        Produkt* produkt = new Produkt;
+        QPushButton* produktBtn = nullptr;
+
+        switch(i){
+        case 0:
+            produktBtn = ui->product1Btn;
+            break;
+        case 1:
+            produktBtn = ui->product2Btn;
+            break;
+        case 2:
+            produktBtn = ui->product3Btn;
+            break;
+        case 3:
+            produktBtn = ui->product4Btn;
+            break;
+        case 4:
+            produktBtn = ui->product5Btn;
+            break;
+        case 5:
+            produktBtn = ui->product6Btn;
+            break;
+        case 6:
+            produktBtn = ui->product7Btn;
+            break;
+        case 7:
+            produktBtn = ui->product8Btn;
+            break;
+        case 8:
+            produktBtn = ui->product9Btn;
+            break;
+        case 9:
+            produktBtn = ui->product10Btn;
+            break;
+        case 10:
+            produktBtn = ui->product11Btn;
+            break;
+        case 11:
+            produktBtn = ui->product12Btn;
+            break;
+        case 12:
+            produktBtn = ui->product13Btn;
+            break;
+        case 13:
+            produktBtn = ui->product14Btn;
+            break;
+        case 14:
+            produktBtn = ui->product15Btn;
+            break;
+        case 15:
+            produktBtn = ui->product16Btn;
+            break;
+        case 16:
+            produktBtn = ui->product17Btn;
+            break;
+        case 17:
+            produktBtn = ui->product18Btn;
+            break;
+        }
+        connect(produktBtn, &QPushButton::clicked, this, [produkt,i](){
+            produkt->handleStackedWidgetIndexChange(i);
+        });
+    }
 }
 
 MainWindow::~MainWindow()
@@ -23,28 +96,48 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::progressBarLoading()
+//void MainWindow::progressBarLoading()
+void MainWindow::progressBarLoading(QProgressBar* progressBar)
 {
     QTimer* timer = new QTimer(this);
-    connect(timer, &QTimer::timeout, this, &MainWindow::updateProgressBar);
-    timer->start(25);
+//    connect(timer, &QTimer::timeout, this, &MainWindow::updateProgressBar(progressBar));
+//    connect(timer, &QTimer::timeout, this, [=]() {
+//        updateProgressBar(progressBar); // Wywołanie updateProgressBar z przekazanym progressBar
+//    });
+//    static int value = 0;
+    connect(timer, &QTimer::timeout, this, [=]() { MainWindow::updateProgressBar(progressBar, timer, &value);
+    });
+//    updateProgressBar(progressBar)});
+    timer->start(20);
+
 }
 
-void MainWindow::updateProgressBar()
+//void MainWindow::updateProgressBar()
+void MainWindow::updateProgressBar(QProgressBar *progressBarName, QTimer* timer, int* value)
 {
-    static int value = 0;
-    ui->progressBar->setValue(value);
-
-    if (value >= 100) {
-        goToNextPage();
-        // to ponizej robimy tylko po to, aby przeskoczylo nam o 1 strone, a nie do samego
-        QTimer* timer = qobject_cast<QTimer*>(sender()); // Pobierz wskaźnik na QTimer
-        if (timer) {
-            timer->stop(); // Zatrzymaj QTimer
-        }
+//    static int value = 0;
+//    ui->progressBar->setValue(value);
+    qDebug() << "Current value: " << *value << "tak: " << progressBarName;
+    if (progressBarName && value) {
+//        QProgressBar* progressBarName = findChild<QProgressBar*>(progressBar);
+//        QString progressBarName = progressBar->objectName();
+//        MainWindow* mainWindow = qobject_cast<MainWindow*>(progressBar->parentWidget());
+        progressBarName->setValue(*value);
+//        updateProgressBar(progressBar,*value);
+        if (*value > 100) {
+            // to ponizej robimy tylko po to, aby przeskoczylo nam o 1 strone, a nie do samego
+//            QTimer* timer = qobject_cast<QTimer*>(sender()); // Pobierz wskaźnik na QTimer
+              timer->stop();
+            goToNextPage();
+//            if (timer) {
+//            counter+=1;
+           // Zatrzymaj QTimer
+            *value = 0;
+//            }
+    }
+        (*value)++;
     }
 
-    value++;
 }
 
 void MainWindow::goToNextPage()
@@ -302,27 +395,32 @@ void MainWindow::total_price(const QString& filePath)
 void MainWindow::on_pushButton_clicked()
 {
     goToNextPage();
-    progressBarLoading();
+    progressBarLoading(ui->progressBar);
 }
 
 // na wynos
 void MainWindow::on_pushButton_3_clicked()
 {
     goToNextPage();
+    goToNextPage();
 
+//    progressBarLoading(ui->progressBar_3);
 }
 
 // na miejscu
 void MainWindow::on_pushButton_2_clicked()
 {
     goToNextPage();
+    goToNextPage();
+
+//    progressBarLoading(ui->progressBar_3);
 }
 
 // przejdz do koszyka/poodsumowania
 void MainWindow::on_pushButton_6_clicked()
 {
     goToNextPage();
-    progressBarLoading();
+//    progressBarLoading();
 }
 
 // zaplac
@@ -497,5 +595,17 @@ void MainWindow::on_toolButton_clicked()
 void MainWindow::on_pushButton_65_clicked()
 {
     ui->stackedWidget2->setCurrentIndex(0); // przejscie do poprzedniej strony
+}
+
+
+// po wyborze czy na miejscu, czy na wynos (progressbar)
+void MainWindow::on_progressBar_3_valueChanged()
+{
+    goToNextPage();
+}
+
+
+void MainWindow::on_product1Btn_clicked()
+{
 }
 
