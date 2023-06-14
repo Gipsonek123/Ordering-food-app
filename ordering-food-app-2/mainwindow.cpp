@@ -181,7 +181,7 @@ void MainWindow::actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funk
 }
 
 
-void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel)
+void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel)// funkcja zapisujaca produkty wraz z cenami do pliku tekstowego
 {
     int number = amountSpinBox->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
     if(number > 0)
@@ -197,8 +197,7 @@ void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QL
         QString quantity = QString::number(number);
         QString total = quantity +"x " + Name_of_product + " " + value + "zł";
 
-
-        QFile file("zamowione_produkty.txt");
+        QFile file("ceny_produktow.txt");
         if (!file.open(QIODevice::Append | QIODevice::Text))  // Otwieranie pliku w trybie dopisywania
         {
             qDebug() << "Nie można otworzyć pliku.";
@@ -206,17 +205,33 @@ void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QL
 
         // Tworzenie obiektu klasy QTextStream i powiązanie go z obiektem QFile
         QTextStream stream(&file);
+        QString prizes = QString::number(sum);
 
         // Zapisywanie tekstu do strumienia
-        stream << total << Qt::endl;
+        stream << prizes << Qt::endl;
 
         // Zamykanie pliku
         file.close();
-    }
 
+        QFile file1("zamowione_produkty.txt");
+        if (!file1.open(QIODevice::Append | QIODevice::Text))  // Otwieranie pliku w trybie dopisywania
+        {
+            qDebug() << "Nie można otworzyć pliku.";
+        }
+
+        // Tworzenie obiektu klasy QTextStream i powiązanie go z obiektem QFile
+        QTextStream stream1(&file1);
+
+        // Zapisywanie tekstu do strumienia
+        stream1 << total << Qt::endl;
+
+        // Zamykanie pliku
+        file.close();
+
+    }
 }
 
-void MainWindow::clean_file(const QString& file_patch)
+void MainWindow::clean_file(const QString& file_patch) //funkcja czyszczaca plik
 {
         QFile file(file_patch);
 
@@ -235,7 +250,7 @@ void MainWindow::clean_file(const QString& file_patch)
         file.close();
 }
 
-void MainWindow::readFileContents(const QString& filePath)
+void MainWindow::readFileContents(const QString& filePath)// funkcja odczytujaca zawartosc z pliku(zamowione produkty) i wypisujaca na ekran
 {
         QFile file(filePath);
 
