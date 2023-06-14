@@ -24,6 +24,17 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_5->setPixmap(pix);
     ui->label_9->setPixmap(loading);
     ui->label_10->setPixmap(takeaway);
+
+    // przyciski "wyjscia"
+    connect(ui->btnExit1, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
+    connect(ui->btnExit2, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
+    connect(ui->btnExit3, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
+    connect(ui->btnExit4, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
+    connect(ui->btnExit5, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
+    connect(ui->btnExit6, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
+    connect(ui->btnExit7, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
+
+
     // nowa wersja
     for(int i=0; i<18; ++i){
         Produkt* produkt = new Produkt;
@@ -58,7 +69,7 @@ MainWindow::MainWindow(QWidget *parent)
             produktBtn = ui->product9Btn;
             break;
         case 9:
-            produktBtn = ui->product10Btn;
+//            produktBtn = ui->product11Btn_2;
             break;
         case 10:
             produktBtn = ui->product11Btn;
@@ -152,6 +163,33 @@ void MainWindow::goToNextPage()
     }
 }
 
+void MainWindow::goToPreviousPage()
+{
+    int currentIndex = ui->stackedWidget->currentIndex();
+    int previousPageIndex = currentIndex - 1;
+
+    // Sprawdź, czy nextPageIndex nie przekracza liczby stron w QStackedWidget.
+    if (previousPageIndex < ui->stackedWidget->count())
+    {
+        ui->stackedWidget->setCurrentIndex(previousPageIndex);
+    }
+}
+
+void MainWindow::goToFirstPage()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWindow::changeMenuPage()
+{
+    int index = ui->stackedWidget_2->currentIndex();
+    if(index==1){
+         ui->stackedWidget_2->setCurrentIndex(0);
+
+    }else{
+         ui->stackedWidget_2->setCurrentIndex(1);
+    }
+}
 
 
 void MainWindow::receipt() // funkcja wypisujaca na ekran numer paragonu
@@ -251,25 +289,25 @@ void MainWindow::order_number() //funkcja wypisujaca na ekran date, godzine i nu
 }
 
 
-void MainWindow::actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funkcja do obliczania i wypisywania obecnej ceny, jako argumenty przyjmuje wskaźniki
-{                                                                         // do obiektów pierwszy pokazuje ilość danego produktu a drugi jego cenę
-    int number = amountSpinBox->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
-    QString Strprice = priceLabel->text(); // Odczytaj tekst z pola QLabel(cena produktu)
-    Strprice.remove("zł"); // Usuń symbol waluty
-    Strprice.replace(",", "."); // Zamień przecinek na kropkę
-    double prize = Strprice.toDouble(); // Konwertuj oczyszczony string na liczbę zmiennoprzecinkową (cena za 1 produkt)
+//void MainWindow::actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funkcja do obliczania i wypisywania obecnej ceny, jako argumenty przyjmuje wskaźniki
+//{                                                                         // do obiektów pierwszy pokazuje ilość danego produktu a drugi jego cenę
+//    int number = amountSpinBox->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
+//    QString Strprice = priceLabel->text(); // Odczytaj tekst z pola QLabel(cena produktu)
+//    Strprice.remove("zł"); // Usuń symbol waluty
+//    Strprice.replace(",", "."); // Zamień przecinek na kropkę
+//    double prize = Strprice.toDouble(); // Konwertuj oczyszczony string na liczbę zmiennoprzecinkową (cena za 1 produkt)
 
-    QString Strcurrentprize = ui->label_sum->text(); // odczytanie obecnej sumy
-    Strcurrentprize.remove("zł"); // Usuń symbol waluty
-    double currentprize = Strcurrentprize.toDouble(); // zamienia string z obecna cena na double
+//    QString Strcurrentprize = ui->label_sum->text(); // odczytanie obecnej sumy
+//    Strcurrentprize.remove("zł"); // Usuń symbol waluty
+//    double currentprize = Strcurrentprize.toDouble(); // zamienia string z obecna cena na double
 
-    double sum;
-    sum = currentprize + (number * prize); // oblicza sume
-    QString value = QString::number(sum); // zamienia sume na stringa
-    QString zl = " zł";
-    QString total = value + zl;
-    ui->label_sum->setText(total); // wypisuje na ekranie obecna sume
-}
+//    double sum;
+//    sum = currentprize + (number * prize); // oblicza sume
+//    QString value = QString::number(sum); // zamienia sume na stringa
+//    QString zl = " zł";
+//    QString total = value + zl;
+//    ui->label_sum->setText(total); // wypisuje na ekranie obecna sume
+//}
 
 
 void MainWindow::on_pushButton_clicked()
@@ -281,7 +319,7 @@ void MainWindow::on_pushButton_clicked()
 // na wynos
 void MainWindow::on_pushButton_3_clicked()
 {
-    goToNextPage();
+//    goToNextPage();
     goToNextPage();
 
 //    progressBarLoading(ui->progressBar_3);
@@ -291,7 +329,7 @@ void MainWindow::on_pushButton_3_clicked()
 void MainWindow::on_pushButton_2_clicked()
 {
     goToNextPage();
-    goToNextPage();
+//    goToNextPage();
 
 //    progressBarLoading(ui->progressBar_3);
 }
@@ -332,128 +370,128 @@ void MainWindow::on_pushButton_7_clicked()
 }
 
 
-void MainWindow::on_Btn_item_1_clicked()
-{
-    actual_sum(ui->Amount_item_1, ui->Price_1);
-    ui->Amount_item_1->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_1_clicked()
+//{
+//    actual_sum(ui->Amount_item_1, ui->Price_1);
+//    ui->Amount_item_1->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_2_clicked()
-{
-    actual_sum(ui->Amount_item_2, ui->Price_2);
-    ui->Amount_item_2->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_2_clicked()
+//{
+//    actual_sum(ui->Amount_item_2, ui->Price_2);
+//    ui->Amount_item_2->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_3_clicked()
-{
-    actual_sum(ui->Amount_item_3, ui->Price_3);
-    ui->Amount_item_3->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_3_clicked()
+//{
+//    actual_sum(ui->Amount_item_3, ui->Price_3);
+//    ui->Amount_item_3->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_4_clicked()
-{
-    actual_sum(ui->Amount_item_4, ui->Price_4);
-    ui->Amount_item_4->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_4_clicked()
+//{
+//    actual_sum(ui->Amount_item_4, ui->Price_4);
+//    ui->Amount_item_4->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_5_clicked()
-{
-    actual_sum(ui->Amount_item_5, ui->Price_5);
-    ui->Amount_item_5->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_5_clicked()
+//{
+//    actual_sum(ui->Amount_item_5, ui->Price_5);
+//    ui->Amount_item_5->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_6_clicked()
-{
-    actual_sum(ui->Amount_item_6, ui->Price_6);
-    ui->Amount_item_6->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_6_clicked()
+//{
+//    actual_sum(ui->Amount_item_6, ui->Price_6);
+//    ui->Amount_item_6->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_7_clicked()
-{
-    actual_sum(ui->Amount_item_7, ui->Price_7);
-    ui->Amount_item_7->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_7_clicked()
+//{
+//    actual_sum(ui->Amount_item_7, ui->Price_7);
+//    ui->Amount_item_7->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_8_clicked()
-{
-    actual_sum(ui->Amount_item_8, ui->Price_8);
-    ui->Amount_item_8->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_8_clicked()
+//{
+//    actual_sum(ui->Amount_item_8, ui->Price_8);
+//    ui->Amount_item_8->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_9_clicked()
-{
-    actual_sum(ui->Amount_item_9, ui->Price_9);
-    ui->Amount_item_9->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_9_clicked()
+//{
+//    actual_sum(ui->Amount_item_9, ui->Price_9);
+//    ui->Amount_item_9->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_10_clicked()
-{
-    actual_sum(ui->Amount_item_10, ui->Price_10);
-    ui->Amount_item_10->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_10_clicked()
+//{
+//    actual_sum(ui->Amount_item_10, ui->Price_10);
+//    ui->Amount_item_10->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_11_clicked()
-{
-    actual_sum(ui->Amount_item_11, ui->Price_11);
-    ui->Amount_item_11->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_11_clicked()
+//{
+//    actual_sum(ui->Amount_item_11, ui->Price_11);
+//    ui->Amount_item_11->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_12_clicked()
-{
-    actual_sum(ui->Amount_item_12, ui->Price_12);
-    ui->Amount_item_12->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_12_clicked()
+//{
+//    actual_sum(ui->Amount_item_12, ui->Price_12);
+//    ui->Amount_item_12->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_13_clicked()
-{
-    actual_sum(ui->Amount_item_13, ui->Price_13);
-    ui->Amount_item_13->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_13_clicked()
+//{
+//    actual_sum(ui->Amount_item_13, ui->Price_13);
+//    ui->Amount_item_13->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_14_clicked()
-{
-    actual_sum(ui->Amount_item_14, ui->Price_14);
-    ui->Amount_item_14->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_14_clicked()
+//{
+//    actual_sum(ui->Amount_item_14, ui->Price_14);
+//    ui->Amount_item_14->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_15_clicked()
-{
-    actual_sum(ui->Amount_item_15, ui->Price_15);
-    ui->Amount_item_15->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_15_clicked()
+//{
+//    actual_sum(ui->Amount_item_15, ui->Price_15);
+//    ui->Amount_item_15->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_Btn_item_16_clicked()
-{
-    actual_sum(ui->Amount_item_16, ui->Price_16);
-    ui->Amount_item_16->setValue(0);// resetuje ilość
-}
+//void MainWindow::on_Btn_item_16_clicked()
+//{
+//    actual_sum(ui->Amount_item_16, ui->Price_16);
+//    ui->Amount_item_16->setValue(0);// resetuje ilość
+//}
 
 
-void MainWindow::on_toolButton_clicked()
-{
-    ui->stackedWidget2->setCurrentIndex(1);// przejscie do kolejnej strony
-}
+//void MainWindow::on_toolButton_clicked()
+//{
+//    ui->stackedWidget2->setCurrentIndex(1);// przejscie do kolejnej strony
+//}
 
 
-void MainWindow::on_pushButton_65_clicked()
-{
-    ui->stackedWidget2->setCurrentIndex(0); // przejscie do poprzedniej strony
-}
+//void MainWindow::on_pushButton_65_clicked()
+//{
+//    ui->stackedWidget2->setCurrentIndex(0); // przejscie do poprzedniej strony
+//}
 
 
 // po wyborze czy na miejscu, czy na wynos (progressbar)
@@ -465,5 +503,48 @@ void MainWindow::on_progressBar_3_valueChanged()
 
 void MainWindow::on_product1Btn_clicked()
 {
+}
+
+//przejdz dalej (Zupy)
+void MainWindow::on_pushButton_26_clicked()
+{
+    goToNextPage();
+}
+
+//przejdz dalej (Salatki)
+void MainWindow::on_pushButton_20_clicked()
+{
+    goToNextPage();
+
+}
+
+//w podsumowaniu zamowienia poprzednia strona
+void MainWindow::on_pushButton_8_clicked()
+{
+    goToPreviousPage();
+}
+
+//kup taniej
+void MainWindow::on_pushButton_9_clicked()
+{
+    goToPreviousPage();
+}
+
+
+void MainWindow::on_pushButton_19_clicked()
+{
+    changeMenuPage();
+}
+
+
+void MainWindow::on_pushButton_18_clicked()
+{
+    goToPreviousPage();
+}
+
+//
+void MainWindow::on_pushButton_12_clicked()
+{
+    goToFirstPage();
 }
 

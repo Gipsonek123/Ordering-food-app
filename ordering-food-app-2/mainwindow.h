@@ -88,6 +88,27 @@ private slots:
 
     void on_product1Btn_clicked();
 
+    void on_pushButton_24_clicked();
+
+    void goToPreviousPage();
+
+    void changeMenuPage();
+    void goToFirstPage();
+
+    void on_pushButton_26_clicked();
+
+    void on_pushButton_20_clicked();
+
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_9_clicked();
+
+    void on_pushButton_19_clicked();
+
+    void on_pushButton_18_clicked();
+
+    void on_pushButton_12_clicked();
+
 private:
 
     Ui::MainWindow *ui;

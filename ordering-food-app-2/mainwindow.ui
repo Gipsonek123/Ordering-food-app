@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>480</width>
+    <width>481</width>
     <height>677</height>
    </rect>
   </property>
@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QLabel" name="label_5">
@@ -112,24 +112,6 @@ QPushButton:pressed{
       </property>
       <property name="flat">
        <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_11">
-      <property name="geometry">
-       <rect>
-        <x>432</x>
-        <y>18</y>
-        <width>31</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-image: url(:/img/img/startClickIcon2.svg);
-color: white;
-background-color: rgb(128,128,128,0.2);</string>
-      </property>
-      <property name="text">
-       <string/>
       </property>
      </widget>
     </widget>
@@ -333,660 +315,35 @@ QPushButton:pressed{
        <string>Na miejscu</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="btnExit1">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>20</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+border-image: url(:/img/img/startClickIcon2.svg);
+color: white;
+background-color: rgb(128,128,128,0.2);
+}
+QPushButton:hover{
+border-image: url(:/img/img/ExitBtnWhite.svg);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
      <zorder>label_10</zorder>
      <zorder>label_3</zorder>
      <zorder>pushButton_2</zorder>
      <zorder>pushButton_3</zorder>
-    </widget>
-    <widget class="QWidget" name="Menupage">
-     <widget class="QScrollBar" name="verticalScrollBar">
-      <property name="geometry">
-       <rect>
-        <x>460</x>
-        <y>30</y>
-        <width>16</width>
-        <height>511</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_3">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>120</y>
-        <width>331</width>
-        <height>381</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_7">
-         <item>
-          <widget class="QStackedWidget" name="stackedWidget2">
-           <property name="currentIndex">
-            <number>1</number>
-           </property>
-           <widget class="QWidget" name="stackedWidgetPage1">
-            <widget class="QWidget" name="layoutWidget">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>20</y>
-               <width>285</width>
-               <height>337</height>
-              </rect>
-             </property>
-             <layout class="QVBoxLayout" name="verticalLayout_8">
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_24">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_1"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_1">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_1">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_1">
-                  <property name="text">
-                   <string>6,90zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_25">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_2"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_2">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_2">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_2">
-                  <property name="text">
-                   <string>5,00zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_26">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_3"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_3">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_3">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_3">
-                  <property name="text">
-                   <string>12,50zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_8">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_4"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_4">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_4">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_4">
-                  <property name="text">
-                   <string>25,99zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_7">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_5"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_5">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_5">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_5">
-                  <property name="text">
-                   <string>10,00zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_28">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_6"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_6">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_6">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_6">
-                  <property name="text">
-                   <string>7,80zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_6">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_7"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_7">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_7">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_7">
-                  <property name="text">
-                   <string>16,80zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_5">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_8"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_8">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_8">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_8">
-                  <property name="text">
-                   <string>18,20zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_4">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_9"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_9">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_9">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_9">
-                  <property name="text">
-                   <string>5,50zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </widget>
-            <widget class="QToolButton" name="toolButton">
-             <property name="geometry">
-              <rect>
-               <x>300</x>
-               <y>350</y>
-               <width>24</width>
-               <height>26</height>
-              </rect>
-             </property>
-             <property name="text">
-              <string>&gt;</string>
-             </property>
-            </widget>
-           </widget>
-           <widget class="QWidget" name="page_4">
-            <widget class="QPushButton" name="pushButton_65">
-             <property name="geometry">
-              <rect>
-               <x>300</x>
-               <y>350</y>
-               <width>31</width>
-               <height>29</height>
-              </rect>
-             </property>
-             <property name="text">
-              <string>&lt;</string>
-             </property>
-            </widget>
-            <widget class="QWidget" name="layoutWidget">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>20</y>
-               <width>272</width>
-               <height>261</height>
-              </rect>
-             </property>
-             <layout class="QVBoxLayout" name="verticalLayout_9">
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_31">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_10"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_10">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_10">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_10">
-                  <property name="text">
-                   <string>6,90zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_32">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_11"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_11">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_11">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_11">
-                  <property name="text">
-                   <string>6,90zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_33">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_12"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_12">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_12">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_12">
-                  <property name="text">
-                   <string>6,90zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_34">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_13"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_13">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_13">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_13">
-                  <property name="text">
-                   <string>6,90zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_35">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_14"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_14">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_14">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_14">
-                  <property name="text">
-                   <string>6,90zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_36">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_15"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_15">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_15">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_15">
-                  <property name="text">
-                   <string>6,90zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_37">
-                <item>
-                 <widget class="QSpinBox" name="Amount_item_16"/>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_item_16">
-                  <property name="text">
-                   <string>Dodaj</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Product_16">
-                  <property name="text">
-                   <string>Hamburger</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="Price_16">
-                  <property name="text">
-                   <string>6,90zł</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </widget>
-           </widget>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>79</y>
-        <width>91</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>MENU</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_6">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>510</y>
-        <width>329</width>
-        <height>29</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Przejdź do koszyka/podsumowania</string>
-      </property>
-     </widget>
-     <widget class="QWidget" name="verticalLayoutWidget_5">
-      <property name="geometry">
-       <rect>
-        <x>310</x>
-        <y>10</y>
-        <width>131</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_6">
-       <item>
-        <widget class="QLabel" name="label_8">
-         <property name="text">
-          <string>SUMA</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_sum">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QGroupBox" name="groupBox">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>291</width>
-        <height>101</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Polecane zestawy</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>130</y>
-        <width>91</width>
-        <height>131</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Desery</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_3">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>270</y>
-        <width>91</width>
-        <height>131</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Napoje</string>
-      </property>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_4">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>410</y>
-        <width>91</width>
-        <height>131</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Dodatki</string>
-      </property>
-     </widget>
+     <zorder>btnExit1</zorder>
     </widget>
     <widget class="QWidget" name="page_12">
      <widget class="QStackedWidget" name="stackedWidget_2">
@@ -995,7 +352,7 @@ QPushButton:pressed{
         <x>10</x>
         <y>30</y>
         <width>471</width>
-        <height>581</height>
+        <height>591</height>
        </rect>
       </property>
       <property name="maximumSize">
@@ -1013,8 +370,8 @@ QPushButton:pressed{
          <rect>
           <x>0</x>
           <y>40</y>
-          <width>459</width>
-          <height>551</height>
+          <width>461</width>
+          <height>511</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_88">
@@ -1043,40 +400,53 @@ QPushButton:pressed{
            <item>
             <layout class="QVBoxLayout" name="verticalLayout_89">
              <item>
-              <layout class="QVBoxLayout" name="verticalLayout_90"/>
-             </item>
-             <item>
-              <widget class="QPushButton" name="product1Btn">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>100</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-image: url(&quot;:/img/img/burger.jpg&quot;);</string>
-               </property>
-               <property name="text">
-                <string>PushButton</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLabel" name="label_109">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QVBoxLayout" name="verticalLayout_90">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_106">
+                 <item>
+                  <widget class="QPushButton" name="product1Btn">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>PushButton</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_26">
+                   <item>
+                    <widget class="QLabel" name="label_143">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>15</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                     </property>
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_36">
+                     <property name="text">
+                      <string>TextLabel</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1096,21 +466,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_110">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_22">
+               <item>
+                <widget class="QLabel" name="label_139">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_32">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1130,21 +511,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_111">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_23">
+               <item>
+                <widget class="QLabel" name="label_140">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_33">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1185,21 +577,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_113">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_21">
+               <item>
+                <widget class="QLabel" name="label_138">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_31">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1219,21 +622,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_114">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_19">
+               <item>
+                <widget class="QLabel" name="label_136">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_29">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1253,21 +667,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_115">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_18">
+               <item>
+                <widget class="QLabel" name="label_135">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_28">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1312,21 +737,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_117">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_20">
+               <item>
+                <widget class="QLabel" name="label_137">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_30">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1346,21 +782,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_118">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_17">
+               <item>
+                <widget class="QLabel" name="label_134">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_27">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1380,136 +827,56 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_119">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_16">
+               <item>
+                <widget class="QLabel" name="label_133">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_26">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
           </layout>
          </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_14">
-           <property name="spacing">
-            <number>15</number>
-           </property>
-           <item>
-            <widget class="QPushButton" name="pushButton_24">
-             <property name="styleSheet">
-              <string notr="true">QPushButton{
-	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
-	padding-top: 5px;
-	color: rgb(226,234,216);
-	background-color: rgba(130,170,90,0.6);
-	border: none;
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:hover{
-	background-color: rgba(138,181,96, 0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:pressed{
-	background-color: rgba(120,157,83,0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-	padding-top: -5px;
-	border-bottom: none;
-}	
-</string>
-             </property>
-             <property name="text">
-              <string>Anuluj</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_25">
-             <property name="styleSheet">
-              <string notr="true">QPushButton{
-	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
-	padding-top: 5px;
-	color: rgb(226,234,216);
-	background-color: rgba(130,170,90,0.6);
-	border: none;
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:hover{
-	background-color: rgba(138,181,96, 0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:pressed{
-	background-color: rgba(120,157,83,0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-	padding-top: -5px;
-	border-bottom: none;
-}	
-</string>
-             </property>
-             <property name="text">
-              <string>Zobacz poprzednie</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_26">
-             <property name="styleSheet">
-              <string notr="true">QPushButton{
-	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
-	padding-top: 5px;
-	color: rgb(226,234,216);
-	background-color: rgba(130,170,90,0.6);
-	border: none;
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:hover{
-	background-color: rgba(138,181,96, 0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:pressed{
-	background-color: rgba(120,157,83,0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-	padding-top: -5px;
-	border-bottom: none;
-}	
-</string>
-             </property>
-             <property name="text">
-              <string>Przejdź dalej</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
         </layout>
+       </widget>
+       <widget class="QPushButton" name="btnExit2">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>0</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/img/img/startClickIcon2.svg);
+color: white;
+background-color: rgb(128,128,128,0.2);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
        </widget>
       </widget>
       <widget class="QWidget" name="page_14">
@@ -1517,9 +884,9 @@ QPushButton:pressed{
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>40</y>
-          <width>459</width>
-          <height>551</height>
+          <y>30</y>
+          <width>461</width>
+          <height>521</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_75">
@@ -1546,10 +913,7 @@ QPushButton:pressed{
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_46">
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_76">
-             <item>
-              <layout class="QVBoxLayout" name="verticalLayout_77"/>
-             </item>
+            <layout class="QVBoxLayout" name="verticalLayout_100">
              <item>
               <widget class="QPushButton" name="product10Btn">
                <property name="minimumSize">
@@ -1558,8 +922,11 @@ QPushButton:pressed{
                  <height>100</height>
                 </size>
                </property>
-               <property name="styleSheet">
-                <string notr="true">background-image: url(&quot;:/img/img/burger.jpg&quot;);</string>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>500</height>
+                </size>
                </property>
                <property name="text">
                 <string>PushButton</string>
@@ -1567,26 +934,37 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_94">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLabel" name="label_123">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_78">
+            <layout class="QVBoxLayout" name="verticalLayout_102">
              <item>
               <widget class="QPushButton" name="product11Btn">
                <property name="minimumSize">
@@ -1595,32 +973,49 @@ QPushButton:pressed{
                  <height>100</height>
                 </size>
                </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>500</height>
+                </size>
+               </property>
                <property name="text">
                 <string>PushButton</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_95">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QLabel" name="label_125">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_18">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_79">
+            <layout class="QVBoxLayout" name="verticalLayout_101">
              <item>
               <widget class="QPushButton" name="product12Btn">
                <property name="minimumSize">
@@ -1629,27 +1024,44 @@ QPushButton:pressed{
                  <height>100</height>
                 </size>
                </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>500</height>
+                </size>
+               </property>
                <property name="text">
                 <string>PushButton</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_96">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="QLabel" name="label_124">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_17">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1690,21 +1102,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_98">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QLabel" name="label_127">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_20">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1724,21 +1147,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_99">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_10">
+               <item>
+                <widget class="QLabel" name="label_128">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_21">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1758,21 +1192,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_100">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QLabel" name="label_129">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_22">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1817,21 +1262,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_102">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_13">
+               <item>
+                <widget class="QLabel" name="label_130">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_23">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1851,21 +1307,32 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_103">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_14">
+               <item>
+                <widget class="QLabel" name="label_131">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_24">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
@@ -1885,136 +1352,62 @@ QPushButton:pressed{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="label_104">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+              <layout class="QHBoxLayout" name="horizontalLayout_15">
+               <item>
+                <widget class="QLabel" name="label_132">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>15</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;</string>
-               </property>
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_25">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </item>
           </layout>
          </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_12">
-           <property name="spacing">
-            <number>15</number>
-           </property>
-           <item>
-            <widget class="QPushButton" name="pushButton_18">
-             <property name="styleSheet">
-              <string notr="true">QPushButton{
-	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
-	padding-top: 5px;
-	color: rgb(226,234,216);
-	background-color: rgba(130,170,90,0.6);
-	border: none;
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:hover{
-	background-color: rgba(138,181,96, 0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:pressed{
-	background-color: rgba(120,157,83,0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-	padding-top: -5px;
-	border-bottom: none;
-}	
-</string>
-             </property>
-             <property name="text">
-              <string>Anuluj</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_19">
-             <property name="styleSheet">
-              <string notr="true">QPushButton{
-	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
-	padding-top: 5px;
-	color: rgb(226,234,216);
-	background-color: rgba(130,170,90,0.6);
-	border: none;
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:hover{
-	background-color: rgba(138,181,96, 0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:pressed{
-	background-color: rgba(120,157,83,0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-	padding-top: -5px;
-	border-bottom: none;
-}	
-</string>
-             </property>
-             <property name="text">
-              <string>Zobacz więcej</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_20">
-             <property name="styleSheet">
-              <string notr="true">QPushButton{
-	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
-	padding-top: 5px;
-	color: rgb(226,234,216);
-	background-color: rgba(130,170,90,0.6);
-	border: none;
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:hover{
-	background-color: rgba(138,181,96, 0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-}
-QPushButton:pressed{
-	background-color: rgba(120,157,83,0.6);
-	border-left: 1px solid rgba(110,144,76,0.6);
-	border-right: 1px solid rgba(110,144,76,0.6);
-	border-bottom: 5px solid rgba(110,144,76,0.6);
-	padding-top: -5px;
-	border-bottom: none;
-}	
-</string>
-             </property>
-             <property name="text">
-              <string>Przejdź dalej</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
         </layout>
+       </widget>
+       <widget class="QPushButton" name="btnExit7">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>0</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border-image: url(:/img/img/startClickIcon2.svg);
+color: white;
+background-color: rgb(128,128,128,0.2);
+}
+QPushButton:hover{
+border-image: url(:/img/img/ExitBtnWhite.svg);
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
        </widget>
       </widget>
      </widget>
@@ -2023,7 +1416,7 @@ QPushButton:pressed{
        <rect>
         <x>10</x>
         <y>0</y>
-        <width>431</width>
+        <width>401</width>
         <height>58</height>
        </rect>
       </property>
@@ -2126,6 +1519,123 @@ QPushButton:pressed{
           </widget>
          </item>
         </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>590</y>
+        <width>461</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <property name="spacing">
+        <number>15</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButton_18">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;
+	color: rgb(226,234,216);
+	background-color: rgba(130,170,90,0.6);
+	border: none;
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:hover{
+	background-color: rgba(138,181,96, 0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:pressed{
+	background-color: rgba(120,157,83,0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+	padding-top: -5px;
+	border-bottom: none;
+}	
+</string>
+         </property>
+         <property name="text">
+          <string>Anuluj</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_19">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;
+	color: rgb(226,234,216);
+	background-color: rgba(130,170,90,0.6);
+	border: none;
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:hover{
+	background-color: rgba(138,181,96, 0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:pressed{
+	background-color: rgba(120,157,83,0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+	padding-top: -5px;
+	border-bottom: none;
+}	
+</string>
+         </property>
+         <property name="text">
+          <string>Zobacz więcej</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_20">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;
+	color: rgb(226,234,216);
+	background-color: rgba(130,170,90,0.6);
+	border: none;
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:hover{
+	background-color: rgba(138,181,96, 0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+}
+QPushButton:pressed{
+	background-color: rgba(120,157,83,0.6);
+	border-left: 1px solid rgba(110,144,76,0.6);
+	border-right: 1px solid rgba(110,144,76,0.6);
+	border-bottom: 5px solid rgba(110,144,76,0.6);
+	padding-top: -5px;
+	border-bottom: none;
+}	
+</string>
+         </property>
+         <property name="text">
+          <string>Przejdź dalej</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -2289,6 +1799,30 @@ QPushButton:pressed{
        </item>
       </layout>
      </widget>
+     <widget class="QPushButton" name="btnExit3">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>20</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+border-image: url(:/img/img/startClickIcon2.svg);
+color: white;
+background-color: rgb(128,128,128,0.2);
+}
+QPushButton:hover{
+border-image: url(:/img/img/ExitBtnWhite.svg);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_2">
      <widget class="QLabel" name="label_4">
@@ -2408,6 +1942,30 @@ QPushButton:pressed{
        </item>
       </layout>
      </widget>
+     <widget class="QPushButton" name="btnExit4">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>20</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+border-image: url(:/img/img/startClickIcon2.svg);
+color: white;
+background-color: rgb(128,128,128,0.2);
+}
+QPushButton:hover{
+border-image: url(:/img/img/ExitBtnWhite.svg);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_6">
      <widget class="QLabel" name="label_time1">
@@ -2512,6 +2070,30 @@ QPushButton:pressed{
        <string>Wyświetl paragon</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="btnExit5">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>20</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+border-image: url(:/img/img/startClickIcon2.svg);
+color: white;
+background-color: rgb(128,128,128,0.2);
+}
+QPushButton:hover{
+border-image: url(:/img/img/ExitBtnWhite.svg);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_3">
      <widget class="QLabel" name="label_receipt">
@@ -2535,6 +2117,109 @@ QPushButton:pressed{
       <property name="alignment">
        <set>Qt::AlignCenter</set>
       </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;</string>
+      </property>
+      <property name="text">
+       <string>NIP: 5472143206</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>130</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;</string>
+      </property>
+      <property name="text">
+       <string>## NIEFISKALNY ##</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnExit6">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>20</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+border-image: url(:/img/img/startClickIcon2.svg);
+color: white;
+background-color: rgb(128,128,128,0.2);
+}
+QPushButton:hover{
+border-image: url(:/img/img/ExitBtnWhite.svg);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>10</y>
+        <width>227</width>
+        <height>85</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_11">
+         <property name="styleSheet">
+          <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;</string>
+         </property>
+         <property name="text">
+          <string>Jedzenie na okrągło S.C.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_12">
+         <property name="styleSheet">
+          <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;</string>
+         </property>
+         <property name="text">
+          <string>ul. Opolska 159</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_13">
+         <property name="styleSheet">
+          <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
+	padding-top: 5px;</string>
+         </property>
+         <property name="text">
+          <string>44-100 Gliwice</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="page_23">
@@ -2597,7 +2282,7 @@ QProgressBar::chunk {
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -2608,7 +2293,7 @@ QProgressBar::chunk {
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_49"/>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -2619,7 +2304,7 @@ QProgressBar::chunk {
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_86"/>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -2630,7 +2315,7 @@ QProgressBar::chunk {
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_50"/>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -2647,7 +2332,7 @@ QProgressBar::chunk {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>480</width>
+     <width>481</width>
      <height>26</height>
     </rect>
    </property>
