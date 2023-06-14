@@ -89,6 +89,7 @@ private:
     void actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel);
     void saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel);
     void clean_file(const QString& file_patch);
-    void readFileContents(const QString& filePath);
+    void read_file_contents(const QString& filePath);
+    void total_price(const QString& filePath);
 };
 #endif // MAINWINDOW_H

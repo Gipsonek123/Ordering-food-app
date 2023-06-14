@@ -181,8 +181,8 @@ void MainWindow::actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funk
 }
 
 
-void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel)// funkcja zapisujaca produkty wraz z cenami do pliku tekstowego
-{
+void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel)// funkcja zapisujaca produkty wraz z cenami do pliku tekstowego "zamowione_produkty"
+{                                                                                               // do pliku tekstowego ceny produktow sa zapisywane tylko ceny
     int number = amountSpinBox->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
     if(number > 0)
     {
@@ -197,7 +197,7 @@ void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QL
         QString quantity = QString::number(number);
         QString total = quantity +"x " + Name_of_product + " " + value + "zł";
 
-        QFile file("ceny_produktow.txt");
+        QFile file("ceny_produktow.txt"); // zapisanie tylko cen produktow
         if (!file.open(QIODevice::Append | QIODevice::Text))  // Otwieranie pliku w trybie dopisywania
         {
             qDebug() << "Nie można otworzyć pliku.";
@@ -213,7 +213,7 @@ void MainWindow::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QL
         // Zamykanie pliku
         file.close();
 
-        QFile file1("zamowione_produkty.txt");
+        QFile file1("zamowione_produkty.txt"); // zapisanie całego zamowienia
         if (!file1.open(QIODevice::Append | QIODevice::Text))  // Otwieranie pliku w trybie dopisywania
         {
             qDebug() << "Nie można otworzyć pliku.";
@@ -250,7 +250,7 @@ void MainWindow::clean_file(const QString& file_patch) //funkcja czyszczaca plik
         file.close();
 }
 
-void MainWindow::readFileContents(const QString& filePath)// funkcja odczytujaca zawartosc z pliku(zamowione produkty) i wypisujaca na ekran
+void MainWindow::read_file_contents(const QString& filePath)// funkcja odczytujaca zawartosc z pliku(zamowione produkty) i wypisujaca na ekran
 {
         QFile file(filePath);
 
@@ -266,6 +266,36 @@ void MainWindow::readFileContents(const QString& filePath)// funkcja odczytujaca
 
         ui->label_summary->setText(fileContents); // wypisz w oknie
 
+}
+
+
+void MainWindow::total_price(const QString& filePath)
+{
+        double total = 0;
+
+        QFile file(filePath);
+        if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        {
+        // Obsługa błędu, jeśli nie udało się otworzyć pliku
+        }
+
+        // Utwórz obiekt klasy QTextStream i skojarz go z obiektem QFile
+        QTextStream in(&file);
+
+        // Odczytaj dane linia po linii, dopóki nie osiągniesz końca pliku
+        while (!in.atEnd())
+        {
+        QString line = in.readLine();
+        double prize = line.toDouble();
+        total += prize;
+        }
+
+        // Zamknij plik po zakończeniu odczytu
+        file.close();
+        QString total_price = QString::number(total, 'f', 2);
+        total_price.replace(".", ","); // Zamień kropke na przecinek
+        QString sum_all = "Suma: " + total_price + "zł";
+        ui->label_total_price->setText(sum_all); // wypisz w oknie
 }
 
 
@@ -323,7 +353,9 @@ void MainWindow::on_pushButton_7_clicked()
 {
     goToNextPage();
     receipt();
-    readFileContents("zamowione_produkty.txt");
+    read_file_contents("zamowione_produkty.txt");
+    total_price("ceny_produktow.txt");
+    clean_file("ceny_produktow.txt");
     clean_file("zamowione_produkty.txt");
 }
 
