@@ -10,7 +10,12 @@
 #include <QWidget> // elementy uzytkownika, w tym progress bar
 #include <QThread> //biblioteka m.in do animacji progressbaru
 
+
+#include <vector>
+#include "dbmanager.h"
+
 //#include "product.h" // to dodalem
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -68,6 +73,7 @@ private slots:
     void on_pushButton_18_clicked();
 
     void on_pushButton_12_clicked();
+
 
 private:
 

@@ -10,7 +10,15 @@
 #include <QFile>
 #include <QTextStream>
 #include <QRegularExpression> // do wycinania ze string wartosci liczbowej
+
+#include "dbmanager.h"
+#include <vector>
+#include <iostream>
+
+std::vector<Food> resultFood = writeFoodToVectorOfObjects();
+
 #include <QPixmap>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -107,8 +115,15 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+
+
+
+void MainWindow::progressBarLoading()
+
 //void MainWindow::progressBarLoading()
 void MainWindow::progressBarLoading(QProgressBar* progressBar)
+
 {
     QTimer* timer = new QTimer(this);
 //    connect(timer, &QTimer::timeout, this, &MainWindow::updateProgressBar(progressBar));
@@ -313,7 +328,12 @@ void MainWindow::order_number() //funkcja wypisujaca na ekran date, godzine i nu
 void MainWindow::on_pushButton_clicked()
 {
     goToNextPage();
+
+    progressBarLoading();
+
+
     progressBarLoading(ui->progressBar);
+
 }
 
 // na wynos

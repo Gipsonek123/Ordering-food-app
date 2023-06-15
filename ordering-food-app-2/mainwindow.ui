@@ -2332,8 +2332,13 @@ QProgressBar::chunk {
     <rect>
      <x>0</x>
      <y>0</y>
+      
+     <width>480</width>
+     <height>17</height>
+
      <width>481</width>
      <height>26</height>
+
     </rect>
    </property>
   </widget>
