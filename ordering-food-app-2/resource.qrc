@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/startPict2.jpg</file>
+        <file>img/restaurant.jpg</file>
+        <file>img/restaurant2.jpg</file>
+        <file>img/takeaway.jpg</file>
+        <file>img/startClickIcon2.svg</file>
+        <file>img/loading.jpg</file>
+        <file>img/progressbar2.jpg</file>
+        <file>img/recipe.jpg</file>
+        <file>img/burger.jpg</file>
+        <file>img/order.jpg</file>
+        <file>img/menu.jpg</file>
+        <file>img/x.png</file>
+        <file>img/paying.png</file>
+        <file>img/burger2.jpg</file>
+        <file>img/burger4.jpg</file>
+        <file>img/cancel.svg</file>
+        <file>img/ExitBtnWhite.svg</file>
+    </qresource>
+</RCC>
