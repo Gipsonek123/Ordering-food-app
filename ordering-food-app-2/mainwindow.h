@@ -11,7 +11,7 @@
 #include <QThread> //biblioteka m.in do animacji progressbaru
 
 //#include "product.h" // to dodalem
-
+class Produkt;
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -69,13 +69,20 @@ private slots:
 
     void on_pushButton_12_clicked();
 
+    void on_btnExit2_clicked();
+
 private:
 
     Ui::MainWindow *ui;
 
+
+    friend class Produkt;
     void receipt();
     void order_number();
-    void actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel);
+    void saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel);
+    void clean_file(const QString& file_patch);
+    void read_file_contents(const QString& filePath, QLabel* window);
+    void total_price(const QString& filePath, QLabel* window);
     int value = 0;
 };
 #endif // MAINWINDOW_H
