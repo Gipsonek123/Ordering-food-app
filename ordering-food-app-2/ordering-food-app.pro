@@ -12,7 +12,8 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     produkt.cpp \
-    dbmanager.cpp
+    dbmanager.cpp \
+    showdata.cpp
 
 HEADERS += \
     mainwindow.h \

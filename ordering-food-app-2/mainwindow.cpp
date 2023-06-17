@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "produkt.h"
 #include "ui_mainwindow.h"
+#include "dbmanager.h"
+#include <vector>
 #include <QTimer>
 #include <QFile>
 #include <QLineEdit>
@@ -11,6 +13,8 @@
 #include <QTextStream>
 #include <QRegularExpression> // do wycinania ze string wartosci liczbowej
 #include <QPixmap>
+
+std::vector<Food> resultFood;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -321,15 +325,18 @@ void MainWindow::on_pushButton_3_clicked()
 {
 //    goToNextPage();
     goToNextPage();
-
+    resultFood = writeFoodToVectorOfObjects();
+    showData(resultFood);
 //    progressBarLoading(ui->progressBar_3);
 }
 
 // na miejscu
 void MainWindow::on_pushButton_2_clicked()
 {
+    //    goToNextPage();
     goToNextPage();
-//    goToNextPage();
+    resultFood = writeFoodToVectorOfObjects();
+    showData(resultFood);
 
 //    progressBarLoading(ui->progressBar_3);
 }
