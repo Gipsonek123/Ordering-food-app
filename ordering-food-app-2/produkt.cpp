@@ -15,8 +15,17 @@
 Produkt::Produkt(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Produkt)
+
 {
     ui->setupUi(this);
+
+//    connect(ui->pushButton_2, &QPushButton::clicked, this, &MainWindow::totalPrice("ceny_produktow.txt", MainWindow->ui->label_sum);
+
+
+//    connect(ui->pushButton_2, &QPushButton::clicked, this, [this]() {
+//        this->totalPrice("ceny_produktow.txt", ui->labelowska);
+//    });
+
 }
 
 
@@ -106,6 +115,7 @@ void Produkt::handleStackedWidgetIndexChange(int index)
 
 void Produkt::on_pushButton_2_clicked()
 {
+
     //actualSum(ui->amountItem11, ui->price11);
 
     for (int i = 1; i <= 99; ++i)
@@ -133,6 +143,13 @@ void Produkt::on_pushButton_2_clicked()
                 }
             }
     }
+    MainWindow *obj = new MainWindow();
+    //wyswietla aktualna sume (tylko 4 okienko aktualnie, i po dodaniu produktu)
+    obj -> totalPrice("ceny_produktow.txt", ui->labelowska);
+
+//    close();
+//    obj -> totalPrice("ceny_produktow.txt", obj->ui->label_sum);
+
 }
 
 

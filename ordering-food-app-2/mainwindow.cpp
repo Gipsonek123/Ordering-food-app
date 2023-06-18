@@ -39,14 +39,24 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->btnExit6, &QPushButton::clicked, this, &MainWindow::resetData);
     connect(ui->btnExit7, &QPushButton::clicked, this, &MainWindow::resetData);
 
+//    Produkt *p = new Produkt();
 
+//    connect(p->ui->pushButton_2,  &QPushButton::clicked, this &MainWindow::totalPrice("ceny_produktow.txt", ui->label_sum));
+    // nie dziala
+//    connect(pushbutton, &QPushButton::clicked, this, [=]() {
+//        totalPrice("ceny_produktow.txt", ui->label_sum);
+//    });
 
+//    connect(p->ui->pushButton_2, &QPushButton::clicked, this, [=]() {
+//        totalPrice("ceny_produktow.txt", this->ui->label_sum);
+        // lub
+        // totalPrice("ceny_produktow.txt", ui->label_sum);
+//    });
 
     // nowa wersja
     for(int i=0; i<18; ++i){
         Produkt* produkt = new Produkt;
         QPushButton* produktBtn = nullptr;
-
         switch(i){
         case 0:
             produktBtn = ui->product1Btn;
@@ -103,9 +113,11 @@ MainWindow::MainWindow(QWidget *parent)
             produktBtn = ui->product18Btn;
             break;
         }
-        connect(produktBtn, &QPushButton::clicked, this, [produkt,i](){
-           produkt->handleStackedWidgetIndexChange(i);
+        connect(produktBtn, &QPushButton::clicked, this, [produkt,i,this](){
+            produkt->handleStackedWidgetIndexChange(i);
+            totalPrice("ceny_produktow.txt", ui->label_sum);
         });
+
     }
 }
 
@@ -409,7 +421,7 @@ void MainWindow::on_pushButton_3_clicked()
 void MainWindow::on_pushButton_2_clicked()
 {
 
-    //    goToNextPage();
+//    goToNextPage();
     resultFood = writeFoodToVectorOfObjects();
     showData(resultFood);
 

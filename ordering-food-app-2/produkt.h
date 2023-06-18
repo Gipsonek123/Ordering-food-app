@@ -23,7 +23,6 @@ public:
     void actualSum(QSpinBox* amountSpinBox, QLabel* priceLabel);
     ~Produkt();
 
-
 public slots:
 
 
@@ -36,7 +35,6 @@ private slots:
 
 private:
     Ui::Produkt *ui;
-
     void savingProducts(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel);
     friend class MainWindow;
 };

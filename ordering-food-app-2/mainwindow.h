@@ -29,6 +29,8 @@ public:
     void progressBarLoading(QProgressBar *progressBar);
     void updateProgressBar(QProgressBar *progressBar, QTimer* timer, int* value);
     void showData(std::vector<Food>);
+    void totalPrice(const QString& filePath, QLabel* window);
+
 signals:
     void changeProductStackedWidgetIndex(int index);
 private slots:
@@ -90,7 +92,6 @@ private:
     void savingProducts(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel);
     void cleanFile(const QString& file_patch);
     void readFileContents(const QString& filePath, QLabel* window);
-    void totalPrice(const QString& filePath, QLabel* window);
     void saveTextToFile(const QString& file_patch, const QString& text);
 
     int value = 0;

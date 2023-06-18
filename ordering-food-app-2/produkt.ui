@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>3</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QWidget" name="layoutWidget_2">
@@ -389,7 +389,7 @@
         <item>
          <widget class="QLabel" name="name41">
           <property name="text">
-           <string>Rosół</string>
+           <string>Grzybowa</string>
           </property>
          </widget>
         </item>
@@ -487,6 +487,19 @@
        </layout>
       </item>
      </layout>
+    </widget>
+    <widget class="QLabel" name="labelowska">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>220</y>
+       <width>63</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
     </widget>
    </widget>
    <widget class="QWidget" name="page_5">
