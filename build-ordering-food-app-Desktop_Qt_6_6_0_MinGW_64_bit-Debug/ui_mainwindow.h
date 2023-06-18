@@ -390,7 +390,7 @@ public:
         btnExit1->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgba(128,128,128,0.2);}\n"
+"background-color: rgba(128,128,128,0);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -731,9 +731,14 @@ public:
         btnExit2 = new QPushButton(page_13);
         btnExit2->setObjectName("btnExit2");
         btnExit2->setGeometry(QRect(420, 0, 31, 31));
-        btnExit2->setStyleSheet(QString::fromUtf8("border-image: url(:/img/img/startClickIcon2.svg);\n"
+        btnExit2->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgba(128,128,128,0.2);"));
+"background-color: rgba(128,128,128,0);}\n"
+"QPushButton:hover{\n"
+"border-image: url(:/img/img/ExitBtnWhite.svg);\n"
+"}\n"
+""));
         stackedWidget_2->addWidget(page_13);
         page_14 = new QWidget();
         page_14->setObjectName("page_14");
@@ -1055,7 +1060,7 @@ public:
         btnExit7->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgba(128,128,128,0.2);}\n"
+"background-color: rgba(128,128,128,0);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -1350,7 +1355,7 @@ public:
         btnExit3->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgba(128,128,128,0.2);}\n"
+"background-color: rgba(128,128,128,0);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -1448,7 +1453,7 @@ public:
         btnExit4->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgba(128,128,128,0.2);}\n"
+"background-color: rgba(128,128,128,0);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -1511,7 +1516,7 @@ public:
         btnExit5->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgba(128,128,128,0.2);}\n"
+"background-color: rgba(128,128,128,0);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -1540,7 +1545,7 @@ public:
         btnExit6->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgba(128,128,128,0.2);}\n"
+"background-color: rgba(128,128,128,0);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -1651,8 +1656,8 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
-        stackedWidget_2->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(3);
+        stackedWidget_2->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

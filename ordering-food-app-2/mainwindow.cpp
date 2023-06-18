@@ -120,15 +120,9 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-//void MainWindow::progressBarLoading()
 void MainWindow::progressBarLoading(QProgressBar* progressBar)
 {
     QTimer* timer = new QTimer(this);
-//    connect(timer, &QTimer::timeout, this, &MainWindow::updateProgressBar(progressBar));
-//    connect(timer, &QTimer::timeout, this, [=]() {
-//        updateProgressBar(progressBar); // Wywołanie updateProgressBar z przekazanym progressBar
-//    });
-//    static int value = 0;
     connect(timer, &QTimer::timeout, this, [=]() { MainWindow::updateProgressBar(progressBar, timer, &value);
     });
 //    updateProgressBar(progressBar)});
@@ -139,25 +133,14 @@ void MainWindow::progressBarLoading(QProgressBar* progressBar)
 //void MainWindow::updateProgressBar()
 void MainWindow::updateProgressBar(QProgressBar *progressBarName, QTimer* timer, int* value)
 {
-//    static int value = 0;
-//    ui->progressBar->setValue(value);
-    qDebug() << "Current value: " << *value << "tak: " << progressBarName;
     if (progressBarName && value) {
-//        QProgressBar* progressBarName = findChild<QProgressBar*>(progressBar);
-//        QString progressBarName = progressBar->objectName();
-//        MainWindow* mainWindow = qobject_cast<MainWindow*>(progressBar->parentWidget());
         progressBarName->setValue(*value);
-//        updateProgressBar(progressBar,*value);
         if (*value > 100) {
             // to ponizej robimy tylko po to, aby przeskoczylo nam o 1 strone, a nie do samego
-//            QTimer* timer = qobject_cast<QTimer*>(sender()); // Pobierz wskaźnik na QTimer
               timer->stop();
             goToNextPage();
-//            if (timer) {
-//            counter+=1;
            // Zatrzymaj QTimer
             *value = 0;
-//            }
     }
         (*value)++;
     }
@@ -401,14 +384,6 @@ void MainWindow::on_pushButton_1_clicked()
     progressBarLoading(ui->progressBar);
 }
 
-// na wynos
-void MainWindow::on_pushButton_3_clicked()
-{
-    goToNextPage();
-    resultFood = writeFoodToVectorOfObjects();
-    showData(resultFood);
-}
-
 // na miejscu
 void MainWindow::on_pushButton_2_clicked()
 {
@@ -421,17 +396,14 @@ void MainWindow::on_pushButton_2_clicked()
     goToNextPage();
 }
 
-//// przejdz do koszyka/poodsumowania
-//void MainWindow::on_pushButton_6_clicked()
-//{
-//    goToNextPage();
-//}
-
-// zaplac
-void MainWindow::on_pushButton_10_clicked()
+// na wynos
+void MainWindow::on_pushButton_3_clicked()
 {
     goToNextPage();
+    resultFood = writeFoodToVectorOfObjects();
+    showData(resultFood);
 }
+
 
 // karta online/tutaj
 void MainWindow::on_pushButton_4_clicked()
@@ -458,13 +430,6 @@ void MainWindow::on_pushButton_7_clicked()
     cleanFile("ceny_produktow.txt");
 }
 
-//przejdz dalej (Salatki)
-void MainWindow::on_pushButton_20_clicked()
-{
-    goToNextPage();
-    readFileContents("zamowione_produkty.txt", ui->label_summary);
-    totalPrice("ceny_produktow.txt", ui->label_total_price);
-}
 
 //w podsumowaniu zamowienia poprzednia strona
 void MainWindow::on_pushButton_8_clicked()
@@ -478,17 +443,32 @@ void MainWindow::on_pushButton_9_clicked()
     goToPreviousPage();
 }
 
+// zaplac
+void MainWindow::on_pushButton_10_clicked()
+{
+    goToNextPage();
+}
+
+void MainWindow::on_pushButton_18_clicked()
+{
+    goToPreviousPage();
+}
 
 void MainWindow::on_pushButton_19_clicked()
 {
     changeMenuPage();
 }
 
-
-void MainWindow::on_pushButton_18_clicked()
+//przejdz dalej (Salatki)
+void MainWindow::on_pushButton_20_clicked()
 {
-    goToPreviousPage();
+    goToNextPage();
+    readFileContents("zamowione_produkty.txt", ui->label_summary);
+    totalPrice("ceny_produktow.txt", ui->label_total_price);
 }
+
+
+
 
 
 

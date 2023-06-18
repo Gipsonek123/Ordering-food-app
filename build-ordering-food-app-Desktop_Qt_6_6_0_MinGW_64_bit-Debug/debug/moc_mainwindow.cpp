@@ -46,20 +46,20 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "clearData",
     "goToNextPage",
     "on_pushButton_1_clicked",
-    "on_pushButton_3_clicked",
     "on_pushButton_2_clicked",
-    "on_pushButton_10_clicked",
+    "on_pushButton_3_clicked",
     "on_pushButton_4_clicked",
     "on_pushButton_5_clicked",
     "on_pushButton_7_clicked",
-    "goToPreviousPage",
-    "changeMenuPage",
-    "goToFirstPage",
-    "on_pushButton_20_clicked",
     "on_pushButton_8_clicked",
     "on_pushButton_9_clicked",
+    "on_pushButton_10_clicked",
+    "on_pushButton_18_clicked",
     "on_pushButton_19_clicked",
-    "on_pushButton_18_clicked"
+    "on_pushButton_20_clicked",
+    "goToPreviousPage",
+    "changeMenuPage",
+    "goToFirstPage"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
@@ -73,18 +73,18 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata6[24];
     char stringdata7[24];
     char stringdata8[24];
-    char stringdata9[25];
+    char stringdata9[24];
     char stringdata10[24];
     char stringdata11[24];
     char stringdata12[24];
-    char stringdata13[17];
-    char stringdata14[15];
-    char stringdata15[14];
+    char stringdata13[24];
+    char stringdata14[25];
+    char stringdata15[25];
     char stringdata16[25];
-    char stringdata17[24];
-    char stringdata18[24];
-    char stringdata19[25];
-    char stringdata20[25];
+    char stringdata17[25];
+    char stringdata18[17];
+    char stringdata19[15];
+    char stringdata20[14];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -97,20 +97,20 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(50, 9),  // "clearData"
         QT_MOC_LITERAL(60, 12),  // "goToNextPage"
         QT_MOC_LITERAL(73, 23),  // "on_pushButton_1_clicked"
-        QT_MOC_LITERAL(97, 23),  // "on_pushButton_3_clicked"
-        QT_MOC_LITERAL(121, 23),  // "on_pushButton_2_clicked"
-        QT_MOC_LITERAL(145, 24),  // "on_pushButton_10_clicked"
-        QT_MOC_LITERAL(170, 23),  // "on_pushButton_4_clicked"
-        QT_MOC_LITERAL(194, 23),  // "on_pushButton_5_clicked"
-        QT_MOC_LITERAL(218, 23),  // "on_pushButton_7_clicked"
-        QT_MOC_LITERAL(242, 16),  // "goToPreviousPage"
-        QT_MOC_LITERAL(259, 14),  // "changeMenuPage"
-        QT_MOC_LITERAL(274, 13),  // "goToFirstPage"
-        QT_MOC_LITERAL(288, 24),  // "on_pushButton_20_clicked"
-        QT_MOC_LITERAL(313, 23),  // "on_pushButton_8_clicked"
-        QT_MOC_LITERAL(337, 23),  // "on_pushButton_9_clicked"
-        QT_MOC_LITERAL(361, 24),  // "on_pushButton_19_clicked"
-        QT_MOC_LITERAL(386, 24)   // "on_pushButton_18_clicked"
+        QT_MOC_LITERAL(97, 23),  // "on_pushButton_2_clicked"
+        QT_MOC_LITERAL(121, 23),  // "on_pushButton_3_clicked"
+        QT_MOC_LITERAL(145, 23),  // "on_pushButton_4_clicked"
+        QT_MOC_LITERAL(169, 23),  // "on_pushButton_5_clicked"
+        QT_MOC_LITERAL(193, 23),  // "on_pushButton_7_clicked"
+        QT_MOC_LITERAL(217, 23),  // "on_pushButton_8_clicked"
+        QT_MOC_LITERAL(241, 23),  // "on_pushButton_9_clicked"
+        QT_MOC_LITERAL(265, 24),  // "on_pushButton_10_clicked"
+        QT_MOC_LITERAL(290, 24),  // "on_pushButton_18_clicked"
+        QT_MOC_LITERAL(315, 24),  // "on_pushButton_19_clicked"
+        QT_MOC_LITERAL(340, 24),  // "on_pushButton_20_clicked"
+        QT_MOC_LITERAL(365, 16),  // "goToPreviousPage"
+        QT_MOC_LITERAL(382, 14),  // "changeMenuPage"
+        QT_MOC_LITERAL(397, 13)   // "goToFirstPage"
     },
     "MainWindow",
     "changeProductStackedWidgetIndex",
@@ -119,20 +119,20 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "clearData",
     "goToNextPage",
     "on_pushButton_1_clicked",
-    "on_pushButton_3_clicked",
     "on_pushButton_2_clicked",
-    "on_pushButton_10_clicked",
+    "on_pushButton_3_clicked",
     "on_pushButton_4_clicked",
     "on_pushButton_5_clicked",
     "on_pushButton_7_clicked",
-    "goToPreviousPage",
-    "changeMenuPage",
-    "goToFirstPage",
-    "on_pushButton_20_clicked",
     "on_pushButton_8_clicked",
     "on_pushButton_9_clicked",
+    "on_pushButton_10_clicked",
+    "on_pushButton_18_clicked",
     "on_pushButton_19_clicked",
-    "on_pushButton_18_clicked"
+    "on_pushButton_20_clicked",
+    "goToPreviousPage",
+    "changeMenuPage",
+    "goToFirstPage"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -216,11 +216,9 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButton_1_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_pushButton_3_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButton_2_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_pushButton_10_clicked'
+        // method 'on_pushButton_3_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButton_4_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
@@ -228,21 +226,23 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButton_7_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_8_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_9_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_10_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_18_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_19_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_20_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'goToPreviousPage'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'changeMenuPage'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'goToFirstPage'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_pushButton_20_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_pushButton_8_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_pushButton_9_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_pushButton_19_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_pushButton_18_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -258,20 +258,20 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->clearData(); break;
         case 2: _t->goToNextPage(); break;
         case 3: _t->on_pushButton_1_clicked(); break;
-        case 4: _t->on_pushButton_3_clicked(); break;
-        case 5: _t->on_pushButton_2_clicked(); break;
-        case 6: _t->on_pushButton_10_clicked(); break;
-        case 7: _t->on_pushButton_4_clicked(); break;
-        case 8: _t->on_pushButton_5_clicked(); break;
-        case 9: _t->on_pushButton_7_clicked(); break;
-        case 10: _t->goToPreviousPage(); break;
-        case 11: _t->changeMenuPage(); break;
-        case 12: _t->goToFirstPage(); break;
-        case 13: _t->on_pushButton_20_clicked(); break;
-        case 14: _t->on_pushButton_8_clicked(); break;
-        case 15: _t->on_pushButton_9_clicked(); break;
-        case 16: _t->on_pushButton_19_clicked(); break;
-        case 17: _t->on_pushButton_18_clicked(); break;
+        case 4: _t->on_pushButton_2_clicked(); break;
+        case 5: _t->on_pushButton_3_clicked(); break;
+        case 6: _t->on_pushButton_4_clicked(); break;
+        case 7: _t->on_pushButton_5_clicked(); break;
+        case 8: _t->on_pushButton_7_clicked(); break;
+        case 9: _t->on_pushButton_8_clicked(); break;
+        case 10: _t->on_pushButton_9_clicked(); break;
+        case 11: _t->on_pushButton_10_clicked(); break;
+        case 12: _t->on_pushButton_18_clicked(); break;
+        case 13: _t->on_pushButton_19_clicked(); break;
+        case 14: _t->on_pushButton_20_clicked(); break;
+        case 15: _t->goToPreviousPage(); break;
+        case 16: _t->changeMenuPage(); break;
+        case 17: _t->goToFirstPage(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
