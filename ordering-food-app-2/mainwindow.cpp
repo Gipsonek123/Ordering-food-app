@@ -450,6 +450,7 @@ void MainWindow::on_pushButton_5_clicked()
 {
     //dodac progressbar, zrobic aby byl uniwersalny
     goToNextPage();
+    orderNumber();
 }
 
 //wyswietl paragon
