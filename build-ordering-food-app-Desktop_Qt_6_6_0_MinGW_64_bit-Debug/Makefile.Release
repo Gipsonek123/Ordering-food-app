@@ -117,12 +117,16 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_resource.cpp
 release/qrc_resource.cpp: ../ordering-food-app-2/resource.qrc \
 		C:/Qt/6.6.0/mingw_64/bin/rcc.exe \
+		../ordering-food-app-2/img/restaurantBackground.jpg \
 		../ordering-food-app-2/img/burger4.jpg \
 		../ordering-food-app-2/img/order.jpg \
+		../ordering-food-app-2/img/truck1.jpg \
 		../ordering-food-app-2/img/ExitBtnWhite.svg \
 		../ordering-food-app-2/img/menu.jpg \
 		../ordering-food-app-2/img/x.png \
+		../ordering-food-app-2/img/waiting.jpg \
 		../ordering-food-app-2/img/cancel.svg \
+		../ordering-food-app-2/img/fastfood.jpg \
 		../ordering-food-app-2/img/progressbar2.jpg \
 		../ordering-food-app-2/img/startClickIcon2.svg \
 		../ordering-food-app-2/img/paying.png \
@@ -133,7 +137,9 @@ release/qrc_resource.cpp: ../ordering-food-app-2/resource.qrc \
 		../ordering-food-app-2/img/restaurant2.jpg \
 		../ordering-food-app-2/img/restaurant.jpg \
 		../ordering-food-app-2/img/recipe.jpg \
-		../ordering-food-app-2/img/burger.jpg
+		../ordering-food-app-2/img/drink.jpg \
+		../ordering-food-app-2/img/burger.jpg \
+		../ordering-food-app-2/img/coffee.jpg
 	C:\Qt\6.6.0\mingw_64\bin\rcc.exe -name resource --no-zstd ..\ordering-food-app-2\resource.qrc -o release\qrc_resource.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -1072,12 +1078,27 @@ release/main.o: ../ordering-food-app-2/main.cpp ../ordering-food-app-2/mainwindo
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QDialog \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qdialog.h \
 		ui_produkt.h \
-		ui_mainwindow.h \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QVBoxLayout \
+		ui_mainwindow.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/QIcon \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qstatusbar.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QLocale \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QTranslator \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QTimer
@@ -1264,14 +1285,42 @@ release/mainwindow.o: ../ordering-food-app-2/mainwindow.cpp ../ordering-food-app
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QDialog \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qdialog.h \
 		ui_produkt.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QWidget \
 		../ordering-food-app-2/mainwindow.h \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QProgressBar \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qprogressbar.h \
-		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QThread \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
 		../ordering-food-app-2/dbmanager.h \
 		C:/Qt/6.6.0/mingw_64/include/QtSql/QtSql \
 		C:/Qt/6.6.0/mingw_64/include/QtSql/QtSqlDepends \
@@ -1283,25 +1332,12 @@ release/mainwindow.o: ../ordering-food-app-2/mainwindow.cpp ../ordering-food-app
 		C:/Qt/6.6.0/mingw_64/include/QtCore/q23functional.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qabstractanimation.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qabstractitemmodel.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qabstractnativeeventfilter.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qabstractproxymodel.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qanimationgroup.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qapplicationstatic.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QMutex \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qassociativeiterable.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qbasictimer.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qbitarray.h \
@@ -1400,7 +1436,6 @@ release/mainwindow.o: ../ordering-food-app-2/mainwindow.cpp ../ordering-food-app
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qurlquery.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qvarianthash.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QHash \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/QVariant \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QString \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qvariantlist.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qvariantmap.h \
@@ -1442,6 +1477,12 @@ release/mainwindow.o: ../ordering-food-app-2/mainwindow.cpp ../ordering-food-app
 		C:/Qt/6.6.0/mingw_64/include/QtSql/qtsqlversion.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QDebug \
 		ui_mainwindow.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/QIcon \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qstatusbar.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QTimer \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QFile \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QLineEdit \
@@ -1638,14 +1679,42 @@ release/produkt.o: ../ordering-food-app-2/produkt.cpp ../ordering-food-app-2/pro
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QDialog \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qdialog.h \
 		ui_produkt.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QWidget \
 		../ordering-food-app-2/mainwindow.h \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QProgressBar \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qprogressbar.h \
-		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QThread \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
 		../ordering-food-app-2/dbmanager.h \
 		C:/Qt/6.6.0/mingw_64/include/QtSql/QtSql \
 		C:/Qt/6.6.0/mingw_64/include/QtSql/QtSqlDepends \
@@ -1657,25 +1726,12 @@ release/produkt.o: ../ordering-food-app-2/produkt.cpp ../ordering-food-app-2/pro
 		C:/Qt/6.6.0/mingw_64/include/QtCore/q23functional.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qabstractanimation.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qabstractitemmodel.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qabstractnativeeventfilter.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qabstractproxymodel.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qanimationgroup.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qapplicationstatic.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QMutex \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qassociativeiterable.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qbasictimer.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qbitarray.h \
@@ -1774,7 +1830,6 @@ release/produkt.o: ../ordering-food-app-2/produkt.cpp ../ordering-food-app-2/pro
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qurlquery.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qvarianthash.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QHash \
-		C:/Qt/6.6.0/mingw_64/include/QtCore/QVariant \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QString \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qvariantlist.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/qvariantmap.h \
@@ -1816,6 +1871,12 @@ release/produkt.o: ../ordering-food-app-2/produkt.cpp ../ordering-food-app-2/pro
 		C:/Qt/6.6.0/mingw_64/include/QtSql/qtsqlversion.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QDebug \
 		ui_mainwindow.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/QIcon \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qstatusbar.h \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QTimer \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QFile \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QLineEdit \
@@ -2524,7 +2585,27 @@ release/showdata.o: ../ordering-food-app-2/showdata.cpp ../ordering-food-app-2/d
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qprogressbar.h \
 		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Qt/6.6.0/mingw_64/include/QtCore/QThread \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/QIcon \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.6.0/mingw_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\showdata.o ..\ordering-food-app-2\showdata.cpp
 
 release/qrc_resource.o: release/qrc_resource.cpp 

@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QLabel" name="label_5">
@@ -119,16 +119,16 @@ QPushButton:pressed{
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>120</x>
+        <x>100</x>
         <y>210</y>
-        <width>231</width>
+        <width>281</width>
         <height>20</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">	color: white;
+       <string notr="true">	color: yellow;
     background-color: rgba(120, 157, 83, 0.1);
-	font: 350 10pt &quot;Cascadia Code SemiLight&quot;;
+	font: 500 11pt &quot;Cascadia Code SemiLight&quot;;
 </string>
       </property>
       <property name="text">
@@ -213,14 +213,17 @@ QProgressBar::chunk {
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>0</x>
         <y>-10</y>
-        <width>421</width>
+        <width>481</width>
         <height>631</height>
        </rect>
       </property>
       <property name="text">
        <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_2">
@@ -368,9 +371,9 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>30</y>
-          <width>461</width>
-          <height>521</height>
+          <y>40</y>
+          <width>510</width>
+          <height>511</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_88">
@@ -889,7 +892,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
          <rect>
           <x>0</x>
           <y>40</y>
-          <width>461</width>
+          <width>510</width>
           <height>511</height>
          </rect>
         </property>
@@ -1642,6 +1645,23 @@ QPushButton:pressed{
        </item>
       </layout>
      </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>-8</x>
+        <y>-11</y>
+        <width>501</width>
+        <height>651</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_2</zorder>
+     <zorder>stackedWidget_2</zorder>
+     <zorder>layoutWidget_4</zorder>
+     <zorder>layoutWidget</zorder>
     </widget>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label">
