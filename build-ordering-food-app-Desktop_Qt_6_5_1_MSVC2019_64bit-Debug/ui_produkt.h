@@ -2327,7 +2327,7 @@ public:
 
         retranslateUi(Produkt);
 
-        stackedProductWidget->setCurrentIndex(3);
+        stackedProductWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(Produkt);

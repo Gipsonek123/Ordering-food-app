@@ -31,21 +31,14 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_10->setPixmap(takeaway);
 
     // przyciski "wyjscia"
-    connect(ui->btnExit1, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
-    connect(ui->btnExit2, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
-    connect(ui->btnExit3, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
-    connect(ui->btnExit4, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
-    connect(ui->btnExit5, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
-    connect(ui->btnExit6, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
-    connect(ui->btnExit7, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
+    connect(ui->btnExit1, &QPushButton::clicked, this, &MainWindow::resetData);
+    connect(ui->btnExit2, &QPushButton::clicked, this, &MainWindow::resetData);
+    connect(ui->btnExit3, &QPushButton::clicked, this, &MainWindow::resetData);
+    connect(ui->btnExit4, &QPushButton::clicked, this, &MainWindow::resetData);
+    connect(ui->btnExit5, &QPushButton::clicked, this, &MainWindow::resetData);
+    connect(ui->btnExit6, &QPushButton::clicked, this, &MainWindow::resetData);
+    connect(ui->btnExit7, &QPushButton::clicked, this, &MainWindow::resetData);
 
-    connect(ui->btnExit1, &QPushButton::clicked, this, &MainWindow::clearData);
-    connect(ui->btnExit2, &QPushButton::clicked, this, &MainWindow::clearData);
-    connect(ui->btnExit3, &QPushButton::clicked, this, &MainWindow::clearData);
-    connect(ui->btnExit4, &QPushButton::clicked, this, &MainWindow::clearData);
-    connect(ui->btnExit5, &QPushButton::clicked, this, &MainWindow::clearData);
-    connect(ui->btnExit6, &QPushButton::clicked, this, &MainWindow::clearData);
-    connect(ui->btnExit7, &QPushButton::clicked, this, &MainWindow::clearData);
 
 
 
@@ -187,11 +180,6 @@ void MainWindow::goToPreviousPage()
     {
         ui->stackedWidget->setCurrentIndex(previousPageIndex);
     }
-}
-
-void MainWindow::goToFirstPage()
-{
-    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void MainWindow::changeMenuPage()
@@ -381,6 +369,11 @@ void MainWindow::saveTextToFile(const QString& file_patch, const QString& text)
     }
 }
 
+void MainWindow::goToFirstPage()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
 void MainWindow::clearData()
 {
     cleanFile("zamowione_produkty.txt");
@@ -390,7 +383,11 @@ void MainWindow::clearData()
     ui->label_receipt_3->clear();
 }
 
-
+void MainWindow::resetData()
+{
+    clearData();
+    goToFirstPage();
+}
 
 void MainWindow::on_pushButton_clicked()
 {
@@ -486,6 +483,7 @@ void MainWindow::on_pushButton_20_clicked()
 {
     goToNextPage();
     readFileContents("zamowione_produkty.txt", ui->label_summary);
+    totalPrice("ceny_produktow.txt", ui->label_total_price);
 
 }
 
