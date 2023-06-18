@@ -17,11 +17,5 @@
         <file>img/burger4.jpg</file>
         <file>img/cancel.svg</file>
         <file>img/ExitBtnWhite.svg</file>
-        <file>img/waiting.jpg</file>
-        <file>img/restaurantBackground.jpg</file>
-        <file>img/fastfood.jpg</file>
-        <file>img/drink.jpg</file>
-        <file>img/truck1.jpg</file>
-        <file>img/coffee.jpg</file>
     </qresource>
 </RCC>

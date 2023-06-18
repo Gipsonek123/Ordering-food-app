@@ -170,7 +170,6 @@ public:
     QPushButton *pushButton_18;
     QPushButton *pushButton_19;
     QPushButton *pushButton_20;
-    QLabel *label_2;
     QWidget *page;
     QLabel *label;
     QWidget *layoutWidget1;
@@ -278,10 +277,10 @@ public:
         progressBar_2->setObjectName("progressBar_2");
         label_6 = new QLabel(progressBar_2);
         label_6->setObjectName("label_6");
-        label_6->setGeometry(QRect(100, 210, 281, 20));
-        label_6->setStyleSheet(QString::fromUtf8("	color: yellow;\n"
+        label_6->setGeometry(QRect(120, 210, 231, 20));
+        label_6->setStyleSheet(QString::fromUtf8("	color: white;\n"
 "    background-color: rgba(120, 157, 83, 0.1);\n"
-"	font: 500 11pt \"Cascadia Code SemiLight\";\n"
+"	font: 350 10pt \"Cascadia Code SemiLight\";\n"
 ""));
         progressBar = new QProgressBar(progressBar_2);
         progressBar->setObjectName("progressBar");
@@ -326,8 +325,7 @@ public:
 "	text-align: center;"));
         label_10 = new QLabel(secondPage);
         label_10->setObjectName("label_10");
-        label_10->setGeometry(QRect(0, -10, 481, 631));
-        label_10->setScaledContents(true);
+        label_10->setGeometry(QRect(30, -10, 421, 631));
         pushButton_2 = new QPushButton(secondPage);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(90, 390, 300, 50));
@@ -413,7 +411,7 @@ public:
         page_13->setObjectName("page_13");
         layoutWidget_5 = new QWidget(page_13);
         layoutWidget_5->setObjectName("layoutWidget_5");
-        layoutWidget_5->setGeometry(QRect(0, 40, 510, 511));
+        layoutWidget_5->setGeometry(QRect(0, 30, 461, 521));
         verticalLayout_88 = new QVBoxLayout(layoutWidget_5);
         verticalLayout_88->setSpacing(2);
         verticalLayout_88->setObjectName("verticalLayout_88");
@@ -746,7 +744,7 @@ public:
         page_14->setObjectName("page_14");
         layoutWidget_3 = new QWidget(page_14);
         layoutWidget_3->setObjectName("layoutWidget_3");
-        layoutWidget_3->setGeometry(QRect(0, 40, 510, 511));
+        layoutWidget_3->setGeometry(QRect(0, 40, 461, 511));
         verticalLayout_75 = new QVBoxLayout(layoutWidget_3);
         verticalLayout_75->setSpacing(2);
         verticalLayout_75->setObjectName("verticalLayout_75");
@@ -1236,14 +1234,7 @@ public:
 
         horizontalLayout_12->addWidget(pushButton_20);
 
-        label_2 = new QLabel(page_12);
-        label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(-8, -11, 501, 651));
         stackedWidget->addWidget(page_12);
-        label_2->raise();
-        stackedWidget_2->raise();
-        layoutWidget_4->raise();
-        layoutWidget2->raise();
         page = new QWidget();
         page->setObjectName("page");
         label = new QLabel(page);
@@ -1665,7 +1656,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(3);
         stackedWidget_2->setCurrentIndex(1);
 
 
@@ -1753,7 +1744,6 @@ public:
         pushButton_18->setText(QCoreApplication::translate("MainWindow", "Anuluj", nullptr));
         pushButton_19->setText(QCoreApplication::translate("MainWindow", "Zobacz wi\304\231cej", nullptr));
         pushButton_20->setText(QCoreApplication::translate("MainWindow", "Przejd\305\272 dalej", nullptr));
-        label_2->setText(QString());
         label->setText(QCoreApplication::translate("MainWindow", "Podsumowanie zam\303\263wienia", nullptr));
         pushButton_10->setText(QCoreApplication::translate("MainWindow", "Zap\305\202a\304\207", nullptr));
         pushButton_9->setText(QCoreApplication::translate("MainWindow", "Kup taniej", nullptr));

@@ -23,15 +23,12 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QPixmap pix(":/img/img/drink.jpg");
-    QPixmap loading(":/img/img/truck1.jpg");
-    QPixmap takeaway(":/img/img/coffee.jpg");
-    QPixmap menu(":/img/img/emptyMenu.jpg");
-
+    QPixmap pix(":/img/img/startPict2.jpg");
+    QPixmap loading(":/img/img/loading.jpg");
+    QPixmap takeaway(":/img/img/menu.jpg");
     ui->label_5->setPixmap(pix);
     ui->label_9->setPixmap(loading);
     ui->label_10->setPixmap(takeaway);
-    ui->label_2->setPixmap(menu);
 
     // przyciski "wyjscia"
     connect(ui->btnExit1, &QPushButton::clicked, this, &MainWindow::resetData);
@@ -140,7 +137,6 @@ void MainWindow::updateProgressBar(QProgressBar *progressBarName, QTimer* timer,
         progressBarName->setValue(*value);
         if (*value > 100) {
             // to ponizej robimy tylko po to, aby przeskoczylo nam o 1 strone, a nie do samego
-//            QTimer* timer = qobject_cast<QTimer*>(sender()); // Pobierz wskaźnik na QTimer
               timer->stop();
             goToNextPage();
            // Zatrzymaj QTimer
