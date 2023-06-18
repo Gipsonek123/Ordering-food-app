@@ -106,7 +106,7 @@ void Produkt::handleStackedWidgetIndexChange(int index)
 
 void Produkt::on_pushButton_2_clicked()
 {
-    //actual_sum(ui->Amount_item_1, ui->price_1);
+    //actualSum(ui->amountItem11, ui->price11);
 
     for (int i = 1; i <= 99; ++i)
     {
