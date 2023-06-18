@@ -20,7 +20,7 @@ class Produkt : public QDialog
 
 public:
     explicit Produkt(QWidget *parent = nullptr);
-    void actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel);
+    void actualSum(QSpinBox* amountSpinBox, QLabel* priceLabel);
     ~Produkt();
 
 
@@ -37,7 +37,7 @@ private slots:
 private:
     Ui::Produkt *ui;
 
-    void saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel);
+    void savingProducts(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel);
     friend class MainWindow;
 };
 

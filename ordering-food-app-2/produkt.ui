@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>10</number>
+    <number>3</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QWidget" name="layoutWidget_2">
@@ -39,14 +39,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
-         <widget class="QLabel" name="name_1_1">
+         <widget class="QLabel" name="name11">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_1_1">
+         <widget class="QLabel" name="price11">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -64,7 +64,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_1_1"/>
+         <widget class="QSpinBox" name="amountItem11"/>
         </item>
        </layout>
       </item>
@@ -78,63 +78,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_37">
         <item>
-         <widget class="QLabel" name="name_1_2">
+         <widget class="QLabel" name="name12">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_1_2">
+         <widget class="QLabel" name="price12">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_1_2"/>
+         <widget class="QSpinBox" name="amountItem12"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_38">
         <item>
-         <widget class="QLabel" name="name_1_3">
+         <widget class="QLabel" name="name13">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_1_3">
+         <widget class="QLabel" name="price13">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_1_3"/>
+         <widget class="QSpinBox" name="amountItem13"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_39">
         <item>
-         <widget class="QLabel" name="name_1_4">
+         <widget class="QLabel" name="name14">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_1_4">
+         <widget class="QLabel" name="price14">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_1_4"/>
+         <widget class="QSpinBox" name="amountItem14"/>
         </item>
        </layout>
       </item>
@@ -155,14 +155,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
-         <widget class="QLabel" name="name_2_1">
+         <widget class="QLabel" name="name21">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_2_1">
+         <widget class="QLabel" name="price21">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -180,7 +180,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_2_1"/>
+         <widget class="QSpinBox" name="amountItem21"/>
         </item>
        </layout>
       </item>
@@ -194,63 +194,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_41">
         <item>
-         <widget class="QLabel" name="name_2_2">
+         <widget class="QLabel" name="name22">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_2_2">
+         <widget class="QLabel" name="price22">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_2_2"/>
+         <widget class="QSpinBox" name="amountItem22"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_42">
         <item>
-         <widget class="QLabel" name="name_2_3">
+         <widget class="QLabel" name="name23">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_2_3">
+         <widget class="QLabel" name="price23">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_2_3"/>
+         <widget class="QSpinBox" name="amountItem23"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_43">
         <item>
-         <widget class="QLabel" name="name_2_4">
+         <widget class="QLabel" name="name24">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_2_4">
+         <widget class="QLabel" name="price24">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_2_4"/>
+         <widget class="QSpinBox" name="amountItem24"/>
         </item>
        </layout>
       </item>
@@ -271,14 +271,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_5">
         <item>
-         <widget class="QLabel" name="name_3_1">
+         <widget class="QLabel" name="name31">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_3_1">
+         <widget class="QLabel" name="price31">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -296,7 +296,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_3_1"/>
+         <widget class="QSpinBox" name="amountItem31"/>
         </item>
        </layout>
       </item>
@@ -310,63 +310,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_45">
         <item>
-         <widget class="QLabel" name="name_3_2">
+         <widget class="QLabel" name="name32">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_3_2">
+         <widget class="QLabel" name="price32">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_3_2"/>
+         <widget class="QSpinBox" name="amountItem32"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_46">
         <item>
-         <widget class="QLabel" name="name_3_3">
+         <widget class="QLabel" name="name33">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_3_3">
+         <widget class="QLabel" name="price33">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_3_3"/>
+         <widget class="QSpinBox" name="amountItem33"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_47">
         <item>
-         <widget class="QLabel" name="name_3_4">
+         <widget class="QLabel" name="name34">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_3_4">
+         <widget class="QLabel" name="price34">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_3_4"/>
+         <widget class="QSpinBox" name="amountItem34"/>
         </item>
        </layout>
       </item>
@@ -387,14 +387,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_6">
         <item>
-         <widget class="QLabel" name="name_4_1">
+         <widget class="QLabel" name="name41">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_4_1">
+         <widget class="QLabel" name="price41">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -412,7 +412,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_4_1"/>
+         <widget class="QSpinBox" name="amountItem41"/>
         </item>
        </layout>
       </item>
@@ -426,63 +426,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_49">
         <item>
-         <widget class="QLabel" name="name_4_2">
+         <widget class="QLabel" name="name42">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_4_2">
+         <widget class="QLabel" name="price42">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_4_2"/>
+         <widget class="QSpinBox" name="amountItem42"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_50">
         <item>
-         <widget class="QLabel" name="name_4_3">
+         <widget class="QLabel" name="name43">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_4_3">
+         <widget class="QLabel" name="price43">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_4_3"/>
+         <widget class="QSpinBox" name="amountItem43"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_51">
         <item>
-         <widget class="QLabel" name="name_4_4">
+         <widget class="QLabel" name="name44">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_4_4">
+         <widget class="QLabel" name="price44">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_4_4"/>
+         <widget class="QSpinBox" name="amountItem44"/>
         </item>
        </layout>
       </item>
@@ -503,14 +503,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_7">
         <item>
-         <widget class="QLabel" name="name_5_1">
+         <widget class="QLabel" name="name51">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_5_1">
+         <widget class="QLabel" name="price51">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -528,7 +528,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_5_1"/>
+         <widget class="QSpinBox" name="amountItem51"/>
         </item>
        </layout>
       </item>
@@ -542,63 +542,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_53">
         <item>
-         <widget class="QLabel" name="name_5_2">
+         <widget class="QLabel" name="name52">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_5_2">
+         <widget class="QLabel" name="price52">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_5_2"/>
+         <widget class="QSpinBox" name="amountItem52"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_54">
         <item>
-         <widget class="QLabel" name="name_5_3">
+         <widget class="QLabel" name="name53">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_5_3">
+         <widget class="QLabel" name="price53">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_5_3"/>
+         <widget class="QSpinBox" name="amountItem53"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_55">
         <item>
-         <widget class="QLabel" name="name_5_4">
+         <widget class="QLabel" name="name54">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_5_4">
+         <widget class="QLabel" name="price54">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_5_4"/>
+         <widget class="QSpinBox" name="amountItem54"/>
         </item>
        </layout>
       </item>
@@ -619,14 +619,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_8">
         <item>
-         <widget class="QLabel" name="name_6_1">
+         <widget class="QLabel" name="name61">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_6_1">
+         <widget class="QLabel" name="price61">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -644,7 +644,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_6_1"/>
+         <widget class="QSpinBox" name="amountItem61"/>
         </item>
        </layout>
       </item>
@@ -658,63 +658,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_57">
         <item>
-         <widget class="QLabel" name="name_6_2">
+         <widget class="QLabel" name="name62">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_6_2">
+         <widget class="QLabel" name="price62">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_6_2"/>
+         <widget class="QSpinBox" name="amountItem62"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_58">
         <item>
-         <widget class="QLabel" name="name_6_3">
+         <widget class="QLabel" name="name63">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_6_3">
+         <widget class="QLabel" name="price63">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_6_3"/>
+         <widget class="QSpinBox" name="amountItem63"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_59">
         <item>
-         <widget class="QLabel" name="name_6_4">
+         <widget class="QLabel" name="name64">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_6_4">
+         <widget class="QLabel" name="price64">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_6_4"/>
+         <widget class="QSpinBox" name="amountItem64"/>
         </item>
        </layout>
       </item>
@@ -735,14 +735,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_9">
         <item>
-         <widget class="QLabel" name="name_7_1">
+         <widget class="QLabel" name="name71">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_7_1">
+         <widget class="QLabel" name="price71">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -760,7 +760,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_7_1"/>
+         <widget class="QSpinBox" name="amountItem71"/>
         </item>
        </layout>
       </item>
@@ -774,63 +774,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_61">
         <item>
-         <widget class="QLabel" name="name_7_2">
+         <widget class="QLabel" name="name72">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_7_2">
+         <widget class="QLabel" name="price72">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_7_2"/>
+         <widget class="QSpinBox" name="amountItem72"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_62">
         <item>
-         <widget class="QLabel" name="name_7_3">
+         <widget class="QLabel" name="name73">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_7_3">
+         <widget class="QLabel" name="price73">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_7_3"/>
+         <widget class="QSpinBox" name="amountItem73"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_63">
         <item>
-         <widget class="QLabel" name="name_7_4">
+         <widget class="QLabel" name="name74">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_7_4">
+         <widget class="QLabel" name="price74">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_7_4"/>
+         <widget class="QSpinBox" name="amountItem74"/>
         </item>
        </layout>
       </item>
@@ -851,14 +851,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_10">
         <item>
-         <widget class="QLabel" name="name_8_1">
+         <widget class="QLabel" name="name81">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_8_1">
+         <widget class="QLabel" name="price81">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -876,7 +876,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_8_1"/>
+         <widget class="QSpinBox" name="amountItem81"/>
         </item>
        </layout>
       </item>
@@ -890,63 +890,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_65">
         <item>
-         <widget class="QLabel" name="name_8_2">
+         <widget class="QLabel" name="name82">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_8_2">
+         <widget class="QLabel" name="price82">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_8_2"/>
+         <widget class="QSpinBox" name="amountItem82"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_66">
         <item>
-         <widget class="QLabel" name="name_8_3">
+         <widget class="QLabel" name="name83">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_8_3">
+         <widget class="QLabel" name="price83">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_8_3"/>
+         <widget class="QSpinBox" name="amountItem83"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_67">
         <item>
-         <widget class="QLabel" name="name_8_4">
+         <widget class="QLabel" name="name84">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_8_4">
+         <widget class="QLabel" name="price84">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_8_4"/>
+         <widget class="QSpinBox" name="amountItem84"/>
         </item>
        </layout>
       </item>
@@ -967,14 +967,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_11">
         <item>
-         <widget class="QLabel" name="name_9_1">
+         <widget class="QLabel" name="name91">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_9_1">
+         <widget class="QLabel" name="price91">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -992,7 +992,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_9_1"/>
+         <widget class="QSpinBox" name="amountItem91"/>
         </item>
        </layout>
       </item>
@@ -1006,63 +1006,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_69">
         <item>
-         <widget class="QLabel" name="name_9_2">
+         <widget class="QLabel" name="name92">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_9_2">
+         <widget class="QLabel" name="price92">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_9_2"/>
+         <widget class="QSpinBox" name="amountItem92"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_70">
         <item>
-         <widget class="QLabel" name="name_9_3">
+         <widget class="QLabel" name="name93">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_9_3">
+         <widget class="QLabel" name="price93">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_9_3"/>
+         <widget class="QSpinBox" name="amountItem93"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_71">
         <item>
-         <widget class="QLabel" name="name_9_4">
+         <widget class="QLabel" name="name94">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_9_4">
+         <widget class="QLabel" name="price94">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_9_4"/>
+         <widget class="QSpinBox" name="amountItem94"/>
         </item>
        </layout>
       </item>
@@ -1083,14 +1083,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_12">
         <item>
-         <widget class="QLabel" name="name_10_1">
+         <widget class="QLabel" name="name101">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_10_1">
+         <widget class="QLabel" name="price101">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -1108,7 +1108,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_10_1"/>
+         <widget class="QSpinBox" name="amountItem101"/>
         </item>
        </layout>
       </item>
@@ -1122,63 +1122,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_73">
         <item>
-         <widget class="QLabel" name="name_10_2">
+         <widget class="QLabel" name="name102">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_10_2">
+         <widget class="QLabel" name="price102">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_10_2"/>
+         <widget class="QSpinBox" name="amountItem102"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_74">
         <item>
-         <widget class="QLabel" name="name_10_3">
+         <widget class="QLabel" name="name103">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_10_3">
+         <widget class="QLabel" name="price103">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_10_3"/>
+         <widget class="QSpinBox" name="amountItem103"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_75">
         <item>
-         <widget class="QLabel" name="name_10_4">
+         <widget class="QLabel" name="name104">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_10_4">
+         <widget class="QLabel" name="price104">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_10_4"/>
+         <widget class="QSpinBox" name="amountItem104"/>
         </item>
        </layout>
       </item>
@@ -1199,14 +1199,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_14">
         <item>
-         <widget class="QLabel" name="name_11_1">
+         <widget class="QLabel" name="name111">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_11_1">
+         <widget class="QLabel" name="price111">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -1224,7 +1224,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_11_1"/>
+         <widget class="QSpinBox" name="amountItem111"/>
         </item>
        </layout>
       </item>
@@ -1238,63 +1238,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_81">
         <item>
-         <widget class="QLabel" name="name_11_2">
+         <widget class="QLabel" name="name112">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_11_2">
+         <widget class="QLabel" name="price112">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_11_2"/>
+         <widget class="QSpinBox" name="amountItem112"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_82">
         <item>
-         <widget class="QLabel" name="name_11_3">
+         <widget class="QLabel" name="name113">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_11_3">
+         <widget class="QLabel" name="price113">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_11_3"/>
+         <widget class="QSpinBox" name="amountItem113"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_83">
         <item>
-         <widget class="QLabel" name="name_11_4">
+         <widget class="QLabel" name="name114">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_1_11_4">
+         <widget class="QLabel" name="price114">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_11_4"/>
+         <widget class="QSpinBox" name="amountItem114"/>
         </item>
        </layout>
       </item>
@@ -1315,14 +1315,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_15">
         <item>
-         <widget class="QLabel" name="name_12_1">
+         <widget class="QLabel" name="name121">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_12_1">
+         <widget class="QLabel" name="price121">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -1340,7 +1340,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_12_1"/>
+         <widget class="QSpinBox" name="amountItem121"/>
         </item>
        </layout>
       </item>
@@ -1354,63 +1354,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_85">
         <item>
-         <widget class="QLabel" name="name_12_2">
+         <widget class="QLabel" name="name122">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_12_2">
+         <widget class="QLabel" name="price122">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_12_2"/>
+         <widget class="QSpinBox" name="amountItem122"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_86">
         <item>
-         <widget class="QLabel" name="name_12_3">
+         <widget class="QLabel" name="name123">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_12_3">
+         <widget class="QLabel" name="price123">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_12_3"/>
+         <widget class="QSpinBox" name="amountItem123"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_87">
         <item>
-         <widget class="QLabel" name="name_12_4">
+         <widget class="QLabel" name="name124">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_12_4">
+         <widget class="QLabel" name="price124">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_12_4"/>
+         <widget class="QSpinBox" name="amountItem124"/>
         </item>
        </layout>
       </item>
@@ -1431,14 +1431,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_16">
         <item>
-         <widget class="QLabel" name="name_13_1">
+         <widget class="QLabel" name="name131">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_13_1">
+         <widget class="QLabel" name="price131">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -1456,7 +1456,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_13_1"/>
+         <widget class="QSpinBox" name="amountItem131"/>
         </item>
        </layout>
       </item>
@@ -1470,63 +1470,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_89">
         <item>
-         <widget class="QLabel" name="name_13_2">
+         <widget class="QLabel" name="name132">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_13_2">
+         <widget class="QLabel" name="price132">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_13_2"/>
+         <widget class="QSpinBox" name="amountItem132"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_90">
         <item>
-         <widget class="QLabel" name="name_13_3">
+         <widget class="QLabel" name="name133">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_13_3">
+         <widget class="QLabel" name="price133">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_13_3"/>
+         <widget class="QSpinBox" name="amountItem133"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_91">
         <item>
-         <widget class="QLabel" name="name_13_4">
+         <widget class="QLabel" name="name134">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_13_4">
+         <widget class="QLabel" name="price134">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_13_4"/>
+         <widget class="QSpinBox" name="amountItem134"/>
         </item>
        </layout>
       </item>
@@ -1547,14 +1547,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_17">
         <item>
-         <widget class="QLabel" name="name_14_1">
+         <widget class="QLabel" name="name141">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_14_1">
+         <widget class="QLabel" name="price141">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -1572,7 +1572,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_14_1"/>
+         <widget class="QSpinBox" name="amountItem141"/>
         </item>
        </layout>
       </item>
@@ -1586,63 +1586,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_93">
         <item>
-         <widget class="QLabel" name="name_14_2">
+         <widget class="QLabel" name="name142">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_14_2">
+         <widget class="QLabel" name="price142">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_14_2"/>
+         <widget class="QSpinBox" name="amountItem142"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_94">
         <item>
-         <widget class="QLabel" name="name_14_3">
+         <widget class="QLabel" name="name143">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_14_3">
+         <widget class="QLabel" name="price143">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_14_3"/>
+         <widget class="QSpinBox" name="amountItem143"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_95">
         <item>
-         <widget class="QLabel" name="name_14_4">
+         <widget class="QLabel" name="name144">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_14_4">
+         <widget class="QLabel" name="price144">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_14_4"/>
+         <widget class="QSpinBox" name="amountItem144"/>
         </item>
        </layout>
       </item>
@@ -1663,14 +1663,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_18">
         <item>
-         <widget class="QLabel" name="name_15_1">
+         <widget class="QLabel" name="name151">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_15_1">
+         <widget class="QLabel" name="price151">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -1688,7 +1688,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_15_1"/>
+         <widget class="QSpinBox" name="amountItem151"/>
         </item>
        </layout>
       </item>
@@ -1702,63 +1702,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_97">
         <item>
-         <widget class="QLabel" name="name_15_2">
+         <widget class="QLabel" name="name152">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_15_2">
+         <widget class="QLabel" name="price152">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_15_2"/>
+         <widget class="QSpinBox" name="amountItem152"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_98">
         <item>
-         <widget class="QLabel" name="name_15_3">
+         <widget class="QLabel" name="name153">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_15_3">
+         <widget class="QLabel" name="price153">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_15_3"/>
+         <widget class="QSpinBox" name="amountItem153"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_99">
         <item>
-         <widget class="QLabel" name="name_15_4">
+         <widget class="QLabel" name="name154">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_15_4">
+         <widget class="QLabel" name="price154">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_15_4"/>
+         <widget class="QSpinBox" name="amountItem154"/>
         </item>
        </layout>
       </item>
@@ -1779,14 +1779,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_19">
         <item>
-         <widget class="QLabel" name="name_16_1">
+         <widget class="QLabel" name="name161">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_16_1">
+         <widget class="QLabel" name="price161">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -1804,7 +1804,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_16_1"/>
+         <widget class="QSpinBox" name="amountItem161"/>
         </item>
        </layout>
       </item>
@@ -1818,63 +1818,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_101">
         <item>
-         <widget class="QLabel" name="name_16_2">
+         <widget class="QLabel" name="name162">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_16_2">
+         <widget class="QLabel" name="price162">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_16_2"/>
+         <widget class="QSpinBox" name="amountItem162"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_102">
         <item>
-         <widget class="QLabel" name="name_16_3">
+         <widget class="QLabel" name="name163">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_16_3">
+         <widget class="QLabel" name="price163">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_16_3"/>
+         <widget class="QSpinBox" name="amountItem163"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_103">
         <item>
-         <widget class="QLabel" name="name_16_4">
+         <widget class="QLabel" name="name164">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_16_4">
+         <widget class="QLabel" name="price164">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_16_4"/>
+         <widget class="QSpinBox" name="amountItem164"/>
         </item>
        </layout>
       </item>
@@ -1895,14 +1895,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_20">
         <item>
-         <widget class="QLabel" name="name_17_1">
+         <widget class="QLabel" name="name171">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_17_1">
+         <widget class="QLabel" name="price171">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -1920,7 +1920,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_17_1"/>
+         <widget class="QSpinBox" name="amountItem171"/>
         </item>
        </layout>
       </item>
@@ -1934,63 +1934,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_105">
         <item>
-         <widget class="QLabel" name="name_17_2">
+         <widget class="QLabel" name="name172">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_17_2">
+         <widget class="QLabel" name="price172">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_17_2"/>
+         <widget class="QSpinBox" name="amountItem172"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_106">
         <item>
-         <widget class="QLabel" name="name_17_3">
+         <widget class="QLabel" name="name173">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_17_3">
+         <widget class="QLabel" name="price173">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_17_3"/>
+         <widget class="QSpinBox" name="amountItem173"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_107">
         <item>
-         <widget class="QLabel" name="name_17_4">
+         <widget class="QLabel" name="name174">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_17_4">
+         <widget class="QLabel" name="price174">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_17_4"/>
+         <widget class="QSpinBox" name="amountItem174"/>
         </item>
        </layout>
       </item>
@@ -2011,14 +2011,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_21">
         <item>
-         <widget class="QLabel" name="name_18_1">
+         <widget class="QLabel" name="name181">
           <property name="text">
            <string>Rosół</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_18_1">
+         <widget class="QLabel" name="price181">
           <property name="text">
            <string>9,90zł</string>
           </property>
@@ -2036,7 +2036,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_18_1"/>
+         <widget class="QSpinBox" name="amountItem181"/>
         </item>
        </layout>
       </item>
@@ -2050,63 +2050,63 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_109">
         <item>
-         <widget class="QLabel" name="name_18_2">
+         <widget class="QLabel" name="name182">
           <property name="text">
            <string>Ketchup</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_18_2">
+         <widget class="QLabel" name="price182">
           <property name="text">
            <string>2,00zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_18_2"/>
+         <widget class="QSpinBox" name="amountItem182"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_110">
         <item>
-         <widget class="QLabel" name="name_18_3">
+         <widget class="QLabel" name="name183">
           <property name="text">
            <string>Majonez</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_18_3">
+         <widget class="QLabel" name="price183">
           <property name="text">
            <string>2,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_18_3"/>
+         <widget class="QSpinBox" name="amountItem183"/>
         </item>
        </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_111">
         <item>
-         <widget class="QLabel" name="name_18_4">
+         <widget class="QLabel" name="name184">
           <property name="text">
            <string>Chili</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="price_18_4">
+         <widget class="QLabel" name="price184">
           <property name="text">
            <string>3,50zł</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="Amount_item_18_4"/>
+         <widget class="QSpinBox" name="amountItem184"/>
         </item>
        </layout>
       </item>

@@ -82,16 +82,16 @@ private:
 
     friend class Produkt;
     void receipt();
-    void order_number();
+    void orderNumber();
 
 
-    void actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel);
+    void actualSum(QSpinBox* amountSpinBox, QLabel* priceLabel);
 
-    void saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel);
-    void clean_file(const QString& file_patch);
-    void read_file_contents(const QString& filePath, QLabel* window);
-    void total_price(const QString& filePath, QLabel* window);
-    void save_text_to_file(const QString& file_patch, const QString& text);
+    void savingProducts(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel);
+    void cleanFile(const QString& file_patch);
+    void readFileContents(const QString& filePath, QLabel* window);
+    void totalPrice(const QString& filePath, QLabel* window);
+    void saveTextToFile(const QString& file_patch, const QString& text);
 
     int value = 0;
 };

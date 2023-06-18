@@ -247,7 +247,7 @@ void MainWindow::receipt() // funkcja wypisujaca na ekran numer paragonu
     ui->label_receipt_1->setText(paragon); // wypisanie w oknie
 }
 
-void MainWindow::order_number() //funkcja wypisujaca na ekran date, godzine i numer zamowienia
+void MainWindow::orderNumber() //funkcja wypisujaca na ekran date, godzine i numer zamowienia
 {
     int newNumber;
     int previousNumber;
@@ -303,7 +303,7 @@ void MainWindow::order_number() //funkcja wypisujaca na ekran date, godzine i nu
 }
 
 
-void MainWindow::clean_file(const QString& file_patch) //funkcja czyszczaca plik
+void MainWindow::cleanFile(const QString& file_patch) //funkcja czyszczaca plik
 {
     QFile file(file_patch);
 
@@ -322,7 +322,7 @@ void MainWindow::clean_file(const QString& file_patch) //funkcja czyszczaca plik
     file.close();
 }
 
-void MainWindow::read_file_contents(const QString& filePath, QLabel* window)// funkcja odczytujaca zawartosc z pliku(zamowione produkty) i wypisujaca na ekran
+void MainWindow::readFileContents(const QString& filePath, QLabel* window)// funkcja odczytujaca zawartosc z pliku(zamowione produkty) i wypisujaca na ekran
 {
     QFile file(filePath);
 
@@ -341,7 +341,7 @@ void MainWindow::read_file_contents(const QString& filePath, QLabel* window)// f
 }
 
 
-void MainWindow::total_price(const QString& filePath, QLabel* window)
+void MainWindow::totalPrice(const QString& filePath, QLabel* window)
 {
     double total = 0;
 
@@ -370,7 +370,7 @@ void MainWindow::total_price(const QString& filePath, QLabel* window)
     window->setText(sum_all); // wypisz w oknie
 }
 
-void MainWindow::save_text_to_file(const QString& file_patch, const QString& text)
+void MainWindow::saveTextToFile(const QString& file_patch, const QString& text)
 {
     QFile file(file_patch);
     if (file.open(QIODevice::WriteOnly | QIODevice::Text))
@@ -383,8 +383,8 @@ void MainWindow::save_text_to_file(const QString& file_patch, const QString& tex
 
 void MainWindow::clearData()
 {
-    clean_file("zamowione_produkty.txt");
-    clean_file("ceny_produktow.txt");
+    cleanFile("zamowione_produkty.txt");
+    cleanFile("ceny_produktow.txt");
     ui->label_summary->clear();
     ui->label_receipt_2->clear();
     ui->label_receipt_3->clear();
@@ -413,13 +413,12 @@ void MainWindow::on_pushButton_2_clicked()
 {
 
     //    goToNextPage();
-    goToNextPage();
     resultFood = writeFoodToVectorOfObjects();
     showData(resultFood);
 
 
-    save_text_to_file("zamowione_produkty.txt", "1x Opakowanie 2,00zł");
-    save_text_to_file("ceny_produktow.txt", "2");
+    saveTextToFile("zamowione_produkty.txt", "1x Opakowanie 2,00zł");
+    saveTextToFile("ceny_produktow.txt", "2");
     goToNextPage();
 
 //    progressBarLoading(ui->progressBar_3);
@@ -443,7 +442,7 @@ void MainWindow::on_pushButton_4_clicked()
 {
     goToNextPage();
  //   progressBarLoading();
-    order_number();
+    orderNumber();
 }
 
 // gotowka przy kasie
@@ -451,6 +450,7 @@ void MainWindow::on_pushButton_5_clicked()
 {
     //dodac progressbar, zrobic aby byl uniwersalny
     goToNextPage();
+    orderNumber();
 }
 
 //wyswietl paragon
@@ -458,10 +458,10 @@ void MainWindow::on_pushButton_7_clicked()
 {
     goToNextPage();
     receipt();
-    read_file_contents("zamowione_produkty.txt", ui->label_receipt_2);
-    total_price("ceny_produktow.txt", ui->label_receipt_3);
-    clean_file("zamowione_produkty.txt");
-    clean_file("ceny_produktow.txt");
+    readFileContents("zamowione_produkty.txt", ui->label_receipt_2);
+    totalPrice("ceny_produktow.txt", ui->label_receipt_3);
+    cleanFile("zamowione_produkty.txt");
+    cleanFile("ceny_produktow.txt");
 }
 
 // po wyborze czy na miejscu, czy na wynos (progressbar)
@@ -485,7 +485,7 @@ void MainWindow::on_pushButton_26_clicked()
 void MainWindow::on_pushButton_20_clicked()
 {
     goToNextPage();
-    read_file_contents("zamowione_produkty.txt", ui->label_summary);
+    readFileContents("zamowione_produkty.txt", ui->label_summary);
 
 }
 
@@ -519,76 +519,4 @@ void MainWindow::on_pushButton_12_clicked()
     goToFirstPage();
 }
 
-
-
-
-
-//void MainWindow::on_btnExit1_clicked()
-//{
-//    clean_file("zamowione_produkty.txt");
-//    clean_file("ceny_produktow.txt");
-//    ui->label_summary->clear();
-//    ui->label_receipt_2->clear();
-//    ui->label_receipt_3->clear();
-//}
-
-
-//void MainWindow::on_btnExit7_clicked()
-//{
-//    clean_file("zamowione_produkty.txt");
-//    clean_file("ceny_produktow.txt");
-//    ui->label_summary->clear();
-//    ui->label_receipt_2->clear();
-//    ui->label_receipt_3->clear();
-//}
-
-
-//void MainWindow::on_btnExit3_clicked()
-//{
-//    clean_file("zamowione_produkty.txt");
-//    clean_file("ceny_produktow.txt");
-//    ui->label_summary->clear();
-//    ui->label_receipt_2->clear();
-//    ui->label_receipt_3->clear();
-//}
-
-
-//void MainWindow::on_btnExit4_clicked()
-//{
-//    clean_file("zamowione_produkty.txt");
-//    clean_file("ceny_produktow.txt");
-//    ui->label_summary->clear();
-//    ui->label_receipt_2->clear();
-//    ui->label_receipt_3->clear();
-//}
-
-
-//void MainWindow::on_btnExit5_clicked()
-//{
-//    clean_file("zamowione_produkty.txt");
-//    clean_file("ceny_produktow.txt");
-//    ui->label_summary->clear();
-//    ui->label_receipt_2->clear();
-//    ui->label_receipt_3->clear();
-//}
-
-
-//void MainWindow::on_btnExit6_clicked()
-//{
-//    clean_file("zamowione_produkty.txt");
-//    clean_file("ceny_produktow.txt");
-//    ui->label_summary->clear();
-//    ui->label_receipt_2->clear();
-//    ui->label_receipt_3->clear();
-//}
-
-
-//void MainWindow::on_btnExit2_clicked()
-//{
-//    clean_file("zamowione_produkty.txt");
-//    clean_file("ceny_produktow.txt");
-//    ui->label_summary->clear();
-//    ui->label_receipt_2->clear();
-//    ui->label_receipt_3->clear();
-//}
 

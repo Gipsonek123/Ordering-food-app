@@ -25,7 +25,7 @@ Produkt::~Produkt()
     delete ui;
 }
 
-void Produkt::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel)// funkcja zapisujaca produkty wraz z cenami do pliku tekstowego "zamowione_produkty"
+void Produkt::savingProducts(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel* nameLabel)// funkcja zapisujaca produkty wraz z cenami do pliku tekstowego "zamowione_produkty"
 {                                                                                               // do pliku tekstowego ceny produktow sa zapisywane tylko ceny
     int number = amountSpinBox->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
     if(number > 0)
@@ -75,7 +75,7 @@ void Produkt::saving_products(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabe
     }
 }
 
-//void Produkt::actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funkcja do obliczania i wypisywania obecnej ceny, jako argumenty przyjmuje wskaźniki
+//void Produkt::actualSum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funkcja do obliczania i wypisywania obecnej ceny, jako argumenty przyjmuje wskaźniki
 //{                                                                         // do obiektów pierwszy pokazuje ilość danego produktu a drugi jego cenę
 //    int number = amountSpinBox->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
 //    QString Strprice = priceLabel->text(); // Odczytaj tekst z pola QLabel(cena produktu)
@@ -108,25 +108,25 @@ void Produkt::on_pushButton_2_clicked()
 {
     //actual_sum(ui->Amount_item_1, ui->price_1);
 
-    for (int i = 1; i <= 18; ++i)
+    for (int i = 1; i <= 99; ++i)
     {
-        for (int j = 1; j <= 4; ++j)
+        for (int j = 0; j <= 9; ++j)
         {
-            QSpinBox* amountSpinBox = findChild<QSpinBox*>(QString("Amount_item_%1_%2").arg(i).arg(j));// znajduje odpowiednie obiekty
-            QLabel* priceLabel = findChild<QLabel*>(QString("price_%1_%2").arg(i).arg(j)); // znajduje odpowiednie obiekty
-            QLabel* nameLabel = findChild<QLabel*>(QString("name_%1_%2").arg(i).arg(j)); // znajduje odpowiednie obiekty
+            QSpinBox* amountSpinBox = findChild<QSpinBox*>(QString("amountItem%1%2").arg(i).arg(j));// znajduje odpowiednie obiekty
+            QLabel* priceLabel = findChild<QLabel*>(QString("price%1%2").arg(i).arg(j)); // znajduje odpowiednie obiekty
+            QLabel* nameLabel = findChild<QLabel*>(QString("name%1%2").arg(i).arg(j)); // znajduje odpowiednie obiekty
             if (amountSpinBox && priceLabel && nameLabel) // jeśli znajdzie to wywołuje funkcje z odpowiednimi parametrami
             {
-                saving_products(amountSpinBox, priceLabel, nameLabel);
+                savingProducts(amountSpinBox, priceLabel, nameLabel);
             }
         }
     }
 
-    for (int i = 1; i <= 18; ++i)
+    for (int i = 1; i <= 99; ++i)
     {
-        for (int j = 1; j <= 4; ++j)
+        for (int j = 0; j <= 9; ++j)
         {
-                QSpinBox* amountSpinBox = findChild<QSpinBox*>(QString("Amount_item_%1_%2").arg(i).arg(j)); // znajduje odpowiednie obiekty
+                QSpinBox* amountSpinBox = findChild<QSpinBox*>(QString("amountItem%1%2").arg(i).arg(j)); // znajduje odpowiednie obiekty
                 if (amountSpinBox) // jeśli  znajdzie to wywołuje funkcje
                 {
                     amountSpinBox->setValue(0);
@@ -141,11 +141,11 @@ void Produkt::on_pushButton_2_clicked()
 
 void Produkt::on_pushButton_clicked()
 {
-    for (int i = 1; i <= 18; ++i)
+    for (int i = 1; i <= 99; ++i)
     {
-            for (int j = 1; j <= 4; ++j)
+            for (int j = 0; j <= 9; ++j)
             {
-                QSpinBox* amountSpinBox = findChild<QSpinBox*>(QString("Amount_item_%1_%2").arg(i).arg(j)); // znajduje odpowiednie obiekty
+                QSpinBox* amountSpinBox = findChild<QSpinBox*>(QString("amountItem%1%2").arg(i).arg(j)); // znajduje odpowiednie obiekty
                 if (amountSpinBox) // jeśli  znajdzie to wywołuje funkcje
                 {
                     amountSpinBox->setValue(0);
