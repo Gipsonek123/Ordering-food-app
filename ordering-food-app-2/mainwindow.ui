@@ -361,16 +361,16 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
        </size>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_13">
        <widget class="QWidget" name="layoutWidget_5">
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>40</y>
-          <width>514</width>
-          <height>511</height>
+          <y>30</y>
+          <width>461</width>
+          <height>521</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_88">
@@ -889,7 +889,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
          <rect>
           <x>0</x>
           <y>40</y>
-          <width>510</width>
+          <width>461</width>
           <height>511</height>
          </rect>
         </property>

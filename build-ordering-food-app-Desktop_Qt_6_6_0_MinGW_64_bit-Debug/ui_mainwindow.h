@@ -411,7 +411,7 @@ public:
         page_13->setObjectName("page_13");
         layoutWidget_5 = new QWidget(page_13);
         layoutWidget_5->setObjectName("layoutWidget_5");
-        layoutWidget_5->setGeometry(QRect(0, 40, 514, 511));
+        layoutWidget_5->setGeometry(QRect(0, 30, 461, 521));
         verticalLayout_88 = new QVBoxLayout(layoutWidget_5);
         verticalLayout_88->setSpacing(2);
         verticalLayout_88->setObjectName("verticalLayout_88");
@@ -744,7 +744,7 @@ public:
         page_14->setObjectName("page_14");
         layoutWidget_3 = new QWidget(page_14);
         layoutWidget_3->setObjectName("layoutWidget_3");
-        layoutWidget_3->setGeometry(QRect(0, 40, 510, 511));
+        layoutWidget_3->setGeometry(QRect(0, 40, 461, 511));
         verticalLayout_75 = new QVBoxLayout(layoutWidget_3);
         verticalLayout_75->setSpacing(2);
         verticalLayout_75->setObjectName("verticalLayout_75");
@@ -1657,7 +1657,7 @@ public:
         retranslateUi(MainWindow);
 
         stackedWidget->setCurrentIndex(3);
-        stackedWidget_2->setCurrentIndex(0);
+        stackedWidget_2->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
