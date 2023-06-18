@@ -83,7 +83,7 @@ private:
     friend class Produkt;
     void receipt();
     void orderNumber();
-
+    void resetData();
 
     void actualSum(QSpinBox* amountSpinBox, QLabel* priceLabel);
 
