@@ -69,7 +69,6 @@ private slots:
 
     void on_pushButton_12_clicked();
 
-    void on_btnExit2_clicked();
 
 private:
 
@@ -83,6 +82,7 @@ private:
     void clean_file(const QString& file_patch);
     void read_file_contents(const QString& filePath, QLabel* window);
     void total_price(const QString& filePath, QLabel* window);
+    void save_text_to_file(const QString& file_patch, const QString& text);
     int value = 0;
 };
 #endif // MAINWINDOW_H

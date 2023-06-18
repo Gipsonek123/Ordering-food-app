@@ -357,6 +357,17 @@ void MainWindow::total_price(const QString& filePath, QLabel* window)
     window->setText(sum_all); // wypisz w oknie
 }
 
+void MainWindow::save_text_to_file(const QString& file_patch, const QString& text)
+{
+    QFile file(file_patch);
+    if (file.open(QIODevice::WriteOnly | QIODevice::Text))
+    {
+        QTextStream stream(&file);
+        stream << text << '\n';
+        file.close();
+    }
+}
+
 
 
 void MainWindow::on_pushButton_clicked()
@@ -377,9 +388,9 @@ void MainWindow::on_pushButton_3_clicked()
 // na miejscu
 void MainWindow::on_pushButton_2_clicked()
 {
+    save_text_to_file("zamowione_produkty.txt", "1x Opakowanie 2,00zł");
+    save_text_to_file("ceny_produktow.txt", "2");
     goToNextPage();
-//    goToNextPage();
-
 //    progressBarLoading(ui->progressBar_3);
 }
 
@@ -478,9 +489,5 @@ void MainWindow::on_pushButton_12_clicked()
 }
 
 
-void MainWindow::on_btnExit2_clicked()
-{
-    clean_file("zamowione_produkty.txt");
-    clean_file("ceny_produktow.txt");
-}
+
 
