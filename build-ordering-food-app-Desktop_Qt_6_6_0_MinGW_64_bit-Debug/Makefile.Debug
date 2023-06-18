@@ -501,8 +501,8 @@ debug/moc_mainwindow.cpp: ../ordering-food-app-2/mainwindow.h \
 	C:\Qt\6.6.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/programowanie/projekt/ordering-food-app-2/build-ordering-food-app-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.6.0/mingw_64/mkspecs/win32-g++ -IC:/programowanie/projekt/ordering-food-app-2/ordering-food-app-2 -IC:/Qt/6.6.0/mingw_64/include -IC:/Qt/6.6.0/mingw_64/include/QtWidgets -IC:/Qt/6.6.0/mingw_64/include/QtGui -IC:/Qt/6.6.0/mingw_64/include/QtSql -IC:/Qt/6.6.0/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\ordering-food-app-2\mainwindow.h -o debug\moc_mainwindow.cpp
 
 debug/moc_produkt.cpp: ../ordering-food-app-2/produkt.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QDialog \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qdialog.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QMainWindow \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/qtguiglobal.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qglobal.h \
@@ -662,6 +662,22 @@ debug/moc_produkt.cpp: ../ordering-food-app-2/produkt.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QSizeF \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/QTransform \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qnativeinterface.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QStackedWidget \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qstackedwidget.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qframe.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QSpinBox \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qspinbox.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qvalidator.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qregularexpression.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qlocale.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QLabel \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlabel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qpicture.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qtextdocument.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QDialog \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qdialog.h \
 		debug/moc_predefs.h \
 		../../../../Qt/6.6.0/mingw_64/bin/moc.exe
 	C:\Qt\6.6.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/programowanie/projekt/ordering-food-app-2/build-ordering-food-app-Desktop_Qt_6_6_0_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.6.0/mingw_64/mkspecs/win32-g++ -IC:/programowanie/projekt/ordering-food-app-2/ordering-food-app-2 -IC:/Qt/6.6.0/mingw_64/include -IC:/Qt/6.6.0/mingw_64/include/QtWidgets -IC:/Qt/6.6.0/mingw_64/include/QtGui -IC:/Qt/6.6.0/mingw_64/include/QtSql -IC:/Qt/6.6.0/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\ordering-food-app-2\produkt.h -o debug\moc_produkt.cpp
@@ -1044,17 +1060,37 @@ debug/main.o: ../ordering-food-app-2/main.cpp ../ordering-food-app-2/mainwindow.
 		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqlresult.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtSql/qtsqlversion.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QDebug \
+		../ordering-food-app-2/produkt.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QDialog \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qdialog.h \
+		ui_produkt.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QVBoxLayout \
+		ui_mainwindow.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QMenuBar \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qmenubar.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qmenu.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QStatusBar \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qstatusbar.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QLocale \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QTranslator \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QTimer
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\ordering-food-app-2\main.cpp
 
-debug/mainwindow.o: ../ordering-food-app-2/mainwindow.cpp ../ordering-food-app-2/mainwindow.h \
+debug/mainwindow.o: ../ordering-food-app-2/mainwindow.cpp ../ordering-food-app-2/produkt.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QMainWindow \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -1230,13 +1266,45 @@ debug/mainwindow.o: ../ordering-food-app-2/mainwindow.cpp ../ordering-food-app-2
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlabel.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/qpicture.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/qtextdocument.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QProgressBar \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qprogressbar.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QWidget \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/QThread \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QDialog \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qdialog.h \
+		ui_produkt.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QVariant \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qthread.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qdeadlinetimer.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qelapsedtimer.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QVBoxLayout \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QWidget \
+		../ordering-food-app-2/mainwindow.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QProgressBar \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qprogressbar.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QThread \
 		../ordering-food-app-2/dbmanager.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtSql/QtSql \
 		../../../../Qt/6.6.0/mingw_64/include/QtSql/QtSqlDepends \
@@ -1248,25 +1316,12 @@ debug/mainwindow.o: ../ordering-food-app-2/mainwindow.cpp ../ordering-food-app-2
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/q23functional.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qabstractanimation.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qeventloop.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qabstractitemmodel.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qabstractproxymodel.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qanimationgroup.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qapplicationstatic.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QMutex \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qmutex.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtsan_impl.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfuture.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfutureinterface.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qresultstore.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfuture_impl.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qthreadpool.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qrunnable.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qexception.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qassociativeiterable.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qbasictimer.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qbitarray.h \
@@ -1364,7 +1419,6 @@ debug/mainwindow.o: ../ordering-food-app-2/mainwindow.cpp ../ordering-food-app-2
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qurlquery.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qvarianthash.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QHash \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/QVariant \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QString \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qvariantlist.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qvariantmap.h \
@@ -1405,30 +1459,13 @@ debug/mainwindow.o: ../ordering-food-app-2/mainwindow.cpp ../ordering-food-app-2
 		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqlresult.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtSql/qtsqlversion.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QDebug \
-		../ordering-food-app-2/produkt.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QDialog \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qdialog.h \
 		ui_mainwindow.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qapplication.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QMenuBar \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qmenubar.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qmenu.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QStatusBar \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qstatusbar.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QVBoxLayout \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QTimer \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QFile \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QLineEdit \
@@ -1445,8 +1482,8 @@ debug/mainwindow.o: ../ordering-food-app-2/mainwindow.cpp ../ordering-food-app-2
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\ordering-food-app-2\mainwindow.cpp
 
 debug/produkt.o: ../ordering-food-app-2/produkt.cpp ../ordering-food-app-2/produkt.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QDialog \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qdialog.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QMainWindow \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qmainwindow.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/qtguiglobal.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qglobal.h \
@@ -1606,6 +1643,22 @@ debug/produkt.o: ../ordering-food-app-2/produkt.cpp ../ordering-food-app-2/produ
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QSizeF \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/QTransform \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qnativeinterface.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QStackedWidget \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qstackedwidget.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qframe.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QSpinBox \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qspinbox.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qvalidator.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qregularexpression.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qlocale.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QLabel \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlabel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qpicture.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qtextdocument.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QDialog \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qdialog.h \
 		ui_produkt.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/QVariant \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QApplication \
@@ -1628,30 +1681,193 @@ debug/produkt.o: ../ordering-food-app-2/produkt.cpp ../ordering-food-app-2/produ
 		../../../../Qt/6.6.0/mingw_64/include/QtCore/qpromise.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qlocale.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QHBoxLayout \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayout.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlayoutitem.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qgridlayout.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QLabel \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlabel.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qframe.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtGui/qpicture.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtGui/qtextdocument.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QPushButton \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QSpinBox \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qspinbox.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtGui/qvalidator.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtCore/qregularexpression.h \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QStackedWidget \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qstackedwidget.h \
 		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QVBoxLayout \
-		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QWidget
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QWidget \
+		../ordering-food-app-2/mainwindow.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QProgressBar \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qprogressbar.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QThread \
+		../ordering-food-app-2/dbmanager.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/QtSql \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/QtSqlDepends \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QtCore \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QtCoreDepends \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/q20algorithm.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/q20functional.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/q20iterator.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/q23functional.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qabstractanimation.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qabstractnativeeventfilter.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qabstractproxymodel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qanimationgroup.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qapplicationstatic.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QMutex \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qassociativeiterable.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qbasictimer.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qbitarray.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qbuffer.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qbytearraymatcher.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcache.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcalendar.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcborarray.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcborvalue.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qdatetime.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcborcommon.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/quuid.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qendian.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcbormap.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcborstream.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcborstreamreader.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcborstreamwriter.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcollator.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcommandlineoption.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcommandlineparser.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qconcatenatetablesproxymodel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qcryptographichash.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qdir.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfile.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfiledevice.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfileinfo.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtimezone.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qdiriterator.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qeasingcurve.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfactoryinterface.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfileselector.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QStringList \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfilesystemwatcher.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfuturesynchronizer.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qfuturewatcher.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qidentityproxymodel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qitemselectionmodel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qjsonarray.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qjsonvalue.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qjsondocument.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qjsonobject.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qlatin1stringmatcher.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qlibrary.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qlibraryinfo.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qversionnumber.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qlockfile.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qloggingcategory.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qmessageauthenticationcode.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qmetaobject.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qmimedata.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qmimedatabase.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qmimetype.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qobjectcleanuphandler.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qoperatingsystemversion.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qparallelanimationgroup.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qpauseanimation.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qplugin.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qpluginloader.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qprocess.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qproperty.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qpropertyprivate.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qpropertyanimation.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qvariantanimation.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qqueue.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qrandom.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qreadwritelock.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qresource.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qsavefile.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qscopedvaluerollback.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qsemaphore.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qsequentialanimationgroup.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qsequentialiterable.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qsettings.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qsharedmemory.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtipccommon.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qsignalmapper.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qsimd.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qsocketnotifier.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qsortfilterproxymodel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qstack.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qstandardpaths.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qstorageinfo.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qstringconverter.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qstringlistmodel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qsystemsemaphore.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtcoreversion.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtemporarydir.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtemporaryfile.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtextboundaryfinder.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qthreadstorage.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtimeline.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtimer.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtranslator.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qtransposeproxymodel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qurlquery.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qvarianthash.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QHash \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QString \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qvariantlist.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qvariantmap.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QMap \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qvector.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qwaitcondition.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QDeadlineTimer \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qwineventnotifier.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qxmlstream.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/qxpfunctional.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qtsqlglobal.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qtsql-config.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qtsqlexports.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqldatabase.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqldriver.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqldriverplugin.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqlerror.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqlfield.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqlindex.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqlrecord.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqlquery.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqlquerymodel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqlrelationaldelegate.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qstyleditemdelegate.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qslider.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qstyle.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qtabbar.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qrubberband.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlistview.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractitemview.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qcombobox.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqlrelationaltablemodel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqltablemodel.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qsqlresult.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtSql/qtsqlversion.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QDebug \
+		ui_mainwindow.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/QIcon \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QMenuBar \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qmenubar.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qmenu.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QStatusBar \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qstatusbar.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QTimer \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QFile \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/QLineEdit \
+		../../../../Qt/6.6.0/mingw_64/include/QtWidgets/qlineedit.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qtextcursor.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qtextformat.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qpen.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtGui/qtextoption.h \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QDateTime \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QTime \
+		../../../../Qt/6.6.0/mingw_64/include/QtCore/QTextStream
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\produkt.o ..\ordering-food-app-2\produkt.cpp
 
 debug/dbmanager.o: ../ordering-food-app-2/dbmanager.cpp ../ordering-food-app-2/dbmanager.h \

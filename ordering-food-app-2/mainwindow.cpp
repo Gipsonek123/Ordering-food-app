@@ -2,6 +2,8 @@
 #include "ui_produkt.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "dbmanager.h"
+#include <vector>
 #include <QTimer>
 #include <QFile>
 #include <QLineEdit>
@@ -12,6 +14,8 @@
 #include <QTextStream>
 #include <QRegularExpression> // do wycinania ze string wartosci liczbowej
 #include <QPixmap>
+
+std::vector<Food> resultFood;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -399,16 +403,33 @@ void MainWindow::on_pushButton_3_clicked()
 {
 //    goToNextPage();
     goToNextPage();
-
+    resultFood = writeFoodToVectorOfObjects();
+    showData(resultFood);
 //    progressBarLoading(ui->progressBar_3);
 }
 
 // na miejscu
 void MainWindow::on_pushButton_2_clicked()
 {
+<<<<<<< HEAD
+=======
+
+    //    goToNextPage();
+    goToNextPage();
+    resultFood = writeFoodToVectorOfObjects();
+    showData(resultFood);
+
+
+>>>>>>> f3789c68535ac3c02a0b3b1a24f3bc6fc74340e5
     save_text_to_file("zamowione_produkty.txt", "1x Opakowanie 2,00zł");
     save_text_to_file("ceny_produktow.txt", "2");
+    resultFood = writeFoodToVectorOfObjects();
+    showData(resultFood);
     goToNextPage();
+<<<<<<< HEAD
+=======
+
+>>>>>>> f3789c68535ac3c02a0b3b1a24f3bc6fc74340e5
 //    progressBarLoading(ui->progressBar_3);
 }
 

@@ -163,7 +163,7 @@ public:
     QVBoxLayout *verticalLayout_87;
     QHBoxLayout *horizontalLayout_53;
     QLabel *label_106;
-    QLabel *label_107;
+    QLabel *label_sum;
     QPushButton *pushButton_100;
     QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout_12;
@@ -179,6 +179,8 @@ public:
     QPushButton *pushButton_9;
     QPushButton *pushButton_8;
     QPushButton *btnExit3;
+    QLabel *label_summary;
+    QLabel *label_total_price;
     QWidget *page_2;
     QLabel *label_4;
     QWidget *verticalLayoutWidget_4;
@@ -192,7 +194,7 @@ public:
     QPushButton *pushButton_7;
     QPushButton *btnExit5;
     QWidget *page_3;
-    QLabel *label_receipt;
+    QLabel *label_receipt_1;
     QLabel *label_7;
     QLabel *label_14;
     QPushButton *btnExit6;
@@ -201,6 +203,8 @@ public:
     QLabel *label_11;
     QLabel *label_12;
     QLabel *label_13;
+    QLabel *label_receipt_2;
+    QLabel *label_receipt_3;
     QWidget *page_23;
     QProgressBar *progressBar_10;
     QLabel *label_240;
@@ -408,7 +412,7 @@ public:
         page_13->setObjectName("page_13");
         layoutWidget_5 = new QWidget(page_13);
         layoutWidget_5->setObjectName("layoutWidget_5");
-        layoutWidget_5->setGeometry(QRect(0, 40, 461, 511));
+        layoutWidget_5->setGeometry(QRect(0, 40, 514, 511));
         verticalLayout_88 = new QVBoxLayout(layoutWidget_5);
         verticalLayout_88->setSpacing(2);
         verticalLayout_88->setObjectName("verticalLayout_88");
@@ -736,7 +740,7 @@ public:
         page_14->setObjectName("page_14");
         layoutWidget_3 = new QWidget(page_14);
         layoutWidget_3->setObjectName("layoutWidget_3");
-        layoutWidget_3->setGeometry(QRect(0, 40, 461, 511));
+        layoutWidget_3->setGeometry(QRect(0, 40, 510, 511));
         verticalLayout_75 = new QVBoxLayout(layoutWidget_3);
         verticalLayout_75->setSpacing(2);
         verticalLayout_75->setObjectName("verticalLayout_75");
@@ -1085,13 +1089,13 @@ public:
 
         horizontalLayout_53->addWidget(label_106);
 
-        label_107 = new QLabel(layoutWidget_4);
-        label_107->setObjectName("label_107");
-        label_107->setMaximumSize(QSize(16777215, 30));
-        label_107->setStyleSheet(QString::fromUtf8("	font: 400 10pt \"Cascadia Code SemiLight\";\n"
+        label_sum = new QLabel(layoutWidget_4);
+        label_sum->setObjectName("label_sum");
+        label_sum->setMaximumSize(QSize(16777215, 30));
+        label_sum->setStyleSheet(QString::fromUtf8("	font: 400 10pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_53->addWidget(label_107);
+        horizontalLayout_53->addWidget(label_sum);
 
 
         verticalLayout_87->addLayout(horizontalLayout_53);
@@ -1232,7 +1236,7 @@ public:
         page->setObjectName("page");
         label = new QLabel(page);
         label->setObjectName("label");
-        label->setGeometry(QRect(150, 110, 181, 20));
+        label->setGeometry(QRect(160, 10, 181, 20));
         label->setStyleSheet(QString::fromUtf8("	color: white;\n"
 "    background-color: rgba(120, 157, 83, 0.1);\n"
 "	font: 350 10pt \"Cascadia Code SemiLight\";\n"
@@ -1354,6 +1358,14 @@ public:
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
 ""));
+        label_summary = new QLabel(page);
+        label_summary->setObjectName("label_summary");
+        label_summary->setGeometry(QRect(0, 90, 481, 191));
+        label_summary->setAlignment(Qt::AlignCenter);
+        label_total_price = new QLabel(page);
+        label_total_price->setObjectName("label_total_price");
+        label_total_price->setGeometry(QRect(0, 300, 481, 31));
+        label_total_price->setAlignment(Qt::AlignCenter);
         stackedWidget->addWidget(page);
         page_2 = new QWidget();
         page_2->setObjectName("page_2");
@@ -1512,11 +1524,11 @@ public:
         stackedWidget->addWidget(page_6);
         page_3 = new QWidget();
         page_3->setObjectName("page_3");
-        label_receipt = new QLabel(page_3);
-        label_receipt->setObjectName("label_receipt");
-        label_receipt->setGeometry(QRect(0, 150, 481, 131));
-        label_receipt->setFont(font);
-        label_receipt->setAlignment(Qt::AlignCenter);
+        label_receipt_1 = new QLabel(page_3);
+        label_receipt_1->setObjectName("label_receipt_1");
+        label_receipt_1->setGeometry(QRect(0, 170, 481, 71));
+        label_receipt_1->setFont(font);
+        label_receipt_1->setAlignment(Qt::AlignCenter);
         label_7 = new QLabel(page_3);
         label_7->setObjectName("label_7");
         label_7->setGeometry(QRect(10, 100, 111, 20));
@@ -1566,6 +1578,14 @@ public:
 
         verticalLayout_2->addWidget(label_13);
 
+        label_receipt_2 = new QLabel(page_3);
+        label_receipt_2->setObjectName("label_receipt_2");
+        label_receipt_2->setGeometry(QRect(0, 270, 471, 171));
+        label_receipt_2->setAlignment(Qt::AlignCenter);
+        label_receipt_3 = new QLabel(page_3);
+        label_receipt_3->setObjectName("label_receipt_3");
+        label_receipt_3->setGeometry(QRect(0, 470, 481, 61));
+        label_receipt_3->setAlignment(Qt::AlignCenter);
         stackedWidget->addWidget(page_3);
         page_23 = new QWidget();
         page_23->setObjectName("page_23");
@@ -1658,18 +1678,18 @@ public:
         btnExit1->setText(QString());
         label_108->setText(QCoreApplication::translate("MainWindow", "Burgery", nullptr));
         product1Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        BurgerName_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        BurgerCost_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        BurgerName_1->setText(QCoreApplication::translate("MainWindow", "Ros\303\263\305\202", nullptr));
+        BurgerCost_1->setText(QCoreApplication::translate("MainWindow", "9z\305\202", nullptr));
         product2Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        BurgerName_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        BurgerCost_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        BurgerName_2->setText(QCoreApplication::translate("MainWindow", "Pomidorowa", nullptr));
+        BurgerCost_2->setText(QCoreApplication::translate("MainWindow", "12z\305\202", nullptr));
         product3Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        BurgerName_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        BurgerCost_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        BurgerName_3->setText(QCoreApplication::translate("MainWindow", "\305\273urek", nullptr));
+        BurgerCost_3->setText(QCoreApplication::translate("MainWindow", "14,50z\305\202", nullptr));
         label_112->setText(QCoreApplication::translate("MainWindow", "Pizza", nullptr));
         product4Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        PizzaName_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        PizzaCost_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        PizzaName_1->setText(QCoreApplication::translate("MainWindow", "Schabowy", nullptr));
+        PizzaCost_1->setText(QCoreApplication::translate("MainWindow", "25.80z\305\202", nullptr));
         product5Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         PizzaName_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         PizzaCost_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
@@ -1720,7 +1740,7 @@ public:
         btnExit7->setText(QString());
         label_105->setText(QCoreApplication::translate("MainWindow", "Menu", nullptr));
         label_106->setText(QCoreApplication::translate("MainWindow", "Suma:", nullptr));
-        label_107->setText(QCoreApplication::translate("MainWindow", "59,00z\305\202", nullptr));
+        label_sum->setText(QString());
         pushButton_100->setText(QCoreApplication::translate("MainWindow", "Zobacz koszyk", nullptr));
         pushButton_18->setText(QCoreApplication::translate("MainWindow", "Anuluj", nullptr));
         pushButton_19->setText(QCoreApplication::translate("MainWindow", "Zobacz wi\304\231cej", nullptr));
@@ -1730,6 +1750,8 @@ public:
         pushButton_9->setText(QCoreApplication::translate("MainWindow", "Kup taniej", nullptr));
         pushButton_8->setText(QCoreApplication::translate("MainWindow", "Wr\303\263\304\207", nullptr));
         btnExit3->setText(QString());
+        label_summary->setText(QString());
+        label_total_price->setText(QString());
         label_4->setText(QCoreApplication::translate("MainWindow", "Gdzie zap\305\202acisz?", nullptr));
         pushButton_4->setText(QCoreApplication::translate("MainWindow", "Kart\304\205/online tutaj", nullptr));
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "Got\303\263wk\304\205 przy kasie", nullptr));
@@ -1738,13 +1760,15 @@ public:
         label_numer_zamowienia->setText(QString());
         pushButton_7->setText(QCoreApplication::translate("MainWindow", "Wy\305\233wietl paragon", nullptr));
         btnExit5->setText(QString());
-        label_receipt->setText(QString());
+        label_receipt_1->setText(QString());
         label_7->setText(QCoreApplication::translate("MainWindow", "NIP: 5472143206", nullptr));
         label_14->setText(QCoreApplication::translate("MainWindow", "## NIEFISKALNY ##", nullptr));
         btnExit6->setText(QString());
         label_11->setText(QCoreApplication::translate("MainWindow", "Jedzenie na okr\304\205g\305\202o S.C.", nullptr));
         label_12->setText(QCoreApplication::translate("MainWindow", "ul. Opolska 159", nullptr));
         label_13->setText(QCoreApplication::translate("MainWindow", "44-100 Gliwice", nullptr));
+        label_receipt_2->setText(QString());
+        label_receipt_3->setText(QString());
         label_240->setText(QCoreApplication::translate("MainWindow", "Trwa generowanie paragonu...", nullptr));
     } // retranslateUi
 

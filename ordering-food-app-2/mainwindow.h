@@ -9,7 +9,8 @@
 
 #include <QWidget> // elementy uzytkownika, w tym progress bar
 #include <QThread> //biblioteka m.in do animacji progressbaru
-
+#include <vector>
+#include "dbmanager.h"
 //#include "product.h" // to dodalem
 class Produkt;
 QT_BEGIN_NAMESPACE
@@ -70,6 +71,8 @@ private slots:
     void on_pushButton_18_clicked();
 
     void on_pushButton_12_clicked();
+
+    void showData(std::vector<Food>);
 
 private:
 
