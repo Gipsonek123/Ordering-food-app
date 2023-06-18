@@ -1,6 +1,13 @@
 #include "mainwindow.h"
+
 #include "dbmanager.h"
 #include <QtSql>
+
+#include "produkt.h"
+#include "ui_produkt.h"
+#include "ui_mainwindow.h"
+
+
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>

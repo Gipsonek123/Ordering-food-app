@@ -370,7 +370,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
          <rect>
           <x>0</x>
           <y>40</y>
-          <width>461</width>
+          <width>514</width>
           <height>511</height>
          </rect>
         </property>
@@ -431,14 +431,14 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
 	padding-top: 5px;</string>
                      </property>
                      <property name="text">
-                      <string>TextLabel</string>
+                      <string>Rosół</string>
                      </property>
                     </widget>
                    </item>
                    <item>
                     <widget class="QLabel" name="BurgerCost_1">
                      <property name="text">
-                      <string>TextLabel</string>
+                      <string>9zł</string>
                      </property>
                     </widget>
                    </item>
@@ -480,14 +480,14 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
 	padding-top: 5px;</string>
                  </property>
                  <property name="text">
-                  <string>TextLabel</string>
+                  <string>Pomidorowa</string>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="QLabel" name="BurgerCost_2">
                  <property name="text">
-                  <string>TextLabel</string>
+                  <string>12zł</string>
                  </property>
                 </widget>
                </item>
@@ -525,14 +525,14 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
 	padding-top: 5px;</string>
                  </property>
                  <property name="text">
-                  <string>TextLabel</string>
+                  <string>Żurek</string>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="QLabel" name="BurgerCost_3">
                  <property name="text">
-                  <string>TextLabel</string>
+                  <string>14,50zł</string>
                  </property>
                 </widget>
                </item>
@@ -591,14 +591,14 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
 	padding-top: 5px;</string>
                  </property>
                  <property name="text">
-                  <string>TextLabel</string>
+                  <string>Schabowy</string>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="QLabel" name="PizzaCost_1">
                  <property name="text">
-                  <string>TextLabel</string>
+                  <string>25.80zł</string>
                  </property>
                 </widget>
                </item>
@@ -885,7 +885,7 @@ background-color: rgb(128,128,128,0.2);</string>
          <rect>
           <x>0</x>
           <y>40</y>
-          <width>461</width>
+          <width>510</width>
           <height>511</height>
          </rect>
         </property>
@@ -1460,7 +1460,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="label_107">
+            <widget class="QLabel" name="label_sum">
              <property name="maximumSize">
               <size>
                <width>16777215</width>
@@ -1472,7 +1472,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
 	padding-top: 5px;</string>
              </property>
              <property name="text">
-              <string>59,00zł</string>
+              <string/>
              </property>
             </widget>
            </item>
@@ -1644,8 +1644,8 @@ QPushButton:pressed{
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>110</y>
+        <x>160</x>
+        <y>10</y>
         <width>181</width>
         <height>20</height>
        </rect>
@@ -1821,6 +1821,38 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
       </property>
       <property name="text">
        <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_summary">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>481</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_total_price">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>300</y>
+        <width>481</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
@@ -2096,13 +2128,13 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
      </widget>
     </widget>
     <widget class="QWidget" name="page_3">
-     <widget class="QLabel" name="label_receipt">
+     <widget class="QLabel" name="label_receipt_1">
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>150</y>
+        <y>170</y>
         <width>481</width>
-        <height>131</height>
+        <height>71</height>
        </rect>
       </property>
       <property name="font">
@@ -2220,6 +2252,38 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
         </widget>
        </item>
       </layout>
+     </widget>
+     <widget class="QLabel" name="label_receipt_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>270</y>
+        <width>471</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_receipt_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>470</y>
+        <width>481</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="page_23">
