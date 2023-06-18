@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>10</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QWidget" name="layoutWidget_2">
@@ -764,76 +764,6 @@
         </item>
        </layout>
       </item>
-      <item>
-       <widget class="QLabel" name="label_64">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_61">
-        <item>
-         <widget class="QLabel" name="name_7_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_7_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_7_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_62">
-        <item>
-         <widget class="QLabel" name="name_7_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_7_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_7_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_63">
-        <item>
-         <widget class="QLabel" name="name_7_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_7_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_7_4"/>
-        </item>
-       </layout>
-      </item>
      </layout>
     </widget>
    </widget>
@@ -841,8 +771,8 @@
     <widget class="QWidget" name="layoutWidget_9">
      <property name="geometry">
       <rect>
-       <x>140</x>
-       <y>10</y>
+       <x>100</x>
+       <y>20</y>
        <width>215</width>
        <height>257</height>
       </rect>
@@ -877,76 +807,6 @@
         </item>
         <item>
          <widget class="QSpinBox" name="Amount_item_8_1"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_66">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_65">
-        <item>
-         <widget class="QLabel" name="name_8_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_8_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_8_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_66">
-        <item>
-         <widget class="QLabel" name="name_8_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_8_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_8_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_67">
-        <item>
-         <widget class="QLabel" name="name_8_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_8_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_8_4"/>
         </item>
        </layout>
       </item>
@@ -996,76 +856,6 @@
         </item>
        </layout>
       </item>
-      <item>
-       <widget class="QLabel" name="label_68">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_69">
-        <item>
-         <widget class="QLabel" name="name_9_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_9_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_9_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_70">
-        <item>
-         <widget class="QLabel" name="name_9_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_9_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_9_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_71">
-        <item>
-         <widget class="QLabel" name="name_9_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_9_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_9_4"/>
-        </item>
-       </layout>
-      </item>
      </layout>
     </widget>
    </widget>
@@ -1109,76 +899,6 @@
         </item>
         <item>
          <widget class="QSpinBox" name="Amount_item_10_1"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_70">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_73">
-        <item>
-         <widget class="QLabel" name="name_10_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_10_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_10_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_74">
-        <item>
-         <widget class="QLabel" name="name_10_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_10_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_10_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_75">
-        <item>
-         <widget class="QLabel" name="name_10_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_10_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_10_4"/>
         </item>
        </layout>
       </item>
@@ -1228,76 +948,6 @@
         </item>
        </layout>
       </item>
-      <item>
-       <widget class="QLabel" name="label_74">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_81">
-        <item>
-         <widget class="QLabel" name="name_11_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_11_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_11_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_82">
-        <item>
-         <widget class="QLabel" name="name_11_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_11_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_11_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_83">
-        <item>
-         <widget class="QLabel" name="name_11_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_1_11_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_11_4"/>
-        </item>
-       </layout>
-      </item>
      </layout>
     </widget>
    </widget>
@@ -1341,76 +991,6 @@
         </item>
         <item>
          <widget class="QSpinBox" name="Amount_item_12_1"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_76">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_85">
-        <item>
-         <widget class="QLabel" name="name_12_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_12_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_12_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_86">
-        <item>
-         <widget class="QLabel" name="name_12_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_12_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_12_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_87">
-        <item>
-         <widget class="QLabel" name="name_12_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_12_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_12_4"/>
         </item>
        </layout>
       </item>
@@ -1460,76 +1040,6 @@
         </item>
        </layout>
       </item>
-      <item>
-       <widget class="QLabel" name="label_78">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_89">
-        <item>
-         <widget class="QLabel" name="name_13_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_13_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_13_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_90">
-        <item>
-         <widget class="QLabel" name="name_13_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_13_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_13_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_91">
-        <item>
-         <widget class="QLabel" name="name_13_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_13_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_13_4"/>
-        </item>
-       </layout>
-      </item>
      </layout>
     </widget>
    </widget>
@@ -1573,76 +1083,6 @@
         </item>
         <item>
          <widget class="QSpinBox" name="Amount_item_14_1"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_80">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_93">
-        <item>
-         <widget class="QLabel" name="name_14_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_14_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_14_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_94">
-        <item>
-         <widget class="QLabel" name="name_14_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_14_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_14_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_95">
-        <item>
-         <widget class="QLabel" name="name_14_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_14_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_14_4"/>
         </item>
        </layout>
       </item>
@@ -1692,76 +1132,6 @@
         </item>
        </layout>
       </item>
-      <item>
-       <widget class="QLabel" name="label_82">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_97">
-        <item>
-         <widget class="QLabel" name="name_15_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_15_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_15_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_98">
-        <item>
-         <widget class="QLabel" name="name_15_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_15_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_15_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_99">
-        <item>
-         <widget class="QLabel" name="name_15_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_15_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_15_4"/>
-        </item>
-       </layout>
-      </item>
      </layout>
     </widget>
    </widget>
@@ -1805,76 +1175,6 @@
         </item>
         <item>
          <widget class="QSpinBox" name="Amount_item_16_1"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_84">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_101">
-        <item>
-         <widget class="QLabel" name="name_16_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_16_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_16_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_102">
-        <item>
-         <widget class="QLabel" name="name_16_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_16_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_16_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_103">
-        <item>
-         <widget class="QLabel" name="name_16_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_16_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_16_4"/>
         </item>
        </layout>
       </item>
@@ -1924,76 +1224,6 @@
         </item>
        </layout>
       </item>
-      <item>
-       <widget class="QLabel" name="label_86">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_105">
-        <item>
-         <widget class="QLabel" name="name_17_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_17_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_17_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_106">
-        <item>
-         <widget class="QLabel" name="name_17_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_17_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_17_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_107">
-        <item>
-         <widget class="QLabel" name="name_17_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_17_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_17_4"/>
-        </item>
-       </layout>
-      </item>
      </layout>
     </widget>
    </widget>
@@ -2037,76 +1267,6 @@
         </item>
         <item>
          <widget class="QSpinBox" name="Amount_item_18_1"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_88">
-        <property name="text">
-         <string>Dodatki:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_109">
-        <item>
-         <widget class="QLabel" name="name_18_2">
-          <property name="text">
-           <string>Ketchup</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_18_2">
-          <property name="text">
-           <string>2,00zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_18_2"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_110">
-        <item>
-         <widget class="QLabel" name="name_18_3">
-          <property name="text">
-           <string>Majonez</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_18_3">
-          <property name="text">
-           <string>2,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_18_3"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_111">
-        <item>
-         <widget class="QLabel" name="name_18_4">
-          <property name="text">
-           <string>Chili</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="price_18_4">
-          <property name="text">
-           <string>3,50zł</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="Amount_item_18_4"/>
         </item>
        </layout>
       </item>

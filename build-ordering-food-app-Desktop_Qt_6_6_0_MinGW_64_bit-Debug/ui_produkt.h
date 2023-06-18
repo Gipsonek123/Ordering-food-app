@@ -167,19 +167,6 @@ public:
     QHBoxLayout *horizontalLayout_60;
     QLabel *label_63;
     QSpinBox *Amount_item_7_1;
-    QLabel *label_64;
-    QHBoxLayout *horizontalLayout_61;
-    QLabel *name_7_2;
-    QLabel *price_7_2;
-    QSpinBox *Amount_item_7_2;
-    QHBoxLayout *horizontalLayout_62;
-    QLabel *name_7_3;
-    QLabel *price_7_3;
-    QSpinBox *Amount_item_7_3;
-    QHBoxLayout *horizontalLayout_63;
-    QLabel *name_7_4;
-    QLabel *price_7_4;
-    QSpinBox *Amount_item_7_4;
     QWidget *page_8;
     QWidget *layoutWidget_9;
     QVBoxLayout *verticalLayout_15;
@@ -189,19 +176,6 @@ public:
     QHBoxLayout *horizontalLayout_64;
     QLabel *label_65;
     QSpinBox *Amount_item_8_1;
-    QLabel *label_66;
-    QHBoxLayout *horizontalLayout_65;
-    QLabel *name_8_2;
-    QLabel *price_8_2;
-    QSpinBox *Amount_item_8_2;
-    QHBoxLayout *horizontalLayout_66;
-    QLabel *name_8_3;
-    QLabel *price_8_3;
-    QSpinBox *Amount_item_8_3;
-    QHBoxLayout *horizontalLayout_67;
-    QLabel *name_8_4;
-    QLabel *price_8_4;
-    QSpinBox *Amount_item_8_4;
     QWidget *page_9;
     QWidget *layoutWidget_10;
     QVBoxLayout *verticalLayout_16;
@@ -211,19 +185,6 @@ public:
     QHBoxLayout *horizontalLayout_68;
     QLabel *label_67;
     QSpinBox *Amount_item_9_1;
-    QLabel *label_68;
-    QHBoxLayout *horizontalLayout_69;
-    QLabel *name_9_2;
-    QLabel *price_9_2;
-    QSpinBox *Amount_item_9_2;
-    QHBoxLayout *horizontalLayout_70;
-    QLabel *name_9_3;
-    QLabel *price_9_3;
-    QSpinBox *Amount_item_9_3;
-    QHBoxLayout *horizontalLayout_71;
-    QLabel *name_9_4;
-    QLabel *price_9_4;
-    QSpinBox *Amount_item_9_4;
     QWidget *page_10;
     QWidget *layoutWidget_11;
     QVBoxLayout *verticalLayout_17;
@@ -233,19 +194,6 @@ public:
     QHBoxLayout *horizontalLayout_72;
     QLabel *label_69;
     QSpinBox *Amount_item_10_1;
-    QLabel *label_70;
-    QHBoxLayout *horizontalLayout_73;
-    QLabel *name_10_2;
-    QLabel *price_10_2;
-    QSpinBox *Amount_item_10_2;
-    QHBoxLayout *horizontalLayout_74;
-    QLabel *name_10_3;
-    QLabel *price_10_3;
-    QSpinBox *Amount_item_10_3;
-    QHBoxLayout *horizontalLayout_75;
-    QLabel *name_10_4;
-    QLabel *price_10_4;
-    QSpinBox *Amount_item_10_4;
     QWidget *page_11;
     QWidget *layoutWidget_12;
     QVBoxLayout *verticalLayout_19;
@@ -255,19 +203,6 @@ public:
     QHBoxLayout *horizontalLayout_80;
     QLabel *label_73;
     QSpinBox *Amount_item_11_1;
-    QLabel *label_74;
-    QHBoxLayout *horizontalLayout_81;
-    QLabel *name_11_2;
-    QLabel *price_11_2;
-    QSpinBox *Amount_item_11_2;
-    QHBoxLayout *horizontalLayout_82;
-    QLabel *name_11_3;
-    QLabel *price_11_3;
-    QSpinBox *Amount_item_11_3;
-    QHBoxLayout *horizontalLayout_83;
-    QLabel *name_11_4;
-    QLabel *price_1_11_4;
-    QSpinBox *Amount_item_11_4;
     QWidget *page_12;
     QWidget *layoutWidget_13;
     QVBoxLayout *verticalLayout_20;
@@ -277,19 +212,6 @@ public:
     QHBoxLayout *horizontalLayout_84;
     QLabel *label_75;
     QSpinBox *Amount_item_12_1;
-    QLabel *label_76;
-    QHBoxLayout *horizontalLayout_85;
-    QLabel *name_12_2;
-    QLabel *price_12_2;
-    QSpinBox *Amount_item_12_2;
-    QHBoxLayout *horizontalLayout_86;
-    QLabel *name_12_3;
-    QLabel *price_12_3;
-    QSpinBox *Amount_item_12_3;
-    QHBoxLayout *horizontalLayout_87;
-    QLabel *name_12_4;
-    QLabel *price_12_4;
-    QSpinBox *Amount_item_12_4;
     QWidget *page_13;
     QWidget *layoutWidget_14;
     QVBoxLayout *verticalLayout_21;
@@ -299,19 +221,6 @@ public:
     QHBoxLayout *horizontalLayout_88;
     QLabel *label_77;
     QSpinBox *Amount_item_13_1;
-    QLabel *label_78;
-    QHBoxLayout *horizontalLayout_89;
-    QLabel *name_13_2;
-    QLabel *price_13_2;
-    QSpinBox *Amount_item_13_2;
-    QHBoxLayout *horizontalLayout_90;
-    QLabel *name_13_3;
-    QLabel *price_13_3;
-    QSpinBox *Amount_item_13_3;
-    QHBoxLayout *horizontalLayout_91;
-    QLabel *name_13_4;
-    QLabel *price_13_4;
-    QSpinBox *Amount_item_13_4;
     QWidget *page_14;
     QWidget *layoutWidget_15;
     QVBoxLayout *verticalLayout_22;
@@ -321,19 +230,6 @@ public:
     QHBoxLayout *horizontalLayout_92;
     QLabel *label_79;
     QSpinBox *Amount_item_14_1;
-    QLabel *label_80;
-    QHBoxLayout *horizontalLayout_93;
-    QLabel *name_14_2;
-    QLabel *price_14_2;
-    QSpinBox *Amount_item_14_2;
-    QHBoxLayout *horizontalLayout_94;
-    QLabel *name_14_3;
-    QLabel *price_14_3;
-    QSpinBox *Amount_item_14_3;
-    QHBoxLayout *horizontalLayout_95;
-    QLabel *name_14_4;
-    QLabel *price_14_4;
-    QSpinBox *Amount_item_14_4;
     QWidget *page_15;
     QWidget *layoutWidget_16;
     QVBoxLayout *verticalLayout_23;
@@ -343,19 +239,6 @@ public:
     QHBoxLayout *horizontalLayout_96;
     QLabel *label_81;
     QSpinBox *Amount_item_15_1;
-    QLabel *label_82;
-    QHBoxLayout *horizontalLayout_97;
-    QLabel *name_15_2;
-    QLabel *price_15_2;
-    QSpinBox *Amount_item_15_2;
-    QHBoxLayout *horizontalLayout_98;
-    QLabel *name_15_3;
-    QLabel *price_15_3;
-    QSpinBox *Amount_item_15_3;
-    QHBoxLayout *horizontalLayout_99;
-    QLabel *name_15_4;
-    QLabel *price_15_4;
-    QSpinBox *Amount_item_15_4;
     QWidget *page_16;
     QWidget *layoutWidget_17;
     QVBoxLayout *verticalLayout_24;
@@ -365,19 +248,6 @@ public:
     QHBoxLayout *horizontalLayout_100;
     QLabel *label_83;
     QSpinBox *Amount_item_16_1;
-    QLabel *label_84;
-    QHBoxLayout *horizontalLayout_101;
-    QLabel *name_16_2;
-    QLabel *price_16_2;
-    QSpinBox *Amount_item_16_2;
-    QHBoxLayout *horizontalLayout_102;
-    QLabel *name_16_3;
-    QLabel *price_16_3;
-    QSpinBox *Amount_item_16_3;
-    QHBoxLayout *horizontalLayout_103;
-    QLabel *name_16_4;
-    QLabel *price_16_4;
-    QSpinBox *Amount_item_16_4;
     QWidget *page_17;
     QWidget *layoutWidget_18;
     QVBoxLayout *verticalLayout_25;
@@ -387,19 +257,6 @@ public:
     QHBoxLayout *horizontalLayout_104;
     QLabel *label_85;
     QSpinBox *Amount_item_17_1;
-    QLabel *label_86;
-    QHBoxLayout *horizontalLayout_105;
-    QLabel *name_17_2;
-    QLabel *price_17_2;
-    QSpinBox *Amount_item_17_2;
-    QHBoxLayout *horizontalLayout_106;
-    QLabel *name_17_3;
-    QLabel *price_17_3;
-    QSpinBox *Amount_item_17_3;
-    QHBoxLayout *horizontalLayout_107;
-    QLabel *name_17_4;
-    QLabel *price_17_4;
-    QSpinBox *Amount_item_17_4;
     QWidget *page_18;
     QWidget *layoutWidget_19;
     QVBoxLayout *verticalLayout_26;
@@ -409,19 +266,6 @@ public:
     QHBoxLayout *horizontalLayout_108;
     QLabel *label_87;
     QSpinBox *Amount_item_18_1;
-    QLabel *label_88;
-    QHBoxLayout *horizontalLayout_109;
-    QLabel *name_18_2;
-    QLabel *price_18_2;
-    QSpinBox *Amount_item_18_2;
-    QHBoxLayout *horizontalLayout_110;
-    QLabel *name_18_3;
-    QLabel *price_18_3;
-    QSpinBox *Amount_item_18_3;
-    QHBoxLayout *horizontalLayout_111;
-    QLabel *name_18_4;
-    QLabel *price_18_4;
-    QSpinBox *Amount_item_18_4;
     QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton;
@@ -1097,77 +941,12 @@ public:
 
         verticalLayout_14->addLayout(horizontalLayout_60);
 
-        label_64 = new QLabel(layoutWidget_8);
-        label_64->setObjectName("label_64");
-
-        verticalLayout_14->addWidget(label_64);
-
-        horizontalLayout_61 = new QHBoxLayout();
-        horizontalLayout_61->setObjectName("horizontalLayout_61");
-        name_7_2 = new QLabel(layoutWidget_8);
-        name_7_2->setObjectName("name_7_2");
-
-        horizontalLayout_61->addWidget(name_7_2);
-
-        price_7_2 = new QLabel(layoutWidget_8);
-        price_7_2->setObjectName("price_7_2");
-
-        horizontalLayout_61->addWidget(price_7_2);
-
-        Amount_item_7_2 = new QSpinBox(layoutWidget_8);
-        Amount_item_7_2->setObjectName("Amount_item_7_2");
-
-        horizontalLayout_61->addWidget(Amount_item_7_2);
-
-
-        verticalLayout_14->addLayout(horizontalLayout_61);
-
-        horizontalLayout_62 = new QHBoxLayout();
-        horizontalLayout_62->setObjectName("horizontalLayout_62");
-        name_7_3 = new QLabel(layoutWidget_8);
-        name_7_3->setObjectName("name_7_3");
-
-        horizontalLayout_62->addWidget(name_7_3);
-
-        price_7_3 = new QLabel(layoutWidget_8);
-        price_7_3->setObjectName("price_7_3");
-
-        horizontalLayout_62->addWidget(price_7_3);
-
-        Amount_item_7_3 = new QSpinBox(layoutWidget_8);
-        Amount_item_7_3->setObjectName("Amount_item_7_3");
-
-        horizontalLayout_62->addWidget(Amount_item_7_3);
-
-
-        verticalLayout_14->addLayout(horizontalLayout_62);
-
-        horizontalLayout_63 = new QHBoxLayout();
-        horizontalLayout_63->setObjectName("horizontalLayout_63");
-        name_7_4 = new QLabel(layoutWidget_8);
-        name_7_4->setObjectName("name_7_4");
-
-        horizontalLayout_63->addWidget(name_7_4);
-
-        price_7_4 = new QLabel(layoutWidget_8);
-        price_7_4->setObjectName("price_7_4");
-
-        horizontalLayout_63->addWidget(price_7_4);
-
-        Amount_item_7_4 = new QSpinBox(layoutWidget_8);
-        Amount_item_7_4->setObjectName("Amount_item_7_4");
-
-        horizontalLayout_63->addWidget(Amount_item_7_4);
-
-
-        verticalLayout_14->addLayout(horizontalLayout_63);
-
         stackedProductWidget->addWidget(page_7);
         page_8 = new QWidget();
         page_8->setObjectName("page_8");
         layoutWidget_9 = new QWidget(page_8);
         layoutWidget_9->setObjectName("layoutWidget_9");
-        layoutWidget_9->setGeometry(QRect(140, 10, 215, 257));
+        layoutWidget_9->setGeometry(QRect(100, 20, 215, 257));
         verticalLayout_15 = new QVBoxLayout(layoutWidget_9);
         verticalLayout_15->setObjectName("verticalLayout_15");
         verticalLayout_15->setContentsMargins(0, 0, 0, 0);
@@ -1200,71 +979,6 @@ public:
 
 
         verticalLayout_15->addLayout(horizontalLayout_64);
-
-        label_66 = new QLabel(layoutWidget_9);
-        label_66->setObjectName("label_66");
-
-        verticalLayout_15->addWidget(label_66);
-
-        horizontalLayout_65 = new QHBoxLayout();
-        horizontalLayout_65->setObjectName("horizontalLayout_65");
-        name_8_2 = new QLabel(layoutWidget_9);
-        name_8_2->setObjectName("name_8_2");
-
-        horizontalLayout_65->addWidget(name_8_2);
-
-        price_8_2 = new QLabel(layoutWidget_9);
-        price_8_2->setObjectName("price_8_2");
-
-        horizontalLayout_65->addWidget(price_8_2);
-
-        Amount_item_8_2 = new QSpinBox(layoutWidget_9);
-        Amount_item_8_2->setObjectName("Amount_item_8_2");
-
-        horizontalLayout_65->addWidget(Amount_item_8_2);
-
-
-        verticalLayout_15->addLayout(horizontalLayout_65);
-
-        horizontalLayout_66 = new QHBoxLayout();
-        horizontalLayout_66->setObjectName("horizontalLayout_66");
-        name_8_3 = new QLabel(layoutWidget_9);
-        name_8_3->setObjectName("name_8_3");
-
-        horizontalLayout_66->addWidget(name_8_3);
-
-        price_8_3 = new QLabel(layoutWidget_9);
-        price_8_3->setObjectName("price_8_3");
-
-        horizontalLayout_66->addWidget(price_8_3);
-
-        Amount_item_8_3 = new QSpinBox(layoutWidget_9);
-        Amount_item_8_3->setObjectName("Amount_item_8_3");
-
-        horizontalLayout_66->addWidget(Amount_item_8_3);
-
-
-        verticalLayout_15->addLayout(horizontalLayout_66);
-
-        horizontalLayout_67 = new QHBoxLayout();
-        horizontalLayout_67->setObjectName("horizontalLayout_67");
-        name_8_4 = new QLabel(layoutWidget_9);
-        name_8_4->setObjectName("name_8_4");
-
-        horizontalLayout_67->addWidget(name_8_4);
-
-        price_8_4 = new QLabel(layoutWidget_9);
-        price_8_4->setObjectName("price_8_4");
-
-        horizontalLayout_67->addWidget(price_8_4);
-
-        Amount_item_8_4 = new QSpinBox(layoutWidget_9);
-        Amount_item_8_4->setObjectName("Amount_item_8_4");
-
-        horizontalLayout_67->addWidget(Amount_item_8_4);
-
-
-        verticalLayout_15->addLayout(horizontalLayout_67);
 
         stackedProductWidget->addWidget(page_8);
         page_9 = new QWidget();
@@ -1305,71 +1019,6 @@ public:
 
         verticalLayout_16->addLayout(horizontalLayout_68);
 
-        label_68 = new QLabel(layoutWidget_10);
-        label_68->setObjectName("label_68");
-
-        verticalLayout_16->addWidget(label_68);
-
-        horizontalLayout_69 = new QHBoxLayout();
-        horizontalLayout_69->setObjectName("horizontalLayout_69");
-        name_9_2 = new QLabel(layoutWidget_10);
-        name_9_2->setObjectName("name_9_2");
-
-        horizontalLayout_69->addWidget(name_9_2);
-
-        price_9_2 = new QLabel(layoutWidget_10);
-        price_9_2->setObjectName("price_9_2");
-
-        horizontalLayout_69->addWidget(price_9_2);
-
-        Amount_item_9_2 = new QSpinBox(layoutWidget_10);
-        Amount_item_9_2->setObjectName("Amount_item_9_2");
-
-        horizontalLayout_69->addWidget(Amount_item_9_2);
-
-
-        verticalLayout_16->addLayout(horizontalLayout_69);
-
-        horizontalLayout_70 = new QHBoxLayout();
-        horizontalLayout_70->setObjectName("horizontalLayout_70");
-        name_9_3 = new QLabel(layoutWidget_10);
-        name_9_3->setObjectName("name_9_3");
-
-        horizontalLayout_70->addWidget(name_9_3);
-
-        price_9_3 = new QLabel(layoutWidget_10);
-        price_9_3->setObjectName("price_9_3");
-
-        horizontalLayout_70->addWidget(price_9_3);
-
-        Amount_item_9_3 = new QSpinBox(layoutWidget_10);
-        Amount_item_9_3->setObjectName("Amount_item_9_3");
-
-        horizontalLayout_70->addWidget(Amount_item_9_3);
-
-
-        verticalLayout_16->addLayout(horizontalLayout_70);
-
-        horizontalLayout_71 = new QHBoxLayout();
-        horizontalLayout_71->setObjectName("horizontalLayout_71");
-        name_9_4 = new QLabel(layoutWidget_10);
-        name_9_4->setObjectName("name_9_4");
-
-        horizontalLayout_71->addWidget(name_9_4);
-
-        price_9_4 = new QLabel(layoutWidget_10);
-        price_9_4->setObjectName("price_9_4");
-
-        horizontalLayout_71->addWidget(price_9_4);
-
-        Amount_item_9_4 = new QSpinBox(layoutWidget_10);
-        Amount_item_9_4->setObjectName("Amount_item_9_4");
-
-        horizontalLayout_71->addWidget(Amount_item_9_4);
-
-
-        verticalLayout_16->addLayout(horizontalLayout_71);
-
         stackedProductWidget->addWidget(page_9);
         page_10 = new QWidget();
         page_10->setObjectName("page_10");
@@ -1408,71 +1057,6 @@ public:
 
 
         verticalLayout_17->addLayout(horizontalLayout_72);
-
-        label_70 = new QLabel(layoutWidget_11);
-        label_70->setObjectName("label_70");
-
-        verticalLayout_17->addWidget(label_70);
-
-        horizontalLayout_73 = new QHBoxLayout();
-        horizontalLayout_73->setObjectName("horizontalLayout_73");
-        name_10_2 = new QLabel(layoutWidget_11);
-        name_10_2->setObjectName("name_10_2");
-
-        horizontalLayout_73->addWidget(name_10_2);
-
-        price_10_2 = new QLabel(layoutWidget_11);
-        price_10_2->setObjectName("price_10_2");
-
-        horizontalLayout_73->addWidget(price_10_2);
-
-        Amount_item_10_2 = new QSpinBox(layoutWidget_11);
-        Amount_item_10_2->setObjectName("Amount_item_10_2");
-
-        horizontalLayout_73->addWidget(Amount_item_10_2);
-
-
-        verticalLayout_17->addLayout(horizontalLayout_73);
-
-        horizontalLayout_74 = new QHBoxLayout();
-        horizontalLayout_74->setObjectName("horizontalLayout_74");
-        name_10_3 = new QLabel(layoutWidget_11);
-        name_10_3->setObjectName("name_10_3");
-
-        horizontalLayout_74->addWidget(name_10_3);
-
-        price_10_3 = new QLabel(layoutWidget_11);
-        price_10_3->setObjectName("price_10_3");
-
-        horizontalLayout_74->addWidget(price_10_3);
-
-        Amount_item_10_3 = new QSpinBox(layoutWidget_11);
-        Amount_item_10_3->setObjectName("Amount_item_10_3");
-
-        horizontalLayout_74->addWidget(Amount_item_10_3);
-
-
-        verticalLayout_17->addLayout(horizontalLayout_74);
-
-        horizontalLayout_75 = new QHBoxLayout();
-        horizontalLayout_75->setObjectName("horizontalLayout_75");
-        name_10_4 = new QLabel(layoutWidget_11);
-        name_10_4->setObjectName("name_10_4");
-
-        horizontalLayout_75->addWidget(name_10_4);
-
-        price_10_4 = new QLabel(layoutWidget_11);
-        price_10_4->setObjectName("price_10_4");
-
-        horizontalLayout_75->addWidget(price_10_4);
-
-        Amount_item_10_4 = new QSpinBox(layoutWidget_11);
-        Amount_item_10_4->setObjectName("Amount_item_10_4");
-
-        horizontalLayout_75->addWidget(Amount_item_10_4);
-
-
-        verticalLayout_17->addLayout(horizontalLayout_75);
 
         stackedProductWidget->addWidget(page_10);
         page_11 = new QWidget();
@@ -1513,71 +1097,6 @@ public:
 
         verticalLayout_19->addLayout(horizontalLayout_80);
 
-        label_74 = new QLabel(layoutWidget_12);
-        label_74->setObjectName("label_74");
-
-        verticalLayout_19->addWidget(label_74);
-
-        horizontalLayout_81 = new QHBoxLayout();
-        horizontalLayout_81->setObjectName("horizontalLayout_81");
-        name_11_2 = new QLabel(layoutWidget_12);
-        name_11_2->setObjectName("name_11_2");
-
-        horizontalLayout_81->addWidget(name_11_2);
-
-        price_11_2 = new QLabel(layoutWidget_12);
-        price_11_2->setObjectName("price_11_2");
-
-        horizontalLayout_81->addWidget(price_11_2);
-
-        Amount_item_11_2 = new QSpinBox(layoutWidget_12);
-        Amount_item_11_2->setObjectName("Amount_item_11_2");
-
-        horizontalLayout_81->addWidget(Amount_item_11_2);
-
-
-        verticalLayout_19->addLayout(horizontalLayout_81);
-
-        horizontalLayout_82 = new QHBoxLayout();
-        horizontalLayout_82->setObjectName("horizontalLayout_82");
-        name_11_3 = new QLabel(layoutWidget_12);
-        name_11_3->setObjectName("name_11_3");
-
-        horizontalLayout_82->addWidget(name_11_3);
-
-        price_11_3 = new QLabel(layoutWidget_12);
-        price_11_3->setObjectName("price_11_3");
-
-        horizontalLayout_82->addWidget(price_11_3);
-
-        Amount_item_11_3 = new QSpinBox(layoutWidget_12);
-        Amount_item_11_3->setObjectName("Amount_item_11_3");
-
-        horizontalLayout_82->addWidget(Amount_item_11_3);
-
-
-        verticalLayout_19->addLayout(horizontalLayout_82);
-
-        horizontalLayout_83 = new QHBoxLayout();
-        horizontalLayout_83->setObjectName("horizontalLayout_83");
-        name_11_4 = new QLabel(layoutWidget_12);
-        name_11_4->setObjectName("name_11_4");
-
-        horizontalLayout_83->addWidget(name_11_4);
-
-        price_1_11_4 = new QLabel(layoutWidget_12);
-        price_1_11_4->setObjectName("price_1_11_4");
-
-        horizontalLayout_83->addWidget(price_1_11_4);
-
-        Amount_item_11_4 = new QSpinBox(layoutWidget_12);
-        Amount_item_11_4->setObjectName("Amount_item_11_4");
-
-        horizontalLayout_83->addWidget(Amount_item_11_4);
-
-
-        verticalLayout_19->addLayout(horizontalLayout_83);
-
         stackedProductWidget->addWidget(page_11);
         page_12 = new QWidget();
         page_12->setObjectName("page_12");
@@ -1616,71 +1135,6 @@ public:
 
 
         verticalLayout_20->addLayout(horizontalLayout_84);
-
-        label_76 = new QLabel(layoutWidget_13);
-        label_76->setObjectName("label_76");
-
-        verticalLayout_20->addWidget(label_76);
-
-        horizontalLayout_85 = new QHBoxLayout();
-        horizontalLayout_85->setObjectName("horizontalLayout_85");
-        name_12_2 = new QLabel(layoutWidget_13);
-        name_12_2->setObjectName("name_12_2");
-
-        horizontalLayout_85->addWidget(name_12_2);
-
-        price_12_2 = new QLabel(layoutWidget_13);
-        price_12_2->setObjectName("price_12_2");
-
-        horizontalLayout_85->addWidget(price_12_2);
-
-        Amount_item_12_2 = new QSpinBox(layoutWidget_13);
-        Amount_item_12_2->setObjectName("Amount_item_12_2");
-
-        horizontalLayout_85->addWidget(Amount_item_12_2);
-
-
-        verticalLayout_20->addLayout(horizontalLayout_85);
-
-        horizontalLayout_86 = new QHBoxLayout();
-        horizontalLayout_86->setObjectName("horizontalLayout_86");
-        name_12_3 = new QLabel(layoutWidget_13);
-        name_12_3->setObjectName("name_12_3");
-
-        horizontalLayout_86->addWidget(name_12_3);
-
-        price_12_3 = new QLabel(layoutWidget_13);
-        price_12_3->setObjectName("price_12_3");
-
-        horizontalLayout_86->addWidget(price_12_3);
-
-        Amount_item_12_3 = new QSpinBox(layoutWidget_13);
-        Amount_item_12_3->setObjectName("Amount_item_12_3");
-
-        horizontalLayout_86->addWidget(Amount_item_12_3);
-
-
-        verticalLayout_20->addLayout(horizontalLayout_86);
-
-        horizontalLayout_87 = new QHBoxLayout();
-        horizontalLayout_87->setObjectName("horizontalLayout_87");
-        name_12_4 = new QLabel(layoutWidget_13);
-        name_12_4->setObjectName("name_12_4");
-
-        horizontalLayout_87->addWidget(name_12_4);
-
-        price_12_4 = new QLabel(layoutWidget_13);
-        price_12_4->setObjectName("price_12_4");
-
-        horizontalLayout_87->addWidget(price_12_4);
-
-        Amount_item_12_4 = new QSpinBox(layoutWidget_13);
-        Amount_item_12_4->setObjectName("Amount_item_12_4");
-
-        horizontalLayout_87->addWidget(Amount_item_12_4);
-
-
-        verticalLayout_20->addLayout(horizontalLayout_87);
 
         stackedProductWidget->addWidget(page_12);
         page_13 = new QWidget();
@@ -1721,71 +1175,6 @@ public:
 
         verticalLayout_21->addLayout(horizontalLayout_88);
 
-        label_78 = new QLabel(layoutWidget_14);
-        label_78->setObjectName("label_78");
-
-        verticalLayout_21->addWidget(label_78);
-
-        horizontalLayout_89 = new QHBoxLayout();
-        horizontalLayout_89->setObjectName("horizontalLayout_89");
-        name_13_2 = new QLabel(layoutWidget_14);
-        name_13_2->setObjectName("name_13_2");
-
-        horizontalLayout_89->addWidget(name_13_2);
-
-        price_13_2 = new QLabel(layoutWidget_14);
-        price_13_2->setObjectName("price_13_2");
-
-        horizontalLayout_89->addWidget(price_13_2);
-
-        Amount_item_13_2 = new QSpinBox(layoutWidget_14);
-        Amount_item_13_2->setObjectName("Amount_item_13_2");
-
-        horizontalLayout_89->addWidget(Amount_item_13_2);
-
-
-        verticalLayout_21->addLayout(horizontalLayout_89);
-
-        horizontalLayout_90 = new QHBoxLayout();
-        horizontalLayout_90->setObjectName("horizontalLayout_90");
-        name_13_3 = new QLabel(layoutWidget_14);
-        name_13_3->setObjectName("name_13_3");
-
-        horizontalLayout_90->addWidget(name_13_3);
-
-        price_13_3 = new QLabel(layoutWidget_14);
-        price_13_3->setObjectName("price_13_3");
-
-        horizontalLayout_90->addWidget(price_13_3);
-
-        Amount_item_13_3 = new QSpinBox(layoutWidget_14);
-        Amount_item_13_3->setObjectName("Amount_item_13_3");
-
-        horizontalLayout_90->addWidget(Amount_item_13_3);
-
-
-        verticalLayout_21->addLayout(horizontalLayout_90);
-
-        horizontalLayout_91 = new QHBoxLayout();
-        horizontalLayout_91->setObjectName("horizontalLayout_91");
-        name_13_4 = new QLabel(layoutWidget_14);
-        name_13_4->setObjectName("name_13_4");
-
-        horizontalLayout_91->addWidget(name_13_4);
-
-        price_13_4 = new QLabel(layoutWidget_14);
-        price_13_4->setObjectName("price_13_4");
-
-        horizontalLayout_91->addWidget(price_13_4);
-
-        Amount_item_13_4 = new QSpinBox(layoutWidget_14);
-        Amount_item_13_4->setObjectName("Amount_item_13_4");
-
-        horizontalLayout_91->addWidget(Amount_item_13_4);
-
-
-        verticalLayout_21->addLayout(horizontalLayout_91);
-
         stackedProductWidget->addWidget(page_13);
         page_14 = new QWidget();
         page_14->setObjectName("page_14");
@@ -1824,71 +1213,6 @@ public:
 
 
         verticalLayout_22->addLayout(horizontalLayout_92);
-
-        label_80 = new QLabel(layoutWidget_15);
-        label_80->setObjectName("label_80");
-
-        verticalLayout_22->addWidget(label_80);
-
-        horizontalLayout_93 = new QHBoxLayout();
-        horizontalLayout_93->setObjectName("horizontalLayout_93");
-        name_14_2 = new QLabel(layoutWidget_15);
-        name_14_2->setObjectName("name_14_2");
-
-        horizontalLayout_93->addWidget(name_14_2);
-
-        price_14_2 = new QLabel(layoutWidget_15);
-        price_14_2->setObjectName("price_14_2");
-
-        horizontalLayout_93->addWidget(price_14_2);
-
-        Amount_item_14_2 = new QSpinBox(layoutWidget_15);
-        Amount_item_14_2->setObjectName("Amount_item_14_2");
-
-        horizontalLayout_93->addWidget(Amount_item_14_2);
-
-
-        verticalLayout_22->addLayout(horizontalLayout_93);
-
-        horizontalLayout_94 = new QHBoxLayout();
-        horizontalLayout_94->setObjectName("horizontalLayout_94");
-        name_14_3 = new QLabel(layoutWidget_15);
-        name_14_3->setObjectName("name_14_3");
-
-        horizontalLayout_94->addWidget(name_14_3);
-
-        price_14_3 = new QLabel(layoutWidget_15);
-        price_14_3->setObjectName("price_14_3");
-
-        horizontalLayout_94->addWidget(price_14_3);
-
-        Amount_item_14_3 = new QSpinBox(layoutWidget_15);
-        Amount_item_14_3->setObjectName("Amount_item_14_3");
-
-        horizontalLayout_94->addWidget(Amount_item_14_3);
-
-
-        verticalLayout_22->addLayout(horizontalLayout_94);
-
-        horizontalLayout_95 = new QHBoxLayout();
-        horizontalLayout_95->setObjectName("horizontalLayout_95");
-        name_14_4 = new QLabel(layoutWidget_15);
-        name_14_4->setObjectName("name_14_4");
-
-        horizontalLayout_95->addWidget(name_14_4);
-
-        price_14_4 = new QLabel(layoutWidget_15);
-        price_14_4->setObjectName("price_14_4");
-
-        horizontalLayout_95->addWidget(price_14_4);
-
-        Amount_item_14_4 = new QSpinBox(layoutWidget_15);
-        Amount_item_14_4->setObjectName("Amount_item_14_4");
-
-        horizontalLayout_95->addWidget(Amount_item_14_4);
-
-
-        verticalLayout_22->addLayout(horizontalLayout_95);
 
         stackedProductWidget->addWidget(page_14);
         page_15 = new QWidget();
@@ -1929,71 +1253,6 @@ public:
 
         verticalLayout_23->addLayout(horizontalLayout_96);
 
-        label_82 = new QLabel(layoutWidget_16);
-        label_82->setObjectName("label_82");
-
-        verticalLayout_23->addWidget(label_82);
-
-        horizontalLayout_97 = new QHBoxLayout();
-        horizontalLayout_97->setObjectName("horizontalLayout_97");
-        name_15_2 = new QLabel(layoutWidget_16);
-        name_15_2->setObjectName("name_15_2");
-
-        horizontalLayout_97->addWidget(name_15_2);
-
-        price_15_2 = new QLabel(layoutWidget_16);
-        price_15_2->setObjectName("price_15_2");
-
-        horizontalLayout_97->addWidget(price_15_2);
-
-        Amount_item_15_2 = new QSpinBox(layoutWidget_16);
-        Amount_item_15_2->setObjectName("Amount_item_15_2");
-
-        horizontalLayout_97->addWidget(Amount_item_15_2);
-
-
-        verticalLayout_23->addLayout(horizontalLayout_97);
-
-        horizontalLayout_98 = new QHBoxLayout();
-        horizontalLayout_98->setObjectName("horizontalLayout_98");
-        name_15_3 = new QLabel(layoutWidget_16);
-        name_15_3->setObjectName("name_15_3");
-
-        horizontalLayout_98->addWidget(name_15_3);
-
-        price_15_3 = new QLabel(layoutWidget_16);
-        price_15_3->setObjectName("price_15_3");
-
-        horizontalLayout_98->addWidget(price_15_3);
-
-        Amount_item_15_3 = new QSpinBox(layoutWidget_16);
-        Amount_item_15_3->setObjectName("Amount_item_15_3");
-
-        horizontalLayout_98->addWidget(Amount_item_15_3);
-
-
-        verticalLayout_23->addLayout(horizontalLayout_98);
-
-        horizontalLayout_99 = new QHBoxLayout();
-        horizontalLayout_99->setObjectName("horizontalLayout_99");
-        name_15_4 = new QLabel(layoutWidget_16);
-        name_15_4->setObjectName("name_15_4");
-
-        horizontalLayout_99->addWidget(name_15_4);
-
-        price_15_4 = new QLabel(layoutWidget_16);
-        price_15_4->setObjectName("price_15_4");
-
-        horizontalLayout_99->addWidget(price_15_4);
-
-        Amount_item_15_4 = new QSpinBox(layoutWidget_16);
-        Amount_item_15_4->setObjectName("Amount_item_15_4");
-
-        horizontalLayout_99->addWidget(Amount_item_15_4);
-
-
-        verticalLayout_23->addLayout(horizontalLayout_99);
-
         stackedProductWidget->addWidget(page_15);
         page_16 = new QWidget();
         page_16->setObjectName("page_16");
@@ -2032,71 +1291,6 @@ public:
 
 
         verticalLayout_24->addLayout(horizontalLayout_100);
-
-        label_84 = new QLabel(layoutWidget_17);
-        label_84->setObjectName("label_84");
-
-        verticalLayout_24->addWidget(label_84);
-
-        horizontalLayout_101 = new QHBoxLayout();
-        horizontalLayout_101->setObjectName("horizontalLayout_101");
-        name_16_2 = new QLabel(layoutWidget_17);
-        name_16_2->setObjectName("name_16_2");
-
-        horizontalLayout_101->addWidget(name_16_2);
-
-        price_16_2 = new QLabel(layoutWidget_17);
-        price_16_2->setObjectName("price_16_2");
-
-        horizontalLayout_101->addWidget(price_16_2);
-
-        Amount_item_16_2 = new QSpinBox(layoutWidget_17);
-        Amount_item_16_2->setObjectName("Amount_item_16_2");
-
-        horizontalLayout_101->addWidget(Amount_item_16_2);
-
-
-        verticalLayout_24->addLayout(horizontalLayout_101);
-
-        horizontalLayout_102 = new QHBoxLayout();
-        horizontalLayout_102->setObjectName("horizontalLayout_102");
-        name_16_3 = new QLabel(layoutWidget_17);
-        name_16_3->setObjectName("name_16_3");
-
-        horizontalLayout_102->addWidget(name_16_3);
-
-        price_16_3 = new QLabel(layoutWidget_17);
-        price_16_3->setObjectName("price_16_3");
-
-        horizontalLayout_102->addWidget(price_16_3);
-
-        Amount_item_16_3 = new QSpinBox(layoutWidget_17);
-        Amount_item_16_3->setObjectName("Amount_item_16_3");
-
-        horizontalLayout_102->addWidget(Amount_item_16_3);
-
-
-        verticalLayout_24->addLayout(horizontalLayout_102);
-
-        horizontalLayout_103 = new QHBoxLayout();
-        horizontalLayout_103->setObjectName("horizontalLayout_103");
-        name_16_4 = new QLabel(layoutWidget_17);
-        name_16_4->setObjectName("name_16_4");
-
-        horizontalLayout_103->addWidget(name_16_4);
-
-        price_16_4 = new QLabel(layoutWidget_17);
-        price_16_4->setObjectName("price_16_4");
-
-        horizontalLayout_103->addWidget(price_16_4);
-
-        Amount_item_16_4 = new QSpinBox(layoutWidget_17);
-        Amount_item_16_4->setObjectName("Amount_item_16_4");
-
-        horizontalLayout_103->addWidget(Amount_item_16_4);
-
-
-        verticalLayout_24->addLayout(horizontalLayout_103);
 
         stackedProductWidget->addWidget(page_16);
         page_17 = new QWidget();
@@ -2137,71 +1331,6 @@ public:
 
         verticalLayout_25->addLayout(horizontalLayout_104);
 
-        label_86 = new QLabel(layoutWidget_18);
-        label_86->setObjectName("label_86");
-
-        verticalLayout_25->addWidget(label_86);
-
-        horizontalLayout_105 = new QHBoxLayout();
-        horizontalLayout_105->setObjectName("horizontalLayout_105");
-        name_17_2 = new QLabel(layoutWidget_18);
-        name_17_2->setObjectName("name_17_2");
-
-        horizontalLayout_105->addWidget(name_17_2);
-
-        price_17_2 = new QLabel(layoutWidget_18);
-        price_17_2->setObjectName("price_17_2");
-
-        horizontalLayout_105->addWidget(price_17_2);
-
-        Amount_item_17_2 = new QSpinBox(layoutWidget_18);
-        Amount_item_17_2->setObjectName("Amount_item_17_2");
-
-        horizontalLayout_105->addWidget(Amount_item_17_2);
-
-
-        verticalLayout_25->addLayout(horizontalLayout_105);
-
-        horizontalLayout_106 = new QHBoxLayout();
-        horizontalLayout_106->setObjectName("horizontalLayout_106");
-        name_17_3 = new QLabel(layoutWidget_18);
-        name_17_3->setObjectName("name_17_3");
-
-        horizontalLayout_106->addWidget(name_17_3);
-
-        price_17_3 = new QLabel(layoutWidget_18);
-        price_17_3->setObjectName("price_17_3");
-
-        horizontalLayout_106->addWidget(price_17_3);
-
-        Amount_item_17_3 = new QSpinBox(layoutWidget_18);
-        Amount_item_17_3->setObjectName("Amount_item_17_3");
-
-        horizontalLayout_106->addWidget(Amount_item_17_3);
-
-
-        verticalLayout_25->addLayout(horizontalLayout_106);
-
-        horizontalLayout_107 = new QHBoxLayout();
-        horizontalLayout_107->setObjectName("horizontalLayout_107");
-        name_17_4 = new QLabel(layoutWidget_18);
-        name_17_4->setObjectName("name_17_4");
-
-        horizontalLayout_107->addWidget(name_17_4);
-
-        price_17_4 = new QLabel(layoutWidget_18);
-        price_17_4->setObjectName("price_17_4");
-
-        horizontalLayout_107->addWidget(price_17_4);
-
-        Amount_item_17_4 = new QSpinBox(layoutWidget_18);
-        Amount_item_17_4->setObjectName("Amount_item_17_4");
-
-        horizontalLayout_107->addWidget(Amount_item_17_4);
-
-
-        verticalLayout_25->addLayout(horizontalLayout_107);
-
         stackedProductWidget->addWidget(page_17);
         page_18 = new QWidget();
         page_18->setObjectName("page_18");
@@ -2241,71 +1370,6 @@ public:
 
         verticalLayout_26->addLayout(horizontalLayout_108);
 
-        label_88 = new QLabel(layoutWidget_19);
-        label_88->setObjectName("label_88");
-
-        verticalLayout_26->addWidget(label_88);
-
-        horizontalLayout_109 = new QHBoxLayout();
-        horizontalLayout_109->setObjectName("horizontalLayout_109");
-        name_18_2 = new QLabel(layoutWidget_19);
-        name_18_2->setObjectName("name_18_2");
-
-        horizontalLayout_109->addWidget(name_18_2);
-
-        price_18_2 = new QLabel(layoutWidget_19);
-        price_18_2->setObjectName("price_18_2");
-
-        horizontalLayout_109->addWidget(price_18_2);
-
-        Amount_item_18_2 = new QSpinBox(layoutWidget_19);
-        Amount_item_18_2->setObjectName("Amount_item_18_2");
-
-        horizontalLayout_109->addWidget(Amount_item_18_2);
-
-
-        verticalLayout_26->addLayout(horizontalLayout_109);
-
-        horizontalLayout_110 = new QHBoxLayout();
-        horizontalLayout_110->setObjectName("horizontalLayout_110");
-        name_18_3 = new QLabel(layoutWidget_19);
-        name_18_3->setObjectName("name_18_3");
-
-        horizontalLayout_110->addWidget(name_18_3);
-
-        price_18_3 = new QLabel(layoutWidget_19);
-        price_18_3->setObjectName("price_18_3");
-
-        horizontalLayout_110->addWidget(price_18_3);
-
-        Amount_item_18_3 = new QSpinBox(layoutWidget_19);
-        Amount_item_18_3->setObjectName("Amount_item_18_3");
-
-        horizontalLayout_110->addWidget(Amount_item_18_3);
-
-
-        verticalLayout_26->addLayout(horizontalLayout_110);
-
-        horizontalLayout_111 = new QHBoxLayout();
-        horizontalLayout_111->setObjectName("horizontalLayout_111");
-        name_18_4 = new QLabel(layoutWidget_19);
-        name_18_4->setObjectName("name_18_4");
-
-        horizontalLayout_111->addWidget(name_18_4);
-
-        price_18_4 = new QLabel(layoutWidget_19);
-        price_18_4->setObjectName("price_18_4");
-
-        horizontalLayout_111->addWidget(price_18_4);
-
-        Amount_item_18_4 = new QSpinBox(layoutWidget_19);
-        Amount_item_18_4->setObjectName("Amount_item_18_4");
-
-        horizontalLayout_111->addWidget(Amount_item_18_4);
-
-
-        verticalLayout_26->addLayout(horizontalLayout_111);
-
         stackedProductWidget->addWidget(page_18);
         layoutWidget = new QWidget(Produkt);
         layoutWidget->setObjectName("layoutWidget");
@@ -2327,7 +1391,7 @@ public:
 
         retranslateUi(Produkt);
 
-        stackedProductWidget->setCurrentIndex(10);
+        stackedProductWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(Produkt);
@@ -2399,123 +1463,39 @@ public:
         name_7_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_7_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_63->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_64->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_7_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_7_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_7_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_7_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_7_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_7_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         name_8_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_8_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_65->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_66->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_8_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_8_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_8_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_8_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_8_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_8_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         name_9_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_9_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_67->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_68->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_9_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_9_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_9_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_9_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_9_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_9_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         name_10_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_10_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_69->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_70->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_10_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_10_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_10_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_10_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_10_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_10_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         name_11_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_11_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_73->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_74->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_11_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_11_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_11_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_11_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_11_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_1_11_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         name_12_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_12_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_75->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_76->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_12_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_12_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_12_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_12_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_12_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_12_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         name_13_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_13_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_77->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_78->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_13_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_13_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_13_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_13_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_13_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_13_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         name_14_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_14_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_79->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_80->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_14_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_14_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_14_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_14_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_14_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_14_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         name_15_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_15_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_81->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_82->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_15_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_15_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_15_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_15_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_15_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_15_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         name_16_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_16_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_83->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_84->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_16_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_16_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_16_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_16_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_16_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_16_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         name_17_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_17_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_85->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_86->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_17_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_17_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_17_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_17_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_17_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_17_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         name_18_1->setText(QCoreApplication::translate("Produkt", "Ros\303\263\305\202", nullptr));
         price_18_1->setText(QCoreApplication::translate("Produkt", "9,90z\305\202", nullptr));
         label_87->setText(QCoreApplication::translate("Produkt", "ilo\305\233\304\207", nullptr));
-        label_88->setText(QCoreApplication::translate("Produkt", "Dodatki:", nullptr));
-        name_18_2->setText(QCoreApplication::translate("Produkt", "Ketchup", nullptr));
-        price_18_2->setText(QCoreApplication::translate("Produkt", "2,00z\305\202", nullptr));
-        name_18_3->setText(QCoreApplication::translate("Produkt", "Majonez", nullptr));
-        price_18_3->setText(QCoreApplication::translate("Produkt", "2,50z\305\202", nullptr));
-        name_18_4->setText(QCoreApplication::translate("Produkt", "Chili", nullptr));
-        price_18_4->setText(QCoreApplication::translate("Produkt", "3,50z\305\202", nullptr));
         pushButton->setText(QCoreApplication::translate("Produkt", "Anuluj", nullptr));
         pushButton_2->setText(QCoreApplication::translate("Produkt", "Zapisz", nullptr));
     } // retranslateUi

@@ -21,7 +21,8 @@ class Addons
 {
 public:
     Addons(const int,const QString, const double, const int);
-    void writeAddonsToScreen();
+    QString writeAddonsName();
+    QString writeAddonsCost();
 private:
     const int addonId;
     const QString addonName;

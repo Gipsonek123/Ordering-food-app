@@ -16,6 +16,7 @@
 #include <QPixmap>
 
 std::vector<Food> resultFood;
+std::vector<Addons> resultAddons;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -112,6 +113,7 @@ MainWindow::MainWindow(QWidget *parent)
         }
         connect(produktBtn, &QPushButton::clicked, this, [produkt,i](){
            produkt->handleStackedWidgetIndexChange(i);
+           produkt->showAddons(resultAddons, resultFood);
         });
     }
 }
@@ -405,31 +407,29 @@ void MainWindow::on_pushButton_3_clicked()
     goToNextPage();
     resultFood = writeFoodToVectorOfObjects();
     showData(resultFood);
+    resultAddons=writeAddonsToVectorOfObjects();
 //    progressBarLoading(ui->progressBar_3);
 }
 
 // na miejscu
 void MainWindow::on_pushButton_2_clicked()
 {
-<<<<<<< HEAD
-=======
+
 
     //    goToNextPage();
     goToNextPage();
     resultFood = writeFoodToVectorOfObjects();
     showData(resultFood);
+    resultAddons=writeAddonsToVectorOfObjects();
 
 
->>>>>>> f3789c68535ac3c02a0b3b1a24f3bc6fc74340e5
     save_text_to_file("zamowione_produkty.txt", "1x Opakowanie 2,00zł");
     save_text_to_file("ceny_produktow.txt", "2");
     resultFood = writeFoodToVectorOfObjects();
     showData(resultFood);
     goToNextPage();
-<<<<<<< HEAD
-=======
 
->>>>>>> f3789c68535ac3c02a0b3b1a24f3bc6fc74340e5
+
 //    progressBarLoading(ui->progressBar_3);
 }
 

@@ -7,6 +7,8 @@
 
 #include "qlabel.h"
 #include <QDialog>
+#include <vector>
+#include "dbmanager.h"
 
 class MainWindow;
 
@@ -22,6 +24,7 @@ public:
     explicit Produkt(QWidget *parent = nullptr);
     void actual_sum(QSpinBox* amountSpinBox, QLabel* priceLabel);
     ~Produkt();
+    void showAddons(std::vector<Addons>, std::vector<Food> foods);
 
 
 public slots:
