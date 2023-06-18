@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QLabel" name="label_5">
@@ -391,7 +391,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
 	padding-top: 5px;</string>
            </property>
            <property name="text">
-            <string>Zupy</string>
+            <string>Burgery</string>
            </property>
           </widget>
          </item>
@@ -419,7 +419,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
                  <item>
                   <layout class="QHBoxLayout" name="horizontalLayout_26">
                    <item>
-                    <widget class="QLabel" name="label_143">
+                    <widget class="QLabel" name="BurgerName_1">
                      <property name="maximumSize">
                       <size>
                        <width>16777215</width>
@@ -436,7 +436,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLabel" name="label_36">
+                    <widget class="QLabel" name="BurgerCost_1">
                      <property name="text">
                       <string>9zł</string>
                      </property>
@@ -468,7 +468,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_22">
                <item>
-                <widget class="QLabel" name="label_139">
+                <widget class="QLabel" name="BurgerName_2">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -485,7 +485,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_32">
+                <widget class="QLabel" name="BurgerCost_2">
                  <property name="text">
                   <string>12zł</string>
                  </property>
@@ -513,7 +513,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_23">
                <item>
-                <widget class="QLabel" name="label_140">
+                <widget class="QLabel" name="BurgerName_3">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -530,7 +530,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_33">
+                <widget class="QLabel" name="BurgerCost_3">
                  <property name="text">
                   <string>14,50zł</string>
                  </property>
@@ -555,7 +555,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
 	padding-top: 5px;</string>
            </property>
            <property name="text">
-            <string>Dania główne</string>
+            <string>Pizza</string>
            </property>
           </widget>
          </item>
@@ -579,7 +579,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_21">
                <item>
-                <widget class="QLabel" name="label_138">
+                <widget class="QLabel" name="PizzaName_1">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -596,7 +596,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_31">
+                <widget class="QLabel" name="PizzaCost_1">
                  <property name="text">
                   <string>25.80zł</string>
                  </property>
@@ -624,7 +624,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_19">
                <item>
-                <widget class="QLabel" name="label_136">
+                <widget class="QLabel" name="PizzaName_2">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -641,7 +641,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_29">
+                <widget class="QLabel" name="PizzaCost_2">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -669,7 +669,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_18">
                <item>
-                <widget class="QLabel" name="label_135">
+                <widget class="QLabel" name="PizzaName_3">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -686,7 +686,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_28">
+                <widget class="QLabel" name="PizzaCost_3">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -739,7 +739,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_20">
                <item>
-                <widget class="QLabel" name="label_137">
+                <widget class="QLabel" name="DessertName_1">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -756,7 +756,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_30">
+                <widget class="QLabel" name="DessertCost_1">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -784,7 +784,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_17">
                <item>
-                <widget class="QLabel" name="label_134">
+                <widget class="QLabel" name="DessertName_2">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -801,7 +801,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_27">
+                <widget class="QLabel" name="DessertCost_2">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -829,7 +829,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_16">
                <item>
-                <widget class="QLabel" name="label_133">
+                <widget class="QLabel" name="DessertName_3">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -846,7 +846,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_26">
+                <widget class="QLabel" name="DessertCost_3">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -936,7 +936,7 @@ background-color: rgb(128,128,128,0.2);</string>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_2">
                <item>
-                <widget class="QLabel" name="label_123">
+                <widget class="QLabel" name="SaladName_1">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -953,7 +953,7 @@ background-color: rgb(128,128,128,0.2);</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_2">
+                <widget class="QLabel" name="SaladCost_1">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -987,7 +987,7 @@ background-color: rgb(128,128,128,0.2);</string>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_7">
                <item>
-                <widget class="QLabel" name="label_125">
+                <widget class="QLabel" name="SaladName_2">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -1004,7 +1004,7 @@ background-color: rgb(128,128,128,0.2);</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_18">
+                <widget class="QLabel" name="SaladCost_2">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -1038,7 +1038,7 @@ background-color: rgb(128,128,128,0.2);</string>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_6">
                <item>
-                <widget class="QLabel" name="label_124">
+                <widget class="QLabel" name="SaladName_3">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -1055,7 +1055,7 @@ background-color: rgb(128,128,128,0.2);</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_17">
+                <widget class="QLabel" name="SaladCost_3">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -1104,7 +1104,7 @@ background-color: rgb(128,128,128,0.2);</string>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_9">
                <item>
-                <widget class="QLabel" name="label_127">
+                <widget class="QLabel" name="SnackName_1">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -1121,7 +1121,7 @@ background-color: rgb(128,128,128,0.2);</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_20">
+                <widget class="QLabel" name="SnackCost_1">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -1149,7 +1149,7 @@ background-color: rgb(128,128,128,0.2);</string>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_10">
                <item>
-                <widget class="QLabel" name="label_128">
+                <widget class="QLabel" name="SnackName_2">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -1166,7 +1166,7 @@ background-color: rgb(128,128,128,0.2);</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_21">
+                <widget class="QLabel" name="SnackCost_2">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -1194,7 +1194,7 @@ background-color: rgb(128,128,128,0.2);</string>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_11">
                <item>
-                <widget class="QLabel" name="label_129">
+                <widget class="QLabel" name="SnackName_3">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -1211,7 +1211,7 @@ background-color: rgb(128,128,128,0.2);</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_22">
+                <widget class="QLabel" name="SnackCost_3">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -1264,7 +1264,7 @@ background-color: rgb(128,128,128,0.2);</string>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_13">
                <item>
-                <widget class="QLabel" name="label_130">
+                <widget class="QLabel" name="DrinkName_1">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -1281,7 +1281,7 @@ background-color: rgb(128,128,128,0.2);</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_23">
+                <widget class="QLabel" name="DrinkCost_1">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -1309,7 +1309,7 @@ background-color: rgb(128,128,128,0.2);</string>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_14">
                <item>
-                <widget class="QLabel" name="label_131">
+                <widget class="QLabel" name="DrinkName_2">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -1326,7 +1326,7 @@ background-color: rgb(128,128,128,0.2);</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_24">
+                <widget class="QLabel" name="DrinkCost_2">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -1354,7 +1354,7 @@ background-color: rgb(128,128,128,0.2);</string>
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_15">
                <item>
-                <widget class="QLabel" name="label_132">
+                <widget class="QLabel" name="DrinkName_3">
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
@@ -1371,7 +1371,7 @@ background-color: rgb(128,128,128,0.2);</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="label_25">
+                <widget class="QLabel" name="DrinkCost_3">
                  <property name="text">
                   <string>TextLabel</string>
                  </property>
@@ -2397,7 +2397,7 @@ QProgressBar::chunk {
      <x>0</x>
      <y>0</y>
      <width>481</width>
-     <height>26</height>
+     <height>17</height>
     </rect>
    </property>
   </widget>
