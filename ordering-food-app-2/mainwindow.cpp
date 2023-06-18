@@ -35,6 +35,15 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->btnExit6, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
     connect(ui->btnExit7, &QPushButton::clicked, this, &MainWindow::goToFirstPage);
 
+    connect(ui->btnExit1, &QPushButton::clicked, this, &MainWindow::clearData);
+    connect(ui->btnExit2, &QPushButton::clicked, this, &MainWindow::clearData);
+    connect(ui->btnExit3, &QPushButton::clicked, this, &MainWindow::clearData);
+    connect(ui->btnExit4, &QPushButton::clicked, this, &MainWindow::clearData);
+    connect(ui->btnExit5, &QPushButton::clicked, this, &MainWindow::clearData);
+    connect(ui->btnExit6, &QPushButton::clicked, this, &MainWindow::clearData);
+    connect(ui->btnExit7, &QPushButton::clicked, this, &MainWindow::clearData);
+
+
 
     // nowa wersja
     for(int i=0; i<18; ++i){
@@ -368,6 +377,15 @@ void MainWindow::save_text_to_file(const QString& file_patch, const QString& tex
     }
 }
 
+void MainWindow::clearData()
+{
+    clean_file("zamowione_produkty.txt");
+    clean_file("ceny_produktow.txt");
+    ui->label_summary->clear();
+    ui->label_receipt_2->clear();
+    ui->label_receipt_3->clear();
+}
+
 
 
 void MainWindow::on_pushButton_clicked()
@@ -490,4 +508,74 @@ void MainWindow::on_pushButton_12_clicked()
 
 
 
+
+
+//void MainWindow::on_btnExit1_clicked()
+//{
+//    clean_file("zamowione_produkty.txt");
+//    clean_file("ceny_produktow.txt");
+//    ui->label_summary->clear();
+//    ui->label_receipt_2->clear();
+//    ui->label_receipt_3->clear();
+//}
+
+
+//void MainWindow::on_btnExit7_clicked()
+//{
+//    clean_file("zamowione_produkty.txt");
+//    clean_file("ceny_produktow.txt");
+//    ui->label_summary->clear();
+//    ui->label_receipt_2->clear();
+//    ui->label_receipt_3->clear();
+//}
+
+
+//void MainWindow::on_btnExit3_clicked()
+//{
+//    clean_file("zamowione_produkty.txt");
+//    clean_file("ceny_produktow.txt");
+//    ui->label_summary->clear();
+//    ui->label_receipt_2->clear();
+//    ui->label_receipt_3->clear();
+//}
+
+
+//void MainWindow::on_btnExit4_clicked()
+//{
+//    clean_file("zamowione_produkty.txt");
+//    clean_file("ceny_produktow.txt");
+//    ui->label_summary->clear();
+//    ui->label_receipt_2->clear();
+//    ui->label_receipt_3->clear();
+//}
+
+
+//void MainWindow::on_btnExit5_clicked()
+//{
+//    clean_file("zamowione_produkty.txt");
+//    clean_file("ceny_produktow.txt");
+//    ui->label_summary->clear();
+//    ui->label_receipt_2->clear();
+//    ui->label_receipt_3->clear();
+//}
+
+
+//void MainWindow::on_btnExit6_clicked()
+//{
+//    clean_file("zamowione_produkty.txt");
+//    clean_file("ceny_produktow.txt");
+//    ui->label_summary->clear();
+//    ui->label_receipt_2->clear();
+//    ui->label_receipt_3->clear();
+//}
+
+
+//void MainWindow::on_btnExit2_clicked()
+//{
+//    clean_file("zamowione_produkty.txt");
+//    clean_file("ceny_produktow.txt");
+//    ui->label_summary->clear();
+//    ui->label_receipt_2->clear();
+//    ui->label_receipt_3->clear();
+//}
 

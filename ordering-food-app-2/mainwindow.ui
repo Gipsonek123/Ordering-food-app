@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QLabel" name="label_5">
@@ -362,7 +362,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
        </size>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_13">
        <widget class="QWidget" name="layoutWidget_5">

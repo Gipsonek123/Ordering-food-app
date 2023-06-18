@@ -29,6 +29,8 @@ public:
 signals:
     void changeProductStackedWidgetIndex(int index);
 private slots:
+
+    void clearData();
     void on_pushButton_clicked();
     void goToNextPage();
 
@@ -68,7 +70,6 @@ private slots:
     void on_pushButton_18_clicked();
 
     void on_pushButton_12_clicked();
-
 
 private:
 
