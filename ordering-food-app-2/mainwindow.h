@@ -30,20 +30,24 @@ public:
     void updateProgressBar(QProgressBar *progressBar, QTimer* timer, int* value);
     void showData(std::vector<Food>);
     void totalPrice(const QString& filePath, QLabel* window);
+    void on_pushButton_clicked();
+
 
 signals:
     void changeProductStackedWidgetIndex(int index);
+
 private slots:
 
     void clearData();
-    void on_pushButton_clicked();
     void goToNextPage();
+
+    void on_pushButton_1_clicked();
 
     void on_pushButton_3_clicked();
 
     void on_pushButton_2_clicked();
 
-    void on_pushButton_6_clicked();
+//    void on_pushButton_6_clicked();
 
     void on_pushButton_10_clicked();
 
@@ -53,16 +57,11 @@ private slots:
 
     void on_pushButton_7_clicked();
 
-    void on_progressBar_3_valueChanged();
-
-    void on_product1Btn_clicked();
-
     void goToPreviousPage();
 
     void changeMenuPage();
-    void goToFirstPage();
 
-    void on_pushButton_26_clicked();
+    void goToFirstPage();
 
     void on_pushButton_20_clicked();
 
@@ -73,9 +72,6 @@ private slots:
     void on_pushButton_19_clicked();
 
     void on_pushButton_18_clicked();
-
-    void on_pushButton_12_clicked();
-
 
 private:
 

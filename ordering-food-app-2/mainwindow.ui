@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QLabel" name="label_5">
@@ -50,7 +50,7 @@
        <string/>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="pushButton_1">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -328,8 +328,7 @@ QPushButton:pressed{
        <string notr="true">QPushButton{
 border-image: url(:/img/img/startClickIcon2.svg);
 color: white;
-background-color: rgb(128,128,128,0.2);
-}
+background-color: rgba(128,128,128,0.2);}
 QPushButton:hover{
 border-image: url(:/img/img/ExitBtnWhite.svg);
 }
@@ -362,7 +361,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
        </size>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_13">
        <widget class="QWidget" name="layoutWidget_5">
@@ -872,7 +871,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
         <property name="styleSheet">
          <string notr="true">border-image: url(:/img/img/startClickIcon2.svg);
 color: white;
-background-color: rgb(128,128,128,0.2);</string>
+background-color: rgba(128,128,128,0.2);</string>
         </property>
         <property name="text">
          <string/>
@@ -1398,8 +1397,7 @@ background-color: rgb(128,128,128,0.2);</string>
          <string notr="true">QPushButton{
 border-image: url(:/img/img/startClickIcon2.svg);
 color: white;
-background-color: rgb(128,128,128,0.2);
-}
+background-color: rgba(128,128,128,0.2);}
 QPushButton:hover{
 border-image: url(:/img/img/ExitBtnWhite.svg);
 }
@@ -1812,8 +1810,7 @@ QPushButton:pressed{
        <string notr="true">QPushButton{
 border-image: url(:/img/img/startClickIcon2.svg);
 color: white;
-background-color: rgb(128,128,128,0.2);
-}
+background-color: rgba(128,128,128,0.2);}
 QPushButton:hover{
 border-image: url(:/img/img/ExitBtnWhite.svg);
 }
@@ -1987,8 +1984,7 @@ QPushButton:pressed{
        <string notr="true">QPushButton{
 border-image: url(:/img/img/startClickIcon2.svg);
 color: white;
-background-color: rgb(128,128,128,0.2);
-}
+background-color: rgba(128,128,128,0.2);}
 QPushButton:hover{
 border-image: url(:/img/img/ExitBtnWhite.svg);
 }
@@ -2115,8 +2111,7 @@ QPushButton:pressed{
        <string notr="true">QPushButton{
 border-image: url(:/img/img/startClickIcon2.svg);
 color: white;
-background-color: rgb(128,128,128,0.2);
-}
+background-color: rgba(128,128,128,0.2);}
 QPushButton:hover{
 border-image: url(:/img/img/ExitBtnWhite.svg);
 }
@@ -2197,8 +2192,7 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
        <string notr="true">QPushButton{
 border-image: url(:/img/img/startClickIcon2.svg);
 color: white;
-background-color: rgb(128,128,128,0.2);
-}
+background-color: rgba(128,128,128,0.2);}
 QPushButton:hover{
 border-image: url(:/img/img/ExitBtnWhite.svg);
 }

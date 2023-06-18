@@ -32,7 +32,7 @@ public:
     QStackedWidget *stackedWidget;
     QWidget *firstPage;
     QLabel *label_5;
-    QPushButton *pushButton;
+    QPushButton *pushButton_1;
     QWidget *progressBar_2;
     QLabel *label_6;
     QProgressBar *progressBar;
@@ -237,11 +237,11 @@ public:
         label_5->setObjectName("label_5");
         label_5->setGeometry(QRect(0, -11, 481, 671));
         label_5->setMaximumSize(QSize(16777215, 16777215));
-        pushButton = new QPushButton(firstPage);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(0, 200, 479, 125));
-        pushButton->setMinimumSize(QSize(100, 125));
-        pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+        pushButton_1 = new QPushButton(firstPage);
+        pushButton_1->setObjectName("pushButton_1");
+        pushButton_1->setGeometry(QRect(0, 200, 479, 125));
+        pushButton_1->setMinimumSize(QSize(100, 125));
+        pushButton_1->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "	font: 350 14pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "	color: rgb(226,234,216);\n"
@@ -267,11 +267,11 @@ public:
 "}"));
         QIcon icon;
         icon.addFile(QString::fromUtf8("img/startClickIcon2.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton->setIcon(icon);
-        pushButton->setIconSize(QSize(25, 25));
-        pushButton->setCheckable(false);
-        pushButton->setAutoRepeat(false);
-        pushButton->setFlat(false);
+        pushButton_1->setIcon(icon);
+        pushButton_1->setIconSize(QSize(25, 25));
+        pushButton_1->setCheckable(false);
+        pushButton_1->setAutoRepeat(false);
+        pushButton_1->setFlat(false);
         stackedWidget->addWidget(firstPage);
         progressBar_2 = new QWidget();
         progressBar_2->setObjectName("progressBar_2");
@@ -390,8 +390,7 @@ public:
         btnExit1->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgb(128,128,128,0.2);\n"
-"}\n"
+"background-color: rgba(128,128,128,0.2);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -734,7 +733,7 @@ public:
         btnExit2->setGeometry(QRect(420, 0, 31, 31));
         btnExit2->setStyleSheet(QString::fromUtf8("border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgb(128,128,128,0.2);"));
+"background-color: rgba(128,128,128,0.2);"));
         stackedWidget_2->addWidget(page_13);
         page_14 = new QWidget();
         page_14->setObjectName("page_14");
@@ -1056,8 +1055,7 @@ public:
         btnExit7->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgb(128,128,128,0.2);\n"
-"}\n"
+"background-color: rgba(128,128,128,0.2);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -1352,8 +1350,7 @@ public:
         btnExit3->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgb(128,128,128,0.2);\n"
-"}\n"
+"background-color: rgba(128,128,128,0.2);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -1451,8 +1448,7 @@ public:
         btnExit4->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgb(128,128,128,0.2);\n"
-"}\n"
+"background-color: rgba(128,128,128,0.2);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -1515,8 +1511,7 @@ public:
         btnExit5->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgb(128,128,128,0.2);\n"
-"}\n"
+"background-color: rgba(128,128,128,0.2);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -1545,8 +1540,7 @@ public:
         btnExit6->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "border-image: url(:/img/img/startClickIcon2.svg);\n"
 "color: white;\n"
-"background-color: rgb(128,128,128,0.2);\n"
-"}\n"
+"background-color: rgba(128,128,128,0.2);}\n"
 "QPushButton:hover{\n"
 "border-image: url(:/img/img/ExitBtnWhite.svg);\n"
 "}\n"
@@ -1657,8 +1651,8 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(2);
-        stackedWidget_2->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(0);
+        stackedWidget_2->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1668,7 +1662,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         label_5->setText(QString());
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Zaczynajmy!", nullptr));
+        pushButton_1->setText(QCoreApplication::translate("MainWindow", "Zaczynajmy!", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "Trwa \305\202adowanie pozycji z menu...", nullptr));
         label_9->setText(QString());
         label_3->setText(QCoreApplication::translate("MainWindow", "  Gdzie zjesz?", nullptr));

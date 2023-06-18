@@ -47,12 +47,6 @@ MainWindow::MainWindow(QWidget *parent)
 //        totalPrice("ceny_produktow.txt", ui->label_sum);
 //    });
 
-//    connect(p->ui->pushButton_2, &QPushButton::clicked, this, [=]() {
-//        totalPrice("ceny_produktow.txt", this->ui->label_sum);
-        // lub
-        // totalPrice("ceny_produktow.txt", ui->label_sum);
-//    });
-
     // nowa wersja
     for(int i=0; i<18; ++i){
         Produkt* produkt = new Produkt;
@@ -401,7 +395,7 @@ void MainWindow::resetData()
     goToFirstPage();
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButton_1_clicked()
 {
     goToNextPage();
     progressBarLoading(ui->progressBar);
@@ -410,11 +404,9 @@ void MainWindow::on_pushButton_clicked()
 // na wynos
 void MainWindow::on_pushButton_3_clicked()
 {
-//    goToNextPage();
     goToNextPage();
     resultFood = writeFoodToVectorOfObjects();
     showData(resultFood);
-//    progressBarLoading(ui->progressBar_3);
 }
 
 // na miejscu
@@ -424,21 +416,16 @@ void MainWindow::on_pushButton_2_clicked()
 //    goToNextPage();
     resultFood = writeFoodToVectorOfObjects();
     showData(resultFood);
-
-
     saveTextToFile("zamowione_produkty.txt", "1x Opakowanie 2,00zł");
     saveTextToFile("ceny_produktow.txt", "2");
     goToNextPage();
-
-//    progressBarLoading(ui->progressBar_3);
 }
 
-// przejdz do koszyka/poodsumowania
-void MainWindow::on_pushButton_6_clicked()
-{
-    goToNextPage();
-//    progressBarLoading();
-}
+//// przejdz do koszyka/poodsumowania
+//void MainWindow::on_pushButton_6_clicked()
+//{
+//    goToNextPage();
+//}
 
 // zaplac
 void MainWindow::on_pushButton_10_clicked()
@@ -450,14 +437,12 @@ void MainWindow::on_pushButton_10_clicked()
 void MainWindow::on_pushButton_4_clicked()
 {
     goToNextPage();
- //   progressBarLoading();
     orderNumber();
 }
 
 // gotowka przy kasie
 void MainWindow::on_pushButton_5_clicked()
 {
-    //dodac progressbar, zrobic aby byl uniwersalny
     goToNextPage();
     orderNumber();
 }
@@ -473,30 +458,12 @@ void MainWindow::on_pushButton_7_clicked()
     cleanFile("ceny_produktow.txt");
 }
 
-// po wyborze czy na miejscu, czy na wynos (progressbar)
-void MainWindow::on_progressBar_3_valueChanged()
-{
-    goToNextPage();
-}
-
-
-void MainWindow::on_product1Btn_clicked()
-{
-}
-
-//przejdz dalej (Zupy)
-void MainWindow::on_pushButton_26_clicked()
-{
-    goToNextPage();
-}
-
 //przejdz dalej (Salatki)
 void MainWindow::on_pushButton_20_clicked()
 {
     goToNextPage();
     readFileContents("zamowione_produkty.txt", ui->label_summary);
     totalPrice("ceny_produktow.txt", ui->label_total_price);
-
 }
 
 //w podsumowaniu zamowienia poprzednia strona
@@ -523,10 +490,6 @@ void MainWindow::on_pushButton_18_clicked()
     goToPreviousPage();
 }
 
-//
-void MainWindow::on_pushButton_12_clicked()
-{
-    goToFirstPage();
-}
+
 
 
