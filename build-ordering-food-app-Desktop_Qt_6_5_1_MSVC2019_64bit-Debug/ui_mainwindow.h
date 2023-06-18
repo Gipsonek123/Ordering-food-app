@@ -55,52 +55,52 @@ public:
     QVBoxLayout *verticalLayout_106;
     QPushButton *product1Btn;
     QHBoxLayout *horizontalLayout_26;
-    QLabel *label_143;
-    QLabel *label_36;
+    QLabel *BurgerName_1;
+    QLabel *BurgerCost_1;
     QVBoxLayout *verticalLayout_91;
     QPushButton *product2Btn;
     QHBoxLayout *horizontalLayout_22;
-    QLabel *label_139;
-    QLabel *label_32;
+    QLabel *BurgerName_2;
+    QLabel *BurgerCost_2;
     QVBoxLayout *verticalLayout_92;
     QPushButton *product3Btn;
     QHBoxLayout *horizontalLayout_23;
-    QLabel *label_140;
-    QLabel *label_33;
+    QLabel *BurgerName_3;
+    QLabel *BurgerCost_3;
     QLabel *label_112;
     QHBoxLayout *horizontalLayout_55;
     QVBoxLayout *verticalLayout_93;
     QPushButton *product4Btn;
     QHBoxLayout *horizontalLayout_21;
-    QLabel *label_138;
-    QLabel *label_31;
+    QLabel *PizzaName_1;
+    QLabel *PizzaCost_1;
     QVBoxLayout *verticalLayout_94;
     QPushButton *product5Btn;
     QHBoxLayout *horizontalLayout_19;
-    QLabel *label_136;
-    QLabel *label_29;
+    QLabel *PizzaName_2;
+    QLabel *PizzaCost_2;
     QVBoxLayout *verticalLayout_95;
     QPushButton *product6Btn;
     QHBoxLayout *horizontalLayout_18;
-    QLabel *label_135;
-    QLabel *label_28;
+    QLabel *PizzaName_3;
+    QLabel *PizzaCost_3;
     QLabel *label_116;
     QHBoxLayout *horizontalLayout_56;
     QVBoxLayout *verticalLayout_96;
     QPushButton *product7Btn;
     QHBoxLayout *horizontalLayout_20;
-    QLabel *label_137;
-    QLabel *label_30;
+    QLabel *DessertName_1;
+    QLabel *DessertCost_1;
     QVBoxLayout *verticalLayout_97;
     QPushButton *product8Btn;
     QHBoxLayout *horizontalLayout_17;
-    QLabel *label_134;
-    QLabel *label_27;
+    QLabel *DessertName_2;
+    QLabel *DessertCost_2;
     QVBoxLayout *verticalLayout_98;
     QPushButton *product9Btn;
     QHBoxLayout *horizontalLayout_16;
-    QLabel *label_133;
-    QLabel *label_26;
+    QLabel *DessertName_3;
+    QLabel *DessertCost_3;
     QPushButton *btnExit2;
     QWidget *page_14;
     QWidget *layoutWidget_3;
@@ -110,52 +110,52 @@ public:
     QVBoxLayout *verticalLayout_100;
     QPushButton *product10Btn;
     QHBoxLayout *horizontalLayout_2;
-    QLabel *label_123;
-    QLabel *label_2;
+    QLabel *SaladName_1;
+    QLabel *SaladCost_1;
     QVBoxLayout *verticalLayout_102;
     QPushButton *product11Btn;
     QHBoxLayout *horizontalLayout_7;
-    QLabel *label_125;
-    QLabel *label_18;
+    QLabel *SaladName_2;
+    QLabel *SaladCost_2;
     QVBoxLayout *verticalLayout_101;
     QPushButton *product12Btn;
     QHBoxLayout *horizontalLayout_6;
-    QLabel *label_124;
-    QLabel *label_17;
+    QLabel *SaladName_3;
+    QLabel *SaladCost_3;
     QLabel *label_97;
     QHBoxLayout *horizontalLayout_47;
     QVBoxLayout *verticalLayout_80;
     QPushButton *product13Btn;
     QHBoxLayout *horizontalLayout_9;
-    QLabel *label_127;
-    QLabel *label_20;
+    QLabel *SnackName_1;
+    QLabel *SnackCost_1;
     QVBoxLayout *verticalLayout_81;
     QPushButton *product14Btn;
     QHBoxLayout *horizontalLayout_10;
-    QLabel *label_128;
-    QLabel *label_21;
+    QLabel *SnackName_2;
+    QLabel *SnackCost_2;
     QVBoxLayout *verticalLayout_82;
     QPushButton *product15Btn;
     QHBoxLayout *horizontalLayout_11;
-    QLabel *label_129;
-    QLabel *label_22;
+    QLabel *SnackName_3;
+    QLabel *SnackCost_3;
     QLabel *label_101;
     QHBoxLayout *horizontalLayout_48;
     QVBoxLayout *verticalLayout_83;
     QPushButton *product16Btn;
     QHBoxLayout *horizontalLayout_13;
-    QLabel *label_130;
-    QLabel *label_23;
+    QLabel *DrinkName_1;
+    QLabel *DrinkCost_1;
     QVBoxLayout *verticalLayout_84;
     QPushButton *product17Btn;
     QHBoxLayout *horizontalLayout_14;
-    QLabel *label_131;
-    QLabel *label_24;
+    QLabel *DrinkName_2;
+    QLabel *DrinkCost_2;
     QVBoxLayout *verticalLayout_85;
     QPushButton *product18Btn;
     QHBoxLayout *horizontalLayout_15;
-    QLabel *label_132;
-    QLabel *label_25;
+    QLabel *DrinkName_3;
+    QLabel *DrinkCost_3;
     QPushButton *btnExit7;
     QWidget *layoutWidget_4;
     QHBoxLayout *horizontalLayout_52;
@@ -441,18 +441,18 @@ public:
 
         horizontalLayout_26 = new QHBoxLayout();
         horizontalLayout_26->setObjectName("horizontalLayout_26");
-        label_143 = new QLabel(layoutWidget_5);
-        label_143->setObjectName("label_143");
-        label_143->setMaximumSize(QSize(16777215, 15));
-        label_143->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        BurgerName_1 = new QLabel(layoutWidget_5);
+        BurgerName_1->setObjectName("BurgerName_1");
+        BurgerName_1->setMaximumSize(QSize(16777215, 15));
+        BurgerName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_26->addWidget(label_143);
+        horizontalLayout_26->addWidget(BurgerName_1);
 
-        label_36 = new QLabel(layoutWidget_5);
-        label_36->setObjectName("label_36");
+        BurgerCost_1 = new QLabel(layoutWidget_5);
+        BurgerCost_1->setObjectName("BurgerCost_1");
 
-        horizontalLayout_26->addWidget(label_36);
+        horizontalLayout_26->addWidget(BurgerCost_1);
 
 
         verticalLayout_106->addLayout(horizontalLayout_26);
@@ -476,18 +476,18 @@ public:
 
         horizontalLayout_22 = new QHBoxLayout();
         horizontalLayout_22->setObjectName("horizontalLayout_22");
-        label_139 = new QLabel(layoutWidget_5);
-        label_139->setObjectName("label_139");
-        label_139->setMaximumSize(QSize(16777215, 15));
-        label_139->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        BurgerName_2 = new QLabel(layoutWidget_5);
+        BurgerName_2->setObjectName("BurgerName_2");
+        BurgerName_2->setMaximumSize(QSize(16777215, 15));
+        BurgerName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_22->addWidget(label_139);
+        horizontalLayout_22->addWidget(BurgerName_2);
 
-        label_32 = new QLabel(layoutWidget_5);
-        label_32->setObjectName("label_32");
+        BurgerCost_2 = new QLabel(layoutWidget_5);
+        BurgerCost_2->setObjectName("BurgerCost_2");
 
-        horizontalLayout_22->addWidget(label_32);
+        horizontalLayout_22->addWidget(BurgerCost_2);
 
 
         verticalLayout_91->addLayout(horizontalLayout_22);
@@ -505,18 +505,18 @@ public:
 
         horizontalLayout_23 = new QHBoxLayout();
         horizontalLayout_23->setObjectName("horizontalLayout_23");
-        label_140 = new QLabel(layoutWidget_5);
-        label_140->setObjectName("label_140");
-        label_140->setMaximumSize(QSize(16777215, 15));
-        label_140->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        BurgerName_3 = new QLabel(layoutWidget_5);
+        BurgerName_3->setObjectName("BurgerName_3");
+        BurgerName_3->setMaximumSize(QSize(16777215, 15));
+        BurgerName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_23->addWidget(label_140);
+        horizontalLayout_23->addWidget(BurgerName_3);
 
-        label_33 = new QLabel(layoutWidget_5);
-        label_33->setObjectName("label_33");
+        BurgerCost_3 = new QLabel(layoutWidget_5);
+        BurgerCost_3->setObjectName("BurgerCost_3");
 
-        horizontalLayout_23->addWidget(label_33);
+        horizontalLayout_23->addWidget(BurgerCost_3);
 
 
         verticalLayout_92->addLayout(horizontalLayout_23);
@@ -547,18 +547,18 @@ public:
 
         horizontalLayout_21 = new QHBoxLayout();
         horizontalLayout_21->setObjectName("horizontalLayout_21");
-        label_138 = new QLabel(layoutWidget_5);
-        label_138->setObjectName("label_138");
-        label_138->setMaximumSize(QSize(16777215, 15));
-        label_138->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        PizzaName_1 = new QLabel(layoutWidget_5);
+        PizzaName_1->setObjectName("PizzaName_1");
+        PizzaName_1->setMaximumSize(QSize(16777215, 15));
+        PizzaName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_21->addWidget(label_138);
+        horizontalLayout_21->addWidget(PizzaName_1);
 
-        label_31 = new QLabel(layoutWidget_5);
-        label_31->setObjectName("label_31");
+        PizzaCost_1 = new QLabel(layoutWidget_5);
+        PizzaCost_1->setObjectName("PizzaCost_1");
 
-        horizontalLayout_21->addWidget(label_31);
+        horizontalLayout_21->addWidget(PizzaCost_1);
 
 
         verticalLayout_93->addLayout(horizontalLayout_21);
@@ -576,18 +576,18 @@ public:
 
         horizontalLayout_19 = new QHBoxLayout();
         horizontalLayout_19->setObjectName("horizontalLayout_19");
-        label_136 = new QLabel(layoutWidget_5);
-        label_136->setObjectName("label_136");
-        label_136->setMaximumSize(QSize(16777215, 15));
-        label_136->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        PizzaName_2 = new QLabel(layoutWidget_5);
+        PizzaName_2->setObjectName("PizzaName_2");
+        PizzaName_2->setMaximumSize(QSize(16777215, 15));
+        PizzaName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_19->addWidget(label_136);
+        horizontalLayout_19->addWidget(PizzaName_2);
 
-        label_29 = new QLabel(layoutWidget_5);
-        label_29->setObjectName("label_29");
+        PizzaCost_2 = new QLabel(layoutWidget_5);
+        PizzaCost_2->setObjectName("PizzaCost_2");
 
-        horizontalLayout_19->addWidget(label_29);
+        horizontalLayout_19->addWidget(PizzaCost_2);
 
 
         verticalLayout_94->addLayout(horizontalLayout_19);
@@ -605,18 +605,18 @@ public:
 
         horizontalLayout_18 = new QHBoxLayout();
         horizontalLayout_18->setObjectName("horizontalLayout_18");
-        label_135 = new QLabel(layoutWidget_5);
-        label_135->setObjectName("label_135");
-        label_135->setMaximumSize(QSize(16777215, 15));
-        label_135->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        PizzaName_3 = new QLabel(layoutWidget_5);
+        PizzaName_3->setObjectName("PizzaName_3");
+        PizzaName_3->setMaximumSize(QSize(16777215, 15));
+        PizzaName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_18->addWidget(label_135);
+        horizontalLayout_18->addWidget(PizzaName_3);
 
-        label_28 = new QLabel(layoutWidget_5);
-        label_28->setObjectName("label_28");
+        PizzaCost_3 = new QLabel(layoutWidget_5);
+        PizzaCost_3->setObjectName("PizzaCost_3");
 
-        horizontalLayout_18->addWidget(label_28);
+        horizontalLayout_18->addWidget(PizzaCost_3);
 
 
         verticalLayout_95->addLayout(horizontalLayout_18);
@@ -649,18 +649,18 @@ public:
 
         horizontalLayout_20 = new QHBoxLayout();
         horizontalLayout_20->setObjectName("horizontalLayout_20");
-        label_137 = new QLabel(layoutWidget_5);
-        label_137->setObjectName("label_137");
-        label_137->setMaximumSize(QSize(16777215, 15));
-        label_137->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        DessertName_1 = new QLabel(layoutWidget_5);
+        DessertName_1->setObjectName("DessertName_1");
+        DessertName_1->setMaximumSize(QSize(16777215, 15));
+        DessertName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_20->addWidget(label_137);
+        horizontalLayout_20->addWidget(DessertName_1);
 
-        label_30 = new QLabel(layoutWidget_5);
-        label_30->setObjectName("label_30");
+        DessertCost_1 = new QLabel(layoutWidget_5);
+        DessertCost_1->setObjectName("DessertCost_1");
 
-        horizontalLayout_20->addWidget(label_30);
+        horizontalLayout_20->addWidget(DessertCost_1);
 
 
         verticalLayout_96->addLayout(horizontalLayout_20);
@@ -678,18 +678,18 @@ public:
 
         horizontalLayout_17 = new QHBoxLayout();
         horizontalLayout_17->setObjectName("horizontalLayout_17");
-        label_134 = new QLabel(layoutWidget_5);
-        label_134->setObjectName("label_134");
-        label_134->setMaximumSize(QSize(16777215, 15));
-        label_134->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        DessertName_2 = new QLabel(layoutWidget_5);
+        DessertName_2->setObjectName("DessertName_2");
+        DessertName_2->setMaximumSize(QSize(16777215, 15));
+        DessertName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_17->addWidget(label_134);
+        horizontalLayout_17->addWidget(DessertName_2);
 
-        label_27 = new QLabel(layoutWidget_5);
-        label_27->setObjectName("label_27");
+        DessertCost_2 = new QLabel(layoutWidget_5);
+        DessertCost_2->setObjectName("DessertCost_2");
 
-        horizontalLayout_17->addWidget(label_27);
+        horizontalLayout_17->addWidget(DessertCost_2);
 
 
         verticalLayout_97->addLayout(horizontalLayout_17);
@@ -707,18 +707,18 @@ public:
 
         horizontalLayout_16 = new QHBoxLayout();
         horizontalLayout_16->setObjectName("horizontalLayout_16");
-        label_133 = new QLabel(layoutWidget_5);
-        label_133->setObjectName("label_133");
-        label_133->setMaximumSize(QSize(16777215, 15));
-        label_133->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        DessertName_3 = new QLabel(layoutWidget_5);
+        DessertName_3->setObjectName("DessertName_3");
+        DessertName_3->setMaximumSize(QSize(16777215, 15));
+        DessertName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_16->addWidget(label_133);
+        horizontalLayout_16->addWidget(DessertName_3);
 
-        label_26 = new QLabel(layoutWidget_5);
-        label_26->setObjectName("label_26");
+        DessertCost_3 = new QLabel(layoutWidget_5);
+        DessertCost_3->setObjectName("DessertCost_3");
 
-        horizontalLayout_16->addWidget(label_26);
+        horizontalLayout_16->addWidget(DessertCost_3);
 
 
         verticalLayout_98->addLayout(horizontalLayout_16);
@@ -766,18 +766,18 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        label_123 = new QLabel(layoutWidget_3);
-        label_123->setObjectName("label_123");
-        label_123->setMaximumSize(QSize(16777215, 15));
-        label_123->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        SaladName_1 = new QLabel(layoutWidget_3);
+        SaladName_1->setObjectName("SaladName_1");
+        SaladName_1->setMaximumSize(QSize(16777215, 15));
+        SaladName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_2->addWidget(label_123);
+        horizontalLayout_2->addWidget(SaladName_1);
 
-        label_2 = new QLabel(layoutWidget_3);
-        label_2->setObjectName("label_2");
+        SaladCost_1 = new QLabel(layoutWidget_3);
+        SaladCost_1->setObjectName("SaladCost_1");
 
-        horizontalLayout_2->addWidget(label_2);
+        horizontalLayout_2->addWidget(SaladCost_1);
 
 
         verticalLayout_100->addLayout(horizontalLayout_2);
@@ -796,18 +796,18 @@ public:
 
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setObjectName("horizontalLayout_7");
-        label_125 = new QLabel(layoutWidget_3);
-        label_125->setObjectName("label_125");
-        label_125->setMaximumSize(QSize(16777215, 15));
-        label_125->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        SaladName_2 = new QLabel(layoutWidget_3);
+        SaladName_2->setObjectName("SaladName_2");
+        SaladName_2->setMaximumSize(QSize(16777215, 15));
+        SaladName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_7->addWidget(label_125);
+        horizontalLayout_7->addWidget(SaladName_2);
 
-        label_18 = new QLabel(layoutWidget_3);
-        label_18->setObjectName("label_18");
+        SaladCost_2 = new QLabel(layoutWidget_3);
+        SaladCost_2->setObjectName("SaladCost_2");
 
-        horizontalLayout_7->addWidget(label_18);
+        horizontalLayout_7->addWidget(SaladCost_2);
 
 
         verticalLayout_102->addLayout(horizontalLayout_7);
@@ -826,18 +826,18 @@ public:
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName("horizontalLayout_6");
-        label_124 = new QLabel(layoutWidget_3);
-        label_124->setObjectName("label_124");
-        label_124->setMaximumSize(QSize(16777215, 15));
-        label_124->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        SaladName_3 = new QLabel(layoutWidget_3);
+        SaladName_3->setObjectName("SaladName_3");
+        SaladName_3->setMaximumSize(QSize(16777215, 15));
+        SaladName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_6->addWidget(label_124);
+        horizontalLayout_6->addWidget(SaladName_3);
 
-        label_17 = new QLabel(layoutWidget_3);
-        label_17->setObjectName("label_17");
+        SaladCost_3 = new QLabel(layoutWidget_3);
+        SaladCost_3->setObjectName("SaladCost_3");
 
-        horizontalLayout_6->addWidget(label_17);
+        horizontalLayout_6->addWidget(SaladCost_3);
 
 
         verticalLayout_101->addLayout(horizontalLayout_6);
@@ -868,18 +868,18 @@ public:
 
         horizontalLayout_9 = new QHBoxLayout();
         horizontalLayout_9->setObjectName("horizontalLayout_9");
-        label_127 = new QLabel(layoutWidget_3);
-        label_127->setObjectName("label_127");
-        label_127->setMaximumSize(QSize(16777215, 15));
-        label_127->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        SnackName_1 = new QLabel(layoutWidget_3);
+        SnackName_1->setObjectName("SnackName_1");
+        SnackName_1->setMaximumSize(QSize(16777215, 15));
+        SnackName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_9->addWidget(label_127);
+        horizontalLayout_9->addWidget(SnackName_1);
 
-        label_20 = new QLabel(layoutWidget_3);
-        label_20->setObjectName("label_20");
+        SnackCost_1 = new QLabel(layoutWidget_3);
+        SnackCost_1->setObjectName("SnackCost_1");
 
-        horizontalLayout_9->addWidget(label_20);
+        horizontalLayout_9->addWidget(SnackCost_1);
 
 
         verticalLayout_80->addLayout(horizontalLayout_9);
@@ -897,18 +897,18 @@ public:
 
         horizontalLayout_10 = new QHBoxLayout();
         horizontalLayout_10->setObjectName("horizontalLayout_10");
-        label_128 = new QLabel(layoutWidget_3);
-        label_128->setObjectName("label_128");
-        label_128->setMaximumSize(QSize(16777215, 15));
-        label_128->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        SnackName_2 = new QLabel(layoutWidget_3);
+        SnackName_2->setObjectName("SnackName_2");
+        SnackName_2->setMaximumSize(QSize(16777215, 15));
+        SnackName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_10->addWidget(label_128);
+        horizontalLayout_10->addWidget(SnackName_2);
 
-        label_21 = new QLabel(layoutWidget_3);
-        label_21->setObjectName("label_21");
+        SnackCost_2 = new QLabel(layoutWidget_3);
+        SnackCost_2->setObjectName("SnackCost_2");
 
-        horizontalLayout_10->addWidget(label_21);
+        horizontalLayout_10->addWidget(SnackCost_2);
 
 
         verticalLayout_81->addLayout(horizontalLayout_10);
@@ -926,18 +926,18 @@ public:
 
         horizontalLayout_11 = new QHBoxLayout();
         horizontalLayout_11->setObjectName("horizontalLayout_11");
-        label_129 = new QLabel(layoutWidget_3);
-        label_129->setObjectName("label_129");
-        label_129->setMaximumSize(QSize(16777215, 15));
-        label_129->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        SnackName_3 = new QLabel(layoutWidget_3);
+        SnackName_3->setObjectName("SnackName_3");
+        SnackName_3->setMaximumSize(QSize(16777215, 15));
+        SnackName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_11->addWidget(label_129);
+        horizontalLayout_11->addWidget(SnackName_3);
 
-        label_22 = new QLabel(layoutWidget_3);
-        label_22->setObjectName("label_22");
+        SnackCost_3 = new QLabel(layoutWidget_3);
+        SnackCost_3->setObjectName("SnackCost_3");
 
-        horizontalLayout_11->addWidget(label_22);
+        horizontalLayout_11->addWidget(SnackCost_3);
 
 
         verticalLayout_82->addLayout(horizontalLayout_11);
@@ -970,18 +970,18 @@ public:
 
         horizontalLayout_13 = new QHBoxLayout();
         horizontalLayout_13->setObjectName("horizontalLayout_13");
-        label_130 = new QLabel(layoutWidget_3);
-        label_130->setObjectName("label_130");
-        label_130->setMaximumSize(QSize(16777215, 15));
-        label_130->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        DrinkName_1 = new QLabel(layoutWidget_3);
+        DrinkName_1->setObjectName("DrinkName_1");
+        DrinkName_1->setMaximumSize(QSize(16777215, 15));
+        DrinkName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_13->addWidget(label_130);
+        horizontalLayout_13->addWidget(DrinkName_1);
 
-        label_23 = new QLabel(layoutWidget_3);
-        label_23->setObjectName("label_23");
+        DrinkCost_1 = new QLabel(layoutWidget_3);
+        DrinkCost_1->setObjectName("DrinkCost_1");
 
-        horizontalLayout_13->addWidget(label_23);
+        horizontalLayout_13->addWidget(DrinkCost_1);
 
 
         verticalLayout_83->addLayout(horizontalLayout_13);
@@ -999,18 +999,18 @@ public:
 
         horizontalLayout_14 = new QHBoxLayout();
         horizontalLayout_14->setObjectName("horizontalLayout_14");
-        label_131 = new QLabel(layoutWidget_3);
-        label_131->setObjectName("label_131");
-        label_131->setMaximumSize(QSize(16777215, 15));
-        label_131->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        DrinkName_2 = new QLabel(layoutWidget_3);
+        DrinkName_2->setObjectName("DrinkName_2");
+        DrinkName_2->setMaximumSize(QSize(16777215, 15));
+        DrinkName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_14->addWidget(label_131);
+        horizontalLayout_14->addWidget(DrinkName_2);
 
-        label_24 = new QLabel(layoutWidget_3);
-        label_24->setObjectName("label_24");
+        DrinkCost_2 = new QLabel(layoutWidget_3);
+        DrinkCost_2->setObjectName("DrinkCost_2");
 
-        horizontalLayout_14->addWidget(label_24);
+        horizontalLayout_14->addWidget(DrinkCost_2);
 
 
         verticalLayout_84->addLayout(horizontalLayout_14);
@@ -1028,18 +1028,18 @@ public:
 
         horizontalLayout_15 = new QHBoxLayout();
         horizontalLayout_15->setObjectName("horizontalLayout_15");
-        label_132 = new QLabel(layoutWidget_3);
-        label_132->setObjectName("label_132");
-        label_132->setMaximumSize(QSize(16777215, 15));
-        label_132->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
+        DrinkName_3 = new QLabel(layoutWidget_3);
+        DrinkName_3->setObjectName("DrinkName_3");
+        DrinkName_3->setMaximumSize(QSize(16777215, 15));
+        DrinkName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;"));
 
-        horizontalLayout_15->addWidget(label_132);
+        horizontalLayout_15->addWidget(DrinkName_3);
 
-        label_25 = new QLabel(layoutWidget_3);
-        label_25->setObjectName("label_25");
+        DrinkCost_3 = new QLabel(layoutWidget_3);
+        DrinkCost_3->setObjectName("DrinkCost_3");
 
-        horizontalLayout_15->addWidget(label_25);
+        horizontalLayout_15->addWidget(DrinkCost_3);
 
 
         verticalLayout_85->addLayout(horizontalLayout_15);
@@ -1676,67 +1676,67 @@ public:
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Na wynos", nullptr));
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "Na miejscu", nullptr));
         btnExit1->setText(QString());
-        label_108->setText(QCoreApplication::translate("MainWindow", "Zupy", nullptr));
+        label_108->setText(QCoreApplication::translate("MainWindow", "Burgery", nullptr));
         product1Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_143->setText(QCoreApplication::translate("MainWindow", "Ros\303\263\305\202", nullptr));
-        label_36->setText(QCoreApplication::translate("MainWindow", "9z\305\202", nullptr));
+        BurgerName_1->setText(QCoreApplication::translate("MainWindow", "Ros\303\263\305\202", nullptr));
+        BurgerCost_1->setText(QCoreApplication::translate("MainWindow", "9z\305\202", nullptr));
         product2Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_139->setText(QCoreApplication::translate("MainWindow", "Pomidorowa", nullptr));
-        label_32->setText(QCoreApplication::translate("MainWindow", "12z\305\202", nullptr));
+        BurgerName_2->setText(QCoreApplication::translate("MainWindow", "Pomidorowa", nullptr));
+        BurgerCost_2->setText(QCoreApplication::translate("MainWindow", "12z\305\202", nullptr));
         product3Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_140->setText(QCoreApplication::translate("MainWindow", "\305\273urek", nullptr));
-        label_33->setText(QCoreApplication::translate("MainWindow", "14,50z\305\202", nullptr));
-        label_112->setText(QCoreApplication::translate("MainWindow", "Dania g\305\202\303\263wne", nullptr));
+        BurgerName_3->setText(QCoreApplication::translate("MainWindow", "\305\273urek", nullptr));
+        BurgerCost_3->setText(QCoreApplication::translate("MainWindow", "14,50z\305\202", nullptr));
+        label_112->setText(QCoreApplication::translate("MainWindow", "Pizza", nullptr));
         product4Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_138->setText(QCoreApplication::translate("MainWindow", "Schabowy", nullptr));
-        label_31->setText(QCoreApplication::translate("MainWindow", "25.80z\305\202", nullptr));
+        PizzaName_1->setText(QCoreApplication::translate("MainWindow", "Schabowy", nullptr));
+        PizzaCost_1->setText(QCoreApplication::translate("MainWindow", "25.80z\305\202", nullptr));
         product5Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_136->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_29->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        PizzaName_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        PizzaCost_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         product6Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_135->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_28->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        PizzaName_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        PizzaCost_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_116->setText(QCoreApplication::translate("MainWindow", "Desery", nullptr));
         product7Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_137->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_30->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DessertName_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DessertCost_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         product8Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_134->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_27->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DessertName_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DessertCost_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         product9Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_133->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_26->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DessertName_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DessertCost_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         btnExit2->setText(QString());
         label_93->setText(QCoreApplication::translate("MainWindow", "Sa\305\202atki", nullptr));
         product10Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_123->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SaladName_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SaladCost_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         product11Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_125->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_18->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SaladName_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SaladCost_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         product12Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_124->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_17->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SaladName_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SaladCost_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_97->setText(QCoreApplication::translate("MainWindow", "Przek\304\205ski", nullptr));
         product13Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_127->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_20->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SnackName_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SnackCost_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         product14Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_128->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_21->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SnackName_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SnackCost_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         product15Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_129->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_22->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SnackName_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        SnackCost_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_101->setText(QCoreApplication::translate("MainWindow", "Napoje", nullptr));
         product16Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_130->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_23->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DrinkName_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DrinkCost_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         product17Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_131->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_24->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DrinkName_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DrinkCost_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         product18Btn->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        label_132->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_25->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DrinkName_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        DrinkCost_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         btnExit7->setText(QString());
         label_105->setText(QCoreApplication::translate("MainWindow", "Menu", nullptr));
         label_106->setText(QCoreApplication::translate("MainWindow", "Suma:", nullptr));

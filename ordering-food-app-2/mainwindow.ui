@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QLabel" name="label_5">
@@ -2397,7 +2397,7 @@ QProgressBar::chunk {
      <x>0</x>
      <y>0</y>
      <width>481</width>
-     <height>17</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
