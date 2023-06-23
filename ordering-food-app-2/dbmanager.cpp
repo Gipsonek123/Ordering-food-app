@@ -60,7 +60,7 @@ std::vector<Addons> writeAddonsToVectorOfObjects()
         // qDebug() << name <<" "<<cost<<" "<< category;
     }
     for ( auto& obj : addons) {
-        obj.writeAddonsToScreen();
+        obj.writeAddonsName();
     }
     return addons;
 }
@@ -71,7 +71,7 @@ Addons::Addons(const int id, const QString name, const double cost, const int ca
 
 
 QString Food::writeFoodName(){
-    qDebug()<<this->foodName<<" "<<this->foodCost<<" "<<this->foodCategory;
+
     return foodName;
 }
 QString Food::writeFoodCost()
@@ -82,6 +82,12 @@ QString Food::writeFoodCost()
 }
 
 
-void Addons::writeAddonsToScreen(){
-    qDebug()<<this->addonName<<" "<<this->addonCost<<" "<<this->addonCategory;
+QString Addons::writeAddonsName(){
+
+    return addonName;
+}
+QString Addons::writeAddonsCost(){
+    double bruttoCost=this->addonCost + this->addonCost*0.23;
+    bruttoCost = std::ceil(bruttoCost*100.0)/100.0;
+    return QString::number(bruttoCost);
 }

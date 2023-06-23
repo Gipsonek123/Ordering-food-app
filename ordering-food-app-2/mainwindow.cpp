@@ -14,8 +14,10 @@
 #include <QTextStream>
 #include <QRegularExpression> // do wycinania ze string wartosci liczbowej
 #include <QPixmap>
+#include <QMessageBox>
 
 std::vector<Food> resultFood;
+std::vector<Addons> resultAddons;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -23,9 +25,12 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QPixmap pix(":/img/img/startPict2.jpg");
-    QPixmap loading(":/img/img/loading.jpg");
-    QPixmap takeaway(":/img/img/menu.jpg");
+    QPixmap pix(":/img/img/start3.jpg");
+    QPixmap loading(":/img/img/progress.jpg");
+    QPixmap takeaway(":/img/img/menuS1.jpg");
+//    QPixmap food(":/img/img/food.jpg");
+
+//    ui->label_2->setPixmap(food);
     ui->label_5->setPixmap(pix);
     ui->label_9->setPixmap(loading);
     ui->label_10->setPixmap(takeaway);
@@ -105,6 +110,7 @@ MainWindow::MainWindow(QWidget *parent)
         }
         connect(produktBtn, &QPushButton::clicked, this, [produkt,i](){
            produkt->handleStackedWidgetIndexChange(i);
+            produkt->showAddons(resultAddons, resultFood);
         });
     }
 }
@@ -114,18 +120,11 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-//void MainWindow::progressBarLoading()
 void MainWindow::progressBarLoading(QProgressBar* progressBar)
 {
     QTimer* timer = new QTimer(this);
-//    connect(timer, &QTimer::timeout, this, &MainWindow::updateProgressBar(progressBar));
-//    connect(timer, &QTimer::timeout, this, [=]() {
-//        updateProgressBar(progressBar); // Wywołanie updateProgressBar z przekazanym progressBar
-//    });
-//    static int value = 0;
     connect(timer, &QTimer::timeout, this, [=]() { MainWindow::updateProgressBar(progressBar, timer, &value);
     });
-//    updateProgressBar(progressBar)});
     timer->start(20);
 
 }
@@ -133,25 +132,14 @@ void MainWindow::progressBarLoading(QProgressBar* progressBar)
 //void MainWindow::updateProgressBar()
 void MainWindow::updateProgressBar(QProgressBar *progressBarName, QTimer* timer, int* value)
 {
-//    static int value = 0;
-//    ui->progressBar->setValue(value);
-    qDebug() << "Current value: " << *value << "tak: " << progressBarName;
     if (progressBarName && value) {
-//        QProgressBar* progressBarName = findChild<QProgressBar*>(progressBar);
-//        QString progressBarName = progressBar->objectName();
-//        MainWindow* mainWindow = qobject_cast<MainWindow*>(progressBar->parentWidget());
         progressBarName->setValue(*value);
-//        updateProgressBar(progressBar,*value);
         if (*value > 100) {
             // to ponizej robimy tylko po to, aby przeskoczylo nam o 1 strone, a nie do samego
-//            QTimer* timer = qobject_cast<QTimer*>(sender()); // Pobierz wskaźnik na QTimer
               timer->stop();
             goToNextPage();
-//            if (timer) {
-//            counter+=1;
            // Zatrzymaj QTimer
             *value = 0;
-//            }
     }
         (*value)++;
     }
@@ -191,6 +179,42 @@ void MainWindow::changeMenuPage()
     }else{
          ui->stackedWidget_2->setCurrentIndex(1);
     }
+}
+
+
+void MainWindow::basket(const QString& filePath, QLabel* window)
+{
+    static qint64 lastReadPosition = 0;
+
+    QString actualSum = window->text();
+    actualSum.remove("zł"); // Usuń symbol waluty
+    double actualSumDouble = actualSum.toDouble();
+    QFile file(filePath);
+    file.seek(lastReadPosition);
+
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        // obsługa błędu odczytu pliku
+    }
+    // Utwórz obiekt klasy QTextStream i skojarz go z obiektem QFile
+    QTextStream in(&file);
+
+    // Odczytaj dane linia po linii, dopóki nie osiągniesz końca pliku
+    while (!in.atEnd())
+    {
+         QString line = in.readLine();
+         double prize = line.toDouble();
+         actualSumDouble += prize;
+    }
+
+
+    lastReadPosition = file.pos();
+    // Zamknij plik po zakończeniu odczytu
+    file.close();
+    QString total_price = QString::number(actualSumDouble, 'f', 2);
+    total_price.replace(".", ","); // Zamień kropke na przecinek
+    QString sum_all = total_price + "zł";
+    window->setText(sum_all); // wypisz w oknie
 }
 
 
@@ -381,6 +405,7 @@ void MainWindow::clearData()
     ui->label_summary->clear();
     ui->label_receipt_2->clear();
     ui->label_receipt_3->clear();
+    ui->label_sum->clear();
 }
 
 void MainWindow::resetData()
@@ -398,11 +423,10 @@ void MainWindow::on_pushButton_clicked()
 // na wynos
 void MainWindow::on_pushButton_3_clicked()
 {
-//    goToNextPage();
     goToNextPage();
     resultFood = writeFoodToVectorOfObjects();
     showData(resultFood);
-//    progressBarLoading(ui->progressBar_3);
+    resultAddons = writeAddonsToVectorOfObjects();
 }
 
 // na miejscu
@@ -412,21 +436,14 @@ void MainWindow::on_pushButton_2_clicked()
     //    goToNextPage();
     resultFood = writeFoodToVectorOfObjects();
     showData(resultFood);
-
+    resultAddons = writeAddonsToVectorOfObjects();
 
     saveTextToFile("zamowione_produkty.txt", "1x Opakowanie 2,00zł");
     saveTextToFile("ceny_produktow.txt", "2");
     goToNextPage();
-
-//    progressBarLoading(ui->progressBar_3);
 }
 
-// przejdz do koszyka/poodsumowania
-void MainWindow::on_pushButton_6_clicked()
-{
-    goToNextPage();
-//    progressBarLoading();
-}
+
 
 // zaplac
 void MainWindow::on_pushButton_10_clicked()
@@ -445,9 +462,10 @@ void MainWindow::on_pushButton_4_clicked()
 // gotowka przy kasie
 void MainWindow::on_pushButton_5_clicked()
 {
-    //dodac progressbar, zrobic aby byl uniwersalny
     goToNextPage();
     orderNumber();
+    QMessageBox::information(this, "Informacja", "Proszę podejść do kasy, aby zapłacić!");
+    close();
 }
 
 //wyswietl paragon
@@ -461,30 +479,32 @@ void MainWindow::on_pushButton_7_clicked()
     cleanFile("ceny_produktow.txt");
 }
 
-// po wyborze czy na miejscu, czy na wynos (progressbar)
-void MainWindow::on_progressBar_3_valueChanged()
-{
-    goToNextPage();
-}
-
-
 void MainWindow::on_product1Btn_clicked()
 {
 }
 
-//przejdz dalej (Zupy)
-void MainWindow::on_pushButton_26_clicked()
-{
-    goToNextPage();
-}
 
 //przejdz dalej (Salatki)
 void MainWindow::on_pushButton_20_clicked()
 {
-    goToNextPage();
-    readFileContents("zamowione_produkty.txt", ui->label_summary);
-    totalPrice("ceny_produktow.txt", ui->label_total_price);
 
+    QFile file("zamowione_produkty.txt");
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        qint64 fileSize = file.size();
+        if (fileSize == 0)
+        {
+            QMessageBox::warning(this, "Ostrzeżenie", "Aby przejść dalej musisz wybrać jakieś produkty!");
+        }
+        else
+        {
+            goToNextPage();
+            readFileContents("zamowione_produkty.txt", ui->label_summary);
+            totalPrice("ceny_produktow.txt", ui->label_total_price);
+        }
+
+        file.close();
+    }
 }
 
 //w podsumowaniu zamowienia poprzednia strona
@@ -493,28 +513,49 @@ void MainWindow::on_pushButton_8_clicked()
     goToPreviousPage();
 }
 
-//kup taniej
-void MainWindow::on_pushButton_9_clicked()
-{
-    goToPreviousPage();
-}
+////kup taniej
+//void MainWindow::on_pushButton_9_clicked()
+//{
+//    goToPreviousPage();
+//}
 
 
 void MainWindow::on_pushButton_19_clicked()
 {
     changeMenuPage();
+
 }
 
 
 void MainWindow::on_pushButton_18_clicked()
 {
-    goToPreviousPage();
+    basket("ceny_produktow.txt", ui->label_sum);
 }
 
-//
-void MainWindow::on_pushButton_12_clicked()
+
+
+
+
+void MainWindow::on_pushButton_100_clicked()
 {
-    goToFirstPage();
-}
+    QFile file("zamowione_produkty.txt");
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        qint64 fileSize = file.size();
+        if (fileSize == 0)
+        {
+            QMessageBox::warning(this, "Ostrzeżenie", "Aby przejść do koszyka musisz wybrać jakieś produkty!");
+        }
+        else
+        {
+            readFileContents("zamowione_produkty.txt", ui->label_summary);
+            totalPrice("ceny_produktow.txt", ui->label_total_price);
+            basket("ceny_produktow.txt", ui->label_sum);
+            goToNextPage();
+        }
 
+        file.close();
+    }
+
+}
 

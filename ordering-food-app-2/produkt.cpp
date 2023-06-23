@@ -17,6 +17,7 @@ Produkt::Produkt(QWidget *parent) :
     ui(new Ui::Produkt)
 {
     ui->setupUi(this);
+
 }
 
 
@@ -75,29 +76,6 @@ void Produkt::savingProducts(QSpinBox* amountSpinBox, QLabel* priceLabel, QLabel
     }
 }
 
-//void Produkt::actualSum(QSpinBox* amountSpinBox, QLabel* priceLabel) // funkcja do obliczania i wypisywania obecnej ceny, jako argumenty przyjmuje wskaźniki
-//{                                                                         // do obiektów pierwszy pokazuje ilość danego produktu a drugi jego cenę
-//    int number = amountSpinBox->value(); // Odczytaj wartość z pola QSpinBox (ilość produktów)
-//    QString Strprice = priceLabel->text(); // Odczytaj tekst z pola QLabel(cena produktu)
-//    Strprice.remove("zł"); // Usuń symbol waluty
-//    Strprice.replace(",", "."); // Zamień przecinek na kropkę
-//    double prize = Strprice.toDouble(); // Konwertuj oczyszczony string na liczbę zmiennoprzecinkową (cena za 1 produkt)
-
-//    QString Strcurrentprize = ui->label_sum->text(); // odczytanie obecnej sumy
-//    Strcurrentprize.remove("zł"); // Usuń symbol waluty
-//    Strcurrentprize.replace(",", "."); // Zamień przecinek na kropkę
-//    double currentprize = Strcurrentprize.toDouble(); // zamienia string z obecna cena na double
-
-//    double sum;
-//    sum = currentprize + (number * prize); // oblicza sume
-//    QString value = QString::number(sum, 'f',2); // zamienia sume na stringa
-//    value.replace(".", ","); // Zamień kropke na przecinek
-//    QString zl = " zł";
-//    QString total = value + zl;
-//    ui->label_sum->setText(total); // wypisuje na ekranie obecna sume
-//}
-
-
 void Produkt::handleStackedWidgetIndexChange(int index)
 {
     ui->stackedProductWidget->setCurrentIndex(index);
@@ -106,6 +84,7 @@ void Produkt::handleStackedWidgetIndexChange(int index)
 
 void Produkt::on_pushButton_2_clicked()
 {
+    //basket("ceny_produktow.txt", ui->label_sum);
     //actualSum(ui->amountItem11, ui->price11);
 
     for (int i = 1; i <= 99; ++i)
@@ -133,11 +112,8 @@ void Produkt::on_pushButton_2_clicked()
                 }
             }
     }
+    close();
 }
-
-
-
-
 
 void Produkt::on_pushButton_clicked()
 {

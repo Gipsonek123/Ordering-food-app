@@ -41,8 +41,6 @@ private slots:
 
     void on_pushButton_2_clicked();
 
-    void on_pushButton_6_clicked();
-
     void on_pushButton_10_clicked();
 
     void on_pushButton_4_clicked();
@@ -51,8 +49,6 @@ private slots:
 
     void on_pushButton_7_clicked();
 
-    void on_progressBar_3_valueChanged();
-
     void on_product1Btn_clicked();
 
     void goToPreviousPage();
@@ -60,20 +56,22 @@ private slots:
     void changeMenuPage();
     void goToFirstPage();
 
-    void on_pushButton_26_clicked();
+
 
     void on_pushButton_20_clicked();
 
     void on_pushButton_8_clicked();
 
-    void on_pushButton_9_clicked();
+    //void on_pushButton_9_clicked();
 
     void on_pushButton_19_clicked();
 
     void on_pushButton_18_clicked();
 
-    void on_pushButton_12_clicked();
 
+
+
+    void on_pushButton_100_clicked();
 
 private:
 
@@ -92,6 +90,7 @@ private:
     void readFileContents(const QString& filePath, QLabel* window);
     void totalPrice(const QString& filePath, QLabel* window);
     void saveTextToFile(const QString& file_patch, const QString& text);
+    void basket(const QString& filePath, QLabel* window);
 
     int value = 0;
 };
