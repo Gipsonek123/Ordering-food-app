@@ -186,43 +186,28 @@ release\qrc_resource.cpp: ..\ordering-food-app-2\resource.qrc \
 		C:\Qt\6.5.1\msvc2019_64\bin\rcc.exe \
 		..\ordering-food-app-2\img\ceasar.jpg \
 		..\ordering-food-app-2\img\burger1.jpg \
-		..\ordering-food-app-2\img\burger4.jpg \
-		..\ordering-food-app-2\img\order.jpg \
 		..\ordering-food-app-2\img\coleslaw.jpg \
+		..\ordering-food-app-2\img\pexels-cottonbro-studio-6150658.jpg \
 		..\ordering-food-app-2\img\burger3.jpg \
 		..\ordering-food-app-2\img\Fries.jpg \
-		..\ordering-food-app-2\img\pexels-cottonbro-studio-6150658.jpg \
 		..\ordering-food-app-2\img\sprite.jpg \
 		..\ordering-food-app-2\img\ExitBtnWhite.svg \
-		..\ordering-food-app-2\img\menu.jpg \
 		..\ordering-food-app-2\img\menuS1.jpg \
-		..\ordering-food-app-2\img\x.png \
 		..\ordering-food-app-2\img\margharita.jpg \
-		..\ordering-food-app-2\img\cancel.svg \
-		..\ordering-food-app-2\img\started.jpg \
 		..\ordering-food-app-2\img\diavolo.jpg \
-		..\ordering-food-app-2\img\progressbar2.jpg \
 		..\ordering-food-app-2\img\capriciosa.jpg \
 		..\ordering-food-app-2\img\startClickIcon2.svg \
 		..\ordering-food-app-2\img\kremowka.jpg \
-		..\ordering-food-app-2\img\paying.png \
 		..\ordering-food-app-2\img\burger2.jpg \
-		..\ordering-food-app-2\img\takeaway.jpg \
 		..\ordering-food-app-2\img\start3.jpg \
 		..\ordering-food-app-2\img\startPict2.jpg \
-		..\ordering-food-app-2\img\loading.jpg \
-		..\ordering-food-app-2\img\restaurant2.jpg \
-		..\ordering-food-app-2\img\restaurant.jpg \
 		..\ordering-food-app-2\img\cocacola.jpg \
 		..\ordering-food-app-2\img\taco.jpg \
-		..\ordering-food-app-2\img\menuPict.jpg \
 		..\ordering-food-app-2\img\chips.jpg \
-		..\ordering-food-app-2\img\recipe.jpg \
 		..\ordering-food-app-2\img\chocolateicecream.jpg \
-		..\ordering-food-app-2\img\hummus.jpg \
 		..\ordering-food-app-2\img\progress.jpg \
-		..\ordering-food-app-2\img\vanillaicecream.jpg \
-		..\ordering-food-app-2\img\burger.jpg
+		..\ordering-food-app-2\img\hummus.jpg \
+		..\ordering-food-app-2\img\vanillaicecream.jpg
 	C:\Qt\6.5.1\msvc2019_64\bin\rcc.exe -name resource --no-zstd ..\ordering-food-app-2\resource.qrc -o release\qrc_resource.cpp
 
 compiler_moc_predefs_make_all: release\moc_predefs.h

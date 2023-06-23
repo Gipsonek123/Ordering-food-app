@@ -412,7 +412,7 @@ public:
         page_13->setObjectName("page_13");
         layoutWidget_5 = new QWidget(page_13);
         layoutWidget_5->setObjectName("layoutWidget_5");
-        layoutWidget_5->setGeometry(QRect(0, 40, 471, 501));
+        layoutWidget_5->setGeometry(QRect(10, 40, 461, 511));
         verticalLayout_88 = new QVBoxLayout(layoutWidget_5);
         verticalLayout_88->setSpacing(2);
         verticalLayout_88->setObjectName("verticalLayout_88");
@@ -438,6 +438,7 @@ public:
         product1Btn = new QPushButton(layoutWidget_5);
         product1Btn->setObjectName("product1Btn");
         product1Btn->setMinimumSize(QSize(0, 100));
+        product1Btn->setMaximumSize(QSize(155, 16777215));
         product1Btn->setStyleSheet(QString::fromUtf8("background-image: url(:/img/img/burger2.jpg);"));
 
         verticalLayout_106->addWidget(product1Btn);
@@ -446,7 +447,7 @@ public:
         horizontalLayout_26->setObjectName("horizontalLayout_26");
         BurgerName_1 = new QLabel(layoutWidget_5);
         BurgerName_1->setObjectName("BurgerName_1");
-        BurgerName_1->setMaximumSize(QSize(16777215, 15));
+        BurgerName_1->setMaximumSize(QSize(115, 15));
         BurgerName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -456,6 +457,7 @@ public:
 
         BurgerCost_1 = new QLabel(layoutWidget_5);
         BurgerCost_1->setObjectName("BurgerCost_1");
+        BurgerCost_1->setMaximumSize(QSize(40, 16777215));
         BurgerCost_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -481,6 +483,7 @@ public:
         product2Btn = new QPushButton(layoutWidget_5);
         product2Btn->setObjectName("product2Btn");
         product2Btn->setMinimumSize(QSize(0, 100));
+        product2Btn->setMaximumSize(QSize(155, 16777215));
         product2Btn->setStyleSheet(QString::fromUtf8("background-image: url(:/img/img/burger3.jpg);"));
 
         verticalLayout_91->addWidget(product2Btn);
@@ -489,7 +492,7 @@ public:
         horizontalLayout_22->setObjectName("horizontalLayout_22");
         BurgerName_2 = new QLabel(layoutWidget_5);
         BurgerName_2->setObjectName("BurgerName_2");
-        BurgerName_2->setMaximumSize(QSize(16777215, 15));
+        BurgerName_2->setMaximumSize(QSize(115, 15));
         BurgerName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -499,6 +502,7 @@ public:
 
         BurgerCost_2 = new QLabel(layoutWidget_5);
         BurgerCost_2->setObjectName("BurgerCost_2");
+        BurgerCost_2->setMaximumSize(QSize(40, 16777215));
         BurgerCost_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -517,6 +521,7 @@ public:
         product3Btn = new QPushButton(layoutWidget_5);
         product3Btn->setObjectName("product3Btn");
         product3Btn->setMinimumSize(QSize(0, 100));
+        product3Btn->setMaximumSize(QSize(155, 16777215));
         product3Btn->setStyleSheet(QString::fromUtf8("background-image: url(:/img/img/burger1.jpg);"));
 
         verticalLayout_92->addWidget(product3Btn);
@@ -525,7 +530,7 @@ public:
         horizontalLayout_23->setObjectName("horizontalLayout_23");
         BurgerName_3 = new QLabel(layoutWidget_5);
         BurgerName_3->setObjectName("BurgerName_3");
-        BurgerName_3->setMaximumSize(QSize(16777215, 15));
+        BurgerName_3->setMaximumSize(QSize(115, 15));
         BurgerName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -535,6 +540,7 @@ public:
 
         BurgerCost_3 = new QLabel(layoutWidget_5);
         BurgerCost_3->setObjectName("BurgerCost_3");
+        BurgerCost_3->setMaximumSize(QSize(40, 16777215));
         BurgerCost_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -568,6 +574,7 @@ public:
         product4Btn = new QPushButton(layoutWidget_5);
         product4Btn->setObjectName("product4Btn");
         product4Btn->setMinimumSize(QSize(0, 100));
+        product4Btn->setMaximumSize(QSize(155, 16777215));
         product4Btn->setStyleSheet(QString::fromUtf8("background-image: url(:/img/img/capriciosa.jpg);"));
 
         verticalLayout_93->addWidget(product4Btn);
@@ -576,7 +583,7 @@ public:
         horizontalLayout_21->setObjectName("horizontalLayout_21");
         PizzaName_1 = new QLabel(layoutWidget_5);
         PizzaName_1->setObjectName("PizzaName_1");
-        PizzaName_1->setMaximumSize(QSize(16777215, 15));
+        PizzaName_1->setMaximumSize(QSize(115, 15));
         PizzaName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -586,6 +593,7 @@ public:
 
         PizzaCost_1 = new QLabel(layoutWidget_5);
         PizzaCost_1->setObjectName("PizzaCost_1");
+        PizzaCost_1->setMaximumSize(QSize(40, 16777215));
         PizzaCost_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -605,6 +613,7 @@ public:
         product5Btn = new QPushButton(layoutWidget_5);
         product5Btn->setObjectName("product5Btn");
         product5Btn->setMinimumSize(QSize(0, 100));
+        product5Btn->setMaximumSize(QSize(155, 16777215));
         product5Btn->setStyleSheet(QString::fromUtf8("background-image: url(:/img/img/margharita.jpg);"));
 
         verticalLayout_94->addWidget(product5Btn);
@@ -613,7 +622,7 @@ public:
         horizontalLayout_19->setObjectName("horizontalLayout_19");
         PizzaName_2 = new QLabel(layoutWidget_5);
         PizzaName_2->setObjectName("PizzaName_2");
-        PizzaName_2->setMaximumSize(QSize(16777215, 15));
+        PizzaName_2->setMaximumSize(QSize(115, 15));
         PizzaName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -623,6 +632,7 @@ public:
 
         PizzaCost_2 = new QLabel(layoutWidget_5);
         PizzaCost_2->setObjectName("PizzaCost_2");
+        PizzaCost_2->setMaximumSize(QSize(40, 16777215));
         PizzaCost_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -641,6 +651,7 @@ public:
         product6Btn = new QPushButton(layoutWidget_5);
         product6Btn->setObjectName("product6Btn");
         product6Btn->setMinimumSize(QSize(0, 100));
+        product6Btn->setMaximumSize(QSize(155, 16777215));
         product6Btn->setStyleSheet(QString::fromUtf8("background-image: url(:/img/img/diavolo.jpg);"));
 
         verticalLayout_95->addWidget(product6Btn);
@@ -649,7 +660,7 @@ public:
         horizontalLayout_18->setObjectName("horizontalLayout_18");
         PizzaName_3 = new QLabel(layoutWidget_5);
         PizzaName_3->setObjectName("PizzaName_3");
-        PizzaName_3->setMaximumSize(QSize(16777215, 15));
+        PizzaName_3->setMaximumSize(QSize(115, 15));
         PizzaName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -659,6 +670,7 @@ public:
 
         PizzaCost_3 = new QLabel(layoutWidget_5);
         PizzaCost_3->setObjectName("PizzaCost_3");
+        PizzaCost_3->setMaximumSize(QSize(40, 16777215));
         PizzaCost_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -692,6 +704,7 @@ public:
         product7Btn = new QPushButton(layoutWidget_5);
         product7Btn->setObjectName("product7Btn");
         product7Btn->setMinimumSize(QSize(0, 100));
+        product7Btn->setMaximumSize(QSize(155, 16777215));
         product7Btn->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "background-image: url(:/img/img/vanillaicecream.jpg);\n"
 "	padding-top: 5px;"));
@@ -702,7 +715,7 @@ public:
         horizontalLayout_20->setObjectName("horizontalLayout_20");
         DessertName_1 = new QLabel(layoutWidget_5);
         DessertName_1->setObjectName("DessertName_1");
-        DessertName_1->setMaximumSize(QSize(16777215, 15));
+        DessertName_1->setMaximumSize(QSize(115, 15));
         DessertName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -712,6 +725,7 @@ public:
 
         DessertCost_1 = new QLabel(layoutWidget_5);
         DessertCost_1->setObjectName("DessertCost_1");
+        DessertCost_1->setMaximumSize(QSize(40, 16777215));
         DessertCost_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -730,6 +744,7 @@ public:
         product8Btn = new QPushButton(layoutWidget_5);
         product8Btn->setObjectName("product8Btn");
         product8Btn->setMinimumSize(QSize(0, 100));
+        product8Btn->setMaximumSize(QSize(155, 16777215));
         product8Btn->setStyleSheet(QString::fromUtf8("background-image: url(:/img/img/chocolateicecream.jpg);"));
 
         verticalLayout_97->addWidget(product8Btn);
@@ -738,7 +753,7 @@ public:
         horizontalLayout_17->setObjectName("horizontalLayout_17");
         DessertName_2 = new QLabel(layoutWidget_5);
         DessertName_2->setObjectName("DessertName_2");
-        DessertName_2->setMaximumSize(QSize(16777215, 15));
+        DessertName_2->setMaximumSize(QSize(115, 15));
         DessertName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -748,6 +763,7 @@ public:
 
         DessertCost_2 = new QLabel(layoutWidget_5);
         DessertCost_2->setObjectName("DessertCost_2");
+        DessertCost_2->setMaximumSize(QSize(40, 16777215));
         DessertCost_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -766,6 +782,7 @@ public:
         product9Btn = new QPushButton(layoutWidget_5);
         product9Btn->setObjectName("product9Btn");
         product9Btn->setMinimumSize(QSize(0, 100));
+        product9Btn->setMaximumSize(QSize(155, 16777215));
         product9Btn->setStyleSheet(QString::fromUtf8("background-image: url(:/img/img/kremowka.jpg);"));
 
         verticalLayout_98->addWidget(product9Btn);
@@ -774,7 +791,7 @@ public:
         horizontalLayout_16->setObjectName("horizontalLayout_16");
         DessertName_3 = new QLabel(layoutWidget_5);
         DessertName_3->setObjectName("DessertName_3");
-        DessertName_3->setMaximumSize(QSize(16777215, 15));
+        DessertName_3->setMaximumSize(QSize(115, 15));
         DessertName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -784,6 +801,7 @@ public:
 
         DessertCost_3 = new QLabel(layoutWidget_5);
         DessertCost_3->setObjectName("DessertCost_3");
+        DessertCost_3->setMaximumSize(QSize(40, 16777215));
         DessertCost_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -816,7 +834,7 @@ public:
         page_14->setObjectName("page_14");
         layoutWidget_3 = new QWidget(page_14);
         layoutWidget_3->setObjectName("layoutWidget_3");
-        layoutWidget_3->setGeometry(QRect(10, 50, 471, 501));
+        layoutWidget_3->setGeometry(QRect(10, 40, 461, 511));
         verticalLayout_75 = new QVBoxLayout(layoutWidget_3);
         verticalLayout_75->setSpacing(2);
         verticalLayout_75->setObjectName("verticalLayout_75");
@@ -847,7 +865,7 @@ public:
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         SaladName_1 = new QLabel(layoutWidget_3);
         SaladName_1->setObjectName("SaladName_1");
-        SaladName_1->setMaximumSize(QSize(16777215, 15));
+        SaladName_1->setMaximumSize(QSize(115, 15));
         SaladName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -857,6 +875,7 @@ public:
 
         SaladCost_1 = new QLabel(layoutWidget_3);
         SaladCost_1->setObjectName("SaladCost_1");
+        SaladCost_1->setMaximumSize(QSize(40, 16777215));
         SaladCost_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -884,7 +903,7 @@ public:
         horizontalLayout_7->setObjectName("horizontalLayout_7");
         SaladName_2 = new QLabel(layoutWidget_3);
         SaladName_2->setObjectName("SaladName_2");
-        SaladName_2->setMaximumSize(QSize(16777215, 15));
+        SaladName_2->setMaximumSize(QSize(115, 15));
         SaladName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -894,6 +913,7 @@ public:
 
         SaladCost_2 = new QLabel(layoutWidget_3);
         SaladCost_2->setObjectName("SaladCost_2");
+        SaladCost_2->setMaximumSize(QSize(40, 16777215));
         SaladCost_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -921,7 +941,7 @@ public:
         horizontalLayout_6->setObjectName("horizontalLayout_6");
         SaladName_3 = new QLabel(layoutWidget_3);
         SaladName_3->setObjectName("SaladName_3");
-        SaladName_3->setMaximumSize(QSize(16777215, 15));
+        SaladName_3->setMaximumSize(QSize(115, 15));
         SaladName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -931,6 +951,7 @@ public:
 
         SaladCost_3 = new QLabel(layoutWidget_3);
         SaladCost_3->setObjectName("SaladCost_3");
+        SaladCost_3->setMaximumSize(QSize(40, 16777215));
         SaladCost_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -972,7 +993,7 @@ public:
         horizontalLayout_9->setObjectName("horizontalLayout_9");
         SnackName_1 = new QLabel(layoutWidget_3);
         SnackName_1->setObjectName("SnackName_1");
-        SnackName_1->setMaximumSize(QSize(16777215, 15));
+        SnackName_1->setMaximumSize(QSize(115, 15));
         SnackName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -982,6 +1003,7 @@ public:
 
         SnackCost_1 = new QLabel(layoutWidget_3);
         SnackCost_1->setObjectName("SnackCost_1");
+        SnackCost_1->setMaximumSize(QSize(40, 16777215));
         SnackCost_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -1008,7 +1030,7 @@ public:
         horizontalLayout_10->setObjectName("horizontalLayout_10");
         SnackName_2 = new QLabel(layoutWidget_3);
         SnackName_2->setObjectName("SnackName_2");
-        SnackName_2->setMaximumSize(QSize(16777215, 15));
+        SnackName_2->setMaximumSize(QSize(115, 15));
         SnackName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -1018,6 +1040,7 @@ public:
 
         SnackCost_2 = new QLabel(layoutWidget_3);
         SnackCost_2->setObjectName("SnackCost_2");
+        SnackCost_2->setMaximumSize(QSize(40, 16777215));
         SnackCost_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -1044,16 +1067,18 @@ public:
         horizontalLayout_11->setObjectName("horizontalLayout_11");
         SnackName_3 = new QLabel(layoutWidget_3);
         SnackName_3->setObjectName("SnackName_3");
-        SnackName_3->setMaximumSize(QSize(16777215, 15));
+        SnackName_3->setMaximumSize(QSize(115, 15));
         SnackName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
-""));
+"white-space: nowrap;\n"
+"text-overflow: ellipsis;"));
 
         horizontalLayout_11->addWidget(SnackName_3);
 
         SnackCost_3 = new QLabel(layoutWidget_3);
         SnackCost_3->setObjectName("SnackCost_3");
+        SnackCost_3->setMaximumSize(QSize(40, 16777215));
         SnackCost_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -1097,7 +1122,7 @@ public:
         horizontalLayout_13->setObjectName("horizontalLayout_13");
         DrinkName_1 = new QLabel(layoutWidget_3);
         DrinkName_1->setObjectName("DrinkName_1");
-        DrinkName_1->setMaximumSize(QSize(16777215, 15));
+        DrinkName_1->setMaximumSize(QSize(115, 15));
         DrinkName_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -1107,6 +1132,7 @@ public:
 
         DrinkCost_1 = new QLabel(layoutWidget_3);
         DrinkCost_1->setObjectName("DrinkCost_1");
+        DrinkCost_1->setMaximumSize(QSize(40, 16777215));
         DrinkCost_1->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -1133,7 +1159,7 @@ public:
         horizontalLayout_14->setObjectName("horizontalLayout_14");
         DrinkName_2 = new QLabel(layoutWidget_3);
         DrinkName_2->setObjectName("DrinkName_2");
-        DrinkName_2->setMaximumSize(QSize(16777215, 15));
+        DrinkName_2->setMaximumSize(QSize(115, 15));
         DrinkName_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -1143,6 +1169,7 @@ public:
 
         DrinkCost_2 = new QLabel(layoutWidget_3);
         DrinkCost_2->setObjectName("DrinkCost_2");
+        DrinkCost_2->setMaximumSize(QSize(40, 16777215));
         DrinkCost_2->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -1169,7 +1196,7 @@ public:
         horizontalLayout_15->setObjectName("horizontalLayout_15");
         DrinkName_3 = new QLabel(layoutWidget_3);
         DrinkName_3->setObjectName("DrinkName_3");
-        DrinkName_3->setMaximumSize(QSize(16777215, 15));
+        DrinkName_3->setMaximumSize(QSize(115, 15));
         DrinkName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -1179,6 +1206,7 @@ public:
 
         DrinkCost_3 = new QLabel(layoutWidget_3);
         DrinkCost_3->setObjectName("DrinkCost_3");
+        DrinkCost_3->setMaximumSize(QSize(40, 16777215));
         DrinkCost_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
@@ -1792,8 +1820,8 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
-        stackedWidget_2->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(3);
+        stackedWidget_2->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
