@@ -1071,8 +1071,7 @@ public:
         SnackName_3->setStyleSheet(QString::fromUtf8("	font: 350 9pt \"Cascadia Code SemiLight\";\n"
 "	padding-top: 5px;\n"
 "background-color: rgba(128,128,128,0);\n"
-"white-space: nowrap;\n"
-"text-overflow: ellipsis;"));
+""));
 
         horizontalLayout_11->addWidget(SnackName_3);
 
