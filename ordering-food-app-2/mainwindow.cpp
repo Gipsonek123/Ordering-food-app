@@ -28,9 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
     QPixmap pix(":/img/img/start3.jpg");
     QPixmap loading(":/img/img/progress.jpg");
     QPixmap takeaway(":/img/img/menuS1.jpg");
-//    QPixmap food(":/img/img/food.jpg");
 
-//    ui->label_2->setPixmap(food);
     ui->label_5->setPixmap(pix);
     ui->label_9->setPixmap(loading);
     ui->label_10->setPixmap(takeaway);

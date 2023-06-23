@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="firstPage">
      <widget class="QLabel" name="label_5">
@@ -363,16 +363,16 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
        </size>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_13">
        <widget class="QWidget" name="layoutWidget_5">
         <property name="geometry">
          <rect>
-          <x>0</x>
+          <x>10</x>
           <y>40</y>
-          <width>471</width>
-          <height>501</height>
+          <width>461</width>
+          <height>511</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_88">
@@ -414,6 +414,12 @@ background-color: rgba(128,128,128,0);
                      <height>100</height>
                     </size>
                    </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>155</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">background-image: url(:/img/img/burger2.jpg);</string>
                    </property>
@@ -428,7 +434,7 @@ background-color: rgba(128,128,128,0);
                     <widget class="QLabel" name="BurgerName_1">
                      <property name="maximumSize">
                       <size>
-                       <width>16777215</width>
+                       <width>115</width>
                        <height>15</height>
                       </size>
                      </property>
@@ -445,6 +451,12 @@ background-color: rgba(128,128,128,0);
                    </item>
                    <item>
                     <widget class="QLabel" name="BurgerCost_1">
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -475,6 +487,12 @@ background-color: rgba(128,128,128,0);
                  <height>100</height>
                 </size>
                </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="styleSheet">
                 <string notr="true">background-image: url(:/img/img/burger3.jpg);</string>
                </property>
@@ -489,7 +507,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="BurgerName_2">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -506,6 +524,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="BurgerCost_2">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -531,6 +555,12 @@ background-color: rgba(128,128,128,0);
                  <height>100</height>
                 </size>
                </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="styleSheet">
                 <string notr="true">background-image: url(:/img/img/burger1.jpg);</string>
                </property>
@@ -545,7 +575,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="BurgerName_3">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -562,6 +592,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="BurgerCost_3">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -610,6 +646,12 @@ background-color: rgba(128,128,128,0);
                  <height>100</height>
                 </size>
                </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="styleSheet">
                 <string notr="true">background-image: url(:/img/img/capriciosa.jpg);</string>
                </property>
@@ -624,7 +666,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="PizzaName_1">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -641,6 +683,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="PizzaCost_1">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -667,6 +715,12 @@ background-color: rgba(128,128,128,0);
                  <height>100</height>
                 </size>
                </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="styleSheet">
                 <string notr="true">background-image: url(:/img/img/margharita.jpg);</string>
                </property>
@@ -681,7 +735,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="PizzaName_2">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -698,6 +752,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="PizzaCost_2">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -723,6 +783,12 @@ background-color: rgba(128,128,128,0);
                  <height>100</height>
                 </size>
                </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="styleSheet">
                 <string notr="true">background-image: url(:/img/img/diavolo.jpg);</string>
                </property>
@@ -737,7 +803,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="PizzaName_3">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -754,6 +820,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="PizzaCost_3">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -802,6 +874,12 @@ background-color: rgba(128,128,128,0);
                  <height>100</height>
                 </size>
                </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="styleSheet">
                 <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 background-image: url(:/img/img/vanillaicecream.jpg);
@@ -818,7 +896,7 @@ background-image: url(:/img/img/vanillaicecream.jpg);
                 <widget class="QLabel" name="DessertName_1">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -835,6 +913,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="DessertCost_1">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -860,6 +944,12 @@ background-color: rgba(128,128,128,0);
                  <height>100</height>
                 </size>
                </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="styleSheet">
                 <string notr="true">background-image: url(:/img/img/chocolateicecream.jpg);</string>
                </property>
@@ -874,7 +964,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="DessertName_2">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -891,6 +981,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="DessertCost_2">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -916,6 +1012,12 @@ background-color: rgba(128,128,128,0);
                  <height>100</height>
                 </size>
                </property>
+               <property name="maximumSize">
+                <size>
+                 <width>155</width>
+                 <height>16777215</height>
+                </size>
+               </property>
                <property name="styleSheet">
                 <string notr="true">background-image: url(:/img/img/kremowka.jpg);</string>
                </property>
@@ -930,7 +1032,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="DessertName_3">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -947,6 +1049,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="DessertCost_3">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -995,9 +1103,9 @@ border-image: url(:/img/img/ExitBtnWhite.svg);
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>50</y>
-          <width>471</width>
-          <height>501</height>
+          <y>40</y>
+          <width>461</width>
+          <height>511</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_75">
@@ -1055,7 +1163,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="SaladName_1">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -1072,6 +1180,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="SaladCost_1">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -1117,7 +1231,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="SaladName_2">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -1134,6 +1248,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="SaladCost_2">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -1179,7 +1299,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="SaladName_3">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -1196,6 +1316,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="SaladCost_3">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -1258,7 +1384,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="SnackName_1">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -1275,6 +1401,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="SnackCost_1">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -1314,7 +1446,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="SnackName_2">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -1331,6 +1463,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="SnackCost_2">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -1370,7 +1508,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="SnackName_3">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -1378,7 +1516,8 @@ background-color: rgba(128,128,128,0);
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
 background-color: rgba(128,128,128,0);
-</string>
+white-space: nowrap;
+text-overflow: ellipsis;</string>
                  </property>
                  <property name="text">
                   <string>TextLabel</string>
@@ -1387,6 +1526,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="SnackCost_3">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -1451,7 +1596,7 @@ background-image: url(:/img/img/cocacola.jpg);
                 <widget class="QLabel" name="DrinkName_1">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -1468,6 +1613,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="DrinkCost_1">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -1507,7 +1658,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="DrinkName_2">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -1524,6 +1675,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="DrinkCost_2">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
@@ -1563,7 +1720,7 @@ background-color: rgba(128,128,128,0);
                 <widget class="QLabel" name="DrinkName_3">
                  <property name="maximumSize">
                   <size>
-                   <width>16777215</width>
+                   <width>115</width>
                    <height>15</height>
                   </size>
                  </property>
@@ -1580,6 +1737,12 @@ background-color: rgba(128,128,128,0);
                </item>
                <item>
                 <widget class="QLabel" name="DrinkCost_3">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">	font: 350 9pt &quot;Cascadia Code SemiLight&quot;;
 	padding-top: 5px;
