@@ -1,2 +1,2 @@
-# Ordering-food-app-
+# Ordering-food-app
 Simple restaurant ordering kiosk
